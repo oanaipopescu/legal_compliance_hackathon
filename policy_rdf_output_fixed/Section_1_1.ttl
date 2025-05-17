@@ -1,0 +1,19 @@
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:SecurityIncidentManagement a :RegulationRule ;
+    rdfs:label "Security Incident Management" ;
+    :definesRequirement :ConsistentIncidentManagement , :EffectiveIncidentManagement ;
+    :goal :MinimizeImpact , :LearnFromIncidents .
+
+:ConsistentIncidentManagement a :RegulationRule ;
+    rdfs:label "Consistent Incident Management" .
+
+:EffectiveIncidentManagement a :RegulationRule ;
+    rdfs:label "Effective Incident Management" .
+
+:MinimizeImpact a :RegulationGoal ;
+    rdfs:label "Minimize Impact" .
+
+:LearnFromIncidents a :RegulationGoal ;
+    rdfs:label "Learn From Incidents" .

@@ -1,0 +1,2 @@
+2.6 Learning from Security Incidents 
+In addition to detecting and taking action to resolve security incidents, it is important to create continuous feedback loops. Lessons learned activities shall be conducted periodically after a major incident to improve security measures and the incident handling process itself. By reviewing what occurred, what was done to remediate, and how well a remediation worked a learning opportunity is created which contributes to the continuous improvement cycle.

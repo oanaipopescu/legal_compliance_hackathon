@@ -1,0 +1,93 @@
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ResponseToInformationSecurityIncidents a :RegulationRule ;
+    rdfs:label "Response to Information Security Incidents" ;
+    :includes :IncidentResolutionProcess .
+
+:IncidentResolutionProcess a :RegulationRule ;
+    rdfs:label "Incident Resolution Process" ;
+    :involves :SecurityOperationsCenter ;
+    :consistentWith :SignifyCrisisManagementSOP , :BusinessContinuityManagementSOP .
+
+:SecurityOperationsCenter a :LegalEntity ;
+    rdfs:label "Security Operations Center" .
+
+:SignifyCrisisManagementSOP a :RegulationRule ;
+    rdfs:label "Company's Crisis Management SOP" .
+
+:BusinessContinuityManagementSOP a :RegulationRule ;
+    rdfs:label "Business Continuity Management SOP" .
+
+:InformationSecurityIncidentManagementProcess a :RegulationRule ;
+    rdfs:label "Information Security Incident Management Process" ;
+    :definesSupportLevels :FirstLineSupport , :SecondLineSupport , :ThirdLineSupport , :FourthLineSupport .
+
+:FirstLineSupport a :SupportLevel ;
+    rdfs:label "1st Line Support" ;
+    :handledBy :ServiceDesk ;
+    :originatesFrom :User .
+
+:SecondLineSupport a :SupportLevel ;
+    rdfs:label "2nd Line Support" ;
+    :handledBy :ITOperations , :SecurityOperations ;
+    :originatesFrom :SecurityEventMonitoring , :FirstLineSupportEscalation .
+
+:ThirdLineSupport a :SupportLevel ;
+    rdfs:label "3rd Line Support" ;
+    :handledBy :SOC , :CERT ;
+    :originatesFrom :SecurityEventMonitoring , :FirstLineSupportEscalation , :SecondLineSupportEscalation .
+
+:FourthLineSupport a :SupportLevel ;
+    rdfs:label "4th Line Support" ;
+    :handledBy :ExternalVendor .
+
+:SupportLevel a :RegulationClass ;
+    rdfs:label "Support Level" .
+
+:ServiceDesk a :LegalEntity ;
+    rdfs:label "Service Desk" .
+
+:User a :LegalEntity ;
+    rdfs:label "User" .
+
+:ITOperations a :LegalEntity ;
+    rdfs:label "IT Operations" .
+
+:SecurityOperations a :LegalEntity ;
+    rdfs:label "Security Operations" .
+
+:SOC a :LegalEntity ;
+    rdfs:label "Security Operations Center (SOC)" .
+
+:CERT a :LegalEntity ;
+    rdfs:label "Computer Emergency Response Team (CERT)" .
+
+:ExternalVendor a :LegalEntity ;
+    rdfs:label "External Vendor" .
+
+:SecurityEventMonitoring a :RegulationRule ;
+    rdfs:label "Monitoring of Security Events" .
+
+:FirstLineSupportEscalation a :RegulationRule ;
+    rdfs:label "Escalation from 1st Line Support" .
+
+:SecondLineSupportEscalation a :RegulationRule ;
+    rdfs:label "Escalation from 2nd Line Support" .
+
+:InformationSecurityIncidentHandlingProcedures a :RegulationRule ;
+    rdfs:label "Information Security Incident Handling Procedures" ;
+    :describes :MultiDisciplinarySupportTeams .
+
+:MultiDisciplinarySupportTeams a :RegulationClass ;
+    rdfs:label "Multi-disciplinary Support Teams" ;
+    :includes :LegalDepartment , :CommunicationsTeam , :ITDepartment .
+
+:LegalDepartment a :LegalEntity ;
+    rdfs:label "Legal Department" .
+
+:CommunicationsTeam a :LegalEntity ;
+    rdfs:label "Communications Team" .
+
+:ITDepartment a :LegalEntity ;
+    rdfs:label "IT Department" .

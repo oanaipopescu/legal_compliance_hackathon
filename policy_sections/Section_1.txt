@@ -1,0 +1,2 @@
+1 Introduction
+The Security Incident Management Standard focuses on incident management topics with respect to security requirements which is subject to the Corporate Security Policy. All underlying security incident management related documentation contained in Standard and Local Operation Procedures, guidelines, templates for reports and baselines is derived from and subjected to this Standard.

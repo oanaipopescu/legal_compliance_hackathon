@@ -1,0 +1,2 @@
+1.1 Purpose 
+The purpose of this document is to define the mandatory requirements and high-level approach for consistent and effective security incident management enabling Signify to minimize the impact of and learn from security incidents.

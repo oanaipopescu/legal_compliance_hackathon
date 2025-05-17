@@ -1,0 +1,39 @@
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ReportingSecurityWeaknesses a :RegulationRule ;
+    rdfs:label "Reporting Security Weaknesses" .
+
+:SecurityWeakness a :RegulationRequirement ;
+    rdfs:label "Security Weakness" ;
+    :appliesTo :Product , :System , :Service , :Vendor , :Customer ;
+    :requires :ImmediateReporting .
+
+:ImmediateReporting a :RegulationRequirement ;
+    rdfs:label "Immediate Reporting" .
+
+:Product a :LegalEntity ;
+    rdfs:label "Product" .
+
+:System a :LegalEntity ;
+    rdfs:label "System" .
+
+:Service a :LegalEntity ;
+    rdfs:label "Service" .
+
+:Vendor a :LegalEntity ;
+    rdfs:label "Vendor" .
+
+:Customer a :LegalEntity ;
+    rdfs:label "Customer" .
+
+:AuthorizedSecurityTeam a :LegalEntity ;
+    rdfs:label "Authorized Security Team" ;
+    :includes :SecurityOperationsCenter .
+
+:SecurityOperationsCenter a :LegalEntity ;
+    rdfs:label "Security Operations Center" .
+
+:UnauthorizedTesting a :RegulationRequirement ;
+    rdfs:label "Unauthorized Testing" ;
+    :prohibited true .

@@ -1,0 +1,8 @@
+3.8 Response to Information Security Incidents 
+The Security Operations Center shall be included in the incident resolution process in accordance with the company’s Crisis Management SOP, and Business Continuity Management SOP.
+An information security incident management process must be developed, including which lines of service support are differentiated and responsible for handling which type of information security incidents, e.g.:
+o 1st line support: Service desk for information security incidents originating from users.
+o 2nd line support: IT operations or security operations for information security incidents originating from monitoring of security events or escalated information security incidents from 1st line support.
+o 3rd line support: SOC/ CERT for information security incidents originating from monitoring of security events or escalated information security incidents from 1st line or 2nd line support.
+o 4th line support: External vendor/ product support.
+Information security incident handling procedures must be developed for response and resolution to information security incidents. The procedures should describe details of multi-disciplinary support teams including Legal, Communications, IT, etc.

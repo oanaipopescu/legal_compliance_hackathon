@@ -1,0 +1,4 @@
+3.2 Responsibilities and Procedures 
+In case high classified (confidential or secret) information is impacted due to an information security incident, the Major Event Team as an actor shall be established.
+In case a security incident does not qualify as a Major Event even then the security incident will be referred to Legal Counsel supporting CSO to ensure appropriate legal assessment. 
+If personal data is impacted, Privacy related incident procedures shall be followed accordingly and for legal obligations Legal Counsel supporting CSO shall be notified.

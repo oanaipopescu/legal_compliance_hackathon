@@ -1,0 +1,55 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:CentralizedIncidentReportingProcedure a :RegulationRule ;
+    rdfs:label "Centralized Incident Reporting Procedure" ;
+    :requires :TimelyReporting , :EfficientReporting , :ConsistentReporting , :AppropriatePersonnelNotification , :SecuredCommunicationChannels ;
+    :compliesWith :LegalRegulatoryRequirements .
+
+:TimelyReporting a :RegulationRequirement ;
+    rdfs:label "Timely Reporting" .
+
+:EfficientReporting a :RegulationRequirement ;
+    rdfs:label "Efficient Reporting" .
+
+:ConsistentReporting a :RegulationRequirement ;
+    rdfs:label "Consistent Reporting" .
+
+:AppropriatePersonnelNotification a :RegulationRequirement ;
+    rdfs:label "Appropriate Personnel Notification" .
+
+:SecuredCommunicationChannels a :RegulationRequirement ;
+    rdfs:label "Secured Communication Channels" ;
+    :encrypted true .
+
+:LegalRegulatoryRequirements a :RegulationRule ;
+    rdfs:label "Legal and Regulatory Requirements" .
+
+:EmployeeReportingObligation a :RegulationRule ;
+    rdfs:label "Employee Reporting Obligation" ;
+    :appliesTo :Employee , :Contractor , :Supplier ;
+    :requires :SecurityEventReportingAwareness , :ProcedureAwareness , :ReportingChannelAwareness ;
+    :consistentWith :SignifyCrisisManagementSOP .
+
+:SecurityEventReportingAwareness a :RegulationRequirement ;
+    rdfs:label "Security Event Reporting Awareness" .
+
+:ProcedureAwareness a :RegulationRequirement ;
+    rdfs:label "Procedure Awareness" .
+
+:ReportingChannelAwareness a :RegulationRequirement ;
+    rdfs:label "Reporting Channel Awareness" .
+
+:SignifyCrisisManagementSOP a :RegulationRule ;
+    rdfs:label "Signify Crisis Management SOP" .
+
+:Employee a :LegalEntity ;
+    rdfs:label "Employee" .
+
+:Contractor a :LegalEntity ;
+    rdfs:label "Contractor" .
+
+:Supplier a :LegalEntity ;
+    rdfs:label "Supplier" .
+```

@@ -1,0 +1,41 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:InformationSecurityIncidentCategorization a :RegulationRule;
+    rdfs:label "Information Security Incident Categorization";
+    :requires :IncidentFlag , :IncidentCategory .
+
+:IncidentFlag a :RegulationRequirement;
+    rdfs:label "Information Security Incident Flag" .
+
+:IncidentCategory a :RegulationRequirement;
+    rdfs:label "Information Security Incident Category";
+    :includes :Malware , :SocialEngineering , :HackingAndAttacks , :Error , :Misuse , :Physical .
+
+:Malware a :IncidentCategoryType ;
+    rdfs:label "Malware" .
+
+:SocialEngineering a :IncidentCategoryType ;
+    rdfs:label "Social Engineering" .
+
+:HackingAndAttacks a :IncidentCategoryType ;
+    rdfs:label "Hacking and Attacks" .
+
+:Error a :IncidentCategoryType ;
+    rdfs:label "Error" .
+
+:Misuse a :IncidentCategoryType ;
+    rdfs:label "Misuse" .
+
+:Physical a :IncidentCategoryType ;
+    rdfs:label "Physical" .
+
+:NeedToKnowAccessRestriction a :RegulationRequirement ;
+    rdfs:label "Need-to-Know Access Restriction" ;
+    :appliesTo :InformationSecurityIncident .
+
+:InformationSecurityIncident a :RegulationRule ;
+    rdfs:label "Information Security Incident" .
+
+```

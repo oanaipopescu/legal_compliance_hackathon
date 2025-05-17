@@ -1,0 +1,90 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:LessonsLearnedDocumentation a :RegulationRequirement ;
+    rdfs:label "Lessons Learned Documentation" ;
+    :requiredFor :InformationSecurityIncidentClosure .
+
+:InformationSecurityIncidentClosure a :RegulationRule ;
+    rdfs:label "Information Security Incident Closure" .
+
+:PostIncidentReport a :RegulationRequirement ;
+    rdfs:label "Post-Incident Report" ;
+    :requiredFor :HighSeverityInformationSecurityIncidentClosure .
+
+:HighSeverityInformationSecurityIncidentClosure a :RegulationRule ;
+    rdfs:label "High Severity Information Security Incident Closure" .
+
+:PostIncidentMeeting a :RegulationRequirement ;
+    rdfs:label "Post-Incident Meeting" ;
+    :requiredFor :HighSeverityInformationSecurityIncidentClosure .
+
+:PeriodicKPIReporting a :RegulationRequirement ;
+    rdfs:label "Periodic KPI Reporting" ;
+    :frequency "monthly" ;
+    :recipient :InformationSecurityOffice ;
+    :includes :NumberOfReportedIncidents , :IncidentCategoryCount , :IncidentStatus , :IncidentResponseTime , :IncidentIdleTime , :IncidentThroughputTime .
+
+:NumberOfReportedIncidents a :RegulationRequirement ;
+    rdfs:label "Number of Reported Information Security Incidents per Month" .
+
+:IncidentCategoryCount a :RegulationRequirement ;
+    rdfs:label "Counting per Information Security Incident Category per Month" .
+
+:IncidentStatus a :RegulationRequirement ;
+    rdfs:label "Status of Information Security Incidents" ;
+    :includes :NewIncident , :AssignedIncident , :InProgressIncident , :OnHoldIncident , :PendingIncident , :ResolvedIncident , :ClosedIncident .
+
+:NewIncident a :IncidentStatusType ;
+    rdfs:label "New Incident" .
+
+:AssignedIncident a :IncidentStatusType ;
+    rdfs:label "Assigned Incident" .
+
+:InProgressIncident a :IncidentStatusType ;
+    rdfs:label "In Progress Incident" .
+
+:OnHoldIncident a :IncidentStatusType ;
+    rdfs:label "On Hold Incident" .
+
+:PendingIncident a :IncidentStatusType ;
+    rdfs:label "Pending Incident" .
+
+:ResolvedIncident a :IncidentStatusType ;
+    rdfs:label "Resolved Incident" .
+
+:ClosedIncident a :IncidentStatusType ;
+    rdfs:label "Closed Incident" .
+
+:IncidentStatusType a :RegulationClass ;
+    rdfs:label "Incident Status Type" .
+
+:IncidentResponseTime a :RegulationRequirement ;
+    rdfs:label "Response Time to Information Security Incidents" .
+
+:IncidentIdleTime a :RegulationRequirement ;
+    rdfs:label "Idle Time of an Information Security Incident" .
+
+:IncidentThroughputTime a :RegulationRequirement ;
+    rdfs:label "Throughput Time of an Information Security Incident" .
+
+:InformationSecurityOffice a :LegalEntity ;
+    rdfs:label "Information Security Office" .
+
+:SecurityAreaImprovementAnalysis a :RegulationRequirement ;
+    rdfs:label "Security Area Improvement Analysis" ;
+    :performedBy :InformationSecurityOffice , :SOC , :CERT ;
+    :goal :IdentifyAreasForImprovement .
+
+:IdentifyAreasForImprovement a :RegulationGoal ;
+    rdfs:label "Identify Areas for Improvement in Security Plans" .
+
+:SOC a :LegalEntity ;
+    rdfs:label "Security Operations Center" .
+
+:CERT a :LegalEntity ;
+    rdfs:label "Computer Emergency Response Team" .
+
+
+```

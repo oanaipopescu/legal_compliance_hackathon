@@ -1,0 +1,7 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:InformationSecuritySpecificProcedure a :RegulationRule ;
+    rdfs:label "Information Security Specific Procedure" .
+```

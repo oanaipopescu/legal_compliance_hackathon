@@ -1,0 +1,2 @@
+4.2 Operational Security 
+Specific procedures for Operational Security are described in the Operational Security SOP, chapter 4.

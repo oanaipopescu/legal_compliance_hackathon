@@ -1,0 +1,19 @@
+3.1 Context 
+In this chapter the requirements regarding information security incident management are addressed in the respective information security incident management process step and categorized under the respective 
+NIST phase:
+NIST Phase 1: Preparation:
+The requirements for planning, building, and running security capabilities which are input for the information security incident management capability for identifying information security incidents are not part of the scope of this chapter.
+NIST Phase 2: Detection and Analysis:
+The requirements regarding analysis of security monitoring alerts, vulnerability scanning results, and threat intelligence are not part of the scope of this chapter but are addressed in the Information Security Monitoring Standard. In the information security incident identification process step below only, the prerequisites regarding detection and analysis are mentioned.
+1. Information security incident identification;
+2. Information security incident registration;
+3. Information security incident categorization;
+4. Information security incident prioritization;
+NIST Phase 3: Containment, Eradication & Recovery:
+5. Information security incident response;
+NIST Phase 4: Post-Incident Activity:
+6. Reporting and learning from information security incidents.
+Since the term triage in information security incident management is interpreted differently, even between information security experts, as well as not unambiguously defined in industry standards, we distinct and define the following two types: 
+Triage of security alerts, events and security tickets: Analyzing security events and alerts, vulnerability scan results, and threat intelligence to identify potential information security incidents.
+Triage of information security incidents: Determining severity and priority of information security incidents.
+The former is part of the Information Security Monitoring Standard and the latter is part of this Standard and described in section 3.7 Information security incident prioritization.

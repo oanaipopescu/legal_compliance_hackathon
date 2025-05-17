@@ -1,0 +1,123 @@
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:InformationSecurityIncidentRegistration a :RegulationRule ;
+    rdfs:label "Information Security Incident Registration" ;
+    :requires :SinglePointOfContact , :CommunicationToUsers , :ServiceDeskTraining ;
+    :registers :UniqueIdentification , :Status , :UserName , :Indicators , :AffectedAssetsServices , :IncidentHandlerName , :IncidentFlag , :IncidentCategory , :IncidentSummary , :RelatedIncidents , :DetailedDescription , :ActionsTaken , :ChainOfCustody , :ImpactAssessments , :ContactInfo , :GatheredEvidence , :HandlerComments , :NextSteps ;
+    :responsibleParty :ServiceDesk , :ServiceDelivery .
+
+:SinglePointOfContact a :RegulationRequirement ;
+    rdfs:label "Single Point of Contact" ;
+    :assignedTo :ServiceDesk .
+
+:CommunicationToUsers a :RegulationRequirement ;
+    rdfs:label "Communication to Users" ;
+    :about :SinglePointOfContact .
+
+:ServiceDeskTraining a :RegulationRequirement ;
+    rdfs:label "Service Desk Training" ;
+    :includes :IncidentProcessing , :UserDetailQuerying , :IncidentAssignment .
+
+:IncidentProcessing a :RegulationRequirement ;
+    rdfs:label "Incident Processing" .
+
+:UserDetailQuerying a :RegulationRequirement ;
+    rdfs:label "User Detail Querying" .
+
+:IncidentAssignment a :RegulationRequirement ;
+    rdfs:label "Incident Assignment" ;
+    :assignsTo :ServiceDeliveryManager .
+
+:UniqueIdentification a :RegulationRequirement ;
+    rdfs:label "Unique Identification" .
+
+:Status a :RegulationRequirement ;
+    rdfs:label "Status" .
+
+:UserName a :RegulationRequirement ;
+    rdfs:label "Name of the User" .
+
+:Indicators a :RegulationRequirement ;
+    rdfs:label "Indicators" .
+
+:AffectedAssetsServices a :RegulationRequirement ;
+    rdfs:label "Assets and/or Services Affected" .
+
+:IncidentHandlerName a :RegulationRequirement ;
+    rdfs:label "Name of the Security Incident Handler" .
+
+:IncidentFlag a :RegulationRequirement ;
+    rdfs:label "Information Security Incident Flag" .
+
+:IncidentCategory a :RegulationRequirement ;
+    rdfs:label "Information Security Incident Category" .
+
+:IncidentSummary a :RegulationRequirement ;
+    rdfs:label "Summary of the Information Security Incident" .
+
+:RelatedIncidents a :RegulationRequirement ;
+    rdfs:label "Related Incidents" .
+
+:DetailedDescription a :RegulationRequirement ;
+    rdfs:label "Detailed Description of the Information Security Incident" .
+
+:ActionsTaken a :RegulationRequirement ;
+    rdfs:label "Actions Taken" .
+
+:ChainOfCustody a :RegulationRequirement ;
+    rdfs:label "Chain of Custody" .
+
+:ImpactAssessments a :RegulationRequirement ;
+    rdfs:label "Impact Assessments" .
+
+:ContactInfo a :RegulationRequirement ;
+    rdfs:label "Contact Info of Involved Parties" .
+
+:GatheredEvidence a :RegulationRequirement ;
+    rdfs:label "List of Gathered Evidence During Investigation" .
+
+:HandlerComments a :RegulationRequirement ;
+    rdfs:label "Comments from Incident Handlers" .
+
+:NextSteps a :RegulationRequirement ;
+    rdfs:label "Next Steps" ;
+    :involves :LegalDepartment , :BusinessDepartment .
+
+
+:ServiceDelivery a :LegalEntity ;
+    rdfs:label "Service Delivery" ;
+    :example :ITOperations , :SecurityOperationsCenter , :SecurityOperations .
+
+:ITOperations a :LegalEntity ;
+    rdfs:label "IT Operations" ;
+    :manages :Systems , :Network .
+
+:SecurityOperationsCenter a :LegalEntity ;
+    rdfs:label "Security Operations Center (SOC)" ;
+    :manages :SecurityIntelligenceAndAnalyticsSystems .
+
+:SecurityOperations a :LegalEntity ;
+    rdfs:label "Security Operations" ;
+    :manages :SecurityManagementAndMonitoring .
+
+:ServiceDeliveryManager a :LegalEntity ;
+    rdfs:label "Service Delivery Manager" .
+
+:Systems a :LegalEntity ;
+    rdfs:label "Systems" .
+
+:Network a :LegalEntity ;
+    rdfs:label "Network" .
+
+:SecurityIntelligenceAndAnalyticsSystems a :LegalEntity ;
+    rdfs:label "Security Intelligence and Analytics Systems" .
+
+:SecurityManagementAndMonitoring a :LegalEntity ;
+    rdfs:label "Security Management and Monitoring" .
+
+:BusinessDepartment a :LegalEntity ;
+    rdfs:label "Business Department".
+
+:LegalDepartment a :LegalEntity ;
+    rdfs:label "Legal Department".

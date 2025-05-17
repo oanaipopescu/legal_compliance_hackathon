@@ -1,0 +1,3 @@
+1.2 Scope 
+This Standard sets out the security requirements with regards to the management of information, operational and product security incidents within the company. It applies to all businesses, markets and functions, as well as our suppliers.
+Overall SOC, CERT, forensic investigation, disaster recovery planning, and problem management processes are not in scope of this Standard.

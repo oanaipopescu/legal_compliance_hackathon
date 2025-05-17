@@ -1,0 +1,15 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ITSecurityOperationsCenter a :LegalEntity ;
+    rdfs:label "IT Security Operations Center" .
+
+:AssessmentOfInformationSecurityEvents a :RegulationRule ;
+    rdfs:label "Assessment of Information Security Events" ;
+    :responsibleParty :ITSecurityOperationsCenter ;
+    :appliesTo :InformationSecurityEvent .
+
+:InformationSecurityEvent a :RegulationRule ;
+    rdfs:label "Information Security Event" .
+```

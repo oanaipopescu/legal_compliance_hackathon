@@ -1,0 +1,47 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:MajorEventTeam a :LegalEntity ;
+    rdfs:label "Major Event Team" .
+
+:LegalCounselSupportingCSO a :LegalEntity ;
+    rdfs:label "Legal Counsel supporting CSO" .
+
+:HighClassifiedInformation a :PersonalData ;
+    rdfs:label "High Classified Information" .
+
+:ResponsibilityHighClassifiedDataIncident a :RegulationRule ;
+    rdfs:label "Responsibility for High Classified Data Incident" ;
+    :appliesTo :HighClassifiedInformation ;
+    :requires :EstablishMajorEventTeam ;
+    :actor :MajorEventTeam .
+
+:EstablishMajorEventTeam a :RegulationRequirement ;
+    rdfs:label "Establish Major Event Team" .
+
+
+:ResponsibilityNonMajorEventIncident a :RegulationRule ;
+    rdfs:label "Responsibility for Non-Major Event Incident" ;
+    :requires :ReferToLegalCounsel .
+
+:ReferToLegalCounsel a :RegulationRequirement ;
+    rdfs:label "Refer to Legal Counsel" ;
+    :recipient :LegalCounselSupportingCSO .
+
+:PrivacyRelatedIncidentProcedure a :RegulationRule ;
+    rdfs:label "Privacy Related Incident Procedure" .
+
+:ResponsibilityPersonalDataIncident a :RegulationRule ;
+    rdfs:label "Responsibility for Personal Data Incident" ;
+    :appliesTo :PersonalData ;
+    :requires :FollowPrivacyRelatedIncidentProcedures , :NotifyLegalCounsel ;
+    :procedure :PrivacyRelatedIncidentProcedure .
+
+:FollowPrivacyRelatedIncidentProcedures a :RegulationRequirement ;
+    rdfs:label "Follow Privacy Related Incident Procedures" .
+
+:NotifyLegalCounsel a :RegulationRequirement ;
+    rdfs:label "Notify Legal Counsel" ;
+    :recipient :LegalCounselSupportingCSO .
+```

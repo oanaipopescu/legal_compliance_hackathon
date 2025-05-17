@@ -1,0 +1,2 @@
+3.3 Assessment of, and Decision on Information Security Events 
+The IT Security Operations Center (SOC) is responsible for assessing Information Security events within the company.

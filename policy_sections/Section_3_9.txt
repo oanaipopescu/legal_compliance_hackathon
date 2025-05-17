@@ -1,0 +1,11 @@
+3.9 Reporting and learning from information security incidents 
+For closing an information security incident lessons learned must be documented.
+For closing high severity information security incidents, a post-incident report and meeting is required. The persons involved in this process can be derived from the table in section 3.7.
+Periodic KPI reporting, e.g. on a monthly basis, regarding information security incident management must be provided to information security office, containing minimal the following information:
+o Number of reported information security incidents per month;
+o Counting per information security incident category per month;
+o Status in terms of new, assigned, in progress, on hold or pending, resolved, and closed information security incidents for each month, including history;
+o Response time to information security incidents.
+o Idle time of an information security incident during a specific status or queue;
+o Throughput time of an information security incident.
+Information security incident reporting should be analyzed by information security office and/ or SOC/ CERT to determine security areas which need improvement to include in future security plans.

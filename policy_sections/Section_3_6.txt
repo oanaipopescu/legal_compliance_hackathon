@@ -1,0 +1,10 @@
+3.6 Information security incident categorization 
+The incident management system in which information security incidents are registered must have the option to flag an information security incident as such.
+It must be possible to apply one of the following categories to an information security incident:
+o Malware;
+o Social Engineering;
+o Hacking and Attacks;
+o Error;
+o Misuse;
+o Physical.
+Dependent on the sensitivity of the information security incident it must be possible to restrict access on a need-to-know basis, e.g. on departmental or named basis.

@@ -1,0 +1,2 @@
+2.5 Response to Security Incidents 
+To create standard information and reporting flows within Signify, it is essential that security incidents must be responded to in accordance with the documented procedures as described in next chapters. Procedures are to ensure effective, timely and consistent response to minimize impact of an incident. Signify Security Operation Centers shall be included in the incident resolution process in accordance with the Signify Crisis Management Plan, and Business Continuity Management.

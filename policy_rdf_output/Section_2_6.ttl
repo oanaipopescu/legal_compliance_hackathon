@@ -1,0 +1,25 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:LessonsLearnedActivity a :RegulationRule ;
+    rdfs:label "Lessons Learned Activity" ;
+    :goal :ContinuousImprovement ;
+    :requires :PostIncidentReview .
+
+:ContinuousImprovement a :RegulationGoal ;
+    rdfs:label "Continuous Improvement" .
+
+:PostIncidentReview a :RegulationRequirement ;
+    rdfs:label "Post-Incident Review" ;
+    :requires :ReviewOfEvents , :ReviewOfRemediation , :ReviewOfRemediationEffectiveness .
+
+:ReviewOfEvents a :RegulationRequirement ;
+    rdfs:label "Review of Events" .
+
+:ReviewOfRemediation a :RegulationRequirement ;
+    rdfs:label "Review of Remediation" .
+
+:ReviewOfRemediationEffectiveness a :RegulationRequirement ;
+    rdfs:label "Review of Remediation Effectiveness" .
+```

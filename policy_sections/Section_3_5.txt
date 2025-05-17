@@ -1,0 +1,27 @@
+3.5 Information security incident registration 
+A single point of contact, i.e. service desk, must be assigned where information security events reported by users are registered.
+The single point of contact for registering information security incidents must be communicated to users.
+Service desk personnel must be instructed and trained on the processing of information security incidents, including querying the user for details and in case needed assigning the information security incident to the appropriate service delivery manager.
+At least the following information regarding an information security incident must be registered:
+o Unique identification;
+o Status;
+o Name of the user;
+o Indicators;
+o Assets and/ or services affected;
+o Name of the security incident handler;
+o Information security incident flag;
+o Information security incident category;
+o Summary of the information security incident;
+o Related incidents;
+o Detailed description the information security incident;
+o Actions taken;
+o Chain of custody;
+o Impact assessments;
+o Contact info of involved parties;
+o List of gathered evidence during investigation;
+o Comments from incident handlers;
+o Next steps including involvement of right stakeholders such as legal, business, etc.
+Responsible for information security incident registration in the incident management system is service delivery or service desk who identified the information security incident. Examples of service delivery groups are:
+o IT Operations responsible for management and monitoring of systems, through e.g. Windows Azure cloud infrastructure, or the network.
+o Security Operation Center (SOC) responsible for management and monitoring of security intelligence and analytics systems, such as SIEM, FireEye, Carbon Black, and Windows Defender.
+o Security Operations responsible for security management and monitoring, e.g. ePO.

@@ -1,0 +1,59 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:InformationSecurityIncidentManagement a :RegulationRule ;
+    rdfs:label "Information Security Incident Management" .
+
+:NISTPhase1Preparation a :RegulationRule ;
+    rdfs:label "NIST Phase 1: Preparation" ;
+    :excludedFrom :InformationSecurityIncidentManagement .
+
+:NISTPhase2DetectionAndAnalysis a :RegulationRule ;
+    rdfs:label "NIST Phase 2: Detection and Analysis" ;
+    :excludedFrom :InformationSecurityIncidentManagement ;
+    :addressedIn :InformationSecurityMonitoringStandard .
+
+:InformationSecurityMonitoringStandard a :RegulationRule ;
+    rdfs:label "Information Security Monitoring Standard" .
+
+:InformationSecurityIncidentIdentification a :RegulationRule ;
+    rdfs:label "Information Security Incident Identification" ;
+    :partOf :NISTPhase2DetectionAndAnalysis .
+
+:InformationSecurityIncidentRegistration a :RegulationRule ;
+    rdfs:label "Information Security Incident Registration" .
+
+:InformationSecurityIncidentCategorization a :RegulationRule ;
+    rdfs:label "Information Security Incident Categorization" .
+
+:InformationSecurityIncidentPrioritization a :RegulationRule ;
+    rdfs:label "Information Security Incident Prioritization" ;
+    :partOf :NISTPhase2DetectionAndAnalysis .
+
+
+:NISTPhase3ContainmentEradicationRecovery a :RegulationRule ;
+    rdfs:label "NIST Phase 3: Containment, Eradication & Recovery" .
+
+:InformationSecurityIncidentResponse a :RegulationRule ;
+    rdfs:label "Information Security Incident Response" ;
+    :partOf :NISTPhase3ContainmentEradicationRecovery .
+
+:NISTPhase4PostIncidentActivity a :RegulationRule ;
+    rdfs:label "NIST Phase 4: Post-Incident Activity" .
+
+:ReportingAndLearningFromInformationSecurityIncidents a :RegulationRule ;
+    rdfs:label "Reporting and Learning from Information Security Incidents" ;
+    :partOf :NISTPhase4PostIncidentActivity .
+
+:SecurityAlertsEventsTicketsTriage a :RegulationRule ;
+    rdfs:label "Triage of security alerts, events and security tickets" ;
+    :partOf :InformationSecurityMonitoringStandard .
+
+:InformationSecurityIncidentsTriage a :RegulationRule ;
+    rdfs:label "Triage of information security incidents" ;
+    :partOf :InformationSecurityIncidentPrioritization .
+
+:InformationSecurityIncidentPrioritization a :RegulationRule ;
+    rdfs:label "Information Security Incident Prioritization" .
+```
