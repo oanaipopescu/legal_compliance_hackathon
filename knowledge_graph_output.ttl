@@ -1,0 +1,28 @@
+```turtle
+@prefix : <urn:example:nis2:> .
+
+:Article11 a :RegulationRule ;
+    :appliesTo :LegalEntity ;
+    :definedBy :NIS2Directive .
+
+:Article12 a :RegulationRule ;
+    :appliesTo :LegalEntity ;
+    :definedBy :NIS2Directive .
+
+:Article13 a :RegulationRule ;
+    :appliesTo :LegalEntity ;
+    :definedBy :NIS2Directive .
+
+:Article14 a :RegulationRule ;
+    :appliesTo :LegalEntity ;
+    :definedBy :NIS2Directive .
+
+:Article15 a :RegulationRule ;
+    :appliesTo :LegalEntity ;
+    :definedBy :NIS2Directive .
+
+:Article60 a :RegulationRule ;
+    :appliesTo :LegalEntity ;
+    :definedBy :NIS2Directive .
+
+```

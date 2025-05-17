@@ -34,16 +34,38 @@ for i, filename in enumerate(article_files):
     # Build prompt, including previous RDF outputs if available
     context = "\n\n".join(previous_translations)
     prompt = f"""
-You are an expert in legal informatics. Given a legal or policy document, extract the key legal entities, classes (like PersonalData), and obligations (like encryption requirements), and represent them as RDF triples in Turtle format. Use a namespace prefix like:
-  @prefix : <http://example.org#> .
-Use classes such as `:RegulationRule`, `:PersonalData`, `:requires`, `:appliesTo`, and attributes like `:encrypted`. Output only valid RDF in Turtle syntax.
+You are an expert legal knowledge extractor. Convert the following legal documents into a symbolic knowledge graph.
 
-Context from previous articles:
-{context}
+Use only the following ontology:
 
-Do not generate any RDF triples for the text in the previous articles. Only use them for context.
-Here is the text to process and generate RDF triples for:
-{article_text}
+**Classes:**
+- :RegulationRule
+- :Obligation
+- :Authority
+- :LegalEntity
+- :LegalEntityClass
+- :TimePeriod
+
+**Properties:**
+- :requires
+- :appliesTo
+- :responsibleFor
+- :references
+- :timeLimit
+- :definedBy
+- :partOf
+
+Output RDF-style triples in Turtle syntax, ensure that there are no syntax errors. Do not include labels or explanations.
+
+Example:
+:Article16 a :RegulationRule ;
+:requires :IncidentNotification ;
+:appliesTo :EssentialEntity .
+
+:IncidentNotification a :Obligation ;
+:timeLimit :24Hours .
+
+:EssentialEntity a :LegalEntityClass .
 """
 
     # Generate RDF using Gemini
