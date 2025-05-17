@@ -1,97 +1,141 @@
 import sys
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QPushButton, QLabel, QTextEdit,
-    QFileDialog, QLineEdit, QMessageBox, QComboBox
+    QFileDialog, QComboBox, QListWidget, QMessageBox, QHBoxLayout
 )
-from PyQt5.QtGui import QTextCharFormat, QTextCursor, QColor
+from PyQt5.QtGui import QFont, QColor, QPalette
 
-class ComplianceChecker(QWidget):
+# Configure Gemini API
+# genai.configure(api_key="YOUR_GOOGLE_API_KEY")  # Replace with your API key
+
+class GeminiComplianceChecker(QWidget):
     def __init__(self):
         super().__init__()
-        self.setWindowTitle("EU Law Compliance Checker")
-        self.setGeometry(100, 100, 900, 700)
+        self.setWindowTitle("ComplyVerify")
+        self.setGeometry(100, 100, 950, 750)
+        self.setStyle()
+
+        self.law_files = []
+        self.contract_files = []
 
         layout = QVBoxLayout()
 
-        self.law_label = QLabel("EU Law or Directive:")
-        layout.addWidget(self.law_label)
+        # Law file section
+        layout.addWidget(self._make_label("Upload EU Law Documents (PDF/DOCX):"))
+        self.law_list = QListWidget()
+        layout.addWidget(self.law_list)
 
-        self.law_input = QLineEdit()
-        layout.addWidget(self.law_input)
+        self.law_button = QPushButton("Upload Law Files")
+        self.law_button.clicked.connect(self.load_law_files)
+        layout.addWidget(self.law_button)
 
-        self.country_label = QLabel("Select Country:")
-        layout.addWidget(self.country_label)
-
+        # Country selection
+        layout.addWidget(self._make_label("Select Country:"))
         self.country_dropdown = QComboBox()
-        self.country_dropdown.addItems(["Germany", "France", "Italy", "Spain", 
+        self.country_dropdown.addItems([
+            "European Union", "Germany", "France", "Italy", "Spain",
             "Netherlands", "Poland", "Sweden", "Denmark", "Romania", "Other"
         ])
         layout.addWidget(self.country_dropdown)
 
-        self.upload_button = QPushButton("Upload Contract Files")
-        self.upload_button.clicked.connect(self.load_contracts)
-        layout.addWidget(self.upload_button)
+        # Contract file section
+        layout.addWidget(self._make_label("Upload Contract Files (PDF/DOCX):"))
+        self.contract_list = QListWidget()
+        layout.addWidget(self.contract_list)
 
-        self.contract_text = QTextEdit()
-        layout.addWidget(self.contract_text)
+        self.contract_button = QPushButton("Upload Contract Files")
+        self.contract_button.clicked.connect(self.load_contract_files)
+        layout.addWidget(self.contract_button)
 
-        self.check_button = QPushButton("Check Compliance")
-        self.check_button.clicked.connect(self.check_compliance)
-        layout.addWidget(self.check_button)
+        # Action buttons
+        button_layout = QHBoxLayout()
 
+        self.check_button = QPushButton("Check Compliance with Gemini")
+        self.check_button.clicked.connect(self.send_to_gemini)
+        button_layout.addWidget(self.check_button)
+
+        self.visualize_button = QPushButton("Visualize Graphs")
+        self.visualize_button.clicked.connect(self.visualize_graphs)
+        button_layout.addWidget(self.visualize_button)
+
+        layout.addLayout(button_layout)
+
+        # Output
+        layout.addWidget(self._make_label("Compliance Report:"))
         self.result_text = QTextEdit()
         self.result_text.setReadOnly(True)
         layout.addWidget(self.result_text)
 
         self.setLayout(layout)
 
-    def load_contracts(self):
-        paths, _ = QFileDialog.getOpenFileNames(
-            self, "Select Contract Files", "", "Text Files (*.pdf);;pdf Files (*.pdf);;All Files (*)"
-        )
-        # all_text = ""
-        # for path in paths:
-        #     try:
-        #         with open(path, 'r', encoding='utf-8') as file:
-        #             content = file.read()
-        #             all_text += f"\n--- File: {path.split('/')[-1]} ---\n{content}\n"
-        #     except Exception as e:
-        #         QMessageBox.warning(self, "File Error", f"Could not read {path}: {e}")
-        # self.contract_text.setText(all_text)
+    def _make_label(self, text):
+        label = QLabel(text)
+        label.setFont(QFont("Segoe UI", 10, QFont.Bold))
+        return label
 
-    def check_compliance(self):
+    # def setStyle(self):
+    #     palette = QPalette()
+    #     palette.setColor(QPalette.Window, QColor("#f4f6f9"))
+    #     palette.setColor(QPalette.Base, QColor("#ffffff"))
+    #     palette.setColor(QPalette.Text, QColor("#222222"))
+    #     self.setPalette(palette)
+    #     self.setFont(QFont("Segoe UI", 10))
+
+    def setStyle(self):
+        self.setStyleSheet("""
+            QWidget {
+                background-color: #f4f6f9;
+                font-family: 'Segoe UI', 'Arial';
+                font-size: 10pt;
+            }
+
+            QPushButton {
+                background-color: #1d3557;
+                color: white;
+                padding: 8px 14px;
+                border-radius: 8px;
+                border: none;
+            }
+
+            QPushButton:hover {
+                background-color: #457b9d;
+            }
+
+            QListWidget, QComboBox, QTextEdit {
+                background-color: #ffffff;
+                border: 1px solid #ccc;
+                padding: 6px;
+                border-radius: 10px;
+            }
+
+            QLabel {
+                color: #333333;
+            }
+        """)
+
+
+    def load_law_files(self):
+        files, _ = QFileDialog.getOpenFileNames(self, "Select EU Law Files", "", "Documents (*.pdf *.docx)")
+        if files:
+            self.law_files = files
+            self.law_list.clear()
+            self.law_list.addItems([f.split("/")[-1] for f in files])
+
+    def load_contract_files(self):
+        files, _ = QFileDialog.getOpenFileNames(self, "Select Contract Files", "", "Documents (*.pdf *.docx)")
+        if files:
+            self.contract_files = files
+            self.contract_list.clear()
+            self.contract_list.addItems([f.split("/")[-1] for f in files])
+
+    def send_to_gemini(self):
         pass
 
-    def display_highlighted(self, marked_text):
-        self.result_text.clear()
-        cursor = self.result_text.textCursor()
-
-        i = 0
-        while i < len(marked_text):
-            if marked_text.startswith("[COMPLIANT]", i):
-                i += len("[COMPLIANT]")
-                end = marked_text.find("[/COMPLIANT]", i)
-                self.insert_colored_text(cursor, marked_text[i:end], QColor("blue"))
-                i = end + len("[/COMPLIANT]")
-            elif marked_text.startswith("[NONCOMPLIANT]", i):
-                i += len("[NONCOMPLIANT]")
-                end = marked_text.find("[/NONCOMPLIANT]", i)
-                self.insert_colored_text(cursor, marked_text[i:end], QColor("red"))
-                i = end + len("[/NONCOMPLIANT]")
-            else:
-                end = i + 1
-                while end < len(marked_text) and not marked_text.startswith("[", end):
-                    end += 1
-                self.insert_colored_text(cursor, marked_text[i:end], QColor("black"))
-                i = end
-
-    def insert_colored_text(self, cursor: QTextCursor, text: str, color: QColor):
-        fmt = QTextCharFormat()
-        fmt.setForeground(color)
-        cursor.insertText(text, fmt)
+    def visualize_graphs(self):
+        QMessageBox.information(self, "Visualize Graphs", "Graph visualization feature coming soon!")
 
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    window = ComplianceChecker()
+    window = GeminiComplianceChecker()
     window.show()
     sys.exit(app.exec_())
