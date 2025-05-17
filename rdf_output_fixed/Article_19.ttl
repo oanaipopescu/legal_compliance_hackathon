@@ -1,0 +1,105 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article19 a :RegulationRule ;
+    rdfs:label "Article 19" ;
+    :subject "Register of entities" ;
+    :references :Article27_Directive2022_2555 ;
+    :appliesTo :DNSServiceProvider, :TopLevelDomainNameRegistry, :DomainNameRegistrationServiceProvider, :CloudComputingServiceProviders, :DataCentreServiceProviders, :ContentDistributionNetworkProviders, :ManagedServiceProvider, :ManagedSecurityServiceProvider, :OnlineInternetMarketProviders, :OnlineInternetSearchEngineProviders, :SocialNetworkingServicePlatformProviders ;
+    :requires :EntityRegistration .
+
+:Article27_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 27 of Directive (EU) 2022/2555" .
+
+:EntityRegistration a :Obligation ;
+    rdfs:label "Entity Registration" ;
+    :deadline "2025-01-17"^^xsd:date ;
+    :requires :EntityName, :SectorSubsectorEntityType, :MainEstablishmentAddress, :OtherEUEstablishmentAddresses, :ContactDetails, :MemberStatesServed, :IPRanges ;
+    :appliesTo :NationalCybersecurityAuthority .
+
+:EntityName a :InformationElement ;
+    rdfs:label "Entity Name" .
+
+:SectorSubsectorEntityType a :InformationElement ;
+    rdfs:label "Sector, Subsector and Entity Type" ;
+    :references :AnnexI, :AnnexII .
+
+:AnnexI a :Annex ;
+    rdfs:label "Annex I" .
+
+:AnnexII a :Annex ;
+    rdfs:label "Annex II" .
+
+:MainEstablishmentAddress a :InformationElement ;
+    rdfs:label "Address of Main Establishment" .
+
+:OtherEUEstablishmentAddresses a :InformationElement ;
+    rdfs:label "Addresses of Other Establishments in EU" .
+
+:ContactDetails a :InformationElement ;
+    rdfs:label "Contact Details" .
+
+:MemberStatesServed a :InformationElement ;
+    rdfs:label "Member States Served" .
+
+:IPRanges a :InformationElement ;
+    rdfs:label "IP Address Ranges" .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" ;
+    :receives :EntityRegistrationData ;
+    :transmitsTo :ENISA .
+
+:EntityRegistrationData a :Information ;
+    rdfs:label "Entity Registration Data" .
+
+:ENISA a :LegalEntity ;
+    rdfs:label "European Union Agency for Cybersecurity (ENISA)" ;
+    :receives :EntityRegistrationDataExceptIPRanges .
+
+:EntityRegistrationDataExceptIPRanges a :Information ;
+    rdfs:label "Entity Registration Data (excluding IP ranges)" .
+
+:UpdateNotification a :Obligation ;
+    rdfs:label "Notification of Changes" ;
+    :timeLimit "3 Months"^^xsd:duration ;
+    :appliesTo :DNSServiceProvider, :TopLevelDomainNameRegistry, :DomainNameRegistrationServiceProvider, :CloudComputingServiceProviders, :DataCentreServiceProviders, :ContentDistributionNetworkProviders, :ManagedServiceProvider, :ManagedSecurityServiceProvider, :OnlineInternetMarketProviders, :OnlineInternetSearchEngineProviders, :SocialNetworkingServicePlatformProviders ;
+    :requires :UpdatedInformation .
+
+:UpdatedInformation a :InformationElement ;
+    rdfs:label "Updated Information" .
+
+:DNSServiceProvider a :LegalEntity ;
+    rdfs:label "Domain Name System (DNS) Service Provider" .
+
+:TopLevelDomainNameRegistry a :LegalEntity ;
+    rdfs:label "Top-Level Domain Name Registry" .
+
+:DomainNameRegistrationServiceProvider a :LegalEntity ;
+    rdfs:label "Entity Providing Domain Name Registration Services" .
+
+:CloudComputingServiceProviders a :LegalEntity ;
+    rdfs:label "Cloud Computing Service Provider" .
+
+:DataCentreServiceProviders a :LegalEntity ;
+    rdfs:label "Data Centre Service Provider" .
+
+:ContentDistributionNetworkProviders a :LegalEntity ;
+    rdfs:label "Content Distribution Network Provider" .
+
+:ManagedServiceProvider a :LegalEntity ;
+    rdfs:label "Managed Service Provider" .
+
+:ManagedSecurityServiceProvider a :LegalEntity ;
+    rdfs:label "Managed Security Service Provider" .
+
+:OnlineInternetMarketProviders a :LegalEntity ;
+    rdfs:label "Online/Internet Market Provider" .
+
+:OnlineInternetSearchEngineProviders a :LegalEntity ;
+    rdfs:label "Online/Internet Search Engine Provider" .
+
+:SocialNetworkingServicePlatformProviders a :LegalEntity ;
+    rdfs:label "Social Networking Service Platform Provider" .

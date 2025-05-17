@@ -1,0 +1,102 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article43 a :RegulationRule ;
+    rdfs:label "Article 43" ;
+    :subject "Urban railway licensing" ;
+    :requires :OperatingPermit, :ServiceProvisionLicense .
+
+:OperatingPermit a :License ;
+    rdfs:label "Operating Permit for Urban Railway Infrastructure" ;
+    :grantedBy :D14_MinistryOfInfrastructureAndTransport ;
+    :requires :CertificateOfCommencementOfActivity_HELLENICMETRO, :TaxRegistrationNumber_HELLENICMETRO, :BuildingPermit, :ConstructionContractorCertificate, :HELLENICMETRO_IntegritySafetyCertificate, :IndependentCertificationBodyCertificate_Operation, :GeneralHorizontalLayout, :LiftDeclarationsOfConformity, :LiftRegistrationCertificate, :EscalatorWalkwayCertificates, :ActiveFireProtectionCertificate .
+
+:D14_MinistryOfInfrastructureAndTransport a :LegalEntity ;
+    rdfs:label "Competent Directorate of Fixed-Track Infrastructure, Maintenance and Safety (D14) of the Ministry of Infrastructure and Transport" .
+
+:CertificateOfCommencementOfActivity_HELLENICMETRO a :Certificate ;
+    rdfs:label "Certificate of Commencement of Activity for HELLENIC METRO S.A." .
+
+:TaxRegistrationNumber_HELLENICMETRO a :Document ;
+    rdfs:label "Tax Registration Number for HELLENIC METRO S.A." .
+
+:BuildingPermit a :Permit ;
+    rdfs:label "Building Permit for the Urban Railway Project" .
+
+:ConstructionContractorCertificate a :Certificate ;
+    rdfs:label "Construction Contractor Certificate" .
+
+:HELLENICMETRO_IntegritySafetyCertificate a :Certificate ;
+    rdfs:label "HELLENIC METRO S.A. Certificate for Project System Integrity, Safety, Functionality, and Reliability" .
+
+:IndependentCertificationBodyCertificate_Operation a :Certificate ;
+    rdfs:label "Certificate from an Independent Certification Body for Urban Railway Network Operation" .
+
+:GeneralHorizontalLayout a :Document ;
+    rdfs:label "General Horizontal Layout of the Urban Railway Project" .
+
+:LiftDeclarationsOfConformity a :Document ;
+    rdfs:label "Declarations of Conformity for Lifts" .
+
+:LiftRegistrationCertificate a :Certificate ;
+    rdfs:label "Certificate of Registration of Lifts" .
+
+:EscalatorWalkwayCertificates a :Certificate ;
+    rdfs:label "Certificates of Correct Installation and Operation of Escalators and Walkways" .
+
+:ActiveFireProtectionCertificate a :Certificate ;
+    rdfs:label "Active Fire Protection Certificate" .
+
+:ServiceProvisionLicense a :License ;
+    rdfs:label "Service Provision License for Urban Railway Passenger Transport" ;
+    :grantedBy :D32_MinistryOfInfrastructureAndTransport ;
+    :requires :IndependentCertificationBodyCertificate_UrbanRailway, :SolemnDeclaration_Operation, :CertificateOfCommencementOfActivity_OperatingCompany, :CertificateOfIncorporation_OperatingCompany .
+
+:D32_MinistryOfInfrastructureAndTransport a :LegalEntity ;
+    rdfs:label "Competent Passenger Transport Directorate (D32) of the Ministry of Infrastructure and Transport" .
+
+:IndependentCertificationBodyCertificate_UrbanRailway a :Certificate ;
+    rdfs:label "Certificate from an Independent Certification Body for Urban Railway Operation" .
+
+:SolemnDeclaration_Operation a :Document ;
+    rdfs:label "Solemn Declaration of Undertaking the Operation of the Urban Railway Project" .
+
+:CertificateOfCommencementOfActivity_OperatingCompany a :Certificate ;
+    rdfs:label "Certificate of Commencement of Activity for the Operating Company" .
+
+:CertificateOfIncorporation_OperatingCompany a :Certificate ;
+    rdfs:label "Certificate of Incorporation for the Operating Company" .
+
+:HELLENICMETRO a :LegalEntity ;
+    rdfs:label "HELLENIC METRO S.A." ;
+    :role :RecommendingAuthority .
+
+:RecommendingAuthority a :Role ;
+    rdfs:label "Recommending Authority".
+
+:MinistryOfInfrastructureAndTransport a :LegalEntity ;
+    rdfs:label "Ministry of Infrastructure and Transport" .
+
+:OperatingCompany a :LegalEntity ;
+    rdfs:label "Operating Company".
+
+:HellenicRailwaysOrganization a :LegalEntity ;
+    rdfs:label "Hellenic Railways Organization" ;
+    :excludedFrom :Article43_Scope .
+
+:Article43_Scope a :Scope ;
+    rdfs:label "Scope of Article 43" .
+
+:SubsidiariesAffiliates a :LegalEntityClass ;
+    rdfs:label "Subsidiaries and Affiliated Companies of the Hellenic Railways Organization" .
+
+:InfrastructureOperationCompanies a :LegalEntityClass ;
+    rdfs:label "Infrastructure and Operation Companies of the Railway Network" .
+
+:SimilarPurposeBodies a :LegalEntityClass ;
+    rdfs:label "Public or Private Bodies of Similar Purpose" .
+
+```

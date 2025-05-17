@@ -1,0 +1,11 @@
+Article 5
+Reservation regarding sectoral legal acts of the Union (Article 4 of Directive (EU) 2022/2555)
+1. Where sectoral legal acts of the European Union and their national harmonisation provisions require key or significant entities to adopt cybersecurity risk management measures or to notify significant incidents and where those requirements are at least equivalent in effect to the obligations laid down herein, the relevant provisions of this Law, including the provisions on supervision and enforcement laid down in Chapter G, shall not apply to those entities. Where sectoral legal acts of the Union and their national harmonisation provisions do not cover all entities in a specific area falling within the scope of this Law, the provisions of this Law shall continue to apply to entities not covered by those sectoral legal acts of the European Union.
+
+2. The requirements referred to in paragraph 1 shall be considered equivalent in effect to the obligations set out in this Part when:
+
+a) the risk management measures in the field of cybersecurity are at least equivalent in effect to those provided for in paragraphs 1 and 2 of article 15 or
+
+b) the sectoral legal act of the European Union provides for immediate access, where appropriate automatically and directly, to incident notifications by the CSIRT of the National Cybersecurity Authority and provided that the requirements for the notification of significant incidents are at least equivalent in effect to those set out in paragraphs 1 to 6 of Article 16.
+
+3. The provisions herein regarding cybersecurity risk management obligations and incident reporting, and regarding supervision, do not apply to financial entities covered by Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on digital operational resilience of the financial sector and amending Regulations (EC) 1060/2009, (EU) 648/2012, (EU) 600/2014, (EU) 909/2014 and (EU) 2016/1011 (L 333), respecting in any case the obligation to cooperate with the National Cybersecurity Authority, in accordance with Article 13 herein.

@@ -1,0 +1,6 @@
+Article 17
+Standardization (Article 25 of Directive (EU) 2022/2555)
+For the effective implementation of paragraphs 1 and 2 of article 15, it may be provided, by decision of the Director of the National Cybersecurity Authority and after taking into account any guidelines issued by the European Union Agency for Cybersecurity (ENISA), without imposing or favoring the use of a specific type of technology, for the adoption of measures to encourage the use of European and internationally accepted standards and technical specifications related to the security of network and information systems.
+
+CHAPTER E
+JURISDICTION AND REGISTRATION

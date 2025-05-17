@@ -1,0 +1,44 @@
+Article 3
+Scope (Article 2 of Directive (EU) 2022/2555)
+1. This Part shall apply to public or private entities of the types referred to in Annexes I or II to this Law, which are classified as medium-sized enterprises in accordance with paragraph 1 of Article 2 of the Annex to Commission Recommendation 2003/361/EC of 6 May 2003 concerning the definition of micro, small and medium-sized enterprises (L 124), or which exceed the upper limits for medium-sized enterprises referred to in that Article and which are established or provide their services or carry out their activities within the Greek territory. Paragraph 4 of Article 3 of the Annex to that Recommendation shall not apply for the purposes of this Part.
+
+1
+2. This Part also applies to entities, sectors and subsectors listed in Annexes I or II, regardless of their size, provided that:
+
+a) the services are provided by: aa) providers of public electronic communications networks or publicly available electronic communications services, ab) trust service providers, ag) top-level domain name registries and domain name system service providers,
+
+b) the entity is the sole provider in the country of a service that is essential for the maintenance of critical social or economic activities,
+
+(c) the disruption of the service provided by the entity could have a significant impact on public security, public order or public health,
+
+(d) the disruption of the service provided by the entity could cause significant systemic risk, including in sectors where such disruption could have a cross-border impact;
+
+e) the entity is critical due to its particular importance at national or regional level for the specific sector or type of service or for other interdependent sectors in the country,
+
+f) the entity is:
+
+(fa) central government body, as defined in paragraph c of paragraph 1 of article 14 of Law 4270/2014 (Government Gazette A' 143),
+
+fb) First-degree Local Government Organization,
+
+fg) Second-degree Local Government Organization.
+
+3. This Part applies to entities designated as critical entities in accordance with Directive (EU) 2022/2557 of the European Parliament and of the Council of 14 December 2022 on the resilience of critical entities and repealing Council Directive 2008/114/EC (L 333), regardless of their size.
+
+4. This Part applies to entities providing domain name registration services, regardless of their size.
+
+5. This Part shall apply without prejudice to measures taken by the country to protect its national security and its sovereign right to safeguard other essential State functions, including safeguarding its territorial integrity and maintaining public order.
+
+6. This Part shall not apply to public administration entities carrying out their activities in the fields of national security, public order, defence or law enforcement, including the prevention, detection, investigation and prosecution of criminal offences. The supervisory and enforcement measures referred to in Chapter G of this Part shall not apply to entities exempted in accordance with the first subparagraph of point (b) of paragraph 2 of Article 30.
+
+7. Paragraph 6 and paragraph b) of paragraph 2 of article 30 shall not apply when an entity acts as a trust service provider, in accordance with paragraph 16 of article 3 of Regulation (EU) 910/2014 of the European Parliament and of the Council of 23 July 2014.
+
+8. This Part does not apply to entities which Greece excludes from the scope of Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on digital operational resilience of the financial sector and amending Regulations (EC) 1060/2009, (EU) 648/2012, (EU) 600/2014, (EU) 909/2014 and (EU) 2016/1011 (L 333), in accordance with paragraph 4 of Article 2 of that Regulation.
+
+9. The obligations provided for in this Part shall not include the provision of information, the disclosure of which would be contrary to the essential interests of national security, public order or defence of the country.
+
+10. This law applies without prejudice to Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation, L 119), Law 4624/2019 (A' 137), Law 3471/2006 (A' 133), Law 4267/2014 (A' 137), Law 4411/2016 (A' 142) and Directive (EU) 2022/2557 of the European Parliament and of the Council of 14 December 2022, on the resilience of critical entities and repealing Council Directive 2008/114/EC (L 333).
+
+11. Without prejudice to Article 346 of the Treaty on the Functioning of the European Union, information which is confidential under Union or national rules, such as rules on business confidentiality, shall be exchanged with the Commission and other competent authorities in accordance with this Law only to the extent that such exchange is necessary for the implementation of its provisions. The information exchanged shall be limited to what is relevant and proportionate to the purpose of such exchange. The exchange of information shall preserve the confidentiality of such information and protect the security and commercial interests of the entities concerned.
+
+12. The entities, the National Cybersecurity Authority of Article 3 of Law 5086/2024 (A' 23) and the CSIRTs of Article 10 hereof shall process personal data to the extent necessary for the purposes of this Law and in accordance with Regulation (EU) 2016/679, only if such processing is based on Article 6 of that Regulation. The processing of personal data under this Part by providers of public electronic communications networks or providers of publicly available electronic communications services shall be carried out in accordance with European Union law on data protection and the protection of privacy, as well as with Law 4624/2019 and Law 3471/2006.

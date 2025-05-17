@@ -1,0 +1,49 @@
+Article 7
+National Cybersecurity Strategy (article 7 of Directive (EU) 2022/2555)
+1. The National Cybersecurity Authority shall formulate the National Cybersecurity Strategy (NCS) which shall provide for the strategic objectives, the resources required to achieve these objectives and appropriate policy and regulatory measures, with a view to achieving and maintaining a high level of cybersecurity. The NCS shall be established within the framework of the National Security Strategy formulated by the Government National Security Council, in accordance with paragraph 5 of article 7 of Law 4622/2019 (Government Gazette Α' 133).
+
+The CSP includes in particular: a) objectives and priorities of the cybersecurity strategy, covering in particular the areas referred to in Annexes I and II,
+
+b) a governance framework for achieving the objectives and priorities referred to in paragraph a), including the policies referred to in paragraph 2,
+
+(c) a governance framework clarifying the roles and responsibilities of relevant stakeholders at national level, which supports cooperation and coordination at national level between competent authorities, the single point of contact and CSIRTs, pursuant to this Part, as well as coordination and cooperation between those bodies and competent authorities under sectoral legal acts of the European Union;
+
+d) a mechanism for identifying relevant assets and assessing risks,
+
+(e) identification of measures to ensure preparedness, response and recovery from incidents, including cooperation between the public and private sectors;
+
+f) list of authorities and stakeholders participating in the implementation of the E.S.C.,
+
+(g) a policy framework for enhanced coordination between competent authorities under this Part and the competent authorities provided for in Directive (EU) 2022/2557 of the European Parliament and of the Council of 14 December 2022 on the resilience of critical entities and repealing Council Directive 2008/114/EC (L 333) on the exchange of information on risks, cyber threats and incidents, as well as on risks, threats and incidents outside cyberspace, and the exercise of supervisory tasks, where appropriate;
+
+(h) a plan, including the necessary measures, to enhance the general level of awareness of citizens in the field of cybersecurity,
+
+i) the critical success factors for achieving strategic and operational objectives.
+
+2. Within the framework of the E.S.K., policies are established in particular:
+
+a) embedding cybersecurity in the supply chain of information and communication technology (ICT) products and ICT services used by entities to provide their services,
+
+(b) on the inclusion and specification of cybersecurity-related requirements for ICT products and ICT services in public procurement, including those relating to cybersecurity certification, encryption, in cooperation with the competent national CRYPTO authority, and the use of open source cybersecurity products;
+
+c) vulnerability management, including the promotion and facilitation of coordinated vulnerability disclosure in accordance with paragraph 1 of Article 12,
+
+(d) relating to maintaining the general availability, integrity and confidentiality of the public core of the open internet, including, where applicable, the cybersecurity of submarine communications cables;
+
+e) promoting the development and integration of advanced technologies with the aim of implementing advanced risk management measures in the field of cybersecurity,
+
+(f) promoting and developing cybersecurity education and training, developing cybersecurity skills, raising awareness and undertaking research and development initiatives, as well as on guidance on good practices and cyber hygiene controls, targeting citizens, stakeholders and entities;
+
+g) support for academic and research institutions to develop, strengthen and promote the development of cybersecurity tools and secure network infrastructures,
+
+h) including relevant procedures and appropriate information exchange tools to support the voluntary exchange of cybersecurity information between entities in accordance with European Union law and this Law,
+
+(i) strengthening the cyber resilience and cyber health base of small and medium-sized enterprises, in particular those excluded from the scope of this Part, by providing easily accessible guidance and assistance for their specific needs;
+
+j) promoting active cyber protection.
+
+3. The National Cybersecurity Authority shall notify the NCA to the European Commission within three (3) months of its approval in accordance with the first paragraph of paragraph 5 of article 30. Information relating to national security shall be excluded from the above notification.
+
+4. The E.S.K. is evaluated on a regular basis and at least every five (5) years based on key performance indicators and, where necessary, is updated in accordance with the second paragraph of par. 5 of article 30. The Action Plan for the implementation of the E.S.K. is evaluated and, if necessary, updated at least every two (2) years in accordance with the second paragraph of par. 5 of article 30.
+
+5. The National Cybersecurity Authority may submit, if it deems it necessary, a request to the European Union Agency for Cybersecurity (ENISA) for its assistance in the development or updating of the National Cybersecurity Strategy and the key performance indicators for its evaluation, with a view to its harmonisation with this law.

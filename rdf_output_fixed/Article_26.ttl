@@ -1,0 +1,110 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article26 a :RegulationRule ;
+    rdfs:label "Article 26" ;
+    rdfs:comment "General conditions for the imposition of administrative fines on key and significant entities Sanctions (Articles 34 and 36 of Directive (EU) 2022/2555)" ;
+    :appliesTo :KeyEntities, :SignificantEntities ;
+    :references :Article34_Directive2022_2555, :Article36_Directive2022_2555 ;
+    :requires :EffectiveProportionateDissuasiveMeasures .
+
+:Article34_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 34 of Directive (EU) 2022/2555" .
+
+:Article36_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 36 of Directive (EU) 2022/2555" .
+
+:EffectiveProportionateDissuasiveMeasures a :Obligation ;
+    rdfs:label "Effective, Proportionate and Dissuasive Measures" ;
+    :appliesTo :KeyEntities, :SignificantEntities .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" ;
+    :imposes :AdministrativeFines .
+
+:AdministrativeFines a :Sanction ;
+    rdfs:label "Administrative Fines" ;
+    :maximumAmount :TenMillionEuros ;
+    :basedOn :Article26_paragraph4, :Article26_paragraph5, :Article26_paragraph6, :Article26_paragraph8, :Article26_paragraph9 ;
+    :imposedBy :DirectorOfNationalCybersecurityAuthority .
+
+:DirectorOfNationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "Director of the National Cybersecurity Authority" .
+
+:TenMillionEuros a :MonetaryValue ;
+    rdfs:label "Ten Million Euros"^^xsd:decimal .
+
+:Article26_paragraph4 a :LegalBasis ;
+    rdfs:label "paragraph 4 of Article 26" ;
+    :concerns :Article15, :Article16 .
+
+:Article15 a :RegulationRule ;
+    rdfs:label "Article 15".
+
+:Article16 a :RegulationRule ;
+    rdfs:label "Article 16".
+
+:Article26_paragraph5 a :LegalBasis ;
+    rdfs:label "paragraph 5 of Article 26" ;
+    :concerns :Article15, :Article16 .
+
+:Article26_paragraph6 a :LegalBasis ;
+    rdfs:label "paragraph 6 of Article 26" ;
+    :concerns :Article24, :Article25 .
+
+:Article24 a :RegulationRule ;
+    rdfs:label "Article 24".
+
+:Article25 a :RegulationRule ;
+    rdfs:label "Article 25".
+
+:Article26_paragraph8 a :LegalBasis ;
+    rdfs:label "paragraph 8 of Article 26" ;
+    :concerns :Article3 .
+
+:Article3 a :RegulationRule ;
+    rdfs:label "Article 3".
+
+:Article26_paragraph9 a :LegalBasis ;
+    rdfs:label "paragraph 9 of Article 26" ;
+    :concerns :Article14, :Article19, :Article20, :Article21, :Article24, :Article25, :Article15 .
+
+:Article14 a :RegulationRule ;
+    rdfs:label "Article 14".
+
+:Article19 a :RegulationRule ;
+    rdfs:label "Article 19".
+
+:Article20 a :RegulationRule ;
+    rdfs:label "Article 20".
+
+:Article21 a :RegulationRule ;
+    rdfs:label "Article 21".
+
+:KeyEntities a :LegalEntityClass ;
+    rdfs:label "Key Entities" .
+
+:SignificantEntities a :LegalEntityClass ;
+    rdfs:label "Significant Entities" .
+
+:AdministrativeCourtOfAppeal a :LegalEntity ;
+    rdfs:label "Competent Administrative Court of Appeal" ;
+    :hearsAppeals :AdministrativeFines .
+
+:Appeals a :LegalProcess ;
+    rdfs:label "Appeals";
+    :concerns :AdministrativeFines .
+
+:NationalCybersecurityAuthorityWebsite a :Website ;
+    rdfs:label "Official website of the National Cybersecurity Authority".
+
+:PublicationObligation a :Obligation;
+    rdfs:label "Publication of Decisions";
+    :appliesTo :NationalCybersecurityAuthorityWebsite;
+    :requires :DecisionDetails .
+
+:DecisionDetails a :InformationElement;
+    rdfs:label "Details of Decision";
+    :concerns :AdministrativeFines .

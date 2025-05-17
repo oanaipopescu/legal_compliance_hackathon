@@ -1,0 +1,136 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article13 a :RegulationRule ;
+    rdfs:label "Article 13" ;
+    :subject "Cooperation at national level" ;
+    :references :Article13_Directive2022_2555 ;
+    :appliesTo :NationalCybersecurityAuthority, :CSIRT ;
+    :requires :InterCSIRTcooperation, :IncidentReporting, :InformationExchange .
+
+:Article13_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 13 of Directive (EU) 2022/2555" .
+
+:InterCSIRTcooperation a :Obligation ;
+    rdfs:label "Cooperation between CSIRTs" ;
+    :appliesTo :NationalCybersecurityAuthority, :CSIRT ;
+    :requires :ComplianceWithObligations .
+
+:ComplianceWithObligations a :Obligation ;
+    rdfs:label "Compliance with Obligations defined in this law" .
+
+:IncidentReporting a :Obligation ;
+    rdfs:label "Incident Reporting to CSIRTs" ;
+    :appliesTo :CSIRT ;
+    :requires :SeriousIncidentReporting, :CyberthreatIncidentReporting .
+
+:SeriousIncidentReporting a :Obligation ;
+    rdfs:label "Reporting of Serious Incidents" ;
+    :basedOn :Article16 .
+
+:CyberthreatIncidentReporting a :Obligation ;
+    rdfs:label "Reporting of Cyberthreat Incidents and Near-misses" ;
+    :basedOn :Article22 .
+
+
+:InformationExchange a :Obligation ;
+    rdfs:label "Systematic Information Exchange" ;
+    :appliesTo :NationalCybersecurityAuthority, :CSIRT ;
+    :requires :NCSANotificationToCSIRT, :CSIRTNotificationToNCSA, :CoordinationCommitteeReporting .
+
+:NCSANotificationToCSIRT a :Obligation ;
+    rdfs:label "NCSA Notification to CSIRT" ;
+    :requires :DataSubmissionNotification ;
+    :basedOn :Article4 .
+
+:DataSubmissionNotification a :Obligation ;
+    rdfs:label "Notification of Data Submitted in accordance with Article 4 paragraphs 3 and 4" .
+
+
+:CSIRTNotificationToNCSA a :Obligation ;
+    rdfs:label "CSIRT Notification to NCSA" ;
+    :requires :IncidentHandlingNotification, :IncidentReportSubmission .
+
+
+:IncidentHandlingNotification a :Obligation ;
+    rdfs:label "Notification of Incident Handling within 24 hours" .
+
+:IncidentReportSubmission a :Obligation ;
+    rdfs:label "Submission of Relevant Incident Report within 72 hours" .
+
+
+:CoordinationCommitteeReporting a :Obligation ;
+    rdfs:label "Reporting to Coordination Committee for Cybersecurity Issues" ;
+    :requires :DataFromArticle4_9_16, :NCSImplementationProgressReports .
+
+:DataFromArticle4_9_16 a :Obligation ;
+    rdfs:label "Data from Articles 4 (paragraph 5), 9 (paragraph 3), and 16 (paragraph 6)" .
+
+:NCSImplementationProgressReports a :Obligation ;
+    rdfs:label "Reports on the Progress of the National Cybersecurity Strategy Implementation" .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" .
+
+:CSIRT a :Role ;
+    rdfs:label "Computer Security Incident Response Team" .
+
+:CooperationWithAuthorities a :Obligation ;
+    rdfs:label "Cooperation with other Authorities" ;
+    :appliesTo :NationalCybersecurityAuthority, :CSIRT ;
+    :with :LawEnforcementAuthorities, :PersonalDataProtectionAuthority, :CommunicationsPrivacyAuthority, :Regulation300_2008_Authorities, :Regulation2018_1139_Authorities, :Regulation910_2014_Authorities, :Regulation2022_2554_Authorities, :Directive2018_1972_Authorities, :Directive2022_2557_Authorities, :OtherSectoralAuthorities .
+
+:LawEnforcementAuthorities a :LegalEntityClass ;
+    rdfs:label "Competent Law Enforcement Authorities" .
+
+:PersonalDataProtectionAuthority a :LegalEntity ;
+    rdfs:label "Personal Data Protection Authority" .
+
+:CommunicationsPrivacyAuthority a :LegalEntity ;
+    rdfs:label "Communications Privacy Authority" .
+
+:Regulation300_2008_Authorities a :LegalEntityClass ;
+    rdfs:label "Authorities designated in accordance with Regulation (EC) 300/2008" .
+
+:Regulation2018_1139_Authorities a :LegalEntityClass ;
+    rdfs:label "Authorities designated in accordance with Regulation (EU) 2018/1139" .
+
+:Regulation910_2014_Authorities a :LegalEntityClass ;
+    rdfs:label "Authorities designated in accordance with Regulation (EU) 910/2014" .
+
+:Regulation2022_2554_Authorities a :LegalEntityClass ;
+    rdfs:label "Authorities designated in accordance with Regulation (EU) 2022/2554" .
+
+:Directive2018_1972_Authorities a :LegalEntityClass ;
+    rdfs:label "Authorities designated in accordance with Directive (EU) 2018/1972" .
+
+:Directive2022_2557_Authorities a :LegalEntityClass ;
+    rdfs:label "Authorities designated in accordance with Directive (EU) 2022/2557" .
+
+:OtherSectoralAuthorities a :LegalEntityClass ;
+    rdfs:label "Authorities designated in accordance with other sectoral legal acts of the European Union" .
+
+:RegularInformationExchange a :Obligation ;
+    rdfs:label "Regular Information Exchange" ;
+    :appliesTo :NationalCybersecurityAuthority, :Directive2022_2557_Authorities, :Regulation910_2014_Authorities, :Regulation2022_2554_Authorities, :Directive2018_1972_Authorities ;
+    :concerns :CriticalEntities, :Risks, :CyberThreats, :Incidents .
+
+:NationalSectorialFocalPoints a :LegalEntityClass ;
+    rdfs:label "National Sectorial Focal Points (NSFPs)" ;
+    :definedIn :paragraph11_article30 ;
+    :role :SectoralPointsOfContact .
+
+:SectoralPointsOfContact a :Role ;
+    rdfs:label "Sectoral Points of Contact" .
+
+:paragraph11_article30 a :LegalBasis ;
+    rdfs:label "paragraph 11 of article 30" .
+
+:AssistanceToNCSA a :Obligation ;
+    rdfs:label "Assistance to the National Cybersecurity Authority" ;
+    :appliesTo :NationalSectorialFocalPoints .
+
+
+```

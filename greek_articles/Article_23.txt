@@ -1,0 +1,29 @@
+Article 23
+General aspects concerning supervision and enforcement (paragraph 5 of article 8, paragraph 1 of article 9, paragraph 2 of article 10, paragraph 2 of article 11 and article 31 of Directive (EU) 2022/2555)
+1. The National Cybersecurity Authority is designated as the competent authority for supervision and control for compliance with the provisions of this part and exercises supervision and control in accordance with articles 24 and 25.
+
+Entities under the supervision of the National Cybersecurity Authority, with the exception of entities under point f) of paragraph 2 of article 3, are subject to a proportional supervision fee and a proportional audit fee, based in particular on the size of the entity and the complexity of the audit, which are determined by the joint decision of paragraph 20 of article 30.
+
+The assignment of control and inspection tasks and the designation of certified technical experts (Subject Matter Experts, SMEs) is carried out in accordance with paragraph 21 of article 30. In particular, the supervision of the entities of paragraph 2 of article 3 is exercised exclusively by the inspectors of the National Cybersecurity Authority and by inspectors of the public administration certified by it, who may, where appropriate, be assisted by an SME certified by the National Cybersecurity Authority, in accordance with the Regulation.
+
+Control and Supervision of the National Cybersecurity Authority. In case of designation and exercise of supervisory responsibilities by National Sectorial Focal Points (NSFP) in accordance with par. 11 of article 30, supervision and control duties in accordance with the provisions of this law are exercised by the inspectors of the National Cybersecurity Authority and the inspectors of the National Sectorial Focal Points (NSFP) certified by the National Cybersecurity Authority. The bodies participating in the control process, including the certified inspectors and the certified technical experts, receive compensation, the amount of which is determined by the decision of par. 20 of article 30.
+
+2. The revenues from the financial sanctions imposed on natural or legal persons in accordance with this Part, as well as from the supervision fee and the control fee of par. 1, constitute resources of the National Cybersecurity Authority and are allocated exclusively to cover its operating expenses and to serve the purposes of its operation.
+
+3. The National Cybersecurity Authority cooperates with the Personal Data Protection Authority in dealing with incidents leading to personal data breaches, without prejudice to the competence and duties of the Personal Data Protection Authority in accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation, L 119).
+
+4. In case of violation of the provisions of this Part, the fines provided for in article 26 and in paragraph 23 of article 30 shall be imposed, as appropriate.
+
+5. The bodies of the National Cybersecurity Authority enjoy, vis-à-vis the supervised public administration bodies, functional independence in the exercise of their supervisory and control responsibilities provided for in this article and in articles 24 to 27 and 30.
+
+6. In order to fulfill the duties of the National Cybersecurity Authority, as provided for herein, its authorized employees have supervisory powers and have the authority, in particular:
+
+a. to visit, in the context of the exercise of their duties and for the fulfillment of their work, with or without notice, the entities that fall within the scope of this Regulation,
+
+b. to control and collect information and data from mobile terminals, portable devices, their servers and the cloud, in cooperation with the competent authorities, as the case may be, located inside or outside the buildings of these controlled entities,
+
+c. to conduct investigations in the offices and other premises of the entities,
+
+d. to seize, receive or obtain in any form a copy or extract of books, documents, as well as electronic means of storage and data transfer, which relate to professional information and, when they deem it appropriate, to continue the information search and select copies or extracts at the premises of the National Cybersecurity Authority or at other designated places,
+
+e. to seal any business premises, electronic or non-electronic books or documents, during the period in which the audit is being carried out and to the extent necessary.

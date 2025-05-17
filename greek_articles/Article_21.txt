@@ -1,0 +1,11 @@
+Article 21
+Arrangements for the exchange of information in the field of cybersecurity (Article 29 of Directive (EU) 2022/2555)
+1. Entities falling within the scope of this Part and, where applicable, other entities not falling within its scope, shall exchange with each other, on a voluntary basis, information relevant to cybersecurity, including information on cyber threats, near-misses, vulnerabilities, techniques and procedures, indications of breach, malicious tactics, information on specific threat actors, cybersecurity alerts and recommendations on the configuration of cybersecurity tools to detect cyberattacks, to the extent that such exchange of information:
+
+a) aims to prevent, detect, respond to or recover from incidents or mitigate their effects,
+
+(b) enhances the level of cybersecurity, in particular by raising awareness of cyber threats, limiting or hindering the ability of such threats to spread, supporting a range of defence capabilities, remediation and vulnerability disclosure, threat detection, containment and prevention techniques, mitigation strategies or response and recovery phases, or promoting collaborative research on cyber threats between public and private actors.
+
+2. Information shall be exchanged within communities of key and significant entities and, where appropriate, their suppliers or service providers. Such exchange shall take into account the potentially sensitive nature of the information exchanged.
+
+3. The key and significant entities shall notify the National Cybersecurity Authority, without delay, of their participation in the information exchange framework of par. 2, as well as the withdrawal of their participation, once this has taken place.

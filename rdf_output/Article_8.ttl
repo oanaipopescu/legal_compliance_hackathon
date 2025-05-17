@@ -1,0 +1,63 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article8 a :RegulationRule ;
+    rdfs:label "Article 8" ;
+    :subject "Competent authority and single point of contact" ;
+    :references :Article8_Directive2022_2555, :Article14_Directive2022_2555 ;
+    :appliesTo :NationalCybersecurityAuthority ;
+    :requires :CompetentAuthorityDesignation, :SinglePointOfContactDesignation, :CrossBorderCooperation, :CrossSectoralCooperation, :NotificationToEuropeanCommission, :PublicationOnWebsite .
+
+:Article8_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 8 of Directive (EU) 2022/2555" .
+
+:Article14_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 14 of Directive (EU) 2022/2555" .
+
+:CompetentAuthorityDesignation a :Obligation ;
+    rdfs:label "Designation as Competent Authority" .
+
+:SinglePointOfContactDesignation a :Obligation ;
+    rdfs:label "Designation as Single Point of Contact" .
+
+:CrossBorderCooperation a :Obligation ;
+    rdfs:label "Cross-border cooperation with other Member States" ;
+    :appliesTo :NationalCybersecurityAuthority ;
+    :with :OtherMemberStatesCompetentAuthorities, :EuropeanCommission, :ENISA .
+
+:OtherMemberStatesCompetentAuthorities a :LegalEntityClass ;
+    rdfs:label "Competent Authorities of Other Member States" .
+
+:EuropeanCommission a :LegalEntity ;
+    rdfs:label "European Commission" .
+
+:ENISA a :LegalEntity ;
+    rdfs:label "European Union Agency for Cybersecurity (ENISA)" .
+
+:CrossSectoralCooperation a :Obligation ;
+    rdfs:label "Cross-sectoral cooperation with other national competent authorities" ;
+    :appliesTo :NationalCybersecurityAuthority .
+
+:NotificationToEuropeanCommission a :Obligation ;
+    rdfs:label "Notification to the European Commission" ;
+    :requires :DesignationDetails, :TaskDetails, :SubsequentChanges .
+
+:DesignationDetails a :InformationElement ;
+    rdfs:label "Details of Designation" .
+
+:TaskDetails a :InformationElement ;
+    rdfs:label "Details of Tasks" .
+
+:SubsequentChanges a :InformationElement ;
+    rdfs:label "Details of Subsequent Changes" .
+
+:PublicationOnWebsite a :Obligation ;
+    rdfs:label "Publication of designation on website" ;
+    :appliesTo :NationalCybersecurityAuthority .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" .
+
+```

@@ -1,0 +1,109 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article41 a :RegulationRule ;
+    rdfs:label "Article 41" ;
+    rdfs:comment "Regulation of the urban transport project of the Regional Unit of Thessaloniki" ;
+    :amends :Article3_Law4482_2017, :Article11_Law4482_2017, :Article26_Law4482_2017 ;
+    :requires :AmendmentArticle3_Law4482_2017, :AmendmentArticle11_Law4482_2017, :AmendmentArticle26_Law4482_2017 .
+
+:AmendmentArticle3_Law4482_2017 a :Obligation ;
+    rdfs:label "Amendment to Article 3 of Law 4482/2017" ;
+    :adds :Paragraph1l_Article3_Law4482_2017, :Paragraph1la_Article3_Law4482_2017, :Paragraph1lt_Article3_Law4482_2017, :Paragraph2c_Article3_Law4482_2017, :Paragraph2d_Article3_Law4482_2017 .
+
+:Paragraph1l_Article3_Law4482_2017 a :Paragraph ;
+    rdfs:label "Paragraph 1l of Article 3 of Law 4482/2017" ;
+    :text """Promotes sales of fare products through the implementation of the discount policy.""" .
+
+:Paragraph1la_Article3_Law4482_2017 a :Paragraph ;
+    rdfs:label "Paragraph 1la of Article 3 of Law 4482/2017" ;
+    :text """Sells fare products and collects the fare on behalf of providers of transportation projects of the Regional Unit of Thessaloniki of article 2, controls and remits the total revenue from sales of products of providers of the above transportation projects to the state budget, following prior, in order, laa) deduction for reimbursement of the amount of Value Added Tax (VAT) due for the transport service, in accordance with the VAT legislation for the total amount of sales of fare products, lab) withholding the percentages determined in favor of it in accordance with article 11 on the total revenue from sales of fare products (excluding VAT), lag) reimbursement to O.A.S.T.H. of the remaining amount of sales of fare products for the provision of a transport project by i) the providers of public passenger urban transport by buses, with which OSETH has a contract and ii) OASTH in accordance with paragraph 1 of article 26, in accordance with the invoiced service according to the applicable provisions. It may assign part of the responsibilities of this case to transport project bodies.""" .
+
+:Paragraph1lt_Article3_Law4482_2017 a :Paragraph ;
+    rdfs:label "Paragraph 1lt of Article 3 of Law 4482/2017" ;
+    :text """Controls, supervises, acts for and coordinates the interoperability of the transport project carried out by the providers of the public transport system, being able to contract with providers of the said transport project and third parties for the purpose of interoperability.""" .
+
+:Paragraph2c_Article3_Law4482_2017 a :Paragraph ;
+    rdfs:label "Paragraph 2c of Article 3 of Law 4482/2017" ;
+    :text """By joint decision of the Ministers of National Economy and Finance and Infrastructure and Transport, the procedure for the collection by OSETH S.A. of the revenues for the fare products sold on behalf of transport project providers of the Regional Unit of Thessaloniki of article 2, the amount or percentage of revenues from fares of transport project providers in accordance with paragraphs l' and la' of par. 1, the procedure and periodicity of the payment of the above amounts due by OSETH S.A. to OSETH and the state budget, as well as any other matter relevant to the implementation of paragraphs l' and la' of par. 1 are determined.""" .
+
+:Paragraph2d_Article3_Law4482_2017 a :Paragraph ;
+    rdfs:label "Paragraph 2d of Article 3 of Law 4482/2017" ;
+    :text """By decision of its Board of Directors, following the approval of the competent body of the Ministry of Infrastructure and Transport, OSETH selects the legal entity to which it assigns its responsibilities, in accordance with the last paragraph of paragraph 1 of article 3.""" .
+
+
+:AmendmentArticle11_Law4482_2017 a :Obligation ;
+    rdfs:label "Amendment to Article 11 of Law 4482/2017" ;
+    :adds :Paragraph4_Article11_Law4482_2017 .
+
+:Paragraph4_Article11_Law4482_2017 a :Paragraph ;
+    rdfs:label "Paragraph 4 of Article 11 of Law 4482/2017" ;
+    :text """Specifically for O.A.S.T.H., the percentage of par. 1 is valid until June 30, 2020. From July 1, 2020, the above percentage is set at one point two percent (1.2%) of the total revenue derived from the provision of transportation services and the production of transportation work in the area of responsibility of O.A.S.T.H.. From December 1, 2024, the percentage of the second paragraph of this paragraph applies only to fare products whose sales receipt is issued to the tax registration number of O.A.S.T.H., otherwise the percentage of par. 1 applies.""" .
+
+:AmendmentArticle26_Law4482_2017 a :Obligation ;
+    rdfs:label "Amendment to Article 26 of Law 4482/2017" ;
+    :changes :Paragraph1_Article26_Law4482_2017 .
+
+:Paragraph1_Article26_Law4482_2017 a :Paragraph ;
+    rdfs:label "Paragraph 1 of Article 26 of Law 4482/2017" ;
+    :oldText """The transportation project in the Regional Unit of Thessaloniki is temporarily assigned to OASTH for the absolutely necessary time and in any case not after 31.12.2024.""" ;
+    :newText """The transportation project in the Regional Unit of Thessaloniki is temporarily assigned to OASTH for the absolutely necessary time and in any case not after 31.12.2025.""" ;
+    :newDate "2025-12-31"^^xsd:date .
+
+:Article3_Law4482_2017 a :LegalProvision ;
+    rdfs:label "Article 3 of Law 4482/2017" .
+
+:Article11_Law4482_2017 a :LegalProvision ;
+    rdfs:label "Article 11 of Law 4482/2017" .
+
+:Article26_Law4482_2017 a :LegalProvision ;
+    rdfs:label "Article 26 of Law 4482/2017" .
+
+:Law4482_2017 a :NationalLaw ;
+    rdfs:label "Law 4482/2017" .
+
+:OSETH_SA a :LegalEntity ;
+    rdfs:label "Thessaloniki Transport Project Organization, Societe Anonyme (OSETH S.A.)" ;
+    :responsibilities :FareProductSalesPromotion, :FareProductSalesCollection, :RevenueRemittance, :TransportProjectInteroperabilityControl .
+
+:FareProductSalesPromotion a :Responsibility ;
+    rdfs:label "Promotes sales of fare products through the implementation of the discount policy" .
+
+:FareProductSalesCollection a :Responsibility ;
+    rdfs:label "Sells fare products and collects the fare on behalf of providers" .
+
+:RevenueRemittance a :Responsibility ;
+    rdfs:label "Controls and remits the total revenue from sales of products to the state budget" .
+
+:TransportProjectInteroperabilityControl a :Responsibility ;
+    rdfs:label "Controls, supervises, acts for and coordinates the interoperability of the transport project" .
+
+:OASTH a :LegalEntity ;
+    rdfs:label "Organization of Urban Transport of Thessaloniki (OASTH)" .
+
+:MinistryOfNationalEconomyAndFinance a :LegalEntity ;
+    rdfs:label "Ministry of National Economy and Finance" .
+
+:MinistryOfInfrastructureAndTransport a :LegalEntity ;
+    rdfs:label "Ministry of Infrastructure and Transport" .
+
+:VAT a :Tax ;
+    rdfs:label "Value Added Tax" .
+
+:GreekState a :LegalEntity ;
+    rdfs:label "Greek State".
+
+:FinancialAgreement_30_4_2001 a :Contract ;
+    rdfs:label "Financial Agreement of 30.4.2001 between the Greek State and OASTH" .
+
+:Law4568_2018 a :NationalLaw ;
+    rdfs:label "Law 4568/2018" ;
+    :article :Article54 .
+
+:Article54 a :LegalProvision ;
+    rdfs:label "Article 54 of Law 4568/2018".
+
+```

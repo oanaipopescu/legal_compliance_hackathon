@@ -1,0 +1,85 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article28 a :RegulationRule ;
+    rdfs:label "Article 28" ;
+    :subject "Mutual assistance" ;
+    :references :Article37_Directive2022_2555 ;
+    :appliesTo :NationalCybersecurityAuthority, :OtherMemberStatesCompetentAuthorities, :EuropeanCommission, :ENISA ;
+    :requires :MutualAssistanceCooperation .
+
+:Article37_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 37 of Directive (EU) 2022/2555" .
+
+:MutualAssistanceCooperation a :Obligation ;
+    rdfs:label "Mutual Assistance Cooperation" ;
+    :concerns :SupervisoryEnforcementMeasures ;
+    :requires :InformationSharing, :JointSupervisoryActions, :RequestForAssistance .
+
+:InformationSharing a :Obligation ;
+    rdfs:label "Information Sharing" ;
+    :between :NationalCybersecurityAuthority, :OtherMemberStatesCompetentAuthorities .
+
+:JointSupervisoryActions a :Obligation ;
+    rdfs:label "Joint Supervisory Actions" ;
+    :between :NationalCybersecurityAuthority, :OtherMemberStatesCompetentAuthorities .
+
+:RequestForAssistance a :Obligation ;
+    rdfs:label "Request for Assistance" ;
+    :mayInclude :InformationRequests, :OnSiteInspections, :OffSiteSupervision, :TargetedSecurityChecks ;
+    :mayBeRefusedBy :NationalCybersecurityAuthority ;
+    :refusalConditions :Incompetence, :Disproportionality, :NationalSecurityConcerns .
+
+:Incompetence a :Condition ;
+    rdfs:label "Incompetence of National Cybersecurity Authority" .
+
+:Disproportionality a :Condition ;
+    rdfs:label "Disproportionality to supervisory tasks" .
+
+:NationalSecurityConcerns a :Condition ;
+    rdfs:label "Concerns about national security, public security or defence of Greece" .
+
+:InformationRequests a :InformationElement ;
+    rdfs:label "Requests for Information" .
+
+:OnSiteInspections a :SupervisoryMeasure ;
+    rdfs:label "On-site Inspections" .
+
+:OffSiteSupervision a :SupervisoryMeasure ;
+    rdfs:label "Off-site Supervision" .
+
+:TargetedSecurityChecks a :SupervisoryMeasure ;
+    rdfs:label "Targeted Security Checks" .
+
+:SupervisoryEnforcementMeasures a :Obligation ;
+    rdfs:label "Supervisory and Enforcement Measures" .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" .
+
+:OtherMemberStatesCompetentAuthorities a :LegalEntityClass ;
+    rdfs:label "Competent Authorities of Other Member States" .
+
+:EuropeanCommission a :LegalEntity ;
+    rdfs:label "European Commission" .
+
+:ENISA a :LegalEntity ;
+    rdfs:label "European Union Agency for Cybersecurity (ENISA)" .
+
+:ConsultationObligation a :Obligation ;
+    rdfs:label "Consultation Obligation" ;
+    :before :RefusalOfAssistance ;
+    :between :NationalCybersecurityAuthority, :OtherMemberStatesCompetentAuthorities, :EuropeanCommission, :ENISA .
+
+:RefusalOfAssistance a :Action ;
+    rdfs:label "Refusal of Assistance" .
+
+:Entity a :LegalEntity ;
+    rdfs:label "Entity".
+
+:MemberState a :LegalEntity;
+    rdfs:label "Member State".
+
+:NetworkAndInformationSystem a :DefinedTerm;
+    rdfs:label "Network and Information System".

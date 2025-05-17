@@ -1,0 +1,49 @@
+Article 16.
+
+The DPO shall be provided by the relevant entity with the necessary resources for the performance of its duties. The duties of the DPO shall be incompatible with those of the Data Protection Officer (DPO) of Article 37 of Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation, L 119) and Articles 7 and 8 of Law 4624/2019 (Government Gazette A' 137). The DPO shall has an appropriate level of autonomy in decision-making, the ability to implement them by the individual organizational units of the entity, the information of the administrative bodies, the coordination of security incident management, as well as the procedures for implementing business continuity and disaster recovery plans. For central government bodies, as defined in paragraph c of paragraph 1 of article 14 of law 4270/2014 (A' 143), articles 18 and 19 of law 4961/2022 (A' 146) apply, regarding the definition, qualifications and duties of the Y.A.S.P.E.
+
+b) They shall comply with a unified cybersecurity policy, in accordance with the standardized template of paragraph 14 of article 30, which includes all of the individual measures, policies and procedures of paragraph 2 hereof. In the event that the entity complies with individual recorded policies and procedures, which concern at least the compliance measures of paragraph 2 hereof, the unified cybersecurity policy shall refer to these policies and procedures for the individual details. The unified cybersecurity policy shall be submitted for approval in terms of its completeness by the key entities to the National Cybersecurity Authority, at least annually. The submission of the unified cybersecurity policy by the significant entities may be mandatory by decision of paragraph 15 of article 30. A condition for examining the unified policy is the payment of the supervision fee of paragraph 1 of article 23.
+
+c) They maintain a comprehensive record of tangible and intangible information and communication assets, which are prioritized based on their criticality.
+
+6. In order to demonstrate compliance with the requirements of paragraphs 1 and 2, key and significant entities may be required to use specific ICT products, ICT services and ICT processes, developed by the key or significant entity or provided by third parties and certified under European cybersecurity certification schemes established in accordance with Article 49 of Regulation (EU) 2019/881 of the European Parliament and of the Council of 17 April 2019 on ENISA (the "European Union Agency for Cybersecurity") and on cybersecurity certification in the information and communications technology sector and repealing Regulation (EU) 526/2013 (Cybersecurity Act, L 151). Measures may also be provided to encourage key and important entities to use approved trust services.
+
+Article 16
+Incident reporting obligations (article 23 of Directive 2022/2555)
+1. Key and significant entities shall notify, without delay, the Computer Security Incident Response Team (CSIRT) of the National Cybersecurity Authority of any incident that has a significant impact on the provision of their services, in accordance with paragraph 3 (significant incident). The entities referred to in paragraph f) of paragraph 2 of Article 3 shall notify the incidents referred to in this Article to the CSIRT of the National Intelligence Service, simultaneously informing the National Cybersecurity Authority. Where appropriate, the entities concerned shall notify, without undue delay, the recipients of their services of significant incidents that may adversely affect the provision of those services. Such entities shall, inter alia, report any information that allows the National Cybersecurity Authority to determine the cross-border implications of the incident. The simple act of notification does not entail liability of the notifying entity. In the event of a cross-border or cross-sectoral significant incident, the National Cybersecurity Authority shall provide, without delay, to the single points of contact referred to in paragraph 8 the relevant information notified to it in accordance with paragraph 4.
+
+2. Key and significant entities shall, without delay, notify the relevant recipients of their services that may be affected by a significant cyber threat of measures or remedial actions that they can take to address that threat. The entities shall also inform those recipients of the significant cyber threat.
+
+3. An incident is considered significant if:
+
+a) has caused or may cause serious operational disruption of services or financial damage to the entity concerned,
+
+b) has affected or may affect other natural or legal persons, causing significant material or non-material damage.
+
+4. For the notification of par. 1, the relevant entities shall submit to the National Cybersecurity Authority:
+
+a) without undue delay and in any event within twenty-four (24) hours of becoming aware of the significant incident, a warning, which, where appropriate, states whether there is a suspicion that the significant incident was caused by illegal or malicious actions or could have a cross-border impact,
+
+b) without undue delay and in any case within seventy-two (72) hours from the moment they became aware of the significant incident, an incident notification, which, where applicable, updates the information referred to in point a) and, in addition, includes an initial assessment of the significant incident, including its severity and impact, as well as, if any, the indications of the breach,
+
+c) upon request of the National Cybersecurity Authority, an interim report on relevant updates of the situation,
+
+d) a final report no later than one (1) month after the submission of the incident notification in accordance with paragraph b), which includes the following:
+
+(da) a detailed description of the incident, including its severity and impact; (db) the type of threat or root cause that may have caused the incident; (dc) implemented and ongoing mitigation measures; (dd) where applicable, the cross-border impact of the incident;
+
+e) in the event of an ongoing incident at the time of submission of the final report referred to in paragraph d), the relevant entities shall submit a progress report at that time and a final report within one (1) month of their handling of the significant incident.
+
+By way of derogation from paragraph b), the trust service provider shall inform the National Cybersecurity Authority regarding significant incidents affecting the provision of its trust services, without undue delay and in any case within twenty-four (24) hours from the moment it became aware of the significant incident.
+
+5. The National Cybersecurity Authority shall provide the notifying entity, without delay and if possible within twenty-four (24) hours of receipt of the early warning referred to in point a) of paragraph 4, with a response including an initial reaction to the significant incident and, upon request by the entity, guidance or operational advice on the implementation of possible mitigation measures. The National Cybersecurity Authority shall provide additional technical support, if requested by the entity concerned. Where there are suspicions that the significant incident is of a criminal nature, the National Cybersecurity Authority shall also provide guidance on reporting the significant incident to the competent prosecution authorities or to the competent Directorate of the Hellenic Police.
+
+6. Where appropriate, and in particular where the significant incident also concerns other Member States of the European Union, the CSIRT of the National Cybersecurity Authority shall, without delay, inform the other affected Member States and the European Union Agency for Cybersecurity (ENISA) of the significant incident. This information shall include the type of information received in accordance with paragraph 4. In this context, the National Cybersecurity Authority shall safeguard, in accordance with Union and national law, the security and commercial interests of the entity, as well as the confidentiality of the information provided.
+
+7. Where public awareness is necessary to prevent a significant incident or to address a significant ongoing incident, or where disclosure of the significant incident is in the public interest, the National Cybersecurity Authority may, after consultation with the entity concerned, inform the public about the significant incident or require the entity to inform the public within a specified period.
+
+8. The National Cybersecurity Authority shall forward the notifications it receives in accordance with paragraph 1 to the single points of contact of any other affected Member States of the European Union.
+
+9. The National Cybersecurity Authority, as a single point of contact, shall submit to ENISA, every three (3) months, a summary report, which includes anonymized and aggregated data regarding significant incidents, incidents, cyber threats and near misses notified in accordance with paragraph 1 hereof and article 22.
+
+10. The National Cybersecurity Authority shall provide the competent authorities, designated in accordance with Directive (EU) 2022/2557 of the European Parliament and of the Council of 14 December 2022, on the resilience of critical entities and repealing Council Directive 2008/114/EC (L 333), with information on significant incidents, incidents, cyber threats and near misses notified in accordance with paragraph 1 of this and article 22 by entities identified as critical entities in accordance with Directive (EU) 2022/2557.

@@ -1,0 +1,147 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article39 a :RegulationRule ;
+    rdfs:label "Article 39" ;
+    :subject "Textbooks, Textbook Register, Digital Library of Textbooks" ;
+    :amends :Article84_Law4823_2021 ;
+    :requires :AmendmentParagraph5_Article84_Law4823_2021, :AmendmentParagraph6_Article84_Law4823_2021, :AmendmentParagraph7_Article84_Law4823_2021, :AmendmentParagraph17_Article84_Law4823_2021, :AmendmentParagraph20_Article84_Law4823_2021, :AdditionParagraph23_Article84_Law4823_2021, :AdditionParagraph24_Article84_Law4823_2021 .
+
+:Article84_Law4823_2021 a :LegalProvision ;
+    rdfs:label "Article 84 of Law 4823/2021" ;
+    :definedIn :Law4823_2021 .
+
+:Law4823_2021 a :NationalLaw ;
+    rdfs:label "Law 4823/2021" .
+
+:AmendmentParagraph5_Article84_Law4823_2021 a :Amendment ;
+    rdfs:label "Amendment to paragraph 5 of Article 84 of Law 4823/2021" ;
+    :requires :ExpressionOfInterest_Textbooks, :MinisterialDecision_TextbookInclusion .
+
+:ExpressionOfInterest_Textbooks a :Obligation ;
+    rdfs:label "Invitation for expressions of interest for textbook writing" ;
+    :issuedBy :MinisterOfEducationReligiousAffairsAndSports ;
+    :basedOn :RecommendationIEP ;
+    :publishedOn :MinistryOfEducationWebsite, :IEPWebsite, :ITYEDiofantosWebsite, :GreekBookAssociationWebsite .
+
+:MinisterOfEducationReligiousAffairsAndSports a :LegalEntity ;
+    rdfs:label "Minister of Education, Religious Affairs and Sports" .
+
+:RecommendationIEP a :Recommendation ;
+    rdfs:label "Recommendation from the Institute of Educational Policy (IEP)" .
+
+:MinistryOfEducationWebsite a :Website ;
+    rdfs:label "Website of the Ministry of Education, Religious Affairs and Sports" .
+
+:IEPWebsite a :Website ;
+    rdfs:label "Website of the Institute of Educational Policy (IEP)" .
+
+:ITYEDiofantosWebsite a :Website ;
+    rdfs:label "Website of the Institute of Technology and Education 'Diofantos'" .
+
+:GreekBookAssociationWebsite a :Website ;
+    rdfs:label "Website of the Greek Book Association" .
+
+:MinisterialDecision_TextbookInclusion a :Decision ;
+    rdfs:label "Ministerial Decision for Textbook Inclusion" .
+
+
+:AmendmentParagraph6_Article84_Law4823_2021 a :Amendment ;
+    rdfs:label "Amendment to paragraph 6 of Article 84 of Law 4823/2021" ;
+    :requires :TextbookUpload_FORTHDiofantos, :TextbookEvaluation_ScientificCommittees .
+
+:TextbookUpload_FORTHDiofantos a :Obligation ;
+    rdfs:label "Upload of textbooks and supplementary material to FORTH 'Diofantos' system" ;
+    :appliesTo :TextbookParticipant .
+
+:TextbookParticipant a :LegalEntity ;
+    rdfs:label "Textbook Participant" .
+
+:TextbookEvaluation_ScientificCommittees a :Obligation ;
+    rdfs:label "Textbook evaluation by scientific committees" ;
+    :stages :CompletenessCheck, :QualityCheck ;
+    :carriedOutBy :ScientificCommittee_Textbooks .
+
+:CompletenessCheck a :Stage ;
+    rdfs:label "Completeness Check" .
+
+:QualityCheck a :Stage ;
+    rdfs:label "Quality Check" .
+
+:ScientificCommittee_Textbooks a :LegalEntity ;
+    rdfs:label "Scientific Committee for Textbook Evaluation" .
+
+
+:AmendmentParagraph7_Article84_Law4823_2021 a :Amendment ;
+    rdfs:label "Amendment to paragraph 7 of Article 84 of Law 4823/2021" ;
+    :requires :ScientificCommitteeFormation_IEPBoD, :ExpertSelection_IEPBoD, :ExpertParticipation_ITYEDiofantos .
+
+:ScientificCommitteeFormation_IEPBoD a :Obligation ;
+    rdfs:label "Formation of scientific committees by the IEP Board of Directors" .
+
+:ExpertSelection_IEPBoD a :Obligation ;
+    rdfs:label "Selection of experts by the IEP Board of Directors" .
+
+:ExpertParticipation_ITYEDiofantos a :Obligation ;
+    rdfs:label "Participation of ITYE 'Diofantos' in expert evaluation" .
+
+
+:AmendmentParagraph17_Article84_Law4823_2021 a :Amendment ;
+    rdfs:label "Amendment to paragraph 17 of Article 84 of Law 4823/2021" ;
+    :requires :MinisterialDecision_TextbookWritingProcess .
+
+:MinisterialDecision_TextbookWritingProcess a :Decision ;
+    rdfs:label "Ministerial Decision on Textbook Writing Process" .
+
+
+:AmendmentParagraph20_Article84_Law4823_2021 a :Amendment ;
+    rdfs:label "Amendment to paragraph 20 of Article 84 of Law 4823/2021" ;
+    :requires :MinisterialDecision_MDBPSDB .
+
+:MinisterialDecision_MDBPSDB a :Decision ;
+    rdfs:label "Ministerial Decision on MDB and PSDB Procedures" ;
+    :basedOn :RecommendationIEP, :RecommendationITYEDiofantos .
+
+:RecommendationITYEDiofantos a :Recommendation ;
+    rdfs:label "Recommendation from ITYE 'Diofantos'".
+
+:AdditionParagraph23_Article84_Law4823_2021 a :Addition ;
+    rdfs:label "Addition of paragraph 23 to Article 84 of Law 4823/2021" ;
+    :requires :MinisterialDecision_ScientificCommitteesOperation .
+
+:MinisterialDecision_ScientificCommitteesOperation a :Decision ;
+    rdfs:label "Ministerial Decision on Scientific Committees Operation" ;
+    :basedOn :RecommendationIEP, :RecommendationITYEDiofantos .
+
+
+:AdditionParagraph24_Article84_Law4823_2021 a :Addition ;
+    rdfs:label "Addition of paragraph 24 to Article 84 of Law 4823/2021" ;
+    :requires :MaterialSubmission_ITYEDiofantos .
+
+:MaterialSubmission_ITYEDiofantos a :Obligation ;
+    rdfs:label "Submission of material to ITYE 'Diofantos' platform" ;
+    :deadline "10 days from publication"^^xsd:string .
+
+:IEP a :LegalEntity ;
+    rdfs:label "Institute of Educational Policy" .
+
+:FORTHDiofantos a :InformationSystem ;
+    rdfs:label "FORTH 'Diofantos' digital book submission system" .
+
+:MDB a :Database ;
+    rdfs:label "Digital Textbook Library (MDB)" .
+
+:PSDB a :Database ;
+    rdfs:label "Print Textbook Library (PSDB)" .
+
+:AEI a :LegalEntity ;
+    rdfs:label "Higher Education Institution (AEI)".
+
+:Law4412_2016 a :NationalLaw ;
+    rdfs:label "Law 4412/2016".
+
+
+```

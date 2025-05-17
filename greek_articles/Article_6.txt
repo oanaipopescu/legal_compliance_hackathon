@@ -1,0 +1,102 @@
+Article 6
+Definitions (Article 6 of Directive (EU) 2022/2555)
+For the application of this law, the following definitions apply:
+
+a) "network and information system": aa) electronic communications network, as defined in sub-paragraph 9) of paragraph A of article 110 of Law 4727/2020 (Government Gazette 184),
+
+(ab) any device or group of interconnected or related devices, one or more of which, in accordance with a program, carries out automatic processing of digital data or
+
+ag) digital data stored, processed, retrieved or transmitted by elements covered by sub-paragraphs aa) and ab) hereof for the purposes of their operation, use, protection and maintenance,
+
+(b) ‘security of network and information systems’ means the ability of network and information systems to resist, at a given level of confidence, any event that may compromise the availability, authenticity, integrity or confidentiality of data stored, transmitted or processed or of the services offered by or accessible through those network and information systems;
+
+(c) “cybersecurity” means cybersecurity as defined in point (1) of Article 2 of Regulation (EU) 2019/881 of the European Parliament and of the Council of 17 April 2019 on ENISA (the “European Union Agency for Cybersecurity”) and on cybersecurity certification in the information and communications technology sector and repealing Regulation (EU) 526/2013 (Cybersecurity Act, L 151),
+
+d) "National Cybersecurity Strategy": a coherent framework that provides strategic objectives and priorities in the field of cybersecurity and the governance for their achievement,
+
+(e) "near-miss incident": an incident that could have compromised the availability, authenticity, integrity or confidentiality of stored, transmitted or processed data or services offered or accessible through network and information systems, but which was prevented or not successfully implemented,
+
+(f) "incident": any event that compromises the availability, authenticity, integrity or confidentiality of data stored, transmitted or processed or of services offered or accessible through network and information systems;
+
+(g) "large-scale cybersecurity incident": an incident that causes a disruption that exceeds the country's capacity to respond to it or that has a significant impact on at least two Member States of the European Union;
+
+(h) "incident management" means any action and process aimed at preventing, detecting, analysing and containing or responding to and recovering from an incident;
+
+(i) "risk" means the probability of loss or disruption caused by an event and is expressed as a combination of the magnitude of that loss or disruption and the probability of that event occurring;
+
+j) “cyber threat”: cyber threat, as defined in point 8) of Article 2 of Regulation (EU) 2019/881,
+
+(k) ‘significant cyber threat’ means a cyber threat which, based on its technical characteristics, can be considered to have the potential to seriously affect the network and information systems of an entity or the users of the entity’s services, causing significant material or non-material damage;
+
+l) "ICT product": a product, as defined in point 12) of Article 2 of Regulation (EU) 2019/881,
+
+m) "ICT service": ICT service, as defined in point 13) of Article 2 of Regulation (EU) 2019/881,
+
+n) "ICT procedure": ICT procedure, as defined in point (14) of Article 2 of Regulation (EU) 2019/881,
+
+(o) ‘vulnerability’ means a weakness, sensitivity or defect in ICT products or ICT services that can be exploited by a cyber threat;
+
+(p) "standard": standard, as defined in the appendix. 1) Article 2 of Regulation (EU) 1025/2012 of the European Parliament and of the Council of 25 October 2012 on European standardisation, amending Council Directives 89/686/EEC and 93/15/EEC and Directives 94/9/EC, 94/25/EC, 95/16/EC, 97/23/EC, 98/34/EC, 2004/22/EC, 2007/23/EC, 2009/23/EC and 2009/105/EC of the European Parliament and of the Council and repealing Council Decision 87/95/EEC and Decision 1673/2006/EC of the European Parliament and of the Council (L 316),
+
+q) "technical specification": technical specification, as defined in point 4) of Article 2 of Regulation (EU) 1025/2012,
+
+(r) ‘internet exchange point’ means a network facility that allows the interconnection of more than two independent networks (autonomous systems), primarily for the purpose of facilitating the exchange of internet traffic, which provides interconnection only for autonomous systems and which neither requires internet traffic passing between any pair of participating autonomous systems to pass through any third autonomous system nor alters or otherwise affects such traffic;
+
+(s) ‘Domain Name System’ or ‘DNS’: a hierarchical distributed naming system that allows the identification of Internet services and resources, allowing end-user devices to use Internet routing and connectivity services to access those services and resources;
+
+(k) "DNS service provider": an entity that provides: (k) publicly available recursive domain name resolution services for end-users of the Internet or (kb) authoritative domain name resolution services for use by third parties, with the exception of root name servers,
+
+(u) ‘top-level domain name registry’ or ‘TLD registry’ means an entity to which a specific TLD has been assigned and which is responsible for the management of the TLD, including the registration of domain names under the TLD and the technical operation of the TLD, including the operation of its name servers, the maintenance of its databases and the distribution of TLD zone files to name servers, whether any of these acts are performed by the entity itself or outsourced, but excluding cases where TLD names are used by a registry solely for its own use;
+
+(vb) ‘entity providing domain name registration services’ means a registrar or an agent acting on behalf of registrars, such as a provider of personal data registration services or an agent or reseller;
+
+yc) "digital service": service, as defined in paragraph b) of paragraph 2 of article 2 of Presidential Decree 81/2018 (Government Gazette A' 151),
+
+(k) "trust service": technical specification, as defined in point (16) of Article 3 of Regulation (EU) No 910/2014 of the European Parliament and of the Council of 23 July 2014 on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC (L 257),
+
+(k) "trust service provider": trust service provider, as defined in point (19) of Article 3 of Regulation (EU) 910/2014,
+
+(xf) "qualified trust service": qualified trust service, as defined in point (17) of Article 3 of Regulation (EU) 910/2014,
+
+(g) "qualified trust service provider": qualified trust service provider, as defined in point (20) of Article 3 of Regulation (EU) 910/2014,
+
+(ii) "online/internet market": online/internet market, as defined in paragraph 7 of article 3 of Law 2251/1994 (Government Gazette A' 191),
+
+(v) “online/internet search engine”: online/internet search engine, as defined in paragraph 5) of Article 2 of the Regulation
+
+(EU) 2019/1150 of the European Parliament and of the Council of 20 June 2019 on promoting fair treatment and transparency for business users of online intermediation services (L 186),
+
+(l) ‘cloud computing service’ means a digital service that enables on-demand management and widespread remote access to a scalable and elastic pool of shared computing resources, including when those resources are distributed across multiple locations;
+
+(la) "data centre service": a service that includes structures, or groups of structures, intended for the central hosting, interconnection and operation of information technology and network equipment and providing data storage, processing and transmission services, as well as all power distribution and environmental control facilities and infrastructure;
+
+(lv) "content distribution network": a network of geographically distributed servers aimed at ensuring high availability and accessibility or rapid delivery of digital content and digital services to internet users on behalf of content and service providers;
+
+(lc) ‘social networking service platform’ means a platform that allows end-users to connect, exchange, search and communicate with each other through multiple electronic means, in particular through conversations, posts, videos and recommendations;
+
+(d) “representative” means a natural or legal person established in Greece who has been expressly designated to act on behalf of a Domain Name System (DNS) service provider, a top-level domain (TLD) registry, an entity providing domain name registration services, a cloud computing service provider, a data center service provider, a content distribution network provider, a managed services provider, a managed security services provider, an online/online marketplace provider, an online/online search engine or a social networking service platform not established in the European Union, to whom the National Cybersecurity Authority or CSIRT may address itself instead of the entity itself with regard to the obligations of that entity under this law;
+
+(le) ‘public administration entity’ means an entity recognised as such under national law, not including courts, parliaments or the central bank, which meets the following criteria:
+
+(ea) it has been established for the purpose of meeting needs in the general interest and does not have an industrial or commercial character,
+
+(b) has legal personality or is legally entitled to act on behalf of another entity with legal personality,
+
+(e) it is financed for the most part by the State, regional authorities or other bodies governed by public law, is subject to management control by such authorities or bodies or has an administrative, management or supervisory board, more than half of whose members are appointed by the State, regional authorities or other bodies governed by public law,
+
+(d) has the power to issue administrative acts affecting the rights of natural or legal persons in the cross-border movement of persons, goods, services or capital,
+
+lst) "public electronic communications network": public electronic communications network, as defined in sub-paragraph 5) of paragraph A of article 110 of Law 4727/2020,
+
+lg) "electronic communications service": electronic communications service, as defined in sub-paragraph 39) of paragraph A of article 110 of Law 4727/2020,
+
+(l) "entity" means a natural or legal person established and recognised as such under the national law of its place of establishment or of the place of provision of services and pursuit of activities, which may, acting on its own behalf, exercise rights and be subject to obligations;
+
+(lh) "managed service provider" means an entity that provides services related to the installation, management, operation or maintenance of information and communication technology (ICT) products, networks, infrastructure, applications or any other network and information systems, through assistance or active management performed either at the customer's premises or remotely;
+
+(m) ‘managed security service provider’ means a managed service provider that performs or provides support for activities related to cybersecurity risk management, including incident response, penetration testing and security audits;
+
+(ma) "research organisation": an entity whose primary objective is to conduct applied research or experimental development with a view to exploiting the results of such research for commercial purposes, but does not include educational institutions.
+
+CHAPTER C
+COORDINATED CYBERSECURITY REGULATORY FRAMEWORKS

@@ -1,0 +1,81 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article9 a :RegulationRule ;
+    rdfs:label "Article 9" ;
+    :subject "National cyber crisis management framework" ;
+    :references :Article9_Directive2022_2555 ;
+    :appliesTo :NationalCybersecurityAuthority, :EU_CyCLONe ;
+    :requires :LargeScaleIncidentCrisisManagementPlan .
+
+:Article9_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 9 of Directive (EU) 2022/2555" .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" ;
+    :role :CyberCrisisManagementAuthority .
+
+:EU_CyCLONe a :LegalEntity ;
+    rdfs:label "European Network of Liaison Organizations for Cyber Crises (EU-CyCLONe)" .
+
+:CyberCrisisManagementAuthority a :Role ;
+    rdfs:label "Cyber Crisis Management Authority" .
+
+:LargeScaleIncidentCrisisManagementPlan a :Obligation ;
+    rdfs:label "National plan for responding to large-scale incidents and crises in cyberspace" ;
+    :requires :NationalPreparednessObjectives, :NCSAuthorityDutiesResponsibilities, :CyberCrisisManagementProcedures, :NationalPreparednessMeasures, :StakeholderInfrastructureIdentification, :EULevelCoordinationProcedures ;
+    :basedOn :paragraph7_article30, :article22_law5002_2022 ;
+    :approvalProcess :OneMonthApprovalProcess .
+
+:NationalPreparednessObjectives a :Obligation ;
+    rdfs:label "Objectives of national preparedness measures and activities" .
+
+:NCSAuthorityDutiesResponsibilities a :Obligation ;
+    rdfs:label "Duties and responsibilities of the National Cybersecurity Authority as a cyber crisis management authority" .
+
+:CyberCrisisManagementProcedures a :Obligation ;
+    rdfs:label "Cyber crisis management procedures" .
+
+:NationalPreparednessMeasures a :Obligation ;
+    rdfs:label "National preparedness measures, including exercises and training activities" .
+
+:StakeholderInfrastructureIdentification a :Obligation ;
+    rdfs:label "Identification of public and private stakeholders and infrastructure" .
+
+:EULevelCoordinationProcedures a :Obligation ;
+    rdfs:label "Procedures between the competent authorities and bodies to ensure the effective participation and provision of support by the country in the coordinated management of large-scale incidents and crises in the field of cybersecurity at European Union level" .
+
+:paragraph7_article30 a :LegalBasis ;
+    rdfs:label "paragraph 7 of article 30" .
+
+:article22_law5002_2022 a :LegalBasis ;
+    rdfs:label "article 22 of law 5002/2022" .
+
+:OneMonthApprovalProcess a :Process ;
+    rdfs:label "One-month approval process" ;
+    :definedIn :article23_law5002_2022 ;
+    :defaultApproval :TacitApproval .
+
+:article23_law5002_2022 a :LegalBasis ;
+    rdfs:label "article 23 of law 5002/2022" .
+
+:TacitApproval a :ApprovalMethod ;
+    rdfs:label "Tacit Approval" .
+
+:NotificationToEuropeanCommission a :Obligation ;
+    rdfs:label "Notification to the European Commission of designation as competent authority and subsequent changes" ;
+    :requires :CompetentAuthorityDesignationDetails, :NationalPlanDetails ;
+    :timeLimit :ThreeMonths .
+
+:CompetentAuthorityDesignationDetails a :InformationElement ;
+    rdfs:label "Details of designation as competent authority" .
+
+:NationalPlanDetails a :InformationElement ;
+    rdfs:label "Details of the national plan for responding to large-scale incidents and crises in the field of cybersecurity" .
+
+:ThreeMonths a :TimePeriod ;
+    rdfs:label "Three Months" .
+
+```

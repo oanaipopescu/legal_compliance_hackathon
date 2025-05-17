@@ -1,0 +1,100 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article3 a :RegulationRule ;
+    rdfs:label "Article 3" ;
+    :subject "Scope of application" ;
+    :appliesTo :SME, :LargeEnterprise, :CriticalEntities, :PublicElectronicCommunicationsServiceProvider, :TrustServiceProvider, :Top_Level_Domain_Name_Registry, :DomainNameSystemServiceProvider, :EssentialServiceProvider, :SignificantImpactEntity, :SystemicRiskEntity, :NationallyCriticalEntity, :CentralGovernmentBody, :FirstDegreeLocalGovernment, :SecondDegreeLocalGovernment, :DomainNameRegistrationServiceProvider ;
+    :excludes :NationalSecurityEntity ;
+    :references :Directive2022_2555, :CommissionRecommendation2003_361, :Directive2022_2557, :Regulation910_2014, :Regulation2022_2554, :Regulation2016_679, :Law4624_2019, :Law3471_2006, :Law4270_2014 ;
+    :requires :DataProtectionCompliance .
+
+:SME a :LegalEntity ;
+    rdfs:label "Small and Medium-sized Enterprises" ;
+    :definedIn :CommissionRecommendation2003_361 .
+
+:LargeEnterprise a :LegalEntity ;
+    rdfs:label "Large Enterprises" ;
+    :definedBy :CommissionRecommendation2003_361 .
+
+:PublicElectronicCommunicationsServiceProvider a :LegalEntity ;
+    rdfs:label "Public Electronic Communications Service Provider" .
+
+:TrustServiceProvider a :LegalEntity ;
+    rdfs:label "Trust Service Provider" .
+
+:Top_Level_Domain_Name_Registry a :LegalEntity ;
+    rdfs:label "Top-Level Domain Name Registry" .
+
+:DomainNameSystemServiceProvider a :LegalEntity ;
+    rdfs:label "Domain Name System Service Provider" .
+
+:EssentialServiceProvider a :LegalEntity ;
+    rdfs:label "Essential Service Provider" .
+
+:SignificantImpactEntity a :LegalEntity ;
+    rdfs:label "Entity whose service disruption has significant impact" .
+
+:SystemicRiskEntity a :LegalEntity ;
+    rdfs:label "Entity whose service disruption causes systemic risk" .
+
+:NationallyCriticalEntity a :LegalEntity ;
+    rdfs:label "Nationally Critical Entity" .
+
+:CentralGovernmentBody a :LegalEntity ;
+    rdfs:label "Central Government Body" ;
+    :definedIn :Law4270_2014 .
+
+:FirstDegreeLocalGovernment a :LegalEntity ;
+    rdfs:label "First-degree Local Government Organization" .
+
+:SecondDegreeLocalGovernment a :LegalEntity ;
+    rdfs:label "Second-degree Local Government Organization" .
+
+:DomainNameRegistrationServiceProvider a :LegalEntity ;
+    rdfs:label "Domain Name Registration Service Provider" .
+
+:NationalSecurityEntity a :LegalEntity ;
+    rdfs:label "National Security Entity" .
+
+:DataProtectionCompliance a :Obligation ;
+    rdfs:label "Data Protection Compliance" ;
+    :requires :PersonalDataProcessingCompliance .
+
+
+:PersonalDataProcessingCompliance a :Obligation;
+    rdfs:label "Personal Data Processing in compliance with Regulation (EU) 2016/679";
+    :appliesTo :NationalCybersecurityAuthority, :CSIRT, :PublicElectronicCommunicationsServiceProvider ;
+    :basedOn :Article6_Regulation2016_679 .
+
+:Article6_Regulation2016_679 a :LegalBasis ;
+    rdfs:label "Article 6 of Regulation (EU) 2016/679" .
+
+:CommissionRecommendation2003_361 a :EU_Recommendation ;
+    rdfs:label "Commission Recommendation 2003/361/EC" .
+
+:Regulation2022_2554 a :EU_Regulation ;
+    rdfs:label "Regulation (EU) 2022/2554" .
+
+:Regulation2016_679 a :EU_Regulation ;
+    rdfs:label "Regulation (EU) 2016/679" .
+
+:Law4624_2019 a :NationalLaw ;
+    rdfs:label "Law 4624/2019" .
+
+:Law3471_2006 a :NationalLaw ;
+    rdfs:label "Law 3471/2006" .
+
+:Law4270_2014 a :NationalLaw ;
+    rdfs:label "Law 4270/2014" .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" ;
+    :definedIn :Law5086_2024 .
+
+:Law5086_2024 a :NationalLaw ;
+    rdfs:label "Law 5086/2024".
+
+```

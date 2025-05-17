@@ -1,0 +1,9 @@
+Article 29
+More specific arrangements for providers of public electronic communications networks or publicly available electronic communications services
+1. The Communications Privacy Authority (CPA) may, within the framework of its responsibilities, oblige providers of public electronic communications networks or publicly available electronic communications services to take enhanced cybersecurity measures, in addition to those provided for in the other provisions of this Part.
+
+2. Providers of public electronic communications networks or publicly available electronic communications services shall notify, without delay, any incident that has a significant impact on the operation of networks and services to ADAE in accordance with its regulations in force at any time and to the National Cybersecurity Authority (NACA) in accordance with article 16. NACA in turn shall notify the events that have an impact on the availability or integrity of networks or services to the National Telecommunications and Postal Commission. ADAE may inform the public or require such information from the providers, provided that it considers that the disclosure of the event is in the public interest.
+
+3. ADAE cooperates, as appropriate, in accordance with the provisions of applicable legislation, with the competent law enforcement authorities, with the Hellenic Data Protection Authority and with the Personal Data Protection Authority (HDPA).
+
+4. ADAE is designated as a sectoral point of contact and cooperation at national level with the National Cybersecurity Authority (National Sectorial Focal Point, NSFP) with regard to providers of public electronic communications networks or publicly available electronic communications services, pursuant to the second paragraph of paragraph 6 of article 13. The joint ministerial decision of paragraph 26 of

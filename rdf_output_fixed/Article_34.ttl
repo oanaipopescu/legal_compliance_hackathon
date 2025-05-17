@@ -1,0 +1,73 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article34 a :RegulationRule ;
+    rdfs:label "Article 34" ;
+    :subject "Arrangements for the appointment of an Information and Communications Systems Security Officer" ;
+    :amends :Article18_Law4961_2022, :Article113_Law4961_2022 ;
+    :requires :ICSSOSpecification, :NationalCybersecurityCertificationSchemes .
+
+:Article18_Law4961_2022 a :LegalProvision ;
+    rdfs:label "Article 18 of Law 4961/2022" ;
+    :subject "Information and Communications Systems Security Officer" .
+
+:ICSSOSpecification a :Obligation ;
+    rdfs:label "Specification of Information and Communications Systems Security Officer (ICSSO)" ;
+    :details :ICSSO_amendment_a, :ICSSO_amendment_b .
+
+:ICSSO_amendment_a a :Amendment ;
+    rdfs:label "Amendment a)" ;
+    :replaces "IT or IT Specialist" ;
+    :with "IT Specialist of any specialty or IT Specialist category of IT specialty (SOFTWARE or HARDWARE)" .
+
+:ICSSO_amendment_b a :Amendment ;
+    rdfs:label "Amendment b)" ;
+    :adds :NewParagraph2_Article18_Law4961_2022 .
+
+:NewParagraph2_Article18_Law4961_2022 a :Paragraph ;
+    rdfs:label "New paragraph 2 of Article 18 of Law 4961/2022" ;
+    :text """In the absence of an employee of the IT sector category PE or TE, an employee of any IT sector category PE or TE is appointed by the decision of the first paragraph. The YASPE is appointed based on the experience he has in the field of cybersecurity.""" .
+
+:Article113_Law4961_2022 a :LegalProvision ;
+    rdfs:label "Article 113 of Law 4961/2022" ;
+    :subject "Authorizing provisions" .
+
+:NationalCybersecurityCertificationSchemes a :Obligation ;
+    rdfs:label "Establishment of national cybersecurity certification schemes" ;
+    :requires :JointDecisionMinisterDigitalGovernanceRelevantMinister, :RecommendationNationalCybersecurityCertificationAuthority ;
+    :basedOn :Regulation2019_881 .
+
+:JointDecisionMinisterDigitalGovernanceRelevantMinister a :Decision ;
+    rdfs:label "Joint decision of the Minister of Digital Governance and the relevant Minister" .
+
+:RecommendationNationalCybersecurityCertificationAuthority a :Recommendation ;
+    rdfs:label "Recommendation from the national cybersecurity certification authority" ;
+    :basedOn :Article15_paragraph1 .
+
+:Article15_paragraph1 a :LegalBasis ;
+    rdfs:label "paragraph 1 of Article 15" .
+
+:Regulation2019_881 a :EU_Regulation ;
+    rdfs:label "Regulation (EU) 2019/881" ;
+    :concerns "ENISA and cybersecurity certification" .
+
+:CentralGovernmentBody a :LegalEntity ;
+    rdfs:label "Central Government Body" ;
+    :definedIn :Article14_paragraph1c_Law4270_2014 .
+
+:Article14_paragraph1c_Law4270_2014 a :LegalBasis ;
+    rdfs:label "paragraph c of paragraph 1 of article 14 of law 4270/2014" .
+
+:Law4270_2014 a :NationalLaw ;
+    rdfs:label "Law 4270/2014".
+
+:YASPE a :Role ;
+    rdfs:label "Head of Information and Communications Systems Security" .
+
+:ITSpecialist a :Role ;
+    rdfs:label "IT Specialist" .
+
+:Law4961_2022 a :NationalLaw;
+    rdfs:label "Law 4961/2022".

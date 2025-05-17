@@ -1,0 +1,312 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article30_paragraph1 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 1" ;
+    :postpones :Article3_paragraph2f_subparagraph_fb ;
+    :requires :JointDecisionMinistersDigitalGovernanceInterior .
+
+:JointDecisionMinistersDigitalGovernanceInterior a :Decision ;
+    rdfs:label "Joint Decision of Ministers of Digital Governance and Interior" .
+
+:Article3_paragraph2f_subparagraph_fb a :RegulationRule ;
+    rdfs:label "sub-paragraph fb) of paragraph f) of paragraph 2 of article 3" .
+
+
+:Article30_paragraph2a a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 2a" ;
+    :includes :OtherPublicOrPrivateSectorBodies ;
+    :requires :JointDecisionMinisterDigitalGovernanceRelevantMinister, :OpinionDirectorNationalCybersecurityAuthority .
+
+:OtherPublicOrPrivateSectorBodies a :LegalEntityClass ;
+    rdfs:label "Other Public or Private Sector Bodies" .
+
+:JointDecisionMinisterDigitalGovernanceRelevantMinister a :Decision ;
+    rdfs:label "Joint Decision of Minister of Digital Governance and the relevant Minister" .
+
+:OpinionDirectorNationalCybersecurityAuthority a :Opinion ;
+    rdfs:label "Opinion from the Director of the National Cybersecurity Authority" .
+
+
+:Article30_paragraph2b a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 2b" ;
+    :exempts :SpecificEntities ;
+    :from :Article3_obligations ;
+    :requires :JointDecisionMinisterDigitalGovernanceRelevantMinister .
+
+:SpecificEntities a :LegalEntityClass ;
+    rdfs:label "Specific entities carrying out activities in national security, public order, defence or law enforcement" .
+
+:Article3_obligations a :Obligation ;
+    rdfs:label "Obligations laid down in Articles 15 or 16" ;
+    :includes :Article15_obligations, :Article16_obligations .
+
+:Article15_obligations a :Obligation ;
+    rdfs:label "Obligations of Article 15" .
+
+:Article16_obligations a :Obligation ;
+    rdfs:label "Obligations of Article 16" .
+
+
+:Article30_paragraph2b_exemption a :Exemption ;
+    rdfs:label "Exemption from Articles 4 and 19" ;
+    :appliesTo :EntitiesExclusivelyReferredInParagraph2b ;
+    :requires :JointDecisionMinisterDigitalGovernanceRelevantMinister .
+
+:EntitiesExclusivelyReferredInParagraph2b a :LegalEntityClass ;
+    rdfs:label "Entities carrying out activities or providing services exclusively as referred to in the first paragraph of Article 30, paragraph 2b" .
+
+
+:Article30_paragraph2c a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 2c" ;
+    :specifies :Article3_paragraph2 ;
+    :requires :DecisionDirectorNationalCybersecurityAuthority .
+
+:Article3_paragraph2 a :RegulationRule ;
+    rdfs:label "paragraph 2 of article 3" .
+
+:DecisionDirectorNationalCybersecurityAuthority a :Decision ;
+    rdfs:label "Decision of the Director of the National Cybersecurity Authority" .
+
+
+:Article30_paragraph3 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 3" ;
+    :drawsUp :Article4_list ;
+    :requires :DecisionDirectorNationalCybersecurityAuthority ;
+    :deadline "4 Months"^^xsd:duration .
+
+:Article4_list a :List ;
+    rdfs:label "List of Article 4 key and important entities" .
+
+:Article30_paragraph4 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 4" ;
+    :creates :DigitalPlatformForEntityRegistration ;
+    :requires :DecisionMinisterDigitalGovernance .
+
+:DigitalPlatformForEntityRegistration a :DigitalPlatform ;
+    rdfs:label "Digital Platform for Registration of Key and Important Entities" .
+
+:DecisionMinisterDigitalGovernance a :Decision ;
+    rdfs:label "Decision of the Minister of Digital Governance" .
+
+
+:Article30_paragraph5 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 5" ;
+    :approves :NationalCybersecurityStrategy ;
+    :requires :DecisionMinisterDigitalGovernance, :OpinionDirectorNationalCybersecurityAuthority ;
+    :deadline "6 Months"^^xsd:duration .
+
+:NationalCybersecurityStrategy a :NationalStrategy ;
+    rdfs:label "National Cybersecurity Strategy of Article 7" .
+
+
+:Article30_paragraph6 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 6" ;
+    :determines :Article9_resources ;
+    :requires :DecisionDirectorNationalCybersecurityAuthority ;
+    :deadline "4 Months"^^xsd:duration .
+
+:Article9_resources a :ResourceList ;
+    rdfs:label "Resources for Article 9 crisis management" .
+
+
+:Article30_paragraph7 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 7" ;
+    :drawsUp :NationalPlanLargeScaleIncidentsCrises ;
+    :requires :DecisionDirectorNationalCybersecurityAuthority, :ApprovalCoordinationCommitteeCybersecurityIssues ;
+    :deadline "6 Months"^^xsd:duration ;
+    :approvalPeriod "1 Month"^^xsd:duration .
+
+:NationalPlanLargeScaleIncidentsCrises a :Plan ;
+    rdfs:label "National Plan for Responding to Large-Scale Incidents and Crises in Cyberspace" .
+
+:ApprovalCoordinationCommitteeCybersecurityIssues a :Approval ;
+    rdfs:label "Approval by the Coordination Committee for Cybersecurity Issues" .
+
+
+:Article30_paragraph8 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 8" ;
+    :designates :OtherCSIRTs ;
+    :requires :JointDecisionMinisterDigitalGovernanceCompetentMinister, :OpinionDirectorNationalCybersecurityAuthority .
+
+:OtherCSIRTs a :LegalEntityClass ;
+    rdfs:label "Other CSIRTs" .
+
+:JointDecisionMinisterDigitalGovernanceCompetentMinister a :Decision ;
+    rdfs:label "Joint Decision of Minister of Digital Governance and the Competent Minister" .
+
+
+:Article30_paragraph9 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 9" ;
+    :establishes :SpecialResponseTeams ;
+    :requires :DecisionDirectorNationalCybersecurityAuthority, :JointDecisionDirectorNationalCybersecurityAuthorityDirectorNationalIntelligenceService .
+
+:SpecialResponseTeams a :LegalEntityClass ;
+    rdfs:label "Special Response Teams" .
+
+:JointDecisionDirectorNationalCybersecurityAuthorityDirectorNationalIntelligenceService a :Decision ;
+    rdfs:label "Joint Decision of Director of National Cybersecurity Authority and Director of National Intelligence Service" .
+
+
+:Article30_paragraph10 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 10" ;
+    :ensures :AnonymityVulnerabilityReporters ;
+    :requires :DecisionDirectorNationalCybersecurityAuthority .
+
+:AnonymityVulnerabilityReporters a :Obligation ;
+    rdfs:label "Anonymity of Vulnerability Reporters" .
+
+
+:Article30_paragraph11 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 11" ;
+    :designates :NationalSectorialFocalPoints ;
+    :requires :DecisionMinisterDigitalGovernanceRelevantMinister .
+
+:NationalSectorialFocalPoints a :LegalEntityClass ;
+    rdfs:label "National Sectorial Focal Points (NSFPs)" .
+
+:DecisionMinisterDigitalGovernanceRelevantMinister a :Decision ;
+    rdfs:label "Decision of Minister of Digital Governance and the Relevant Minister" .
+
+
+:Article30_paragraph12 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 12" ;
+    :determines :Article14_paragraph2_details ;
+    :requires :JointDecisionMinistersDigitalGovernanceEducationReligiousAffairsSportsLaborSocialSecurity, :OpinionDirectorNationalCybersecurityAuthority .
+
+:Article14_paragraph2_details a :Details ;
+    rdfs:label "Details of Article 14, paragraph 2" .
+
+:JointDecisionMinistersDigitalGovernanceEducationReligiousAffairsSportsLaborSocialSecurity a :Decision ;
+    rdfs:label "Joint Decision of Ministers of Digital Governance, Education, Religious Affairs and Sports, and Labor and Social Security" .
+
+
+:Article30_paragraph13 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 13" ;
+    :determines :NationalFrameworkCybersecurityRequirements, :ICSSOsDetails ;
+    :requires :DecisionMinisterDigitalGovernance .
+
+:NationalFrameworkCybersecurityRequirements a :Framework ;
+    rdfs:label "National Framework of Cybersecurity Requirements" .
+
+:ICSSOsDetails a :Details ;
+    rdfs:label "Details of Information and Communications Systems Security Officers (ICSSOs)" .
+
+
+:Article30_paragraph14 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 14" ;
+    :determines :UnifiedCybersecurityPolicyTemplate ;
+    :requires :DecisionDirectorNationalCybersecurityAuthority .
+
+:UnifiedCybersecurityPolicyTemplate a :Template ;
+    rdfs:label "Standardized Template for Unified Cybersecurity Policy" .
+
+
+:Article30_paragraph15 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 15" ;
+    :regulates :Article15_implementationDetails ;
+    :requires :DecisionDirectorNationalCybersecurityAuthority .
+
+:Article15_implementationDetails a :Details ;
+    rdfs:label "Implementation Details of Article 15" .
+
+
+:Article30_paragraph16 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 16" ;
+    :specifies :SignificantIncidentDetails ;
+    :requires :DecisionDirectorNationalCybersecurityAuthority .
+
+:SignificantIncidentDetails a :Details ;
+    rdfs:label "Details for Classifying Significant Incidents (Article 16)" .
+
+
+:Article30_paragraph17 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 17" ;
+    :carriesOut :Article15_paragraph6 ;
+    :requires :DecisionDirectorNationalCybersecurityAuthority .
+
+:Article15_paragraph6 a :RegulationRule ;
+    rdfs:label "paragraph 6 of article 15" .
+
+
+:Article30_paragraph18 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 18" ;
+    :determines :Article20_publicationTermsProcedures ;
+    :requires :JointDecisionDirectorNationalCybersecurityAuthorityPresidentNationalTelecommunicationsPostCommission .
+
+:Article20_publicationTermsProcedures a :TermsProcedures ;
+    rdfs:label "Terms and Procedures for Publication (Article 20)" .
+
+:JointDecisionDirectorNationalCybersecurityAuthorityPresidentNationalTelecommunicationsPostCommission a :Decision ;
+    rdfs:label "Joint Decision of Director of National Cybersecurity Authority and President of National Telecommunications and Post Commission" .
+
+
+:Article30_paragraph19 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 19" ;
+    :provides :Article21_measuresActions ;
+    :requires :DecisionDirectorNationalCybersecurityAuthority .
+
+:Article21_measuresActions a :MeasuresActions ;
+    rdfs:label "Measures and Actions for Information Exchange (Article 21)" .
+
+
+:Article30_paragraph20 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 20" ;
+    :determines :Article23_paragraph1_details ;
+    :requires :JointDecisionMinistersNationalEconomyFinanceDigitalGovernance, :OpinionDirectorNationalCybersecurityAuthority ;
+    :deadline "3 Months"^^xsd:duration .
+
+:Article23_paragraph1_details a :Details ;
+    rdfs:label "Details of Article 23, paragraph 1 (Supervision and Audit Fees)" .
+
+:JointDecisionMinistersNationalEconomyFinanceDigitalGovernance a :Decision ;
+    rdfs:label "Joint Decision of Ministers of National Economy and Finance, and Digital Governance" .
+
+
+:Article30_paragraph21 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 21" ;
+    :assigns :ControlInspectionTasks ;
+    :requires :DecisionDirectorNationalCybersecurityAuthority .
+
+:ControlInspectionTasks a :Tasks ;
+    rdfs:label "Control and Inspection Tasks" .
+
+
+:Article30_paragraph22 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 22" ;
+    :approves :ControlSupervisionRegulationNationalCybersecurityAuthority ;
+    :requires :DecisionGovernorNationalCybersecurityAuthority ;
+    :deadline "3 Months"^^xsd:duration .
+
+:ControlSupervisionRegulationNationalCybersecurityAuthority a :Regulation ;
+    rdfs:label "Control and Supervision Regulation of the National Cybersecurity Authority" .
+
+:DecisionGovernorNationalCybersecurityAuthority a :Decision ;
+    rdfs:label "Decision of the Governor of the National Cybersecurity Authority" .
+
+
+:Article30_paragraph23 a :AuthorizingProvision ;
+    rdfs:label "Article 30, paragraph 23" ;
+    :determines :Article26_fineTermsConditionsProcedure ;
+    :requires :JointDecisionMinistersNationalEconomyFinanceInteriorDigitalGovernance, :OpinionDirectorNationalCybersecurityAuthority .
+
+:Article26_fineTermsConditionsProcedure a :TermsConditionsProcedure ;
+    rdfs:label "Terms, Conditions and Procedure for Imposing Fines (Article 26)" .
+
+:JointDecisionMinistersNationalEconomyFinanceInteriorDigitalGovernance a :Decision ;
+    rdfs:label "Joint Decision of Ministers of National Economy and Finance, Interior, and Digital Governance" .
+
+
+:Article30 a :RegulationRule ;
+    rdfs:label "Article 30" ;
+    :subject "Authorizing Provisions" ;
+    :doesNotAffect :NACA_ADAE_responsibilities ;
+    :chapter :ChapterEight .
+
+:NACA_ADAE_responsibilities a :Responsibilities ;
+    rdfs:label "Responsibilities of NACA and ADAE" .
+
+:ChapterEight a :Chapter ;
+    rdfs:label "Chapter Eight: Embargo, Transitional, Final and Repeal Provisions" .

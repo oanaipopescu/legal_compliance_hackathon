@@ -1,0 +1,37 @@
+Article 15, monitor their implementation and be liable for any breach by the entities of the obligations of this Regulation. This Regulation shall not affect the applicable rules on liability of public administration entities, as well as the liability of public officials and elected or appointed officials.
+
+2. Members of the management bodies of key and significant entities shall attend training and ensure that key and significant entities provide similar training to their employees at least on an annual basis, in order to acquire sufficient knowledge and skills that allow them to identify risks and assess cybersecurity risk management practices and their impact on the services provided by the entity.
+
+Article 15
+Risk management measures in the field of cybersecurity (article 21 and paragraph 1 of article 24 of Directive (EU) 2022/2555)
+1. Key and significant entities shall take appropriate and proportionate technical, operational and organisational measures to manage the risks to the security of network and information systems that they use for their activities or for the provision of their services and to prevent or minimise the impact of incidents on recipients of their services or on other services and organisations. Taking into account the most up-to-date and, where appropriate, relevant national, European and international standards, as well as the cost of implementation, the measures referred to in the first subparagraph shall ensure a level of security of network and information systems that is proportionate to the risk involved. When assessing the proportionality of those measures, account shall be taken of the entity's exposure to risks, the size of the entity, the likelihood of incidents occurring and their severity, including their social and economic impact.
+
+2. The measures referred to in paragraph 1 shall be based on a holistic approach to risk aimed at protecting network and information systems and the physical environment of such systems from incidents, and shall include at least the following:
+
+a) policies and procedures for risk analysis and information systems security,
+
+b) incident management, c) business continuity, such as backup management and disaster recovery, as well as crisis management,
+
+(d) supply chain security, including security-related aspects concerning the relationships between each entity and its direct suppliers or service providers;
+
+e) security in the acquisition, development and maintenance of network and information systems, including the handling and disclosure of vulnerabilities,
+
+f) policies and procedures for assessing the effectiveness of risk management measures in the field of cybersecurity,
+
+g) basic cyber hygiene practices and cybersecurity training,
+
+h) policies and procedures regarding the use of cryptography and, where applicable, encryption, in cooperation with the national CRYPTO authority, where required,
+
+i) human resources security, access control policies and asset management,
+
+(j) use of multi-factor authentication or continuous authentication solutions, secure voice communications, video and text communications and secure emergency communications systems within the entity, as appropriate.
+
+3. If the measures referred to in point d) of paragraph 2 are deemed, in accordance with the decision of paragraph 15 of article 30, to be appropriate, entities shall take into account the vulnerabilities that characterize each direct supplier and service provider, the overall quality of the products and cybersecurity practices of their suppliers and service providers, including their secure development processes, as well as the results of the coordinated risk assessments of critical supply chains carried out in accordance with paragraph 1 of article 22 of Directive 2022/2555.
+
+4. Any entity that finds that it is not complying with the measures provided for in paragraph 2 shall take, without delay, all necessary, appropriate and proportionate corrective measures.
+
+5. The main and significant entities: a) They shall designate a competent executive, with appropriate qualifications and expertise, as the Information and Communications Systems Security Officer (ICSSO), who shall undertake:
+
+aa) managing all kinds of communications and contacts with the National Cybersecurity Authority,
+
+(bb) the diligence and internal coordination for the compliance of the entity concerned with the requirements of this article, as well as the reporting requirements of incidents in accordance with

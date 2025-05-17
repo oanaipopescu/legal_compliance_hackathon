@@ -1,0 +1,65 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article42 a :RegulationRule ;
+    rdfs:label "Article 42" ;
+    :subject "Guides for the execution of the transportation project of the Thessaloniki Urban Transport Organization" ;
+    :requires :AutomaticContractRenewal_150Drivers, :AutomaticContractRenewal_40Drivers .
+
+:AutomaticContractRenewal_150Drivers a :Obligation ;
+    rdfs:label "Automatic Renewal of Contracts for 150 Drivers" ;
+    :appliesTo :OASTH_Drivers_SOX1_2023 ;
+    :until :ProjectCompletion_OASTH ;
+    :maximumDuration "2025-06-30"^^xsd:date ;
+    :employmentType :PrivateLawFixedTermContract ;
+    :specialization :DriverTraining ;
+    :numberOfContracts "150"^^xsd:integer ;
+    :basedOn :Article41_Law5131_2024 .
+
+:OASTH_Drivers_SOX1_2023 a :LegalEntityClass ;
+    rdfs:label "Drivers hired by OASTH under Announcement SOX 1/2023" .
+
+:ProjectCompletion_OASTH a :Condition ;
+    rdfs:label "Completion of the transportation project assignment to OASTH" .
+
+:Article41_Law5131_2024 a :LegalBasis ;
+    rdfs:label "Article 41 of Law 5131/2024" .
+
+:AutomaticContractRenewal_40Drivers a :Obligation ;
+    rdfs:label "Automatic Renewal of Contracts for 40 Drivers" ;
+    :appliesTo :OASTH_Drivers_SOX1_2024 ;
+    :until :ProjectCompletion_OASTH ;
+    :maximumDuration "2025-06-30"^^xsd:date ;
+    :employmentType :PrivateLawFixedTermContract ;
+    :specialization :DriverTraining ;
+    :numberOfContracts "40"^^xsd:integer ;
+    :basedOn :Announcement_SOX1_2024 .
+
+:OASTH_Drivers_SOX1_2024 a :LegalEntityClass ;
+    rdfs:label "Drivers hired by OASTH under Announcement SOX 1/2024" .
+
+:Announcement_SOX1_2024 a :Announcement ;
+    rdfs:label "Announcement SOX 1/2024" .
+
+:ContractRenewal_NoChangeEmployment a :Obligation ;
+    rdfs:label "Contract Renewal: No Change in Employment Relationship" ;
+    :appliesTo :OASTH_Drivers_SOX1_2023, :OASTH_Drivers_SOX1_2024 ;
+    :excludes :MaximumPeriod_24Months .
+
+:MaximumPeriod_24Months a :Condition ;
+    rdfs:label "Maximum Period of 24 Months" ;
+    :definedIn :Articles5to7_PresidentialDecree164_2004 .
+
+:Articles5to7_PresidentialDecree164_2004 a :LegalBasis ;
+    rdfs:label "Articles 5 to 7 of Presidential Decree 164/2004" .
+
+:PrivateLawFixedTermContract a :EmploymentType ;
+    rdfs:label "Private Law Fixed-Term Employment Contract" .
+
+:DriverTraining a :Specialization ;
+    rdfs:label "Driver Training" .
+
+:OASTH a :LegalEntity ;
+    rdfs:label "URBAN TRANSPORT ORGANIZATION OF THESSALONIKI (O.A.S.T.H.)" .

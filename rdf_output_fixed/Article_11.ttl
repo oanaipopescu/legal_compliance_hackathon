@@ -1,0 +1,212 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article11 a :RegulationRule ;
+    rdfs:label "Article 11" ;
+    :subject "Requirements, technical capabilities and tasks of computer security incident response teams (CSIRTs)" ;
+    :references :Article11_Directive2022_2555 ;
+    :appliesTo :CSIRT ;
+    :requires :HighCommunicationAvailability, :SecureFacilities, :RequestManagementSystem, :ConfidentialityReliability, :AdequateStaffingTraining, :BackupSystems .
+
+:Article11_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 11 of Directive (EU) 2022/2555" .
+
+:HighCommunicationAvailability a :Obligation ;
+    rdfs:label "High Availability of Communication Channels" ;
+    :requires :RedundantCommunication .
+
+:RedundantCommunication a :Obligation;
+    rdfs:label "Alternative Communication Channels".
+
+:SecureFacilities a :Obligation ;
+    rdfs:label "Secure Facilities and Supporting Information Systems" .
+
+:RequestManagementSystem a :Obligation ;
+    rdfs:label "Appropriate Request Management and Routing System" .
+
+:ConfidentialityReliability a :Obligation ;
+    rdfs:label "Confidentiality and Reliability of Activities" .
+
+:AdequateStaffingTraining a :Obligation ;
+    rdfs:label "Adequate Staffing and Training" .
+
+:BackupSystems a :Obligation ;
+    rdfs:label "Backup Systems and Workspace" .
+
+:CSIRT a :Role ;
+    rdfs:label "Computer Security Incident Response Team" ;
+    :tasks :CyberThreatMonitoringAnalysis, :TimelyWarningsAlerts, :IncidentResponseAssistance, :ForensicDataCollectionAnalysis, :ProactiveVulnerabilityScanning, :ParticipationInCSIRTNetwork, :SecureInformationExchangeToolDevelopment, :ProactiveScanning .
+
+:CyberThreatMonitoringAnalysis a :Obligation ;
+    rdfs:label "Monitoring and Analysis of Cyber Threats, Vulnerabilities and Incidents" .
+
+:TimelyWarningsAlerts a :Obligation ;
+    rdfs:label "Providing Timely Warnings, Alerts, Announcements and Information" .
+
+:IncidentResponseAssistance a :Obligation ;
+    rdfs:label "Incident Response and Assistance" .
+
+:ForensicDataCollectionAnalysis a :Obligation ;
+    rdfs:label "Collection and Analysis of Forensic Data and Dynamic Analysis of Risks and Incidents" .
+
+:ProactiveVulnerabilityScanning a :Obligation ;
+    rdfs:label "Proactive Scanning of Network and Information Systems to Identify Vulnerabilities" .
+
+:ParticipationInCSIRTNetwork a :Obligation ;
+    rdfs:label "Participation in the CSIRTs Network" ;
+    :references :Article15_Directive2022_2555 .
+
+:Article15_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 15 of Directive (EU) 2022/2555" .
+
+:SecureInformationExchangeToolDevelopment a :Obligation ;
+    rdfs:label "Contribution to the Development of Secure Information Exchange Tools" ;
+    :references :paragraph4_Article10 .
+
+:paragraph4_Article10 a :LegalBasis ;
+    rdfs:label "paragraph 4 of Article 10" .
+
+:ProactiveScanning a :Obligation ;
+    rdfs:label "Proactive Non-Intrusive Scanning of Publicly Accessible Network and Information Systems" ;
+    :conditionalOn :NoNegativeImpactOnServices .
+
+:NoNegativeImpactOnServices a :Condition ;
+    rdfs:label "No Negative Impact on Entities' Services" .
+
+:CSIRT a :LegalEntity ;
+    rdfs:label "Computer Security Incident Response Team";
+    :mayCooperateWith :PrivateSectorStakeholders ;
+    :promotes :CommonStandardizedPractices .
+
+:PrivateSectorStakeholders a :LegalEntityClass ;
+    rdfs:label "Private Sector Stakeholders".
+
+:CommonStandardizedPractices a :Obligation ;
+    rdfs:label "Common or Standardized Practices" ;
+    :concerns :IncidentManagementProcedures, :CrisisManagement, :CoordinatedVulnerabilityDisclosure .
+
+:IncidentManagementProcedures a :DefinedTerm ;
+    rdfs:label "Incident Management Procedures" .
+
+:CrisisManagement a :DefinedTerm ;
+    rdfs:label "Crisis Management" .
+
+:CoordinatedVulnerabilityDisclosure a :DefinedTerm ;
+    rdfs:label "Coordinated Vulnerability Disclosure" ;
+    :references :paragraph1_ArticleUndetermined .
+
+:paragraph1_ArticleUndetermined a :LegalBasis ;
+    rdfs:label "paragraph 1 of Article Undetermined" .
+
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" ;
+    :requires :IncidentHandling .
+
+:IncidentHandling a :Obligation;
+    rdfs:label "Incident Handling";
+    :appliesTo :CSIRT ;
+    :requires :PromptNotification, :AssistanceToAuthority .
+
+:PromptNotification a :Obligation ;
+    rdfs:label "Prompt Notification of Incidents" .
+
+:AssistanceToAuthority a :Obligation ;
+    rdfs:label "Prompt Assistance to the National Cybersecurity Authority" .
+
+:NationalCERT a :LegalEntity ;
+    rdfs:label "National CERT (Cybersecurity Response Team)" ;
+    :directlyInvolvedIn :IncidentsConcerningSpecificEntities .
+
+:IncidentsConcerningSpecificEntities a :Obligation ;
+    rdfs:label "Incidents Concerning Entities of paragraph f) of paragraph 2 of Article 3" ;
+    :appliesTo :NationalCERT .
+
+:CSIRT a :LegalEntity ;
+    rdfs:label "Computer Security Incident Response Team" ;
+    :mayEstablishCooperativeRelationsWith :ThirdCountryCSIRTs .
+
+:ThirdCountryCSIRTs a :LegalEntityClass ;
+    rdfs:label "National Computer Incident Response Teams of a Third Country" ;
+    :mayExchange :PersonalData .
+
+:PersonalData a :DefinedTerm ;
+    rdfs:label "Personal Data" ;
+    :processingBasedOn :Regulation2016_679 .
+
+:Regulation2016_679 a :EU_Regulation ;
+    rdfs:label "Regulation (EU) 2016/679" .
+
+:mayExchange a :Permission;
+    rdfs:label "May Exchange".
+
+:SpecialResponseTeams a :LegalEntityClass ;
+    rdfs:label "Special Response Teams";
+    :members :NationalCybersecurityAuthorityRepresentatives, :GeneralStaffRepresentatives, :NationalIntelligenceServiceRepresentatives, :NSFPRepresentatives ;
+    :requires :PreliminaryReport, :UpdatedReport, :DetailedReport ;
+    :expensesCoveredBy :NationalCybersecurityAuthority .
+
+:NationalCybersecurityAuthorityRepresentatives a :LegalEntityClass ;
+    rdfs:label "Representatives of the National Cybersecurity Authority".
+
+:GeneralStaffRepresentatives a :LegalEntityClass ;
+    rdfs:label "Representatives of the competent organizational unit of the General Staff of National Defence".
+
+:NationalIntelligenceServiceRepresentatives a :LegalEntityClass ;
+    rdfs:label "Representatives of the Cyberspace Directorate of the National Intelligence Service".
+
+:NSFPRepresentatives a :LegalEntityClass ;
+    rdfs:label "Representatives of the National Sectorial Focal Points (NSFP)".
+
+:PreliminaryReport a :Obligation ;
+    rdfs:label "Preliminary Report within 24 hours" .
+
+:UpdatedReport a :Obligation ;
+    rdfs:label "Updated Report within 72 hours" .
+
+:DetailedReport a :Obligation ;
+    rdfs:label "Detailed Report within 1 month" .
+
+:expensesCoveredBy a :FundingSource;
+    rdfs:label "Expenses Covered By".
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority";
+    :notifies :EuropeanCommission .
+
+:EuropeanCommission a :LegalEntity ;
+    rdfs:label "European Commission".
+
+:notifies a :Obligation ;
+    rdfs:label "Notifies".
+
+:InformationExchange a :Obligation ;
+    rdfs:label "Information Exchange";
+    :appliesTo :CSIRT ;
+    :requires :SecureInformationExchangeTools ;
+    :with :KeyImportantEntities, :OtherRelevantStakeholders .
+
+:SecureInformationExchangeTools a :Obligation ;
+    rdfs:label "Secure Information Exchange Tools" .
+
+:KeyImportantEntities a :LegalEntityClass ;
+    rdfs:label "Key and Important Entities" .
+
+:OtherRelevantStakeholders a :LegalEntityClass ;
+    rdfs:label "Other Relevant Stakeholders" .
+
+:Cooperation a :Obligation ;
+    rdfs:label "Cooperation";
+    :appliesTo :CSIRT ;
+    :with :NationalCybersecurityAuthority, :SectoralCrossSectoralCommunities .
+
+:SectoralCrossSectoralCommunities a :LegalEntityClass ;
+    rdfs:label "Sectoral or Cross-sectoral Communities of Key and Important Entities" .
+
+:PeerReviews a :Obligation;
+    rdfs:label "Participation in Peer Reviews";
+    :references :Article19_Directive2022_2555 .
+
+:Article19_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 19 of Directive (EU) 2022/2555" .

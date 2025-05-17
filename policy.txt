@@ -1,0 +1,145 @@
+1 Introduction
+The Security Incident Management Standard focuses on incident management topics with respect to security requirements which is subject to the Corporate Security Policy. All underlying security incident management related documentation contained in Standard and Local Operation Procedures, guidelines, templates for reports and baselines is derived from and subjected to this Standard.
+1.1 Purpose 
+The purpose of this document is to define the mandatory requirements and high-level approach for consistent and effective security incident management enabling Signify to minimize the impact of and learn from security incidents.
+1.2 Scope 
+This Standard sets out the security requirements with regards to the management of information, operational and product security incidents within the company. It applies to all businesses, markets and functions, as well as our suppliers.
+Overall SOC, CERT, forensic investigation, disaster recovery planning, and problem management processes are not in scope of this Standard.
+1.3 Governance & Document Change Management 
+This Standard is owned and maintained by the Corporate Security department within Signify, issued by the Chief Security Officer (CSO) and Head of the Security Governance, Risk & Compliance (GRC). Input, comments and change requests can be provided via the Head of Security GRC or his delegate, Manager Security Policy & Procedures.
+2 Generic Procedures and Requirements
+2.1 Responsibilities and Procedures 
+Responsibilities and procedures as described in next chapters shall be established to ensure that adequate response is given to (suspected) security events and incidents, thereby preventing and/or mitigating potential harm to the company’s people, assets, information, products, brands, reputation and customers, partners and service providers. Responsibilities and procedures for security incident management need to be consistent with the provisions made in corporate policies including the Corporate Security Policy.
+2.2 Reporting Security Incidents 
+A procedure for centralized reporting of security incidents shall be established that allows for a timely, efficient and consistent reporting of security incidents, including the set up of appropriate people and organizations being informed and appropriate secured communication channels. Reporting of Security Incidents must comply with the company’s legal and regulatory requirements. All employees, contractors and suppliers shall be made aware of their responsibility to report security events as well as the procedure and channels for reporting them. This must be in line with the Signify Crisis Management SOP.
+2.3 Reporting Security Weaknesses 
+Weaknesses in the company’s security controls may occur anywhere in the organization. For mitigating all actual security incidents and improving the quality of security throughout organizations, the products, systems and services the company provides including vendors and customers using company’s assets; weaknesses and incidents must be reported as soon as possible through the appropriate channels.
+Unless there is a Responsible Disclosure in place, it must not be attempted to prove a suspected security weakness by people other than authorized security teams like the Security Operations Center. Testing security weaknesses by unauthorized people may be interpreted as a potential misuse of a resource.
+2.4 Assessment of, and Decision on Security Events 
+To assure continuity of the Signify organization, standardization and escalation of security events is vital to ensure that major security breaches are handled responsibly. Each security event must be assessed in order to decide whether the event meets the criteria to be classified as a security incident. 
+Classification and prioritization of events shall take place in order to identify the impact and extent of an event. Results of the assessment and decision must be recorded in detail for the purpose of future reference and verification. Knowledge about a potential or ongoing security incident must be provided on a need to know basis and shall be communicated over secure channels.
+2.5 Response to Security Incidents 
+To create standard information and reporting flows within Signify, it is essential that security incidents must be responded to in accordance with the documented procedures as described in next chapters. Procedures are to ensure effective, timely and consistent response to minimize impact of an incident. Signify Security Operation Centers shall be included in the incident resolution process in accordance with the Signify Crisis Management Plan, and Business Continuity Management.
+2.6 Learning from Security Incidents 
+In addition to detecting and taking action to resolve security incidents, it is important to create continuous feedback loops. Lessons learned activities shall be conducted periodically after a major incident to improve security measures and the incident handling process itself. By reviewing what occurred, what was done to remediate, and how well a remediation worked a learning opportunity is created which contributes to the continuous improvement cycle. 
+2.7 Collection of Evidence 
+To the extent required, it is important that Signify ensures the collection of admissible and complete evidence for any security incident that takes place for the purposes of disciplinary and legal action in strict coordination with the Legal Department. Local Operation Procedures shall be established for the identification, collection, acquisition and preservation of evidence in accordance with different types of media to maintain a chain of custody and safety of data, personnel, assets and evidence. 
+The requirements of different jurisdictions and countries must be considered when developing these Local Operation Procedures in order to maximize chances of admission of the evidence across different nations and to validate whether such process is permissible in the specific country.
+3 Information Security Specific Procedure
+3.1 Scope 
+The scope of this chapter is to define information security incident management in the context of:
+• Information security incidents derived from security tickets of users by the service desk;
+• Information security incidents derived from monitoring of security events by IT operations, SOC, or security operations. Refer to Information Security Monitoring Standard for sources that will be monitored for deriving information security incidents, which include but is not limited to vulnerability management and threat intelligence.
+This chapter describes information security incident management in the scope of ITIL, which is equivalent to the Incident Handling part of the CMU/ SEI standard, i.e. Defining Incident Management Processes for CSIRTs. 
+For information security incident management, the SOC adapts the NIST Computer Security Incident Handling Guide, references to the guide are included where useful.
+3.1 Context 
+In this chapter the requirements regarding information security incident management are addressed in the respective information security incident management process step and categorized under the respective 
+NIST phase:
+NIST Phase 1: Preparation:
+The requirements for planning, building, and running security capabilities which are input for the information security incident management capability for identifying information security incidents are not part of the scope of this chapter.
+NIST Phase 2: Detection and Analysis:
+The requirements regarding analysis of security monitoring alerts, vulnerability scanning results, and threat intelligence are not part of the scope of this chapter but are addressed in the Information Security Monitoring Standard. In the information security incident identification process step below only, the prerequisites regarding detection and analysis are mentioned.
+1. Information security incident identification;
+2. Information security incident registration;
+3. Information security incident categorization;
+4. Information security incident prioritization;
+NIST Phase 3: Containment, Eradication & Recovery:
+5. Information security incident response;
+NIST Phase 4: Post-Incident Activity:
+6. Reporting and learning from information security incidents.
+Since the term triage in information security incident management is interpreted differently, even between information security experts, as well as not unambiguously defined in industry standards, we distinct and define the following two types: 
+Triage of security alerts, events and security tickets: Analyzing security events and alerts, vulnerability scan results, and threat intelligence to identify potential information security incidents.
+Triage of information security incidents: Determining severity and priority of information security incidents.
+The former is part of the Information Security Monitoring Standard and the latter is part of this Standard and described in section 3.7 Information security incident prioritization.
+3.2 Responsibilities and Procedures 
+In case high classified (confidential or secret) information is impacted due to an information security incident, the Major Event Team as an actor shall be established.
+In case a security incident does not qualify as a Major Event even then the security incident will be referred to Legal Counsel supporting CSO to ensure appropriate legal assessment. 
+If personal data is impacted, Privacy related incident procedures shall be followed accordingly and for legal obligations Legal Counsel supporting CSO shall be notified.
+3.3 Assessment of, and Decision on Information Security Events 
+The IT Security Operations Center (SOC) is responsible for assessing Information Security events within the company. 
+3.4 Information security incident identification 
+Service owner/ delivery manager is responsible for event logging, management, and monitoring of alerts regarding security for their services.
+Users must be instructed in the appropriate usage of information and IT technology, made aware of recognizing information security events, and are responsible for reporting information security events to the service desk.
+Service owner/ delivery manager is responsible for triaging whether security events for their services represent an actual information security incident.
+Service desk is responsible for initial triaging whether a security ticket raised by a user represents an actual information security incident.
+3.5 Information security incident registration 
+A single point of contact, i.e. service desk, must be assigned where information security events reported by users are registered.
+The single point of contact for registering information security incidents must be communicated to users.
+Service desk personnel must be instructed and trained on the processing of information security incidents, including querying the user for details and in case needed assigning the information security incident to the appropriate service delivery manager.
+At least the following information regarding an information security incident must be registered:
+o Unique identification;
+o Status;
+o Name of the user;
+o Indicators;
+o Assets and/ or services affected;
+o Name of the security incident handler;
+o Information security incident flag;
+o Information security incident category;
+o Summary of the information security incident;
+o Related incidents;
+o Detailed description the information security incident;
+o Actions taken;
+o Chain of custody;
+o Impact assessments;
+o Contact info of involved parties;
+o List of gathered evidence during investigation;
+o Comments from incident handlers;
+o Next steps including involvement of right stakeholders such as legal, business, etc.
+Responsible for information security incident registration in the incident management system is service delivery or service desk who identified the information security incident. Examples of service delivery groups are:
+o IT Operations responsible for management and monitoring of systems, through e.g. Windows Azure cloud infrastructure, or the network.
+o Security Operation Center (SOC) responsible for management and monitoring of security intelligence and analytics systems, such as SIEM, FireEye, Carbon Black, and Windows Defender.
+o Security Operations responsible for security management and monitoring, e.g. ePO.
+3.6 Information security incident categorization 
+The incident management system in which information security incidents are registered must have the option to flag an information security incident as such.
+It must be possible to apply one of the following categories to an information security incident:
+o Malware;
+o Social Engineering;
+o Hacking and Attacks;
+o Error;
+o Misuse;
+o Physical.
+Dependent on the sensitivity of the information security incident it must be possible to restrict access on a need-to-know basis, e.g. on departmental or named basis. 
+3.7 Information security incident prioritization 
+Information security incidents must be assigned a severity level, i.e. high, medium, or low, based on functional impact, information impact, and recoverability effort, to determine prioritization.
+The severity level and prioritization can be determined by applying the table below. For determining the severity only one of the properties have to be met.
+1.	Severity: High 
+Properties: 
+• Functional Impact: some (critical) services cannot be delivered to any users and 10 or more users or assets are affected. 
+• Information Impact: confidentiality or integrity compromised of Secret Classified information. 
+• Recoverability Effort: recovery from the incident is not possible and time to recover is unpredictable and additional resources and external expertise might be needed. 
+• Response Time: Immediate
+2.	Severity: Medium 
+• Functional Impact: some (critical) services cannot be delivered to any users and 5 to 10 users or assets are affected. 
+• Information Impact: confidentiality or integrity compromised of Confidential Classified information. 
+• Recoverability Effort: time to recover is predictable and additional resources might be needed. 
+• Response Time: 1 hour 
+3.	Severity Low: 
+• Functional Impact: all (critical) services can still be delivered but with lost efficiency and less than 5 users or assets are affected. 
+• Information Impact: confidentiality or integrity compromised of Internal Classified information.  
+• Recoverability Effort: time to recover is predictable with existing resources.
+• Response time: 2 hours  
+
+3.8 Response to Information Security Incidents 
+The Security Operations Center shall be included in the incident resolution process in accordance with the company’s Crisis Management SOP, and Business Continuity Management SOP.
+An information security incident management process must be developed, including which lines of service support are differentiated and responsible for handling which type of information security incidents, e.g.:
+o 1st line support: Service desk for information security incidents originating from users.
+o 2nd line support: IT operations or security operations for information security incidents originating from monitoring of security events or escalated information security incidents from 1st line support.
+o 3rd line support: SOC/ CERT for information security incidents originating from monitoring of security events or escalated information security incidents from 1st line or 2nd line support.
+o 4th line support: External vendor/ product support.
+Information security incident handling procedures must be developed for response and resolution to information security incidents. The procedures should describe details of multi-disciplinary support teams including Legal, Communications, IT, etc.
+3.9 Reporting and learning from information security incidents 
+For closing an information security incident lessons learned must be documented.
+For closing high severity information security incidents, a post-incident report and meeting is required. The persons involved in this process can be derived from the table in section 3.7.
+Periodic KPI reporting, e.g. on a monthly basis, regarding information security incident management must be provided to information security office, containing minimal the following information:
+o Number of reported information security incidents per month;
+o Counting per information security incident category per month;
+o Status in terms of new, assigned, in progress, on hold or pending, resolved, and closed information security incidents for each month, including history;
+o Response time to information security incidents.
+o Idle time of an information security incident during a specific status or queue;
+o Throughput time of an information security incident.
+Information security incident reporting should be analyzed by information security office and/ or SOC/ CERT to determine security areas which need improvement to include in future security plans. 
+4 Specific Procedures for other security domains
+4.1 Product Security 
+Specific procedures for Product Security are described in the Incident Management of Product Security SOP.
+4.2 Operational Security 
+Specific procedures for Operational Security are described in the Operational Security SOP, chapter 4.

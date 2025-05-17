@@ -1,38 +1,68 @@
 import os
 import google.generativeai as genai
 
-# Load text from file
-with open("translated_regulations/belgium.txt", "r", encoding="utf-8") as f:
-    legal_text = f.read()
+# === Setup ===
+ARTICLE_FOLDER = "greek_articles"
+OUTPUT_FOLDER = "rdf_output"
+API_KEY_FILE = "api_key.txt"
+MODEL_NAME = "models/gemini-1.5-flash"
 
-# --- Set up Google Gemini API
-with open("api_key.txt", "r", encoding="utf-8") as key_file:
+# === Ensure output folder exists ===
+os.makedirs(OUTPUT_FOLDER, exist_ok=True)
+
+# === Load API key and configure Gemini ===
+with open(API_KEY_FILE, "r", encoding="utf-8") as key_file:
     api_key = key_file.read().strip()
-
 genai.configure(api_key=api_key)
 
-# Get available models to use the correct model name
-models = genai.list_models()
-print("Available models:", [model.name for model in models])
+model = genai.GenerativeModel(MODEL_NAME)
 
-# Use a different model that might have a separate quota limit
-model = genai.GenerativeModel("models/gemini-1.5-flash")  # Using flash instead of pro
+# === Get sorted list of article files ===
+article_files = sorted(
+    [f for f in os.listdir(ARTICLE_FOLDER) if f.lower().startswith("article") and f.endswith(".txt")],
+    key=lambda x: int("".join(filter(str.isdigit, x)))
+)
 
-# Prompt to instruct Gemini
-prompt = """
+previous_translations = []
+
+# === Process each article ===
+for i, filename in enumerate(article_files):
+    filepath = os.path.join(ARTICLE_FOLDER, filename)
+    with open(filepath, "r", encoding="utf-8") as f:
+        article_text = f.read().strip()
+
+    # Build prompt, including previous RDF outputs if available
+    context = "\n\n".join(previous_translations)
+    prompt = f"""
 You are an expert in legal informatics. Given a legal or policy document, extract the key legal entities, classes (like PersonalData), and obligations (like encryption requirements), and represent them as RDF triples in Turtle format. Use a namespace prefix like:
   @prefix : <http://example.org#> .
 Use classes such as `:RegulationRule`, `:PersonalData`, `:requires`, `:appliesTo`, and attributes like `:encrypted`. Output only valid RDF in Turtle syntax.
 
+Context from previous articles:
+{context}
+
 Here is the text to process:
-""" + legal_text
+{article_text}
+"""
 
-# Get RDF response
-response = model.generate_content(prompt)
-rdf_output = response.text.strip()
+    # Generate RDF using Gemini
+    print(f"🔍 Processing {filename}...")
+    try:
+        response = model.generate_content(prompt)
+        rdf_output = response.text.strip()
+    except Exception as e:
+        print(f"❌ Error in {filename}: {e}")
+        continue
 
-# Save output
-with open("output.ttl", "w", encoding="utf-8") as f:
-    f.write(rdf_output)
+    # Save RDF output
+    output_filename = filename.replace(".txt", ".ttl")
+    output_path = os.path.join(OUTPUT_FOLDER, output_filename)
+    with open(output_path, "w", encoding="utf-8") as f:
+        f.write(rdf_output)
 
-print("RDF Turtle saved to output.ttl")
+    print(f"✅ Saved RDF: {output_filename}")
+
+    # Store this translation for future context
+    previous_translations.append(rdf_output)
+
+print("\n🎉 All articles processed.")

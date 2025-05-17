@@ -1,0 +1,84 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article20 a :RegulationRule ;
+    rdfs:label "Article 20" ;
+    :subject "Domain name registration database" ;
+    :references :Article28_Directive2022_2555, :Regulation2016_679, :Law4624_2019 ;
+    :appliesTo :TopLevelDomainNameRegistry, :DomainNameRegistrationServiceProvider ;
+    :requires :AccurateCompleteDomainNameRegistrationData, :PubliclyAvailableDomainNameRegistrationData, :AccessToSpecificDomainNameRegistrationData, :CooperationBetweenRegistriesAndProviders .
+
+:Article28_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 28 of Directive (EU) 2022/2555" .
+
+:AccurateCompleteDomainNameRegistrationData a :Obligation ;
+    rdfs:label "Collection and maintenance of accurate and complete domain name registration data" ;
+    :requires :DueDiligence, :ComplianceWithGDPR .
+
+:DueDiligence a :Obligation ;
+    rdfs:label "Due Diligence" .
+
+:ComplianceWithGDPR a :Obligation ;
+    rdfs:label "Compliance with GDPR" ;
+    :basedOn :Regulation2016_679 .
+
+:PubliclyAvailableDomainNameRegistrationData a :Obligation ;
+    rdfs:label "Making publicly available domain name registration data that is not personal data" ;
+    :requires :PromptPublication .
+
+:PromptPublication a :Obligation ;
+    rdfs:label "Prompt Publication" .
+
+:AccessToSpecificDomainNameRegistrationData a :Obligation ;
+    rdfs:label "Providing access to specific domain name registration data upon lawful requests" ;
+    :requires :ComplianceWithGDPR, :TimelyResponse .
+
+:TimelyResponse a :Obligation ;
+    rdfs:label "Timely Response to Access Requests" ;
+    :timeLimit "72 Hours"^^xsd:duration .
+
+:CooperationBetweenRegistriesAndProviders a :Obligation ;
+    rdfs:label "Cooperation between TLD registries and entities providing domain name registration services" ;
+    :purpose "avoid duplication of data collection" .
+
+:DomainNameRegistrationDatabase a :Database ;
+    rdfs:label "Domain Name Registration Database" ;
+    :contains :DomainName, :RegistrationDate, :RegistrantName, :RegistrantEmailAddress, :RegistrantTelephoneNumber, :ContactPointEmailAddress, :ContactPointTelephoneNumber .
+
+:DomainName a :InformationElement ;
+    rdfs:label "Domain Name" .
+
+:RegistrationDate a :InformationElement ;
+    rdfs:label "Registration Date" .
+
+:RegistrantName a :InformationElement ;
+    rdfs:label "Registrant Name" .
+
+:RegistrantEmailAddress a :InformationElement ;
+    rdfs:label "Registrant Email Address" .
+
+:RegistrantTelephoneNumber a :InformationElement ;
+    rdfs:label "Registrant Telephone Number" .
+
+:ContactPointEmailAddress a :InformationElement ;
+    rdfs:label "Contact Point Email Address" .
+
+:ContactPointTelephoneNumber a :InformationElement ;
+    rdfs:label "Contact Point Telephone Number" .
+
+:TopLevelDomainNameRegistry a :LegalEntity ;
+    rdfs:label "Top-Level Domain Name Registry" .
+
+:DomainNameRegistrationServiceProvider a :LegalEntity ;
+    rdfs:label "Entity Providing Domain Name Registration Services" .
+
+:Regulation2016_679 a :EU_Regulation ;
+    rdfs:label "Regulation (EU) 2016/679" .
+
+:Law4624_2019 a :NationalLaw ;
+    rdfs:label "Law 4624/2019" .
+
+:ChapterFive a :Chapter ;
+    rdfs:label "Chapter Five: Information Exchange" .

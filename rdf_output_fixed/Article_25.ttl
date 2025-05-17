@@ -1,0 +1,91 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article25 a :RegulationRule ;
+    rdfs:label "Article 25" ;
+    rdfs:comment "Supervisory and enforcement measures in relation to significant entities (Article 33 of Directive (EU) 2022/2555)" ;
+    :appliesTo :SignificantEntities ;
+    :references :Article33_Directive2022_2555 ;
+    :requires :EffectiveProportionateDissuasiveMeasures .
+
+:Article33_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 33 of Directive (EU) 2022/2555" .
+
+:EffectiveProportionateDissuasiveMeasures a :Obligation ;
+    rdfs:label "Effective, Proportionate and Dissuasive Measures" .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" ;
+    :hasCompetence :OnSiteInspectionsSupervision, :TargetedSecurityAudits, :SecurityScans, :InformationRequests, :DataDocumentInformationAccessRequests, :EvidenceRequests ;
+    :responsibilities :IssueWarningsRecommendations, :IssueBindingInstructionsGuidelines, :OrderCessationOfConduct, :OrderComplianceWithArticles15_16, :InstructInformationToAffectedPersons, :InstructImplementationOfRecommendations, :AppointCompetentSupervisor, :OrderPublicInformationOnViolations, :ImposeAdministrativeFines .
+
+:OnSiteInspectionsSupervision a :Competence ;
+    rdfs:label "On-site inspections and repressive supervision" ;
+    :carriedOutBy :InspectorsOfNCSA .
+
+:InspectorsOfNCSA a :LegalEntityClass ;
+    rdfs:label "Inspectors of the National Cybersecurity Authority" ;
+    :definedIn :Article23 .
+
+:TargetedSecurityAudits a :Competence ;
+    rdfs:label "Targeted Security Audits" ;
+    :basedOn :RiskAssessments .
+
+:RiskAssessments a :LegalBasis ;
+    rdfs:label "Risk Assessments" .
+
+:SecurityScans a :Competence ;
+    rdfs:label "Security Scans" ;
+    :requires :ObjectiveImpartialFairTransparentRiskAssessmentCriteria .
+
+:ObjectiveImpartialFairTransparentRiskAssessmentCriteria a :Obligation ;
+    rdfs:label "Objective, Impartial, Fair and Transparent Risk Assessment Criteria" .
+
+:InformationRequests a :Competence ;
+    rdfs:label "Requests for Necessary Information" ;
+    :requires :Article19Compliance .
+
+:Article19Compliance a :Obligation ;
+    rdfs:label "Compliance with Article 19 reporting obligations".
+
+:DataDocumentInformationAccessRequests a :Competence ;
+    rdfs:label "Requests for Access to Data, Documents and Information" .
+
+:EvidenceRequests a :Competence ;
+    rdfs:label "Requests for Evidence" .
+
+:IssueWarningsRecommendations a :Responsibility ;
+    rdfs:label "Issue warnings or recommendations" .
+
+:IssueBindingInstructionsGuidelines a :Responsibility ;
+    rdfs:label "Issue binding instructions and guidelines" .
+
+:OrderCessationOfConduct a :Responsibility ;
+    rdfs:label "Order cessation of conduct" .
+
+:OrderComplianceWithArticles15_16 a :Responsibility ;
+    rdfs:label "Order compliance with Articles 15 and 16" .
+
+:InstructInformationToAffectedPersons a :Responsibility ;
+    rdfs:label "Instruct relevant entities to inform affected persons" .
+
+:InstructImplementationOfRecommendations a :Responsibility ;
+    rdfs:label "Instruct implementation of recommendations" .
+
+:AppointCompetentSupervisor a :Responsibility ;
+    rdfs:label "Appoint a competent supervisor" .
+
+:OrderPublicInformationOnViolations a :Responsibility ;
+    rdfs:label "Order public information on violations" .
+
+:ImposeAdministrativeFines a :Responsibility ;
+    rdfs:label "Impose administrative fines" ;
+    :basedOn :Article26 .
+
+:Article26 a :RegulationRule ;
+    rdfs:label "Article 26" .
+
+:SignificantEntities a :LegalEntityClass ;
+    rdfs:label "Significant Entities" .

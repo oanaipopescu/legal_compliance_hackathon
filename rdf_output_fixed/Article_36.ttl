@@ -1,0 +1,92 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article36 a :RegulationRule ;
+    rdfs:label "Article 36" ;
+    :subject "New deadline for correcting first registrations" ;
+    :amends :Article102_Law4623_2019 ;
+    :requires :DeadlineExtension_paragraph2_Article102_Law4623_2019, :DeadlineExtension_paragraph2A_Article102_Law4623_2019 .
+
+:Article102_Law4623_2019 a :LegalProvision ;
+    rdfs:label "Article 102 of Law 4623/2019" ;
+    :definedIn :Law4623_2019 .
+
+:Law4623_2019 a :NationalLaw ;
+    rdfs:label "Law 4623/2019" ;
+    :concerns "Regulations of the Ministry of Environment and Energy" .
+
+:DeadlineExtension_paragraph2_Article102_Law4623_2019 a :Obligation ;
+    rdfs:label "Deadline Extension for paragraph 2 of Article 102 of Law 4623/2019" ;
+    :newDeadline :OneYearAfterLandRegistrySystemImplementation ;
+    :appliesTo :AreasUnderCadastralRegistrationBeforeLaw3481_2006, :AreasWithFirstRegistrations2013_2017 ;
+    :exemption :AreasUnderCadastralRegistrationWithoutCadastreDecision .
+
+:OneYearAfterLandRegistrySystemImplementation a :TimePoint ;
+    rdfs:label "One year after the publication of an act establishing the implementation of the Land Registry system" ;
+    :determinedBy :BoardOfDirectors_HellenicLandRegistry .
+
+:BoardOfDirectors_HellenicLandRegistry a :LegalEntity ;
+    rdfs:label "Board of Directors of the Public Legal Entity \"Hellenic Land Registry\"" .
+
+:AreasUnderCadastralRegistrationBeforeLaw3481_2006 a :GeographicArea ;
+    rdfs:label "Areas under cadastral registration before the entry into force of Law 3481/2006" .
+
+:Law3481_2006 a :NationalLaw ;
+    rdfs:label "Law 3481/2006" .
+
+:AreasWithFirstRegistrations2013_2017 a :GeographicArea ;
+    rdfs:label "Areas with first registrations from 2013-01-01 to 2017-12-31"^^xsd:date .
+
+:AreasUnderCadastralRegistrationWithoutCadastreDecision a :GeographicArea ;
+    rdfs:label "Areas under cadastral registration without Cadastre decision at the entry into force of Law 4623/2019" ;
+    :deadline "December 31 of the year 8 years after Cadastre entry into force"^^xsd:string .
+
+:DeadlineExtension_paragraph2A_Article102_Law4623_2019 a :Obligation ;
+    rdfs:label "Deadline Extension for paragraph 2A of Article 102 of Law 4623/2019" ;
+    :newDeadline :OneYearAfterLandRegistrySystemImplementation ;
+    :appliesTo :AreasWithExpiredDeadlineBefore2018_11_30 ;
+    :conditions :NoSubsequentActsRegistered .
+
+:AreasWithExpiredDeadlineBefore2018_11_30 a :GeographicArea ;
+    rdfs:label "Areas with expired deadline before 2018-11-30"^^xsd:date .
+
+:NoSubsequentActsRegistered a :Condition ;
+    rdfs:label "No subsequent acts registered on the cadastral sheet after the exclusive deadline" .
+
+:HellenicCadastre a :LegalEntity ;
+    rdfs:label "Public Legal Entity \"Hellenic Cadastre\"" .
+
+:Law2664_1998 a :NationalLaw ;
+    rdfs:label "Law 2664/1998" ;
+    :article :Article6_paragraph2a, :Article18_paragraph1b, :Article6_paragraph2, :Article7_paragraph2 .
+
+:Article6_paragraph2a a :LegalProvision ;
+    rdfs:label "paragraph a of paragraph 2 of Article 6 of Law 2664/1998" .
+
+:Article18_paragraph1b a :LegalProvision ;
+    rdfs:label "sub-paragraphs aa), ab), ag) and ad) of paragraph b) of paragraph 1 of article 18 of law 2664/1998" .
+
+:Article6_paragraph2 a :LegalProvision ;
+    rdfs:label "paragraph 2 of article 6 of Law 2664/1998" .
+
+:Article7_paragraph2 a :LegalProvision ;
+    rdfs:label "paragraph 2 of article 7 of law 2664/1998" .
+
+:Article6_paragraph4 a :LegalProvision ;
+    rdfs:label "paragraph 4 of article 6 of law 2664/1998" .
+
+:GreekState a :LegalEntity ;
+    rdfs:label "Greek State" .
+
+:MortgageRegistry a :LegalEntity ;
+    rdfs:label "Mortgage Registry" .
+
+:CadastralOffice a :LegalEntity ;
+    rdfs:label "Cadastral Office" .
+
+:CadastralSheet a :Document ;
+    rdfs:label "Cadastral Sheet".
+
+This Turtle representation captures the key legal entities, classes, obligations, and deadlines specified in Article 36,  linking them to relevant articles and laws.  Note that some elements, like the precise definition of "subsequent acts," are not explicitly defined and would require further analysis of the referenced laws for complete representation.  The use of classes like `:GeographicArea`, `:TimePoint`, and `:Condition` helps structure the information effectively.

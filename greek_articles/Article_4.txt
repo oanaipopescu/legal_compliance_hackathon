@@ -1,0 +1,41 @@
+Article 4
+Key and significant entities (Article 3 of Directive (EU) 2022/2555)
+1. For the purposes of this Part, the following entities shall be considered as "core entities":
+
+a) entities in the sectors and subsectors listed in Annex I, which exceed the thresholds for medium-sized enterprises set out in paragraph 1 of Article 2 of the Annex to Commission Recommendation 2003/361/EC of 6 May 2003 concerning the definition of micro, small and medium-sized enterprises (OJ L 124, 20.12.2003, p. 1);
+
+b) approved trust service providers and top-level domain name registries, as well as Domain Name System service providers, regardless of their size,
+
+c) providers of public electronic communications networks or publicly available electronic communications services that are classified as medium-sized enterprises, pursuant to paragraph 1 of Article 2 of the Annex to Recommendation 2003/361/EC,
+
+d) entities referred to in sub-paragraph f) of paragraph 2 of article 3 hereof,
+
+e) any other entities of the sectors and sub-sectors referred to in Annexes I or II, which are identified as key entities in accordance with paragraphs b) to e) of paragraph 2 of Article 3 hereof,
+
+f) entities referred to in paragraph 3 of Article 3 hereof, which are identified as critical entities in accordance with Directive (EU) 2022/2557 of the European Parliament and of the Council of 14 December 2022 on the resilience of critical entities and repealing Council Directive 2008/114/EC (L 333),
+
+g) entities that were recognized, in accordance with article 4 of law 4577/2018 (A' 199) and article 16 of decision no. 1027/4.10.2019 of the Minister of State (B' 3739), before January 16, 2023, as operators of essential services.
+
+2. For the purposes of this Part, entities in the sectors and subsectors listed in Annexes I or II that are not considered to be key entities in accordance with paragraph 1 shall be considered to be significant entities. These include entities identified as significant entities in accordance with paragraphs b) to e) of paragraph 2 of Article 3.
+
+3. The National Cybersecurity Authority, in cooperation with the relevant regulatory/supervisory authorities and other national bodies involved in each sector, shall identify the key or significant entities referred to in points c) to e) of paragraph 2 of article 3 that fall within the scope of this Regulation. The National Cybersecurity Authority shall draw up a list of key and significant entities, as well as entities that provide domain name registration services, in accordance with paragraph 3 of article 30. For the purpose of drawing up the list, the entities referred to therein shall submit to the National Cybersecurity Authority, through the digital platform or in any other manner specified by the decision of paragraph 4 of article 30, within a period of two (2) months from the entry into force of this Regulation, the following information:
+
+a) the name of the entity,
+
+b) the address and updated contact details, including email addresses and telephone numbers of the entity, the range of internet addresses (IP ranges),
+
+c) the set of domain names used by the entity,
+
+(d) where applicable, the relevant sector, subsector and type of entity referred to in Annexes I or II and
+
+(e) where applicable, a list of the other Member States of the European Union in which they provide services falling within the scope of this Part.
+
+4. The entities of par. 3 shall notify the National Cybersecurity Authority of changes to the data submitted through the digital platform of par. 4 of article 30, without delay and in any case within two (2) weeks from the date of occurrence of the change, without prejudice to par. 2 of article 19.
+
+5. No later than April 17, 2025 and every two (2) years, the National Cybersecurity Authority shall notify:
+
+a) to the European Commission and the Cooperation Group to support and facilitate strategic cooperation and information exchange between Member States, as well as to enhance trust and confidence, the number of key and significant entities in accordance with paragraph 3 for each sector and subsector referred to in Annexes I or II and
+
+b) to the European Commission, information on the number of key and significant entities identified in accordance with points b) to e) of paragraph 2 of Article 3, the sector and subsector referred to in Annexes I or II to which they belong, the type of service they provide and the decision of paragraph 3 of Article 30.
+
+6. By 17 April 2025 and upon request of the European Commission, the National Cybersecurity Authority shall notify the European Commission of the names of the key and significant entities referred to in point b) of paragraph 5.

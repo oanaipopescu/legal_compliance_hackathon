@@ -1,0 +1,125 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article40 a :RegulationRule ;
+    rdfs:label "Article 40" ;
+    :subject "Maximum fee limit for doctors of the Special Body of Doctors of the Disability Certification Center" ;
+    :amends :Article104_Law4961_2022 ;
+    :requires :AmendmentParagraph3_Article104_Law4961_2022, :AmendmentParagraph4_Article104_Law4961_2022 .
+
+:Article104_Law4961_2022 a :LegalProvision ;
+    rdfs:label "Article 104 of Law 4961/2022" .
+
+:AmendmentParagraph3_Article104_Law4961_2022 a :Amendment ;
+    rdfs:label "Amendment to paragraph 3 of Article 104 of Law 4961/2022" ;
+    :replaces "The Public Health Care Structures (D.DFY.) and the National Organization for the Provision of Health Services (E.OPYY.)" ;
+    :with "The State bodies" ;
+    :newText """3. The health committees are established by specialty and meeting based on the submitted requests for an opinion and the main diseases in them, the location of the doctor, the residence of the applicant, the available specialties and the minor status of the applicant. In the case of an examination of a minor, the committee includes a doctor from the National Institute of Health with a specialty in pediatrics or another pediatric specialization, if available. Public bodies must allow the doctors serving them to participate in meetings of health committees, to which they have been appointed, at least five (5) days per month. The decision to appoint the health committee also appoints its chairman, who must hold a specialty corresponding to that of the committee.""" .
+
+:AmendmentParagraph4_Article104_Law4961_2022 a :Amendment ;
+    rdfs:label "Amendment to paragraph 4 of Article 104 of Law 4961/2022" ;
+    :changes :Change_ToTheDoctors_ToTheMembers, :Change_EvaluationRequestsDistribution, :Change_CompensationLimit_November1_2024, :Addition_Paragraph5 .
+
+:Change_ToTheDoctors_ToTheMembers a :Change ;
+    rdfs:label "Change 'To the doctors' to 'To the members'" ;
+    :oldText "To the doctors" ;
+    :newText "To the members" .
+
+:Change_EvaluationRequestsDistribution a :Change ;
+    rdfs:label "Change in evaluation requests distribution" ;
+    :addedText "Evaluation requests are equally distributed among the doctors of the National Health Insurance Corporation by category and specialty and" .
+
+:Change_CompensationLimit_November1_2024 a :Change ;
+    rdfs:label "Change in compensation limit from November 1, 2024" ;
+    :addedText "From November 1, 2024" ;
+    :oldText "double" ;
+    :newText "triple" .
+
+:Addition_Paragraph5 a :Addition ;
+    rdfs:label "Addition of paragraph 5" ;
+    :newText """For doctors of the National Institute of Health who travel outside their home country to perform their duties as president or member of the KEPA health committees, the e-EFKA pays the travel expenses (travel expenses, overnight expenses, daily allowance), which are paid in accordance with the provisions in force to public servants who travel outside their home country. The maximum annual travel limit is set at ninety (90) days.""" .
+
+:Law4961_2022 a :NationalLaw ;
+    rdfs:label "Law 4961/2022" .
+
+:eEFKA a :LegalEntity ;
+    rdfs:label "e-EFKA" ;
+    :pays :CompensationPerAssessedRequest, :CompensationPerControlledIncident, :TravelExpenses .
+
+:CompensationPerAssessedRequest a :Compensation ;
+    rdfs:label "Compensation per assessed request" .
+
+:CompensationPerControlledIncident a :Compensation ;
+    rdfs:label "Compensation per controlled incident" .
+
+:TravelExpenses a :Compensation ;
+    rdfs:label "Travel expenses" ;
+    :includes :TravelExpense, :OvernightExpense, :DailyAllowance .
+
+:TravelExpense a :ExpenseItem ;
+    rdfs:label "Travel Expenses" .
+
+:OvernightExpense a :ExpenseItem ;
+    rdfs:label "Overnight Expenses" .
+
+:DailyAllowance a :ExpenseItem ;
+    rdfs:label "Daily Allowance" .
+
+:CompensationLimit a :Limit ;
+    rdfs:label "Compensation Limit" ;
+    :maximumValue "TripleMonthlyMaximumSalaryLimit" ;
+    :appliesFrom "2024-11-01"^^xsd:date ;
+    :exception :InsufficientRheumatologyNeurologyPsychiatrySpecialists .
+
+:TripleMonthlyMaximumSalaryLimit a :MonetaryValue ;
+    rdfs:label "Three times the monthly maximum salary limit" ;
+    :definedIn :Article28_paragraph1_Law4354_2015 .
+
+:Article28_paragraph1_Law4354_2015 a :LegalBasis ;
+    rdfs:label "paragraph 1 of Article 28 of Law 4354/2015" .
+
+:Law4354_2015 a :NationalLaw ;
+    rdfs:label "Law 4354/2015" .
+
+:InsufficientRheumatologyNeurologyPsychiatrySpecialists a :Condition ;
+    rdfs:label "Insufficient number of rheumatology, neurology, and psychiatry specialists" ;
+    :compensationLimit :FiveTimesMonthlyMaximumSalaryLimit .
+
+:FiveTimesMonthlyMaximumSalaryLimit a :MonetaryValue ;
+    rdfs:label "Five times the monthly maximum salary limit" ;
+    :definedIn :Article28_paragraph1_Law4354_2015 .
+
+:KEPA a :LegalEntity ;
+    rdfs:label "Disability Certification Center (KEPA)" .
+
+:NationalInstituteOfHealth a :LegalEntity ;
+    rdfs:label "National Institute of Health" .
+
+
+:AnnualTravelLimit a :Limit ;
+    rdfs:label "Annual Travel Limit" ;
+    :maximumValue "90"^^xsd:integer ;
+    :unit "days" .
+
+:Doctor a :LegalEntity ;
+    rdfs:label "Doctor".
+
+:HealthCommittee a :LegalEntity ;
+    rdfs:label "Health Committee".
+
+:NationalHealthInsuranceCorporation a :LegalEntity ;
+    rdfs:label "National Health Insurance Corporation".
+
+:HellenicMedicalAssociation a :LegalEntity ;
+    rdfs:label "Hellenic Medical Association".
+
+:SamplingControlCommittee a :LegalEntity ;
+    rdfs:label "Sampling Control Committee".
+
+:Article109_paragraph5 a :LegalBasis ;
+    rdfs:label "paragraph 5 of article 109".
+
+```

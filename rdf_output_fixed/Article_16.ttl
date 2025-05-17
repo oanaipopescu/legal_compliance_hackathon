@@ -1,0 +1,196 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article16 a :RegulationRule ;
+    rdfs:label "Article 16" ;
+    :subject "Incident reporting obligations" ;
+    :references :Article23_Directive2022_2555 ;
+    :appliesTo :KeyEntities, :SignificantEntities, :TrustServiceProvider ;
+    :requires :IncidentNotificationToCSIRT, :SignificantCyberThreatNotification .
+
+:Article23_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 23 of Directive (EU) 2022/2555" .
+
+:IncidentNotificationToCSIRT a :Obligation ;
+    rdfs:label "Incident Notification to CSIRT" ;
+    :appliesTo :KeyEntities, :SignificantEntities ;
+    :requires :EarlyWarningNotification, :IncidentNotification, :InterimReport, :FinalReport, :ProgressReport ;
+    :timeLimit :24Hours, :72Hours, :OneMonth .
+
+:EarlyWarningNotification a :Obligation ;
+    rdfs:label "Early Warning Notification" ;
+    :timeLimit :24Hours .
+
+:IncidentNotification a :Obligation ;
+    rdfs:label "Incident Notification" ;
+    :timeLimit :72Hours .
+
+:InterimReport a :Obligation ;
+    rdfs:label "Interim Report" .
+
+:FinalReport a :Obligation ;
+    rdfs:label "Final Report" ;
+    :timeLimit :OneMonth .
+
+:ProgressReport a :Obligation ;
+    rdfs:label "Progress Report" .
+
+:24Hours a :TimePeriod ;
+    rdfs:label "24 Hours" .
+
+:72Hours a :TimePeriod ;
+    rdfs:label "72 Hours" .
+
+:OneMonth a :TimePeriod ;
+    rdfs:label "One Month" .
+
+:SignificantCyberThreatNotification a :Obligation ;
+    rdfs:label "Significant Cyber Threat Notification" ;
+    :appliesTo :KeyEntities, :SignificantEntities .
+
+:SignificantIncident a :DefinedTerm ;
+    rdfs:label "Significant Incident" ;
+    :definedBy :Article16_paragraph3 .
+
+:Article16_paragraph3 a :LegalBasis ;
+    rdfs:label "paragraph 3 of Article 16" .
+
+:KeyEntities a :LegalEntityClass ;
+    rdfs:label "Key Entities" .
+
+:SignificantEntities a :LegalEntityClass ;
+    rdfs:label "Significant Entities" .
+
+:TrustServiceProvider a :LegalEntity ;
+    rdfs:label "Trust Service Provider" ;
+    :requires :TrustServiceProviderIncidentNotification .
+
+:TrustServiceProviderIncidentNotification a :Obligation ;
+    rdfs:label "Trust Service Provider Incident Notification" ;
+    :timeLimit :24Hours .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" ;
+    :requires :AuthorityResponseToNotification, :SupportToEntity, :GuidanceOnReportingToAuthorities, :InformationToOtherMemberStatesAndENISA, :PublicAwarenessNotification, :NotificationToSinglePointsOfContact, :SummaryReportToENISA .
+
+:AuthorityResponseToNotification a :Obligation ;
+    rdfs:label "Authority Response to Notification" ;
+    :timeLimit :24Hours .
+
+:SupportToEntity a :Obligation ;
+    rdfs:label "Technical Support to Entity" .
+
+:GuidanceOnReportingToAuthorities a :Obligation ;
+    rdfs:label "Guidance on Reporting to Authorities" .
+
+:InformationToOtherMemberStatesAndENISA a :Obligation ;
+    rdfs:label "Information to Other Member States and ENISA" .
+
+:PublicAwarenessNotification a :Obligation ;
+    rdfs:label "Public Awareness Notification" .
+
+:NotificationToSinglePointsOfContact a :Obligation ;
+    rdfs:label "Notification to Single Points of Contact" .
+
+:SummaryReportToENISA a :Obligation ;
+    rdfs:label "Summary Report to ENISA" ;
+    :timeLimit :ThreeMonths .
+
+:ThreeMonths a :TimePeriod ;
+    rdfs:label "Three Months" .
+
+:NationalIntelligenceService a :LegalEntity ;
+    rdfs:label "National Intelligence Service" .
+
+:DPO a :Role ;
+    rdfs:label "Data Protection Officer" ;
+    :definedIn :Article16 ;
+    :requires :ResourceProvision, :AutonomyInDecisionMaking .
+
+:ResourceProvision a :Obligation ;
+    rdfs:label "Provision of Necessary Resources" ;
+    :appliesTo :RelevantEntity .
+
+:RelevantEntity a :LegalEntityClass ;
+    rdfs:label "Relevant Entity" .
+
+:AutonomyInDecisionMaking a :Obligation ;
+    rdfs:label "Autonomy in Decision-Making" ;
+    :appliesTo :DPO .
+
+:UnifiedCybersecurityPolicy a :Obligation ;
+    rdfs:label "Unified Cybersecurity Policy" ;
+    :appliesTo :KeyEntities, :SignificantEntities ;
+    :requires :AnnualSubmissionToNCSA .
+
+:AnnualSubmissionToNCSA a :Obligation ;
+    rdfs:label "Annual Submission to National Cybersecurity Authority" ;
+    :requires :SupervisionFeePayment .
+
+:SupervisionFeePayment a :Obligation ;
+    rdfs:label "Supervision Fee Payment" ;
+    :references :Article23_paragraph1 .
+
+:Article23_paragraph1 a :LegalBasis ;
+    rdfs:label "paragraph 1 of Article 23" .
+
+:ComprehensiveAssetRecord a :Obligation ;
+    rdfs:label "Comprehensive Asset Record" ;
+    :appliesTo :KeyEntities, :SignificantEntities .
+
+:EuropeanCybersecurityCertificationSchemes a :DefinedTerm ;
+    rdfs:label "European Cybersecurity Certification Schemes" ;
+    :definedBy :Article49_Regulation2019_881 .
+
+:Article49_Regulation2019_881 a :LegalBasis ;
+    rdfs:label "Article 49 of Regulation (EU) 2019/881" .
+
+:ENISA a :LegalEntity ;
+    rdfs:label "European Union Agency for Cybersecurity (ENISA)" .
+
+:ApprovedTrustServices a :DefinedTerm ;
+    rdfs:label "Approved Trust Services" .
+
+:Article37_Regulation2016_679 a :LegalBasis ;
+    rdfs:label "Article 37 of Regulation (EU) 2016/679" .
+
+:Article7_Law4624_2019 a :LegalBasis ;
+    rdfs:label "Article 7 of Law 4624/2019" .
+
+:Article8_Law4624_2019 a :LegalBasis ;
+    rdfs:label "Article 8 of Law 4624/2019" .
+
+:Article14_paragraph1c_Law4270_2014 a :LegalBasis ;
+    rdfs:label "paragraph c of paragraph 1 of article 14 of law 4270/2014" .
+
+:Article18_Law4961_2022 a :LegalBasis ;
+    rdfs:label "Article 18 of Law 4961/2022" .
+
+:Article19_Law4961_2022 a :LegalBasis ;
+    rdfs:label "Article 19 of Law 4961/2022" .
+
+:paragraph14_article30 a :LegalBasis ;
+    rdfs:label "paragraph 14 of article 30" .
+
+:paragraph15_article30 a :LegalBasis ;
+    rdfs:label "paragraph 15 of article 30" .
+
+
+:Article16_paragraph2 a :LegalBasis ;
+    rdfs:label "paragraph 2 of Article 16".
+
+:Article3_paragraph2f a :LegalBasis ;
+    rdfs:label "paragraph f) of paragraph 2 of Article 3".
+
+:CSIRT a :Role;
+    rdfs:label "Computer Security Incident Response Team".
+
+:NationalCybersecurityAuthority a :LegalEntity;
+    rdfs:label "National Cybersecurity Authority".
+
+:paragraph4 a :LegalBasis ;
+    rdfs:label "paragraph 4".
+
+:paragraph8 a :LegalBasis ;
+    rdfs:label "paragraph 8".

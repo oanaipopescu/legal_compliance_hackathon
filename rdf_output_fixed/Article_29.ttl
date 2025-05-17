@@ -1,0 +1,84 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article29 a :RegulationRule ;
+    rdfs:label "Article 29" ;
+    :subject "More specific arrangements for providers of public electronic communications networks or publicly available electronic communications services" ;
+    :appliesTo :PublicElectronicCommunicationsServiceProvider ;
+    :requires :EnhancedCybersecurityMeasures, :IncidentNotificationADAE, :IncidentNotificationNACA .
+
+:EnhancedCybersecurityMeasures a :Obligation ;
+    rdfs:label "Enhanced Cybersecurity Measures" ;
+    :imposedBy :CommunicationsPrivacyAuthority .
+
+:CommunicationsPrivacyAuthority a :LegalEntity ;
+    rdfs:label "Communications Privacy Authority" ;
+    :role :SupervisoryAuthority .
+
+:SupervisoryAuthority a :Role ;
+    rdfs:label "Supervisory Authority" .
+
+
+:IncidentNotificationADAE a :Obligation ;
+    rdfs:label "Incident Notification to ADAE" ;
+    :timeLimit "without delay"^^xsd:string ;
+    :appliesTo :PublicElectronicCommunicationsServiceProvider ;
+    :requires :SignificantImpactOnOperation .
+
+:SignificantImpactOnOperation a :Condition ;
+    rdfs:label "Significant Impact on Network and Service Operation" .
+
+:IncidentNotificationNACA a :Obligation ;
+    rdfs:label "Incident Notification to NACA" ;
+    :timeLimit "without delay"^^xsd:string ;
+    :appliesTo :PublicElectronicCommunicationsServiceProvider ;
+    :references :Article16 .
+
+:Article16 a :RegulationRule ;
+    rdfs:label "Article 16" .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" ;
+    :notifies :NationalTelecommunicationsAndPostalCommission .
+
+:NationalTelecommunicationsAndPostalCommission a :LegalEntity ;
+    rdfs:label "National Telecommunications and Postal Commission" .
+
+:PublicInformationDisclosure a :Obligation ;
+    rdfs:label "Public Information Disclosure" ;
+    :appliesTo :ADAE ;
+    :conditionalOn :PublicInterest .
+
+:PublicInterest a :Condition ;
+    rdfs:label "Public Interest" .
+
+:ADAE a :LegalEntity ;
+    rdfs:label "ADAE" ;
+    :cooperatesWith :LawEnforcementAuthorities, :HellenicDataProtectionAuthority, :PersonalDataProtectionAuthority .
+
+:LawEnforcementAuthorities a :LegalEntityClass ;
+    rdfs:label "Competent Law Enforcement Authorities" .
+
+:HellenicDataProtectionAuthority a :LegalEntity ;
+    rdfs:label "Hellenic Data Protection Authority" .
+
+:PersonalDataProtectionAuthority a :LegalEntity ;
+    rdfs:label "Personal Data Protection Authority" .
+
+:NationalSectorialFocalPoint a :Role ;
+    rdfs:label "National Sectorial Focal Point (NSFP)" ;
+    :definedIn :Article13 .
+
+:Article13 a :RegulationRule ;
+    rdfs:label "Article 13" .
+
+:PublicElectronicCommunicationsServiceProvider a :LegalEntity ;
+    rdfs:label "Provider of public electronic communications networks or publicly available electronic communications services" .
+
+:notifies a :Obligation ;
+    rdfs:label "Notifies".
+
+:cooperatesWith a :Obligation ;
+    rdfs:label "Cooperates With".

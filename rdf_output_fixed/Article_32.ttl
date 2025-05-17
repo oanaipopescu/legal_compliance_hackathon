@@ -1,0 +1,34 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article32 a :RegulationRule ;
+    rdfs:label "Article 32" ;
+    :subject "Repealed provisions" ;
+    :repeals :Article148_Law4727_2020, :Article149_Law4727_2020, :Law4577_2018_Articles1to16, :Decision1027_2019 .
+
+:Article148_Law4727_2020 a :LegalProvision ;
+    rdfs:label "Article 148 of Law 4727/2020" ;
+    :subject "network and service security" .
+
+:Article149_Law4727_2020 a :LegalProvision ;
+    rdfs:label "Article 149 of Law 4727/2020" ;
+    :subject "implementation and enforcement" .
+
+:Law4727_2020 a :NationalLaw ;
+    rdfs:label "Law 4727/2020" .
+
+:Law4577_2018_Articles1to16 a :LegalProvision ;
+    rdfs:label "Articles 1 to 16 of Law 4577/2018" ;
+    :subject "incorporation into Greek legislation of Directive 2016/1148/EU" .
+
+:Law4577_2018 a :NationalLaw ;
+    rdfs:label "Law 4577/2018" .
+
+:Decision1027_2019 a :NationalDecision ;
+    rdfs:label "Decision No. 1027/4.10.2019" ;
+    :subject "Issues of implementation and procedures of Law 4577/2018" .
+
+:PartB a :Part ;
+    rdfs:label "Part B: National Cybersecurity Staff Regulations and Other Provisions" .

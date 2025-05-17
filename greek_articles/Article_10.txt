@@ -1,0 +1,7 @@
+Article 10
+Computer Security Incident Response Teams (CSIRTs) (Article 10 of Directive (EU) 2022/2555)
+1. The National Cybersecurity Authority is designated as the competent Computer Security Incident Response Team (CSIRT) for the entities falling within the scope of this part. Specifically for the organizations referred to in point f) of paragraph 2 of article 3, the competent Computer Security Incident Response Team (CSIRT) is the Cybersecurity Response Team (National CERT) of the Cyberspace Directorate of the National Intelligence Service (NIS).
+
+2. If deemed necessary to achieve a high level of cybersecurity, other CSIRTs may be designated, in accordance with paragraph 8 of article 30.
+
+3. The CSIRT of the National Cybersecurity Authority shall perform a coordinating role for the CSIRTs, in order to achieve the objectives of this article. The CSIRTs shall comply with the requirements set out in par. 1 of

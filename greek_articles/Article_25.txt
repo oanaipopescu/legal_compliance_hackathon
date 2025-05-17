@@ -1,0 +1,41 @@
+Article 25
+Supervisory and enforcement measures in relation to significant entities (Article 33 of Directive (EU) 2022/2555)
+1. The National Cybersecurity Authority, when provided with evidence, indications or information that a significant entity is suspected of not complying with this Part, in particular with Articles 15 and 16 thereof, shall take, if it deems it necessary, repressive measures, which must be effective, proportionate and dissuasive, taking into account the circumstances of each individual case.
+
+2. The National Cybersecurity Authority, when exercising its enforcement powers in relation to significant entities, shall subject such entities in particular to the following:
+
+a) on-site inspections and repressive supervision inside and outside the premises,
+
+b) targeted security audits carried out by the National Cybersecurity Authority,
+
+(c) security scans based on objective, impartial, fair and transparent risk assessment criteria, where necessary with the cooperation of the entity concerned;
+
+(d) requests for information necessary for the assessment of the cybersecurity risk management measures taken by the entity concerned, including documented cybersecurity policies, as well as compliance with the obligation to transmit information to competent authorities in accordance with Article 19;
+
+e) requests for access to data, documents or information necessary for the performance of its supervisory tasks,
+
+f) requests for evidence concerning the implementation of cybersecurity policies, such as the results of security audits carried out by an authorized inspector of paragraph 1 of article 23 and the corresponding underlying evidence.
+
+The targeted security audits referred to in point b) are based on risk assessments carried out by the National Cybersecurity Authority or the audited entity or on other available risk-related information.
+
+The results of each targeted security audit are made available to the competent organizational unit of the National Cybersecurity Authority.
+
+3. When exercising its powers in accordance with paragraphs d), e) and f) of paragraph 2, the National Cybersecurity Authority shall state the purpose of the request and specify the information requested.
+
+4. The National Cybersecurity Authority, when exercising its supervisory responsibilities in relation to significant entities, has in particular the following responsibilities:
+
+(a) issue warnings or recommendations regarding violations of this Part by the entities concerned;
+
+b) issues binding instructions or an order to the relevant entities to remedy the identified deficiencies or the violation of the obligations of this Part,
+
+(c) order the entities concerned to cease conduct that violates this Part and to refrain from repeating such infringing conduct;
+
+(d) order the entities concerned to ensure that cybersecurity risk management measures comply with Article 15 or to fulfil the reporting obligations set out in Article 16, in a specific manner and within a specified period of time;
+
+(e) instructs the relevant entities to inform natural or legal persons to whom they provide services or carry out activities that may be affected by a significant cyber threat about the nature of the threat, as well as about any protective or remedial measures that those natural or legal persons can take to address that threat;
+
+(f) instruct the entities concerned to implement the recommendations made as a result of a security audit within a reasonable period of time;
+
+(g) direct the relevant entities to disclose aspects of violations of this Part in a specified manner;
+
+h) impose administrative fines in accordance with
