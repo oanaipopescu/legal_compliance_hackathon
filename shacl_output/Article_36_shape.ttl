@@ -5,46 +5,35 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :amends ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it amends" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] .
+:Article36Shape a sh:NodeShape ;
+    sh:targetClass :AreasUnderCadastralRegistrationBeforeLaw3481_2006 ;
+    sh:property [
+        sh:path :registrationDeadline ;
+        sh:minCount 1 ;
+        sh:datatype xsd:date ;
+        sh:message "Article 36 requires a registration deadline for this area." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :registrationDeadline ;
+        sh:pattern "^\d{4}-\d{2}-\d{2}$" ;
+        sh:message "Invalid date format for registration deadline.  Use YYYY-MM-DD." ;
+        sh:severity sh:Violation
+    ] .
 
-:LegalProvisionShape a sh:NodeShape ;
-    sh:targetClass :LegalProvision ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Provision must have a label" ] ;
-    sh:property [ sh:path :definedIn ; sh:message "Legal Provision should specify where it is defined (optional)" ] .
+:Article36Shape2 a sh:NodeShape ;
+    sh:targetClass :AreasWithFirstRegistrations2013_2017 ;
+    sh:property [
+        sh:path :registrationDeadline ;
+        sh:minCount 1 ;
+        sh:datatype xsd:date ;
+        sh:message "Article 36 requires a registration deadline for this area." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :registrationDeadline ;
+        sh:pattern "^\d{4}-\d{2}-\d{2}$" ;
+        sh:message "Invalid date format for registration deadline. Use YYYY-MM-DD." ;
+        sh:severity sh:Violation
+    ] .
 
-:NationalLawShape a sh:NodeShape ;
-    sh:targetClass :NationalLaw ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "National Law must have a label" ] ;
-    sh:property [ sh:path :concerns ; sh:minCount 1 ; sh:message "National Law must specify what it concerns" ] .
-
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
-    sh:property [ sh:path :newDeadline ; sh:minCount 1 ; sh:message "Obligation must have a new deadline" ] ;
-    sh:property [ sh:path :appliesTo ; sh:message "Obligation may specify what it applies to (optional)" ] ;
-    sh:property [ sh:path :exemption ; sh:message "Obligation may specify exemptions (optional)" ] ;
-    sh:property [ sh:path :conditions ; sh:message "Obligation may specify conditions (optional)" ] .
-
-:TimePointShape a sh:NodeShape ;
-    sh:targetClass :TimePoint ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "TimePoint must have a label" ] ;
-    sh:property [ sh:path :determinedBy ; sh:minCount 1 ; sh:message "TimePoint must specify how it is determined" ] .
-
-:LegalEntityShape a sh:NodeShape ;
-    sh:targetClass :LegalEntity ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] .
-
-:GeographicAreaShape a sh:NodeShape ;
-    sh:targetClass :GeographicArea ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Geographic Area must have a label" ] .
-
-:ConditionShape a sh:NodeShape ;
-    sh:targetClass :Condition ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Condition must have a label" ] .
 
 ```

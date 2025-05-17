@@ -4,6 +4,7 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 
+<<<<<<< HEAD
 :RegulationRuleShape a sh:NodeShape ;
     sh:targetClass :RegulationRule ;
     sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation rules must have a label" ] ;
@@ -14,6 +15,16 @@
 :ObligationShape a sh:NodeShape ;
     sh:targetClass :Obligation ;
     sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligations must have a label" ] .
+=======
+:DataProtectionComplianceShape a sh:NodeShape ;
+    sh:targetClass :LegalEntity ;
+    sh:property [
+        sh:path :compliesWithRegulation2016_679 ;
+        sh:minCount 1 ;
+        sh:message "Legal entities must comply with Regulation (EU) 2016/679" ;
+        sh:severity sh:Violation
+    ] .
+>>>>>>> 2578f70 (uploaded)
 
 :LegalEntityShape a sh:NodeShape ;
     sh:targetClass :LegalEntity ;

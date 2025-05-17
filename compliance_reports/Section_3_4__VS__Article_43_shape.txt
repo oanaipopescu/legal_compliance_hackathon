@@ -2,10 +2,22 @@ Conforms: False
 
 Validation Report
 Conforms: False
-Results (1):
+Results (3):
 Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
 	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
-	Focus Node: :InformationSecurityIncidentIdentification
-	Result Path: :subject
-	Message: Regulation Rule must have a subject
+	Source Shape: [ sh:message Literal("Legal Entity must possess at least two licenses: Operating Permit and Service Provision License.") ; sh:minCount Literal("2", datatype=xsd:integer) ; sh:path :hasLicense ; sh:severity sh:Violation ]
+	Focus Node: :User
+	Result Path: :hasLicense
+	Message: Legal Entity must possess at least two licenses: Operating Permit and Service Provision License.
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal Entity must possess at least two licenses: Operating Permit and Service Provision License.") ; sh:minCount Literal("2", datatype=xsd:integer) ; sh:path :hasLicense ; sh:severity sh:Violation ]
+	Focus Node: :ServiceDesk
+	Result Path: :hasLicense
+	Message: Legal Entity must possess at least two licenses: Operating Permit and Service Provision License.
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal Entity must possess at least two licenses: Operating Permit and Service Provision License.") ; sh:minCount Literal("2", datatype=xsd:integer) ; sh:path :hasLicense ; sh:severity sh:Violation ]
+	Focus Node: :ServiceOwner
+	Result Path: :hasLicense
+	Message: Legal Entity must possess at least two licenses: Operating Permit and Service Provision License.

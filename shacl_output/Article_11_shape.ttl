@@ -4,70 +4,83 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it applies to" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] ;
-    sh:property [ sh:path :references ; sh:message "Regulation Rule may specify referenced legislation (optional)" ] .
+:CSIRTValidationShape a sh:NodeShape ;
+    sh:targetClass :CSIRT ;
+    sh:property [
+        sh:path :hasRedundantCommunication ;
+        sh:minCount 1 ;
+        sh:message "CSIRT must have redundant communication channels (Article 11)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasSecureFacilities ;
+        sh:minCount 1 ;
+        sh:message "CSIRT must have secure facilities (Article 11)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasRequestManagementSystem ;
+        sh:minCount 1 ;
+        sh:message "CSIRT must have an appropriate request management system (Article 11)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasConfidentialityReliabilityMeasures ;
+        sh:minCount 1 ;
+        sh:message "CSIRT must ensure confidentiality and reliability of activities (Article 11)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasAdequateStaffingTraining ;
+        sh:minCount 1 ;
+        sh:message "CSIRT must have adequate staffing and training (Article 11)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasBackupSystems ;
+        sh:minCount 1 ;
+        sh:message "CSIRT must have backup systems (Article 11)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :performsCyberThreatMonitoringAnalysis ;
+        sh:minCount 1 ;
+        sh:message "CSIRT must perform cyber threat monitoring and analysis (Article 11)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :providesTimelyWarningsAlerts ;
+        sh:minCount 1 ;
+        sh:message "CSIRT must provide timely warnings and alerts (Article 11)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :providesIncidentResponseAssistance ;
+        sh:minCount 1 ;
+        sh:message "CSIRT must provide incident response assistance (Article 11)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :performsForensicDataCollectionAnalysis ;
+        sh:minCount 1 ;
+        sh:message "CSIRT must perform forensic data collection and analysis (Article 11)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :performsProactiveVulnerabilityScanning ;
+        sh:minCount 1 ;
+        sh:message "CSIRT must perform proactive vulnerability scanning (Article 11)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :participatesInCSIRTNetwork ;
+        sh:minCount 1 ;
+        sh:message "CSIRT must participate in the CSIRT network (Article 11)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :contributesToSecureInformationExchangeToolDevelopment ;
+        sh:minCount 1 ;
+        sh:message "CSIRT must contribute to the development of secure information exchange tools (Article 11)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :performsProactiveScanning ;
+        sh:minCount 1 ;
+        sh:message "CSIRT must perform proactive non-intrusive scanning (Article 11)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :promotesCommonStandardizedPractices ;
+        sh:minCount 1 ;
+        sh:message "CSIRT must promote common or standardized practices (Article 11)." ;
+        sh:severity sh:Violation
+    ] .
 
-:LegalBasisShape a sh:NodeShape ;
-    sh:targetClass :LegalBasis ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Basis must have a label" ] .
-
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
-    sh:property [ sh:path :appliesTo ; sh:message "Obligation may specify what it applies to (optional)" ] ;
-    sh:property [ sh:path :basedOn ; sh:message "Obligation may specify its legal basis (optional)" ] ;
-    sh:property [ sh:path :requires ; sh:message "Obligation may require other obligations (optional)" ] ;
-    sh:property [ sh:path :references ; sh:message "Obligation may specify referenced legislation (optional)" ] ;
-    sh:property [ sh:path :conditionalOn ; sh:message "Obligation may be conditional (optional)" ] .
-
-:RoleShape a sh:NodeShape ;
-    sh:targetClass :Role ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Role must have a label" ] ;
-    sh:property [ sh:path :tasks ; sh:message "Role may specify tasks (optional)" ] ;
-    sh:property [ sh:path :mayCooperateWith ; sh:message "Role may specify cooperation (optional)" ] ;
-    sh:property [ sh:path :promotes ; sh:message "Role may specify promotion of practices (optional)" ] ;
-    sh:property [ sh:path :mayEstablishCooperativeRelationsWith ; sh:message "Role may specify cooperative relations (optional)" ] .
-
-:LegalEntityShape a sh:NodeShape ;
-    sh:targetClass :LegalEntity ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] ;
-    sh:property [ sh:path :requires ; sh:message "Legal Entity may specify requirements (optional)" ] ;
-    sh:property [ sh:path :directlyInvolvedIn ; sh:message "Legal Entity may specify direct involvement (optional)" ] ;
-    sh:property [ sh:path :notifies ; sh:message "Legal Entity may specify notification (optional)" ] .
-
-:LegalEntityClassShape a sh:NodeShape ;
-    sh:targetClass :LegalEntityClass ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] ;
-    sh:property [ sh:path :members ; sh:message "Legal Entity Class may specify members (optional)" ] ;
-    sh:property [ sh:path :requires ; sh:message "Legal Entity Class may specify requirements (optional)" ] ;
-    sh:property [ sh:path :mayExchange ; sh:message "Legal Entity Class may specify exchange of information (optional)" ] ;
-    sh:property [ sh:path :expensesCoveredBy ; sh:message "Legal Entity Class may specify funding (optional)" ] .
-
-:ConditionShape a sh:NodeShape ;
-    sh:targetClass :Condition ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Condition must have a label" ] .
-
-:DefinedTermShape a sh:NodeShape ;
-    sh:targetClass :DefinedTerm ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Defined Term must have a label" ] ;
-    sh:property [ sh:path :definedIn ; sh:message "Defined Term may specify where it is defined (optional)" ] ;
-    sh:property [ sh:path :processingBasedOn ; sh:message "Defined Term may specify processing basis (optional)" ] ;
-    sh:property [ sh:path :references ; sh:message "Defined Term may specify references (optional)" ] .
-
-:PermissionShape a sh:NodeShape;
-    sh:targetClass :Permission;
-    sh:property [ sh:path rdfs:label; sh:minCount 1; sh:message "Permission must have a label" ].
-
-:FundingSourceShape a sh:NodeShape;
-    sh:targetClass :FundingSource;
-    sh:property [ sh:path rdfs:label; sh:minCount 1; sh:message "Funding Source must have a label" ].
-
-:EU_RegulationShape a sh:NodeShape ;
-    sh:targetClass :EU_Regulation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation must have a label" ] .
 ```

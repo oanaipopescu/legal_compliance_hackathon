@@ -2,16 +2,10 @@ Conforms: False
 
 Validation Report
 Conforms: False
-Results (2):
+Results (1):
 Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
 	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
-	Focus Node: :AssessmentOfSecurityEvents
-	Result Path: :subject
-	Message: Regulation Rule must have a subject
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must specify what it amends") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :amends ]
-	Focus Node: :AssessmentOfSecurityEvents
-	Result Path: :amends
-	Message: Regulation Rule must specify what it amends
+	Source Shape: [ sh:message Literal("A company must have at least four responsibilities defined.") ; sh:minCount Literal("4", datatype=xsd:integer) ; sh:path :responsibilities ; sh:severity sh:Violation ]
+	Focus Node: :SignifyOrganization
+	Result Path: :responsibilities
+	Message: A company must have at least four responsibilities defined.

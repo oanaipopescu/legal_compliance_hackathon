@@ -4,48 +4,17 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :amends ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it amends" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] .
-
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
-    sh:property [ sh:path :adds ; sh:message "Obligation may add paragraphs (optional)" ] ;
-    sh:property [ sh:path :changes ; sh:message "Obligation may change paragraphs (optional)" ] .
-
-:ParagraphShape a sh:NodeShape ;
-    sh:targetClass :Paragraph ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Paragraph must have a label" ] ;
-    sh:property [ sh:path :text ; sh:minCount 1 ; sh:message "Paragraph must have text" ] ;
-    sh:property [ sh:path :oldText ; sh:message "Paragraph may have old text (optional)" ] ;
-    sh:property [ sh:path :newText ; sh:message "Paragraph may have new text (optional)" ] ;
-    sh:property [ sh:path :newDate ; sh:datatype xsd:date ; sh:message "Paragraph may have a new date (optional)" ] .
-
-:LegalProvisionShape a sh:NodeShape ;
-    sh:targetClass :LegalProvision ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Provision must have a label" ] .
-
-:NationalLawShape a sh:NodeShape ;
-    sh:targetClass :NationalLaw ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "National Law must have a label" ] .
-
-:LegalEntityShape a sh:NodeShape ;
+:CompanyPolicyShape a sh:NodeShape ;
     sh:targetClass :LegalEntity ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] ;
-    sh:property [ sh:path :responsibilities ; sh:message "Legal Entity may specify responsibilities (optional)" ] .
-
-:ResponsibilityShape a sh:NodeShape ;
-    sh:targetClass :Responsibility ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Responsibility must have a label" ] .
-
-:TaxShape a sh:NodeShape;
-    sh:targetClass :Tax;
-    sh:property [ sh:path rdfs:label; sh:minCount 1; sh:message "Tax must have a label" ].
-
-:ContractShape a sh:NodeShape;
-    sh:targetClass :Contract;
-    sh:property [ sh:path rdfs:label; sh:minCount 1; sh:message "Contract must have a label" ].
+    sh:property [
+        sh:path :responsibilities ;
+        sh:minCount 4 ;
+        sh:message "A company must have at least four responsibilities defined." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :responsibilities ;
+        sh:nodeKind sh:IRI ;
+        sh:in ( :FareProductSalesPromotion :FareProductSalesCollection :RevenueRemittance :TransportProjectInteroperabilityControl ) ;
+        sh:message "The company's responsibilities must include Fare Product Sales Promotion, Fare Product Sales Collection, Revenue Remittance, and Transport Project Interoperability Control." ;
+        sh:severity sh:Violation
+    ] .

@@ -4,30 +4,31 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it applies to" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] .
+:CybersecurityRiskManagementMeasuresShape a sh:NodeShape ;
+    sh:targetClass :KeyEntities ;
+    sh:property [
+        sh:path :hasCybersecurityRiskManagementMeasures ;
+        sh:minCount 1 ;
+        sh:message "Key Entities must have Cybersecurity Risk Management Measures in place." ;
+        sh:severity sh:Violation
+    ] .
 
-:LegalBasisShape a sh:NodeShape ;
-    sh:targetClass :LegalBasis ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Basis must have a label" ] .
+:SignificantIncidentNotificationShape a sh:NodeShape ;
+    sh:targetClass :KeyEntities ;
+    sh:property [
+        sh:path :hasSignificantIncidentNotification ;
+        sh:minCount 1 ;
+        sh:message "Key Entities must have a Significant Incident Notification process." ;
+        sh:severity sh:Violation
+    ] .
 
-:LegalEntityClassShape a sh:NodeShape ;
-    sh:targetClass :LegalEntityClass ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] .
+:ImmediateAccessToNotificationsShape a sh:NodeShape ;
+    sh:targetClass :SignificantEntities ;
+    sh:property [
+        sh:path :hasImmediateAccessToNotifications ;
+        sh:minCount 1 ;
+        sh:message "Significant Entities must have Immediate Access to Incident Notifications." ;
+        sh:severity sh:Violation
+    ] .
 
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] .
-
-:ConditionShape a sh:NodeShape ;
-    sh:targetClass :Condition ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Condition must have a label" ] .
-
-:EU_RegulationShape a sh:NodeShape ;
-    sh:targetClass :EU_Regulation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation must have a label" ] .
 ```

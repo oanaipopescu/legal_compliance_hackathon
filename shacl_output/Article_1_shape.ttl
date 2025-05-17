@@ -1,9 +1,10 @@
 ```turtle
-@prefix : <http://example.org#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix : <http://example.org#> .
 
+<<<<<<< HEAD
 :RegulationRuleShape a sh:NodeShape ;
     sh:targetClass :RegulationRule ;
     sh:property [ sh:path :purpose ; sh:minCount 1 ; sh:message "Regulation rules must specify a purpose" ] ;
@@ -19,4 +20,28 @@
     sh:targetClass :EU_Regulation ;
     sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulations must have a label" ] .
 
+=======
+:CybersecurityPolicyShape a sh:NodeShape ;
+    sh:targetClass :CybersecurityPolicy ;
+    sh:property [
+        sh:path :dataProtectionPolicy ;
+        sh:minCount 1 ;
+        sh:message "Cybersecurity policy must include a data protection policy." ;
+        sh:severity sh:Violation
+    ] ;
+    sh:property [
+        sh:path :incidentResponsePlan ;
+        sh:minCount 1 ;
+        sh:message "Cybersecurity policy must include an incident response plan." ;
+        sh:severity sh:Violation
+    ] ;
+    sh:property [
+        sh:path :regularSecurityAssessments ;
+        sh:hasValue "true" ;
+        sh:message "Cybersecurity policy must state that regular security assessments are performed." ;
+        sh:severity sh:Violation
+    ] .
+
+:CybersecurityPolicy a rdfs:Class .
+>>>>>>> 2578f70 (uploaded)
 ```

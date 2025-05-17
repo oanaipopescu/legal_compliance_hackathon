@@ -1,9 +1,10 @@
 ```turtle
-@prefix : <http://example.org#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix : <http://example.org#> .
 
+<<<<<<< HEAD
 :LegalEntityShape a sh:NodeShape ;
     sh:targetClass :LegalEntity ;
     sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal entities must have a label" ] .
@@ -24,4 +25,32 @@
     sh:targetClass :EU_Directive ;
     sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Directives must have a label" ] ;
     sh:property [ sh:path :concerns ; sh:minCount 1 ; sh:message "Directives must specify what they concern" ] .
+=======
+:RiskManagementShape a sh:NodeShape ;
+    sh:targetClass :CriticalEntities ;
+    sh:property [
+        sh:path :hasRiskManagementMeasure ;
+        sh:minCount 1 ;
+        sh:message "Critical entities must have at least one risk management measure defined." ;
+        sh:severity sh:Violation
+    ] .
+
+:ReportingObligationsShape a sh:NodeShape ;
+    sh:targetClass :CriticalEntities ;
+    sh:property [
+        sh:path :hasReportingObligation ;
+        sh:minCount 1 ;
+        sh:message "Critical entities must have at least one reporting obligation defined." ;
+        sh:severity sh:Violation
+    ] .
+
+:InformationExchangeShape a sh:NodeShape ;
+    sh:targetClass :CriticalEntities ;
+    sh:property [
+        sh:path :hasInformationExchangeMechanism ;
+        sh:minCount 1 ;
+        sh:message "Critical entities must have at least one information exchange mechanism defined." ;
+        sh:severity sh:Violation
+    ] .
+>>>>>>> 2578f70 (uploaded)
 ```

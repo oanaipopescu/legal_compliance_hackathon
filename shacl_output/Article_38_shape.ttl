@@ -1,121 +1,16 @@
 ```turtle
-@prefix : <http://example.org#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix : <http://example.org#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :partOf ; sh:minCount 1 ; sh:message "Regulation Rule must specify the law it is part of" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] .
-
-:NationalLawShape a sh:NodeShape ;
-    sh:targetClass :NationalLaw ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "National Law must have a label" ] .
-
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
-    sh:property [ sh:path :conditions ; sh:message "Obligation may specify conditions (optional)" ] ;
-    sh:property [ sh:path :appliesTo ; sh:message "Obligation may specify what it applies to (optional)" ] ;
-    sh:property [ sh:path :maximumDuration ; sh:message "Obligation may specify a maximum duration (optional)" ] ;
-    sh:property [ sh:path :maximumAge ; sh:datatype xsd:integer ; sh:message "Obligation may specify a maximum age (optional)" ] ;
-    sh:property [ sh:path :employmentType ; sh:message "Obligation may specify employment type (optional)" ] ;
-    sh:property [ sh:path :requires ; sh:message "Obligation may specify requirements (optional)" ] ;
-    sh:property [ sh:path :carriedOutBy ; sh:message "Obligation may specify who carries it out (optional)" ] ;
-    sh:property [ sh:path :to ; sh:message "Obligation may specify the recipient (optional)" ] ;
-    sh:property [ sh:path :deadline ; sh:message "Obligation may specify a deadline (optional)" ] ;
-    sh:property [ sh:path :conditionalOn ; sh:message "Obligation may be conditional (optional)" ] ;
-    sh:property [ sh:path :notUsedIn ; sh:message "Obligation may specify processes it is not used in (optional)" ] ;
-    sh:property [ sh:path :consideredAs ; sh:message "Obligation may specify how it is considered (optional)" ] .
-
-
-:EmploymentTypeShape a sh:NodeShape ;
-    sh:targetClass :EmploymentType ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Employment Type must have a label" ] .
-
-:ConditionShape a sh:NodeShape ;
-    sh:targetClass :Condition ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Condition must have a label" ] ;
-    sh:property [ sh:path :references ; sh:message "Condition may specify references (optional)" ] ;
-    sh:property [ sh:path :requires ; sh:message "Condition may specify requirements (optional)" ] ;
-    sh:property [ sh:path :appliesTo ; sh:message "Condition may specify what it applies to (optional)" ] .
-
-:LegalProvisionShape a sh:NodeShape ;
-    sh:targetClass :LegalProvision ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Provision must have a label" ] ;
-    sh:property [ sh:path :concerns ; sh:message "Legal Provision may specify what it concerns (optional)" ] .
-
-:LegalEntityShape a sh:NodeShape ;
-    sh:targetClass :LegalEntity ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] ;
-    sh:property [ sh:path :mayBe ; sh:message "Legal Entity may specify possible statuses (optional)" ] ;
-    sh:property [ sh:path :maySpecializeIn ; sh:message "Legal Entity may specify specializations (optional)" ] ;
-    sh:property [ sh:path :issuedBy ; sh:message "Legal Entity may specify who issued it (optional)" ] ;
-    sh:property [ sh:path :finances ; sh:message "Legal Entity may specify what it finances (optional)" ] ;
-    sh:property [ sh:path :role ; sh:message "Legal Entity may specify its role (optional)" ] ;
-    sh:property [ sh:path :conducts ; sh:message "Legal Entity may specify what it conducts (optional)" ] ;
-    sh:property [ sh:path :responsibleFor ; sh:message "Legal Entity may specify what it is responsible for (optional)" ] ;
-    sh:property [ sh:path :mayActAs ; sh:message "Legal Entity may specify roles it may act as (optional)" ] ;
-    sh:property [ sh:path :approvedBy ; sh:message "Legal Entity may specify who approved it (optional)" ] ;
-    sh:property [ sh:path :appliesTo ; sh:message "Legal Entity may specify what it applies to (optional)" ] .
-
-
-:EmploymentStatusShape a sh:NodeShape ;
-    sh:targetClass :EmploymentStatus ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Employment Status must have a label" ] .
-
-:SpecializationShape a sh:NodeShape ;
-    sh:targetClass :Specialization ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Specialization must have a label" ] .
-
-:ProcessShape a sh:NodeShape ;
-    sh:targetClass :Process ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Process must have a label" ] ;
-    sh:property [ sh:path :issuedBy ; sh:message "Process may specify who issued it (optional)" ] ;
-    sh:property [ sh:path :requires ; sh:message "Process may specify requirements (optional)" ] ;
-    sh:property [ sh:path :publishedOn ; sh:message "Process may specify publication channels (optional)" ] ;
-    sh:property [ sh:path :criteria ; sh:message "Process may specify criteria (optional)" ] ;
-    sh:property [ sh:path :appliesTo ; sh:message "Process may specify what it applies to (optional)" ] .
-
-:OpinionShape a sh:NodeShape ;
-    sh:targetClass :Opinion ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Opinion must have a label" ] .
-
-:WebsiteShape a sh:NodeShape ;
-    sh:targetClass :Website ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Website must have a label" ] .
-
-:RequirementShape a sh:NodeShape ;
-    sh:targetClass :Requirement ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Requirement must have a label" ] .
-
-:CriterionShape a sh:NodeShape ;
-    sh:targetClass :Criterion ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Criterion must have a label" ] .
-
-:InformationSystemShape a sh:NodeShape ;
-    sh:targetClass :InformationSystem ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Information System must have a label" ] .
-
-:LegalEntityClassShape a sh:NodeShape ;
-    sh:targetClass :LegalEntityClass ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] .
-
-:TimePointShape a sh:NodeShape ;
-    sh:targetClass :TimePoint ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "TimePoint must have a label" ] .
-
-:DocumentShape a sh:NodeShape ;
-    sh:targetClass :Document ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Document must have a label" ] ;
-    sh:property [ sh:path :validityPeriod ; sh:message "Document may specify a validity period (optional)" ] .
-
-:ServiceTypeShape a sh:NodeShape ;
-    sh:targetClass :ServiceType ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Service Type must have a label" ] .
-
+:TeacherHiringShape a sh:NodeShape ;
+    sh:targetClass :Teacher ;
+    sh:property [
+        sh:path :employmentType ;
+        sh:hasValue :FixedTermContract ;
+        sh:message "Teachers must be hired under a fixed-term contract according to Article 63A." ;
+        sh:severity sh:Violation
+    ] .
 ```

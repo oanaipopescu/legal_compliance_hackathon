@@ -4,30 +4,31 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it applies to" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] ;
-    sh:property [ sh:path :references ; sh:message "Regulation Rule may specify referenced legislation (optional)" ] .
+:CybersecurityRiskManagementApprovalShape a sh:NodeShape ;
+    sh:targetClass :KeyEntitiesManagementBodies ;
+    sh:property [
+        sh:path :hasApproval ;
+        sh:minCount 1 ;
+        sh:message "Key Entities Management Bodies must have Cybersecurity Risk Management Measures approved." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :approvalDate ;
+        sh:datatype xsd:date ;
+        sh:message "Approval date must be a valid date." ;
+        sh:severity sh:Violation
+    ] .
 
-:LegalBasisShape a sh:NodeShape ;
-    sh:targetClass :LegalBasis ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Basis must have a label" ] .
-
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Obligation must specify what it applies to" ] ;
-    sh:property [ sh:path :timeLimit ; sh:minCount 1 ; sh:message "Obligation must have a time limit" ] .
-
-
-:LegalEntityClassShape a sh:NodeShape ;
-    sh:targetClass :LegalEntityClass ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] .
-
-:TimePeriodShape a sh:NodeShape ;
-    sh:targetClass :TimePeriod ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Time Period must have a label" ] .
+:CybersecurityRiskManagementApprovalShape2 a sh:NodeShape ;
+    sh:targetClass :SignificantEntitiesManagementBodies ;
+    sh:property [
+        sh:path :hasApproval ;
+        sh:minCount 1 ;
+        sh:message "Significant Entities Management Bodies must have Cybersecurity Risk Management Measures approved." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :approvalDate ;
+        sh:datatype xsd:date ;
+        sh:message "Approval date must be a valid date." ;
+        sh:severity sh:Violation
+    ] .
 ```

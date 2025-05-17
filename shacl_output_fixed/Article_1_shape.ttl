@@ -1,19 +1,28 @@
-@prefix : <http://example.org#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix : <http://example.org#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path :purpose ; sh:minCount 1 ; sh:message "Regulation Rule must have a purpose" ] ;
-    sh:property [ sh:path :incorporates ; sh:minCount 1 ; sh:message "Regulation Rule must incorporate at least one directive" ] .
+:CybersecurityPolicyShape a sh:NodeShape ;
+    sh:targetClass :CybersecurityPolicy ;
+    sh:property [
+        sh:path :dataProtectionPolicy ;
+        sh:minCount 1 ;
+        sh:message "Cybersecurity policy must include a data protection policy." ;
+        sh:severity sh:Violation
+    ] ;
+    sh:property [
+        sh:path :incidentResponsePlan ;
+        sh:minCount 1 ;
+        sh:message "Cybersecurity policy must include an incident response plan." ;
+        sh:severity sh:Violation
+    ] ;
+    sh:property [
+        sh:path :regularSecurityAssessments ;
+        sh:hasValue "true" ;
+        sh:message "Cybersecurity policy must state that regular security assessments are performed." ;
+        sh:severity sh:Violation
+    ] .
 
-:EU_DirectiveShape a sh:NodeShape ;
-    sh:targetClass :EU_Directive ;
-    sh:property [ sh:path :concerns ; sh:minCount 1 ; sh:message "Directive must specify what it concerns" ] ;
-    sh:property [ sh:path :amends ; sh:message "Directive should specify what it amends (optional)" ] ;
-    sh:property [ sh:path :repeals ; sh:message "Directive should specify what it repeals (optional)" ] .
-
-:EU_RegulationShape a sh:NodeShape ;
-    sh:targetClass :EU_Regulation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation must have a label" ] .
+:CybersecurityPolicy a rdfs:Class .

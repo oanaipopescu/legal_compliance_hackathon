@@ -1,9 +1,10 @@
 ```turtle
-@prefix : <http://example.org#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix : <http://example.org#> .
 
+<<<<<<< HEAD
 :RegulationRuleShape a sh:NodeShape ;
     sh:targetClass :RegulationRule ;
     sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation rules must have a label" ] ;
@@ -27,4 +28,86 @@
 :InformationElementShape a sh:NodeShape ;
     sh:targetClass :InformationElement ;
     sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Information elements must have a label" ] .
+=======
+:EntityReportingShape a sh:NodeShape ;
+    sh:targetClass :CoreEntities ;
+    sh:property [
+        sh:path :EntityName ;
+        sh:minCount 1 ;
+        sh:message "Core Entities must provide their Entity Name." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :EntityAddress ;
+        sh:minCount 1 ;
+        sh:message "Core Entities must provide their Entity Address." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :ContactDetails ;
+        sh:minCount 1 ;
+        sh:message "Core Entities must provide Contact Details." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :IPRanges ;
+        sh:minCount 1 ;
+        sh:message "Core Entities must provide their IP Address Ranges." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :DomainNames ;
+        sh:minCount 1 ;
+        sh:message "Core Entities must provide their Domain Names." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :SectorSubsectorType ;
+        sh:minCount 1 ;
+        sh:message "Core Entities must provide their Sector, Subsector, and Entity Type." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :EUCountriesServed ;
+        sh:minCount 1 ;
+        sh:message "Core Entities must provide the EU Countries they serve." ;
+        sh:severity sh:Violation
+    ] ;
+    .
+
+:EntityReportingShape2 a sh:NodeShape ;
+    sh:targetClass :SignificantEntities ;
+    sh:property [
+        sh:path :EntityName ;
+        sh:minCount 1 ;
+        sh:message "Significant Entities must provide their Entity Name." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :EntityAddress ;
+        sh:minCount 1 ;
+        sh:message "Significant Entities must provide their Entity Address." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :ContactDetails ;
+        sh:minCount 1 ;
+        sh:message "Significant Entities must provide Contact Details." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :IPRanges ;
+        sh:minCount 1 ;
+        sh:message "Significant Entities must provide their IP Address Ranges." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :DomainNames ;
+        sh:minCount 1 ;
+        sh:message "Significant Entities must provide their Domain Names." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :SectorSubsectorType ;
+        sh:minCount 1 ;
+        sh:message "Significant Entities must provide their Sector, Subsector, and Entity Type." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :EUCountriesServed ;
+        sh:minCount 1 ;
+        sh:message "Significant Entities must provide the EU Countries they serve." ;
+        sh:severity sh:Violation
+    ] ;
+    .
+
+>>>>>>> 2578f70 (uploaded)
 ```

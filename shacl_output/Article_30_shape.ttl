@@ -5,99 +5,78 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:AuthorizingProvisionShape a sh:NodeShape ;
+:Article30Shape a sh:NodeShape ;
     sh:targetClass :AuthorizingProvision ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Authorizing Provision must have a label" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Authorizing Provision must specify the required decision or approval" ] .
+    sh:property [
+        sh:path :requires ;
+        sh:minCount 1 ;
+        sh:message "Authorizing provisions must specify at least one requiring decision or opinion." ;
+        sh:severity sh:Violation
+    ] .
 
-:DecisionShape a sh:NodeShape ;
-    sh:targetClass :Decision ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Decision must have a label" ] .
+:Article30_paragraph3Shape a sh:NodeShape ;
+    sh:targetClass :AuthorizingProvision ;
+    sh:target :Article30_paragraph3 ;
+    sh:property [
+        sh:path :deadline ;
+        sh:pattern "^P[0-9]+M$" ;
+        sh:message "The deadline for Article 30, paragraph 3 must be specified as PnM, where n is a positive integer." ;
+        sh:severity sh:Violation
+    ] .
 
-:OpinionShape a sh:NodeShape ;
-    sh:targetClass :Opinion ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Opinion must have a label" ] .
+:Article30_paragraph5Shape a sh:NodeShape ;
+    sh:targetClass :AuthorizingProvision ;
+    sh:target :Article30_paragraph5 ;
+    sh:property [
+        sh:path :deadline ;
+        sh:pattern "^P[0-9]+M$" ;
+        sh:message "The deadline for Article 30, paragraph 5 must be specified as PnM, where n is a positive integer." ;
+        sh:severity sh:Violation
+    ] .
 
-:LegalEntityClassShape a sh:NodeShape ;
-    sh:targetClass :LegalEntityClass ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] .
+:Article30_paragraph6Shape a sh:NodeShape ;
+    sh:targetClass :AuthorizingProvision ;
+    sh:target :Article30_paragraph6 ;
+    sh:property [
+        sh:path :deadline ;
+        sh:pattern "^P[0-9]+M$" ;
+        sh:message "The deadline for Article 30, paragraph 6 must be specified as PnM, where n is a positive integer." ;
+        sh:severity sh:Violation
+    ] .
 
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] .
+:Article30_paragraph7Shape a sh:NodeShape ;
+    sh:targetClass :AuthorizingProvision ;
+    sh:target :Article30_paragraph7 ;
+    sh:property [
+        sh:path :deadline ;
+        sh:pattern "^P[0-9]+M$" ;
+        sh:message "The deadline for Article 30, paragraph 7 must be specified as PnM, where n is a positive integer." ;
+        sh:severity sh:Violation
+    ],
+    [
+        sh:path :approvalPeriod ;
+        sh:pattern "^P[0-9]+M$" ;
+        sh:message "The approval period for Article 30, paragraph 7 must be specified as PnM, where n is a positive integer." ;
+        sh:severity sh:Violation
+    ] .
 
-:ExemptionShape a sh:NodeShape ;
-    sh:targetClass :Exemption ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Exemption must have a label" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Exemption must specify what it applies to" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Exemption must specify the required decision or approval" ] .
+:Article30_paragraph20Shape a sh:NodeShape ;
+    sh:targetClass :AuthorizingProvision ;
+    sh:target :Article30_paragraph20 ;
+    sh:property [
+        sh:path :deadline ;
+        sh:pattern "^P[0-9]+M$" ;
+        sh:message "The deadline for Article 30, paragraph 20 must be specified as PnM, where n is a positive integer." ;
+        sh:severity sh:Violation
+    ] .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] .
-
-:ListShape a sh:NodeShape ;
-    sh:targetClass :List ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "List must have a label" ] .
-
-:DigitalPlatformShape a sh:NodeShape ;
-    sh:targetClass :DigitalPlatform ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Digital Platform must have a label" ] .
-
-:NationalStrategyShape a sh:NodeShape ;
-    sh:targetClass :NationalStrategy ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "National Strategy must have a label" ] .
-
-:ResourceListShape a sh:NodeShape ;
-    sh:targetClass :ResourceList ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Resource List must have a label" ] .
-
-:PlanShape a sh:NodeShape ;
-    sh:targetClass :Plan ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Plan must have a label" ] .
-
-:ApprovalShape a sh:NodeShape ;
-    sh:targetClass :Approval ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Approval must have a label" ] .
-
-:TermsProceduresShape a sh:NodeShape ;
-    sh:targetClass :TermsProcedures ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Terms and Procedures must have a label" ] .
-
-:MeasuresActionsShape a sh:NodeShape ;
-    sh:targetClass :MeasuresActions ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Measures and Actions must have a label" ] .
-
-:DetailsShape a sh:NodeShape ;
-    sh:targetClass :Details ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Details must have a label" ] .
-
-:RegulationShape a sh:NodeShape ;
-    sh:targetClass :Regulation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation must have a label" ] .
-
-:TasksShape a sh:NodeShape ;
-    sh:targetClass :Tasks ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Tasks must have a label" ] .
-
-:FrameworkShape a sh:NodeShape ;
-    sh:targetClass :Framework ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Framework must have a label" ] .
-
-:TemplateShape a sh:NodeShape ;
-    sh:targetClass :Template ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Template must have a label" ] .
-
-:ResponsibilitiesShape a sh:NodeShape ;
-    sh:targetClass :Responsibilities ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Responsibilities must have a label" ] .
-
-:ChapterShape a sh:NodeShape ;
-    sh:targetClass :Chapter ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Chapter must have a label" ] .
-
-:TermsConditionsProcedureShape a sh:NodeShape ;
-    sh:targetClass :TermsConditionsProcedure ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Terms, Conditions and Procedure must have a label" ] .
-
+:Article30_paragraph22Shape a sh:NodeShape ;
+    sh:targetClass :AuthorizingProvision ;
+    sh:target :Article30_paragraph22 ;
+    sh:property [
+        sh:path :deadline ;
+        sh:pattern "^P[0-9]+M$" ;
+        sh:message "The deadline for Article 30, paragraph 22 must be specified as PnM, where n is a positive integer." ;
+        sh:severity sh:Violation
+    ] .
 ```

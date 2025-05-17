@@ -2,28 +2,22 @@ Conforms: False
 
 Validation Report
 Conforms: False
-Results (4):
+Results (3):
 Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
 	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
-	Focus Node: :InformationSecurityIncidentClosure
-	Result Path: :subject
-	Message: Regulation Rule must have a subject
+	Source Shape: [ sh:message Literal("Legal Entity must possess at least two licenses: Operating Permit and Service Provision License.") ; sh:minCount Literal("2", datatype=xsd:integer) ; sh:path :hasLicense ; sh:severity sh:Violation ]
+	Focus Node: :InformationSecurityOffice
+	Result Path: :hasLicense
+	Message: Legal Entity must possess at least two licenses: Operating Permit and Service Provision License.
 Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
 	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
-	Focus Node: :HighSeverityInformationSecurityIncidentClosure
-	Result Path: :subject
-	Message: Regulation Rule must have a subject
+	Source Shape: [ sh:message Literal("Legal Entity must possess at least two licenses: Operating Permit and Service Provision License.") ; sh:minCount Literal("2", datatype=xsd:integer) ; sh:path :hasLicense ; sh:severity sh:Violation ]
+	Focus Node: :CERT
+	Result Path: :hasLicense
+	Message: Legal Entity must possess at least two licenses: Operating Permit and Service Provision License.
 Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
 	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must require at least one obligation") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :requires ]
-	Focus Node: :InformationSecurityIncidentClosure
-	Result Path: :requires
-	Message: Regulation Rule must require at least one obligation
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must require at least one obligation") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :requires ]
-	Focus Node: :HighSeverityInformationSecurityIncidentClosure
-	Result Path: :requires
-	Message: Regulation Rule must require at least one obligation
+	Source Shape: [ sh:message Literal("Legal Entity must possess at least two licenses: Operating Permit and Service Provision License.") ; sh:minCount Literal("2", datatype=xsd:integer) ; sh:path :hasLicense ; sh:severity sh:Violation ]
+	Focus Node: :SOC
+	Result Path: :hasLicense
+	Message: Legal Entity must possess at least two licenses: Operating Permit and Service Provision License.

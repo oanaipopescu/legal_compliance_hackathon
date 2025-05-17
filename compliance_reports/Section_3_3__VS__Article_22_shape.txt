@@ -2,34 +2,10 @@ Conforms: False
 
 Validation Report
 Conforms: False
-Results (5):
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+Results (1):
+Constraint Violation in HasValueConstraintComponent (http://www.w3.org/ns/shacl#HasValueConstraintComponent):
 	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
-	Focus Node: :InformationSecurityEvent
-	Result Path: :subject
-	Message: Regulation Rule must have a subject
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
-	Focus Node: :AssessmentOfInformationSecurityEvents
-	Result Path: :subject
-	Message: Regulation Rule must have a subject
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must specify what it applies to") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :appliesTo ]
-	Focus Node: :InformationSecurityEvent
-	Result Path: :appliesTo
-	Message: Regulation Rule must specify what it applies to
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must require at least one obligation") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :requires ]
-	Focus Node: :InformationSecurityEvent
-	Result Path: :requires
-	Message: Regulation Rule must require at least one obligation
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
-	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must require at least one obligation") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :requires ]
-	Focus Node: :AssessmentOfInformationSecurityEvents
-	Result Path: :requires
-	Message: Regulation Rule must require at least one obligation
+	Source Shape: [ sh:hasValue :VoluntaryIncidentNotification ; sh:message Literal("Legal entities must process Voluntary Incident Notifications as per Article 22.") ; sh:path :processes ; sh:severity sh:Violation ]
+	Focus Node: :ITSecurityOperationsCenter
+	Result Path: :processes
+	Message: Legal entities must process Voluntary Incident Notifications as per Article 22.

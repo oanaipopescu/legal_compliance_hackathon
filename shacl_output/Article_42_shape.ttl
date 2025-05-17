@@ -5,48 +5,56 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] .
+:ContractRenewalShape a sh:NodeShape ;
+    sh:targetClass :ContractRenewal ;
+    sh:property [
+        sh:path :employmentType ;
+        sh:hasValue :PrivateLawFixedTermContract ;
+        sh:message "The employment type must be 'Private Law Fixed-Term Employment Contract'." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :specialization ;
+        sh:hasValue :DriverTraining ;
+        sh:message "The specialization must be 'Driver Training'." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :until ;
+        sh:hasValue :ProjectCompletion_OASTH ;
+        sh:message "The contract must end upon completion of the OASTH project." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :maximumDuration ;
+        sh:datatype xsd:date ;
+        sh:maxInclusive "2025-06-30"^^xsd:date ;
+        sh:message "The maximum duration must be before 2025-06-30." ;
+        sh:severity sh:Violation
+    ] .
 
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Obligation must specify what it applies to" ] ;
-    sh:property [ sh:path :until ; sh:minCount 1 ; sh:message "Obligation must specify its end condition" ] ;
-    sh:property [ sh:path :maximumDuration ; sh:datatype xsd:date ; sh:minCount 1 ; sh:message "Obligation must have a maximum duration" ] ;
-    sh:property [ sh:path :employmentType ; sh:minCount 1 ; sh:message "Obligation must specify employment type" ] ;
-    sh:property [ sh:path :specialization ; sh:minCount 1 ; sh:message "Obligation must specify specialization" ] ;
-    sh:property [ sh:path :numberOfContracts ; sh:datatype xsd:integer ; sh:minCount 1 ; sh:message "Obligation must specify number of contracts" ] ;
-    sh:property [ sh:path :basedOn ; sh:minCount 1 ; sh:message "Obligation must specify its legal basis" ] .
+:SOX1_2023_ContractShape a sh:NodeShape ;
+    sh:targetClass :Contract ;
+    sh:property [
+        sh:path :appliesTo ;
+        sh:hasValue :OASTH_Drivers_SOX1_2023 ;
+        sh:message "Contracts must apply to OASTH drivers hired under SOX 1/2023" ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :numberOfContracts ;
+        sh:minCount 150 ;
+        sh:message "Minimum 150 contracts required for this SOX 1/2023 group" ;
+        sh:severity sh:Violation
+    ] .
 
-:LegalEntityClassShape a sh:NodeShape ;
-    sh:targetClass :LegalEntityClass ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] .
-
-:ConditionShape a sh:NodeShape ;
-    sh:targetClass :Condition ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Condition must have a label" ] .
-
-:LegalBasisShape a sh:NodeShape ;
-    sh:targetClass :LegalBasis ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Basis must have a label" ] .
-
-:AnnouncementShape a sh:NodeShape ;
-    sh:targetClass :Announcement ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Announcement must have a label" ] .
-
-:EmploymentTypeShape a sh:NodeShape ;
-    sh:targetClass :EmploymentType ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Employment Type must have a label" ] .
-
-:SpecializationShape a sh:NodeShape ;
-    sh:targetClass :Specialization ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Specialization must have a label" ] .
-
-:LegalEntityShape a sh:NodeShape ;
-  sh:targetClass :LegalEntity ;
-  sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] .
+:SOX1_2024_ContractShape a sh:NodeShape ;
+    sh:targetClass :Contract ;
+    sh:property [
+        sh:path :appliesTo ;
+        sh:hasValue :OASTH_Drivers_SOX1_2024 ;
+        sh:message "Contracts must apply to OASTH drivers hired under SOX 1/2024" ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :numberOfContracts ;
+        sh:minCount 40 ;
+        sh:message "Minimum 40 contracts required for this SOX 1/2024 group" ;
+        sh:severity sh:Violation
+    ] .
 ```

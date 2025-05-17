@@ -2,22 +2,52 @@ Conforms: False
 
 Validation Report
 Conforms: False
-Results (3):
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+Results (8):
+Constraint Violation in HasValueConstraintComponent (http://www.w3.org/ns/shacl#HasValueConstraintComponent):
 	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
-	Focus Node: :Standard
-	Result Path: :subject
-	Message: Regulation Rule must have a subject
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Source Shape: [ sh:hasValue :CSIRT ; sh:message Literal("Legal entities must have a designated CSIRT role.") ; sh:path :role ; sh:severity sh:Violation ]
+	Focus Node: :HeadOfSecurityGRC
+	Result Path: :role
+	Message: Legal entities must have a designated CSIRT role.
+Constraint Violation in HasValueConstraintComponent (http://www.w3.org/ns/shacl#HasValueConstraintComponent):
 	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must specify what it applies to") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :appliesTo ]
-	Focus Node: :Standard
-	Result Path: :appliesTo
-	Message: Regulation Rule must specify what it applies to
-Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Source Shape: [ sh:hasValue :CSIRT ; sh:message Literal("Legal entities must have a designated CSIRT role.") ; sh:path :role ; sh:severity sh:Violation ]
+	Focus Node: :CorporateSecurityDepartment
+	Result Path: :role
+	Message: Legal entities must have a designated CSIRT role.
+Constraint Violation in HasValueConstraintComponent (http://www.w3.org/ns/shacl#HasValueConstraintComponent):
 	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must require at least one obligation") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :requires ]
-	Focus Node: :Standard
-	Result Path: :requires
-	Message: Regulation Rule must require at least one obligation
+	Source Shape: [ sh:hasValue :CSIRT ; sh:message Literal("Legal entities must have a designated CSIRT role.") ; sh:path :role ; sh:severity sh:Violation ]
+	Focus Node: :ManagerSecurityPolicyProcedures
+	Result Path: :role
+	Message: Legal entities must have a designated CSIRT role.
+Constraint Violation in HasValueConstraintComponent (http://www.w3.org/ns/shacl#HasValueConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:hasValue :CSIRT ; sh:message Literal("Legal entities must have a designated CSIRT role.") ; sh:path :role ; sh:severity sh:Violation ]
+	Focus Node: :ChiefSecurityOfficer
+	Result Path: :role
+	Message: Legal entities must have a designated CSIRT role.
+Constraint Violation in HasValueConstraintComponent (http://www.w3.org/ns/shacl#HasValueConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:hasValue :NationalCSIRT ; sh:message Literal("National Cybersecurity Authority must have a National CSIRT role for coordination.") ; sh:path :role ; sh:severity sh:Violation ]
+	Focus Node: :HeadOfSecurityGRC
+	Result Path: :role
+	Message: National Cybersecurity Authority must have a National CSIRT role for coordination.
+Constraint Violation in HasValueConstraintComponent (http://www.w3.org/ns/shacl#HasValueConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:hasValue :NationalCSIRT ; sh:message Literal("National Cybersecurity Authority must have a National CSIRT role for coordination.") ; sh:path :role ; sh:severity sh:Violation ]
+	Focus Node: :CorporateSecurityDepartment
+	Result Path: :role
+	Message: National Cybersecurity Authority must have a National CSIRT role for coordination.
+Constraint Violation in HasValueConstraintComponent (http://www.w3.org/ns/shacl#HasValueConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:hasValue :NationalCSIRT ; sh:message Literal("National Cybersecurity Authority must have a National CSIRT role for coordination.") ; sh:path :role ; sh:severity sh:Violation ]
+	Focus Node: :ManagerSecurityPolicyProcedures
+	Result Path: :role
+	Message: National Cybersecurity Authority must have a National CSIRT role for coordination.
+Constraint Violation in HasValueConstraintComponent (http://www.w3.org/ns/shacl#HasValueConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:hasValue :NationalCSIRT ; sh:message Literal("National Cybersecurity Authority must have a National CSIRT role for coordination.") ; sh:path :role ; sh:severity sh:Violation ]
+	Focus Node: :ChiefSecurityOfficer
+	Result Path: :role
+	Message: National Cybersecurity Authority must have a National CSIRT role for coordination.

@@ -3,28 +3,18 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :repeals ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it repeals" ] .
+:CompanyPolicyShape a sh:NodeShape ;
+    sh:targetClass :CompanyPolicy ;
+    sh:property [
+        sh:path :mentions ;
+        sh:minCount 1 ;
+        sh:message "Company policy must mention at least one of the repealed provisions.";
+        sh:severity sh:Violation
+    ] .
 
-:LegalProvisionShape a sh:NodeShape ;
-    sh:targetClass :LegalProvision ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Provision must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Legal Provision must have a subject" ] .
+:CompanyPolicy a rdf:Class ;
+    rdfs:label "Company Policy" .
 
-:NationalLawShape a sh:NodeShape ;
-    sh:targetClass :NationalLaw ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "National Law must have a label" ] .
-
-:NationalDecisionShape a sh:NodeShape ;
-    sh:targetClass :NationalDecision ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "National Decision must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "National Decision must have a subject" ] .
-
-:PartShape a sh:NodeShape ;
-    sh:targetClass :Part ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Part must have a label" ] .
 ```
