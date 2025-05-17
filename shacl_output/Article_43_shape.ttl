@@ -5,43 +5,30 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] .
-
-:LicenseShape a sh:NodeShape ;
-    sh:targetClass :License ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "License must have a label" ] ;
-    sh:property [ sh:path :grantedBy ; sh:minCount 1 ; sh:message "License must specify granting authority" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "License must specify requirements" ] .
-
-:LegalEntityShape a sh:NodeShape ;
+:Article43Shape a sh:NodeShape ;
     sh:targetClass :LegalEntity ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] .
+    sh:property [
+        sh:path :hasLicense ;
+        sh:minCount 2 ;
+        sh:message "Legal Entity must possess at least two licenses: Operating Permit and Service Provision License.";
+        sh:severity sh:Violation
+    ] .
 
-:CertificateShape a sh:NodeShape ;
-    sh:targetClass :Certificate ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Certificate must have a label" ] .
+:OperatingPermitShape a sh:NodeShape ;
+    sh:targetClass :OperatingPermit ;
+    sh:property [
+        sh:path :requires ;
+        sh:minCount 10 ;
+        sh:message "Operating Permit must include at least ten required documents/certificates.";
+        sh:severity sh:Violation
+    ] .
 
-:DocumentShape a sh:NodeShape ;
-    sh:targetClass :Document ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Document must have a label" ] .
-
-:PermitShape a sh:NodeShape ;
-    sh:targetClass :Permit ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Permit must have a label" ] .
-
-:RoleShape a sh:NodeShape ;
-    sh:targetClass :Role ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Role must have a label" ] .
-
-:ScopeShape a sh:NodeShape ;
-    sh:targetClass :Scope ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Scope must have a label" ] .
-
-:LegalEntityClassShape a sh:NodeShape ;
-    sh:targetClass :LegalEntityClass ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] .
+:ServiceProvisionLicenseShape a sh:NodeShape ;
+    sh:targetClass :ServiceProvisionLicense ;
+    sh:property [
+        sh:path :requires ;
+        sh:minCount 4 ;
+        sh:message "Service Provision License must include at least four required documents/certificates.";
+        sh:severity sh:Violation
+    ] .
 ```

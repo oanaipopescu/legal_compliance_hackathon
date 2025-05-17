@@ -5,72 +5,53 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:NationalLawShape a sh:NodeShape ;
-    sh:targetClass :NationalLaw ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "National Law must have a label" ] .
-
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :paragraph ; sh:minCount 1 ; sh:message "Regulation Rule must have at least one paragraph" ] .
-
-:TransitionalProvisionShape a sh:NodeShape ;
+:Paragraph3aShape a sh:NodeShape ;
     sh:targetClass :TransitionalProvision ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Transitional Provision must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Transitional Provision must have a subject" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Transitional Provision must specify what it applies to" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Transitional Provision must specify what it requires" ] ;
-    sh:property [ sh:path :until ; sh:message "Transitional Provision must specify the end date or event" ] ;
-    sh:property [ sh:path :maximumDuration ; sh:datatype xsd:duration ; sh:message "Transitional Provision must specify a maximum duration" ] .
+    sh:property [
+        sh:path :maximumDuration ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:duration ;
+        sh:message "Paragraph 3a requires a maximum duration value." ;
+        sh:severity sh:Violation
+    ] , [
+        sh:path :appliesTo ;
+        sh:minCount 1 ;
+        sh:message "Paragraph 3a must specify who it applies to." ;
+        sh:severity sh:Violation
+    ] , [
+        sh:path :appliesUntil ;
+        sh:minCount 1 ;
+        sh:message "Paragraph 3a must specify the end date/event." ;
+        sh:severity sh:Violation
+    ] .
 
-:LegalEntityShape a sh:NodeShape ;
-    sh:targetClass :LegalEntity ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] ;
-    sh:property [ sh:path :role ; sh:message "Legal Entity may specify its role (optional)" ] .
+:Paragraph3bShape a sh:NodeShape ;
+    sh:targetClass :TransitionalProvision ;
+    sh:property [
+        sh:path :maximumDuration ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:duration ;
+        sh:message "Paragraph 3b requires a maximum duration value." ;
+        sh:severity sh:Violation
+    ] , [
+        sh:path :appliesTo ;
+        sh:minCount 1 ;
+        sh:message "Paragraph 3b must specify who it applies to." ;
+        sh:severity sh:Violation
+    ] , [
+        sh:path :appliesUntil ;
+        sh:minCount 1 ;
+        sh:message "Paragraph 3b must specify the end date/event." ;
+        sh:severity sh:Violation
+    ] .
 
-:DeclarationShape a sh:NodeShape ;
-    sh:targetClass :Declaration ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Declaration must have a label" ] ;
-    sh:property [ sh:path :issuedBy ; sh:minCount 1 ; sh:message "Declaration must specify who issued it" ] .
-
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
-    sh:property [ sh:path :concerns ; sh:minCount 1 ; sh:message "Obligation must specify what it concerns" ] .
-
-:TasksShape a sh:NodeShape ;
-    sh:targetClass :Tasks ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Tasks must have a label" ] .
-
-:ReferencesShape a sh:NodeShape ;
-    sh:targetClass :References ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "References must have a label" ] .
-
-:LegalEntityClassShape a sh:NodeShape ;
-    sh:targetClass :LegalEntityClass ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] .
-
-:DecisionShape a sh:NodeShape ;
+:JointDecisionMinistersDigitalGovernanceJusticeShape a sh:NodeShape ;
     sh:targetClass :Decision ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Decision must have a label" ] .
-
-:RegulationShape a sh:NodeShape ;
-    sh:targetClass :Regulation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation must have a label" ] .
-
-:SanctionsShape a sh:NodeShape ;
-    sh:targetClass :Sanctions ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Sanctions must have a label" ] .
-
-:DetailsShape a sh:NodeShape ;
-    sh:targetClass :Details ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Details must have a label" ] ;
-    sh:property [ sh:path :determinedBy ; sh:minCount 1 ; sh:message "Details must specify how they are determined" ] ;
-    sh:property [ sh:path :concerns ; sh:minCount 1 ; sh:message "Details must specify what they concern" ] .
-
-:RoleShape a sh:NodeShape ;
-    sh:targetClass :Role ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Role must have a label" ] .
-
+    sh:property [
+        sh:path :deadline ;
+        sh:maxCount 1 ;
+        sh:datatype xsd:duration ;
+        sh:message "The Joint Decision must specify a deadline." ;
+        sh:severity sh:Violation
+    ] .
 ```

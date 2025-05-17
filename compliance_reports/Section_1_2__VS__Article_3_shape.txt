@@ -2,16 +2,58 @@ Conforms: False
 
 Validation Report
 Conforms: False
-Results (2):
+Results (9):
 Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
 	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
-	Focus Node: :Standard
-	Result Path: :subject
-	Message: Regulation Rule must have a subject
+	Source Shape: [ sh:message Literal("Legal entities must comply with Regulation (EU) 2016/679") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :compliesWithRegulation2016_679 ; sh:severity sh:Violation ]
+	Focus Node: :Supplier
+	Result Path: :compliesWithRegulation2016_679
+	Message: Legal entities must comply with Regulation (EU) 2016/679
 Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
 	Severity: sh:Violation
-	Source Shape: [ sh:message Literal("Regulation Rule must require at least one obligation") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :requires ]
-	Focus Node: :Standard
-	Result Path: :requires
-	Message: Regulation Rule must require at least one obligation
+	Source Shape: [ sh:message Literal("Legal entities must comply with Regulation (EU) 2016/679") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :compliesWithRegulation2016_679 ; sh:severity sh:Violation ]
+	Focus Node: :ProblemManagement
+	Result Path: :compliesWithRegulation2016_679
+	Message: Legal entities must comply with Regulation (EU) 2016/679
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal entities must comply with Regulation (EU) 2016/679") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :compliesWithRegulation2016_679 ; sh:severity sh:Violation ]
+	Focus Node: :Business
+	Result Path: :compliesWithRegulation2016_679
+	Message: Legal entities must comply with Regulation (EU) 2016/679
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal entities must comply with Regulation (EU) 2016/679") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :compliesWithRegulation2016_679 ; sh:severity sh:Violation ]
+	Focus Node: :ForensicInvestigation
+	Result Path: :compliesWithRegulation2016_679
+	Message: Legal entities must comply with Regulation (EU) 2016/679
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal entities must comply with Regulation (EU) 2016/679") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :compliesWithRegulation2016_679 ; sh:severity sh:Violation ]
+	Focus Node: :DisasterRecoveryPlanning
+	Result Path: :compliesWithRegulation2016_679
+	Message: Legal entities must comply with Regulation (EU) 2016/679
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal entities must comply with Regulation (EU) 2016/679") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :compliesWithRegulation2016_679 ; sh:severity sh:Violation ]
+	Focus Node: :Market
+	Result Path: :compliesWithRegulation2016_679
+	Message: Legal entities must comply with Regulation (EU) 2016/679
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal entities must comply with Regulation (EU) 2016/679") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :compliesWithRegulation2016_679 ; sh:severity sh:Violation ]
+	Focus Node: :OverallSOC
+	Result Path: :compliesWithRegulation2016_679
+	Message: Legal entities must comply with Regulation (EU) 2016/679
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal entities must comply with Regulation (EU) 2016/679") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :compliesWithRegulation2016_679 ; sh:severity sh:Violation ]
+	Focus Node: :CERT
+	Result Path: :compliesWithRegulation2016_679
+	Message: Legal entities must comply with Regulation (EU) 2016/679
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal entities must comply with Regulation (EU) 2016/679") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :compliesWithRegulation2016_679 ; sh:severity sh:Violation ]
+	Focus Node: :Function
+	Result Path: :compliesWithRegulation2016_679
+	Message: Legal entities must comply with Regulation (EU) 2016/679

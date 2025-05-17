@@ -1,24 +1,99 @@
-@prefix : <http://example.org#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix : <http://example.org#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it applies to" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] ;
-    sh:property [ sh:path :references ; sh:message "Regulation Rule may specify referenced legislation (optional)" ] .
-
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] .
-
-:LegalBasisShape a sh:NodeShape ;
-    sh:targetClass :LegalBasis ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Basis must have a label" ] .
-
-:LegalEntityShape a sh:NodeShape ;
-    sh:targetClass :LegalEntity ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] .
+:NationalCybersecurityStrategyShape a sh:NodeShape ;
+    sh:targetClass :NationalCybersecurityAuthority ;
+    sh:property [
+        sh:path :hasStrategicObjectives ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must define at least one strategic objective." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasRequiredResources ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must define the resources required to achieve its objectives." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasPolicyAndRegulatoryMeasures ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must outline policy and regulatory measures." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasNCS_GovernanceFramework ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must include a governance framework." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasRiskAssessmentMechanism ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must describe a risk assessment mechanism." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasIncidentPreparednessResponseRecoveryMeasures ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must detail measures for incident preparedness, response, and recovery." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasStakeholderParticipationList ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must list participating authorities and stakeholders." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasEnhancedCoordinationPolicyFramework ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must include a policy framework for enhanced coordination." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasCybersecurityAwarenessPlan ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must contain a cybersecurity awareness plan." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasCriticalSuccessFactors ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must identify critical success factors." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasCybersecuritySupplyChainEmbedding ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must address cybersecurity in the ICT supply chain." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasCybersecurityRequirementsInPublicProcurement ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must include cybersecurity requirements in public procurement." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasVulnerabilityManagement ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must address vulnerability management." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasPublicInternetAvailabilityIntegrityConfidentiality ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must address maintaining the availability, integrity, and confidentiality of the public internet." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasAdvancedTechnologyDevelopmentIntegration ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must promote the development and integration of advanced technologies for risk management." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasCybersecurityEducationAndTraining ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must promote cybersecurity education and training." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasInformationExchangeSupport ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must support the voluntary exchange of cybersecurity information." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasSMEResilienceSupport ;
+        sh:minCount 1 ;
+        sh:message "The National Cybersecurity Strategy must support the cyber resilience of small and medium-sized enterprises." ;
+        sh:severity sh:Violation
+    ] .

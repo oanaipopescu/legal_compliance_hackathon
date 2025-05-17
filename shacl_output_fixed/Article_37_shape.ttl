@@ -4,42 +4,12 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it applies to" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] ;
-    sh:property [ sh:path :concerns ; sh:message "Regulation Rule may specify what it concerns (optional)" ] .
-
-:LegalEntityShape a sh:NodeShape ;
-    sh:targetClass :LegalEntity ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] ;
-    sh:property [ sh:path :contract ; sh:message "Legal Entity may specify contracts (optional)" ] .
-
 :ContractShape a sh:NodeShape ;
     sh:targetClass :Contract ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Contract must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Contract must have a subject" ] ;
-    sh:property [ sh:path :subproject ; sh:message "Contract may specify subprojects (optional)" ] ;
-    sh:property [ sh:path :expiryDate ; sh:datatype xsd:date ; sh:minCount 1 ; sh:message "Contract must have an expiry date" ] .
-
-:SubprojectShape a sh:NodeShape ;
-    sh:targetClass :Subproject ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Subproject must have a label" ] ;
-    sh:property [ sh:path :concerns ; sh:minCount 1 ; sh:message "Subproject must specify what it concerns" ] .
-
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
-    sh:property [ sh:path :until ; sh:message "Obligation may specify an end condition (optional)" ] ;
-    sh:property [ sh:path :appliesTo ; sh:message "Obligation may specify what it applies to (optional)" ] .
-
-:ConditionShape a sh:NodeShape ;
-    sh:targetClass :Condition ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Condition must have a label" ] ;
-    sh:property [ sh:path :determinedBy ; sh:minCount 1 ; sh:message "Condition must specify how it is determined" ] .
-
-:ProcessShape a sh:NodeShape ;
-    sh:targetClass :Process ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Process must have a label" ] .
+    sh:property [
+        sh:path :expiryDate ;
+        sh:minCount 1 ;
+        sh:datatype xsd:date ;
+        sh:message "Contracts must have an expiry date." ;
+        sh:severity sh:Violation
+    ] .

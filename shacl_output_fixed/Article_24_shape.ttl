@@ -4,66 +4,11 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it applies to" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] ;
-    sh:property [ sh:path :references ; sh:message "Regulation Rule may specify referenced legislation (optional)" ] .
-
-:LegalBasisShape a sh:NodeShape ;
-    sh:targetClass :LegalBasis ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Basis must have a label" ] .
-
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
-    sh:property [ sh:path :concerns ; sh:message "Obligation may specify what it concerns (optional)" ] ;
-    sh:property [ sh:path :appliesTo ; sh:message "Obligation may specify what it applies to (optional)" ] ;
-    sh:property [ sh:path :requires ; sh:message "Obligation may require other obligations (optional)" ] ;
-    sh:property [ sh:path :basedOn ; sh:message "Obligation may specify its legal basis (optional)" ] .
-
-:CompetenceShape a sh:NodeShape ;
-    sh:targetClass :Competence ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Competence must have a label" ] ;
-    sh:property [ sh:path :carriedOutBy ; sh:message "Competence may specify who carries it out (optional)" ] ;
-    sh:property [ sh:path :basedOn ; sh:message "Competence may specify its legal basis (optional)" ] ;
-    sh:property [ sh:path :requires ; sh:message "Competence may specify requirements (optional)" ] ;
-    sh:property [ sh:path :justifiedBy ; sh:message "Competence may specify justification (optional)" ] .
-
-:LegalEntityClassShape a sh:NodeShape ;
-    sh:targetClass :LegalEntityClass ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] ;
-    sh:property [ sh:path :definedIn ; sh:message "Legal Entity Class may specify its definition (optional)" ] .
-
-:ConditionShape a sh:NodeShape ;
-    sh:targetClass :Condition ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Condition must have a label" ] .
-
-:ResponsibilityShape a sh:NodeShape ;
-    sh:targetClass :Responsibility ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Responsibility must have a label" ] ;
-    sh:property [ sh:path :basedOn ; sh:message "Responsibility may specify its legal basis (optional)" ] .
-
-:SanctionShape a sh:NodeShape ;
-    sh:targetClass :Sanction ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Sanction must have a label" ] .
-
-:CriterionShape a sh:NodeShape ;
-    sh:targetClass :Criterion ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Criterion must have a label" ] .
-
-:EU_DirectiveShape a sh:NodeShape ;
-    sh:targetClass :EU_Directive ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "EU Directive must have a label" ] .
-
-:EU_RegulationShape a sh:NodeShape ;
-    sh:targetClass :EU_Regulation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "EU Regulation must have a label" ] .
-
-:LegalEntityShape a sh:NodeShape ;
-    sh:targetClass :LegalEntity ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] ;
-    sh:property [ sh:path :hasCompetence ; sh:message "Legal Entity may specify its competences (optional)" ] ;
-    sh:property [ sh:path :responsibilities ; sh:message "Legal Entity may specify its responsibilities (optional)" ] .
+:Article24Shape a sh:NodeShape ;
+    sh:targetClass :KeyEntities ;
+    sh:property [
+        sh:path :hasEnforcementMeasures ;
+        sh:minCount 1 ;
+        sh:message "Key Entities must have at least one enforcement measure defined according to Article 24." ;
+        sh:severity sh:Violation
+    ] .

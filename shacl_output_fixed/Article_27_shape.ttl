@@ -4,42 +4,29 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it applies to" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] ;
-    sh:property [ sh:path :references ; sh:message "Regulation Rule may specify referenced legislation (optional)" ] .
+:NotificationShape a sh:NodeShape ;
+    sh:targetClass :NotificationToDPA ;
+    sh:property [
+        sh:path :timeLimit ;
+        sh:pattern "[0-9]+" ;
+        sh:message "Time limit must be a positive integer" ;
+        sh:severity sh:Violation
+    ] .
 
-:LegalBasisShape a sh:NodeShape ;
-    sh:targetClass :LegalBasis ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Basis must have a label" ] .
+:NoDuplicateFineShape a sh:NodeShape ;
+    sh:targetClass :NoDuplicateFine ;
+    sh:property [
+        sh:path :conditionalOn ;
+        sh:hasValue :DPAImposedFine ;
+        sh:message "No Duplicate Fine must be conditional on DPAImposedFine" ;
+        sh:severity sh:Violation
+    ] .
 
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
-    sh:property [ sh:path :appliesTo ; sh:message "Obligation may specify what it applies to (optional)" ] ;
-    sh:property [ sh:path :requires ; sh:message "Obligation may require other obligations (optional)" ] ;
-    sh:property [ sh:path :conditionalOn ; sh:message "Obligation may be conditional (optional)" ] ;
-    sh:property [ sh:path :timeLimit ; sh:datatype xsd:string ; sh:message "Obligation may have a time limit (optional)" ] ;
-    sh:property [ sh:path :concerns ; sh:message "Obligation may specify what it concerns (optional)" ] .
-
-:ConditionShape a sh:NodeShape ;
-    sh:targetClass :Condition ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Condition must have a label" ] ;
-    sh:property [ sh:path :definedIn ; sh:message "Condition may specify where it is defined (optional)" ] ;
-    sh:property [ sh:path :basedOn ; sh:message "Condition may specify its legal basis (optional)" ] .
-
-:LegalEntityShape a sh:NodeShape ;
-    sh:targetClass :LegalEntity ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] .
-
-:LegalEntityClassShape a sh:NodeShape ;
-    sh:targetClass :LegalEntityClass ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] .
-
-:DefinedTermShape a sh:NodeShape ;
-    sh:targetClass :DefinedTerm ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Defined Term must have a label" ] ;
-    sh:property [ sh:path :definedIn ; sh:message "Defined Term may specify where it is defined (optional)" ] .
+:InformationToDPAInOtherMemberStateShape a sh:NodeShape ;
+    sh:targetClass :InformationToDPAInOtherMemberState ;
+    sh:property [
+        sh:path :conditionalOn ;
+        sh:hasValue :DPAInOtherMemberState ;
+        sh:message "Information to DPA in another Member State must be conditional on DPAInOtherMemberState" ;
+        sh:severity sh:Violation
+    ] .

@@ -2,43 +2,69 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it applies to" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] ;
-    sh:property [ sh:path :references ; sh:message "Regulation Rule may specify referenced legislation (optional)" ] .
+:LargeScaleIncidentCrisisManagementPlanShape a sh:NodeShape ;
+    sh:targetClass :LargeScaleIncidentCrisisManagementPlan ;
+    sh:property [
+        sh:path :requires ;
+        sh:minCount 6 ;
+        sh:message "A national plan for responding to large-scale incidents must include at least 6 requirements" ;
+        sh:severity sh:Violation
+    ] .
 
-:LegalBasisShape a sh:NodeShape ;
-    sh:targetClass :LegalBasis ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Basis must have a label" ] .
+:NationalPreparednessObjectivesShape a sh:NodeShape ;
+    sh:targetClass :NationalPreparednessObjectives ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:minCount 1 ;
+        sh:message "Objectives of national preparedness measures must be defined"
+    ] .
 
-:LegalEntityShape a sh:NodeShape ;
-    sh:targetClass :LegalEntity ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] .
+:NCSAuthorityDutiesResponsibilitiesShape a sh:NodeShape ;
+    sh:targetClass :NCSAuthorityDutiesResponsibilities ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:minCount 1 ;
+        sh:message "Duties and responsibilities of the National Cybersecurity Authority must be defined"
+    ] .
 
-:RoleShape a sh:NodeShape ;
-    sh:targetClass :Role ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Role must have a label" ] .
+:CyberCrisisManagementProceduresShape a sh:NodeShape ;
+    sh:targetClass :CyberCrisisManagementProcedures ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:minCount 1 ;
+        sh:message "Cyber crisis management procedures must be defined"
+    ] .
 
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] .
+:NationalPreparednessMeasuresShape a sh:NodeShape ;
+    sh:targetClass :NationalPreparednessMeasures ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:minCount 1 ;
+        sh:message "National preparedness measures must be defined"
+    ] .
 
-:ProcessShape a sh:NodeShape ;
-    sh:targetClass :Process ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Process must have a label" ] .
+:StakeholderInfrastructureIdentificationShape a sh:NodeShape ;
+    sh:targetClass :StakeholderInfrastructureIdentification ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:minCount 1 ;
+        sh:message "Stakeholder infrastructure identification must be defined"
+    ] .
 
-:ApprovalMethodShape a sh:NodeShape ;
-    sh:targetClass :ApprovalMethod ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Approval Method must have a label" ] .
+:EULevelCoordinationProceduresShape a sh:NodeShape ;
+    sh:targetClass :EULevelCoordinationProcedures ;
+    sh:property [
+        sh:path rdfs:label ;
+        sh:minCount 1 ;
+        sh:message "EU-level coordination procedures must be defined"
+    ] .
 
-:InformationElementShape a sh:NodeShape ;
-    sh:targetClass :InformationElement ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Information Element must have a label" ] .
-
-:TimePeriodShape a sh:NodeShape ;
-    sh:targetClass :TimePeriod ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Time Period must have a label" ] .
+:NotificationToEuropeanCommissionShape a sh:NodeShape ;
+    sh:targetClass :NotificationToEuropeanCommission ;
+    sh:property [
+        sh:path :requires ;
+        sh:minCount 2 ;
+        sh:message "Notification to the European Commission requires at least two information elements"
+    ] .

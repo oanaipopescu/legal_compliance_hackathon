@@ -4,36 +4,75 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it applies to" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] ;
-    sh:property [ sh:path :references ; sh:message "Regulation Rule may specify referenced legislation (optional)" ] .
+:IncidentReportingShape a sh:NodeShape ;
+    sh:targetClass :CSIRT ;
+    sh:property [
+        sh:path :IncidentReporting ;
+        sh:minCount 1 ;
+        sh:message "CSIRTs must have an Incident Reporting mechanism in place." ;
+        sh:severity sh:Violation
+    ] .
 
-:LegalBasisShape a sh:NodeShape ;
-    sh:targetClass :LegalBasis ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Basis must have a label" ] .
+:NCSANotificationToCSIRTshape a sh:NodeShape ;
+    sh:targetClass :NationalCybersecurityAuthority ;
+    sh:property [
+        sh:path :NCSANotificationToCSIRT ;
+        sh:minCount 1 ;
+        sh:message "The NCSA must have a mechanism for notifying CSIRTs." ;
+        sh:severity sh:Violation
+    ] .
 
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
-    sh:property [ sh:path :appliesTo ; sh:message "Obligation may specify what it applies to (optional)" ] ;
-    sh:property [ sh:path :requires ; sh:message "Obligation may require other obligations (optional)" ] ;
-    sh:property [ sh:path :basedOn ; sh:message "Obligation may specify its legal basis (optional)" ] .
+:CSIRTNotificationToNCSAshape a sh:NodeShape ;
+    sh:targetClass :CSIRT ;
+    sh:property [
+        sh:path :CSIRTNotificationToNCSA ;
+        sh:minCount 1 ;
+        sh:message "CSIRTs must have a mechanism for notifying the NCSA." ;
+        sh:severity sh:Violation
+    ] .
 
-:LegalEntityShape a sh:NodeShape ;
-    sh:targetClass :LegalEntity ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] .
+:InterCSIRTcooperationShape a sh:NodeShape ;
+    sh:targetClass :CSIRT ;
+    sh:property [
+        sh:path :InterCSIRTcooperation ;
+        sh:minCount 1 ;
+        sh:message "CSIRTs must cooperate with each other." ;
+        sh:severity sh:Violation
+    ] .
 
-:RoleShape a sh:NodeShape ;
-    sh:targetClass :Role ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Role must have a label" ] .
+:InformationExchangeShape a sh:NodeShape ;
+    sh:targetClass :NationalCybersecurityAuthority ;
+    sh:property [
+        sh:path :InformationExchange ;
+        sh:minCount 1 ;
+        sh:message "The NCSA must have a mechanism for information exchange." ;
+        sh:severity sh:Violation
+    ] .
 
-:LegalEntityClassShape a sh:NodeShape ;
-    sh:targetClass :LegalEntityClass ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] ;
-    sh:property [ sh:path :definedIn ; sh:message "Legal Entity Class may specify its definition (optional)" ] .
+:CooperationWithAuthoritiesShape a sh:NodeShape ;
+    sh:targetClass :NationalCybersecurityAuthority, :CSIRT ;
+    sh:property [
+        sh:path :CooperationWithAuthorities ;
+        sh:minCount 1 ;
+        sh:message "The NCSA and CSIRTs must cooperate with other authorities." ;
+        sh:severity sh:Violation
+    ] .
 
+:RegularInformationExchangeShape a sh:NodeShape ;
+    sh:targetClass :NationalCybersecurityAuthority, :Directive2022_2557_Authorities, :Regulation910_2014_Authorities, :Regulation2022_2554_Authorities, :Directive2018_1972_Authorities ;
+    sh:property [
+        sh:path :RegularInformationExchange ;
+        sh:minCount 1 ;
+        sh:message "Regular information exchange is required." ;
+        sh:severity sh:Violation
+    ] .
+
+:AssistanceToNCSAShape a sh:NodeShape ;
+    sh:targetClass :NationalSectorialFocalPoints ;
+    sh:property [
+        sh:path :AssistanceToNCSA ;
+        sh:minCount 1 ;
+        sh:message "National Sectorial Focal Points must assist the NCSA." ;
+        sh:severity sh:Violation
+    ] .
 ```

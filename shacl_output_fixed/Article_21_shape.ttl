@@ -4,41 +4,15 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it applies to" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] ;
-    sh:property [ sh:path :references ; sh:message "Regulation Rule may specify referenced legislation (optional)" ] .
+:VoluntaryInformationExchangeShape a sh:NodeShape ;
+    sh:targetClass :Suppliers ;
+    sh:property [
+        sh:path :hasInformation ;
+        sh:minCount 1 ;
+        sh:message "Suppliers must share at least one type of cybersecurity information as defined in Article 21." ;
+        sh:severity sh:Violation
+    ] .
 
-:LegalBasisShape a sh:NodeShape ;
-    sh:targetClass :LegalBasis ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Basis must have a label" ] .
-
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
-    sh:property [ sh:path :concerns ; sh:minCount 1 ; sh:message "Obligation must specify what it concerns" ] ;
-    sh:property [ sh:path :purpose ; sh:minCount 1 ; sh:message "Obligation must have a purpose" ] ;
-    sh:property [ sh:path :appliesTo ; sh:message "Obligation may specify what it applies to (optional)" ] ;
-    sh:property [ sh:path :requires ; sh:message "Obligation may require other obligations (optional)" ] ;
-    sh:property [ sh:path :within ; sh:message "Obligation may specify a context (optional)" ] ;
-    sh:property [ sh:path :timeLimit ; sh:datatype xsd:string ; sh:message "Obligation may have a time limit (optional)" ] .
-
-:InformationElementShape a sh:NodeShape ;
-    sh:targetClass :InformationElement ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Information Element must have a label" ] .
-
-:CommunityShape a sh:NodeShape ;
-    sh:targetClass :Community ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Community must have a label" ] ;
-    sh:property [ sh:path :includes ; sh:minCount 1 ; sh:message "Community must specify its members" ] .
-
-:LegalEntityClassShape a sh:NodeShape ;
-    sh:targetClass :LegalEntityClass ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] .
-
-:LegalEntityShape a sh:NodeShape ;
-    sh:targetClass :LegalEntity ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] .
+:hasInformation a rdf:Property ;
+    rdfs:label "has Information" ;
+    rdfs:range :InformationElement .

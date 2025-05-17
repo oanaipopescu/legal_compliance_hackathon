@@ -4,25 +4,59 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it applies to" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] ;
-    sh:property [ sh:path :references ; sh:message "Regulation Rule may specify referenced legislation (optional)" ] .
+:Article15Shape a sh:NodeShape ;
+    sh:targetClass :KeyEntities ;
+    sh:property [
+        sh:path :hasRiskAnalysisPoliciesProcedures ;
+        sh:minCount 1 ;
+        sh:message "Key Entities must have policies and procedures for risk analysis and information systems security (Article 15)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasIncidentManagement ;
+        sh:minCount 1 ;
+        sh:message "Key Entities must have an Incident Management system in place (Article 15)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasBusinessContinuity ;
+        sh:minCount 1 ;
+        sh:message "Key Entities must have Business Continuity plans (Article 15)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasSupplyChainSecurity ;
+        sh:minCount 1 ;
+        sh:message "Key Entities must have Supply Chain Security measures in place (Article 15)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasSecureAcquisitionDevelopmentMaintenance ;
+        sh:minCount 1 ;
+        sh:message "Key Entities must have Secure Acquisition, Development and Maintenance processes (Article 15)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasRiskManagementEffectivenessAssessment ;
+        sh:minCount 1 ;
+        sh:message "Key Entities must have policies and procedures for assessing the effectiveness of risk management measures (Article 15)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasCyberHygienePracticesCybersecurityTraining ;
+        sh:minCount 1 ;
+        sh:message "Key Entities must implement basic cyber hygiene practices and cybersecurity training (Article 15)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasCryptographyEncryptionPoliciesProcedures ;
+        sh:minCount 1 ;
+        sh:message "Key Entities must have policies and procedures regarding the use of cryptography and encryption (Article 15)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasHumanResourcesSecurityAccessControlPoliciesAssetManagement ;
+        sh:minCount 1 ;
+        sh:message "Key Entities must have Human Resources security, access control policies and asset management (Article 15)." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :hasMultiFactorAuthenticationContinuousAuthentication ;
+        sh:minCount 1 ;
+        sh:message "Key Entities must use multi-factor authentication or continuous authentication solutions (Article 15)." ;
+        sh:severity sh:Violation
+    ] ;
+    sh:targetClass :SignificantEntities .
 
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
-    sh:property [ sh:path :appliesTo ; sh:message "Obligation may specify what it applies to (optional)" ] ;
-    sh:property [ sh:path :requires ; sh:message "Obligation may require other obligations (optional)" ] .
-
-:LegalBasisShape a sh:NodeShape ;
-    sh:targetClass :LegalBasis ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Basis must have a label" ] .
-
-:LegalEntityClassShape a sh:NodeShape ;
-    sh:targetClass :LegalEntityClass ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] .
 ```

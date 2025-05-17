@@ -4,51 +4,32 @@
 @prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :amends ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it amends" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] .
+:FinancialStatementsSubmissionShape a sh:NodeShape ;
+    sh:targetClass :ConstructionCompanies ;
+    sh:property [
+        sh:path :hasSubmittedFinancialStatements ;
+        sh:minCount 1 ;
+        sh:message "Construction companies must submit annual financial statements." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :submissionDate ;
+        sh:datatype xsd:date ;
+        sh:minInclusive "2025-02-19"^^xsd:date ;
+        sh:message "Financial statements must be submitted by 2025-02-19." ;
+        sh:severity sh:Violation
+    ] .
 
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Obligation must specify what it applies to" ] ;
-    sh:property [ sh:path :oldDeadline ; sh:datatype xsd:date ; sh:minCount 1 ; sh:message "Obligation must have an old deadline" ] ;
-    sh:property [ sh:path :newDeadline ; sh:datatype xsd:date ; sh:minCount 1 ; sh:message "Obligation must have a new deadline" ] ;
-    sh:property [ sh:path :concerns ; sh:minCount 1 ; sh:message "Obligation must specify what it concerns" ] ;
-    sh:property [ sh:path :to ; sh:minCount 1 ; sh:message "Obligation must specify the recipient" ] .
-
-:LegalProvisionShape a sh:NodeShape ;
-    sh:targetClass :LegalProvision ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Provision must have a label" ] .
-
-:LegalEntityClassShape a sh:NodeShape ;
-    sh:targetClass :LegalEntityClass ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] .
-
-:DocumentShape a sh:NodeShape ;
-    sh:targetClass :Document ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Document must have a label" ] .
-
-:LegalEntityShape a sh:NodeShape ;
-    sh:targetClass :LegalEntity ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] ;
-    sh:property [ sh:path :partOf ; sh:message "Legal Entity should specify parent organization (optional)" ] .
-
-:PresidentialDecreeShape a sh:NodeShape ;
-    sh:targetClass :PresidentialDecree ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Presidential Decree must have a label" ] .
-
-:RegisterShape a sh:NodeShape ;
-    sh:targetClass :Register ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Register must have a label" ] .
-
-:CertificateShape a sh:NodeShape ;
-    sh:targetClass :Certificate ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Certificate must have a label" ] .
-
-:PartShape a sh:NodeShape ;
-    sh:targetClass :Part ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Part must have a label" ] .
+:ActivityReportSubmissionShape a sh:NodeShape ;
+    sh:targetClass :ConstructionCompanies ;
+    sh:property [
+        sh:path :hasSubmittedActivityReport ;
+        sh:minCount 1 ;
+        sh:message "Construction companies must submit activity reports." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :reportSubmissionDate ;
+        sh:datatype xsd:date ;
+        sh:minInclusive "2025-02-19"^^xsd:date ;
+        sh:message "Activity reports must be submitted by 2025-02-19." ;
+        sh:severity sh:Violation
+    ] .

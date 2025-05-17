@@ -1,25 +1,32 @@
-@prefix : <http://example.org#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix : <http://example.org#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:RegulationRuleShape a sh:NodeShape ;
-    sh:targetClass :RegulationRule ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
-    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
-    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it applies to" ] ;
-    sh:property [ sh:path :incorporates ; sh:minCount 1 ; sh:message "Regulation Rule must incorporate at least one directive" ] ;
-    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] .
+:RiskManagementShape a sh:NodeShape ;
+    sh:targetClass :CriticalEntities ;
+    sh:property [
+        sh:path :hasRiskManagementMeasure ;
+        sh:minCount 1 ;
+        sh:message "Critical entities must have at least one risk management measure defined." ;
+        sh:severity sh:Violation
+    ] .
 
-:LegalEntityShape a sh:NodeShape ;
-    sh:targetClass :LegalEntity ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] .
+:ReportingObligationsShape a sh:NodeShape ;
+    sh:targetClass :CriticalEntities ;
+    sh:property [
+        sh:path :hasReportingObligation ;
+        sh:minCount 1 ;
+        sh:message "Critical entities must have at least one reporting obligation defined." ;
+        sh:severity sh:Violation
+    ] .
 
-:ObligationShape a sh:NodeShape ;
-    sh:targetClass :Obligation ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] .
-
-:EU_DirectiveShape a sh:NodeShape ;
-    sh:targetClass :EU_Directive ;
-    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Directive must have a label" ] ;
-    sh:property [ sh:path :concerns ; sh:minCount 1 ; sh:message "Directive must specify what it concerns" ] .
+:InformationExchangeShape a sh:NodeShape ;
+    sh:targetClass :CriticalEntities ;
+    sh:property [
+        sh:path :hasInformationExchangeMechanism ;
+        sh:minCount 1 ;
+        sh:message "Critical entities must have at least one information exchange mechanism defined." ;
+        sh:severity sh:Violation
+    ] .
