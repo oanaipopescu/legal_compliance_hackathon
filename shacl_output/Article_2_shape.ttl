@@ -2,8 +2,8 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
-@prefix : <http://example.org#> .
 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -56,16 +56,17 @@
         sh:message "Critical entities must have at least one risk management measure defined." ;
         sh:severity sh:Violation
     ] .
+=======
+:LegalEntityShape a sh:NodeShape ;
+    sh:targetClass :LegalEntity ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal entities must have a label" ] .
+>>>>>>> 489be9b (merged latest changes)
 
-:ReportingObligationsShape a sh:NodeShape ;
-    sh:targetClass :CriticalEntities ;
-    sh:property [
-        sh:path :hasReportingObligation ;
-        sh:minCount 1 ;
-        sh:message "Critical entities must have at least one reporting obligation defined." ;
-        sh:severity sh:Violation
-    ] .
+:ObligationShape a sh:NodeShape ;
+    sh:targetClass :Obligation ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligations must have a label" ] .
 
+<<<<<<< HEAD
 >>>>>>> 2578f70 (uploaded)
 :InformationExchangeShape a sh:NodeShape ;
     sh:targetClass :CriticalEntities ;
@@ -78,6 +79,8 @@
 <<<<<<< HEAD
 >>>>>>> 2578f70 (uploaded)
 =======
+=======
+>>>>>>> 489be9b (merged latest changes)
 :RegulationRuleShape a sh:NodeShape ;
     sh:targetClass :RegulationRule ;
     sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation rules must have a label" ] ;
@@ -90,7 +93,10 @@
     sh:targetClass :EU_Directive ;
     sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Directive must have a label" ] ;
     sh:property [ sh:path :concerns ; sh:minCount 1 ; sh:message "Directive must specify what it concerns" ] .
+<<<<<<< HEAD
 >>>>>>> 489be9b (merged latest changes)
 =======
 >>>>>>> 2578f70 (uploaded)
+=======
+>>>>>>> 489be9b (merged latest changes)
 ```

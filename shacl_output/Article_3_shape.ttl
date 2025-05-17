@@ -7,6 +7,9 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 489be9b (merged latest changes)
 =======
 >>>>>>> 489be9b (merged latest changes)
 :RegulationRuleShape a sh:NodeShape ;
@@ -15,6 +18,7 @@
     sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation rules must specify a subject" ] ;
     sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Regulation rules must specify what they apply to" ] ;
     sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation rules must require at least one obligation" ] .
+<<<<<<< HEAD
 <<<<<<< HEAD
 
 :ObligationShape a sh:NodeShape ;
@@ -38,10 +42,16 @@
 
 =======
 
+=======
+
+>>>>>>> 489be9b (merged latest changes)
 :ObligationShape a sh:NodeShape ;
     sh:targetClass :Obligation ;
     sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligations must have a label" ] .
 
+<<<<<<< HEAD
+>>>>>>> 489be9b (merged latest changes)
+=======
 >>>>>>> 489be9b (merged latest changes)
 :LegalEntityShape a sh:NodeShape ;
     sh:targetClass :LegalEntity ;
