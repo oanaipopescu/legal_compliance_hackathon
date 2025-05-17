@@ -1,0 +1,43 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ResponsibilitiesAndProcedures a :RegulationRule ;
+    rdfs:label "Responsibilities and Procedures" ;
+    :goal :AdequateResponseToSecurityEvents , :PreventMitigateHarm ;
+    :consistentWith :CorporateSecurityPolicy .
+
+:AdequateResponseToSecurityEvents a :RegulationGoal ;
+    rdfs:label "Adequate Response to Security Events" .
+
+:PreventMitigateHarm a :RegulationGoal ;
+    rdfs:label "Prevent and Mitigate Harm" ;
+    :appliesTo :People , :Assets , :Information , :Products , :Brands , :Reputation , :Customers , :Partners , :ServiceProviders .
+
+:People a :LegalEntity ;
+    rdfs:label "People" .
+
+:Assets a :LegalEntity ;
+    rdfs:label "Assets" .
+
+:Information a :PersonalData ;
+    rdfs:label "Information" .
+
+:Products a :LegalEntity ;
+    rdfs:label "Products" .
+
+:Brands a :LegalEntity ;
+    rdfs:label "Brands" .
+
+:Reputation a :LegalEntity ;
+    rdfs:label "Reputation" .
+
+:Customers a :LegalEntity ;
+    rdfs:label "Customers" .
+
+:Partners a :LegalEntity ;
+    rdfs:label "Partners" .
+
+:ServiceProviders a :LegalEntity ;
+    rdfs:label "Service Providers" .
+```

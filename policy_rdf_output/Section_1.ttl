@@ -1,0 +1,21 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:SecurityIncidentManagementStandard a :RegulationRule ;
+    rdfs:label "Security Incident Management Standard" ;
+    :appliesTo :CorporateSecurityPolicy .
+
+:CorporateSecurityPolicy a :RegulationRule ;
+    rdfs:label "Corporate Security Policy" .
+
+:Standard a :RegulationRule ;
+    rdfs:label "Standard" ;
+    :subjectTo :SecurityIncidentManagementStandard .
+
+:LocalOperationProcedures a :RegulationRule ;
+    rdfs:label "Local Operation Procedures" ;
+    :subjectTo :SecurityIncidentManagementStandard .
+
+
+```

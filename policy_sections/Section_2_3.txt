@@ -1,0 +1,3 @@
+2.3 Reporting Security Weaknesses 
+Weaknesses in the company’s security controls may occur anywhere in the organization. For mitigating all actual security incidents and improving the quality of security throughout organizations, the products, systems and services the company provides including vendors and customers using company’s assets; weaknesses and incidents must be reported as soon as possible through the appropriate channels.
+Unless there is a Responsible Disclosure in place, it must not be attempted to prove a suspected security weakness by people other than authorized security teams like the Security Operations Center. Testing security weaknesses by unauthorized people may be interpreted as a potential misuse of a resource.

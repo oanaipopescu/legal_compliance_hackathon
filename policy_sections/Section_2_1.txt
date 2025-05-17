@@ -1,0 +1,2 @@
+2.1 Responsibilities and Procedures 
+Responsibilities and procedures as described in next chapters shall be established to ensure that adequate response is given to (suspected) security events and incidents, thereby preventing and/or mitigating potential harm to the company’s people, assets, information, products, brands, reputation and customers, partners and service providers. Responsibilities and procedures for security incident management need to be consistent with the provisions made in corporate policies including the Corporate Security Policy.

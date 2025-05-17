@@ -1,0 +1,32 @@
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:AssessmentOfSecurityEvents a :RegulationRule ;
+    rdfs:label "Assessment of Security Events" ;
+    :goal :EnsureContinuity , :ResponsibleHandlingOfBreaches ;
+    :requires :EventAssessment , :ClassificationPrioritization , :DetailedRecording , :NeedToKnowCommunication , :SecureCommunication .
+
+:EnsureContinuity a :RegulationGoal ;
+    rdfs:label "Ensure Continuity" .
+
+:ResponsibleHandlingOfBreaches a :RegulationGoal ;
+    rdfs:label "Responsible Handling of Breaches" .
+
+:EventAssessment a :RegulationRequirement ;
+    rdfs:label "Event Assessment" .
+
+:ClassificationPrioritization a :RegulationRequirement ;
+    rdfs:label "Classification and Prioritization" .
+
+:DetailedRecording a :RegulationRequirement ;
+    rdfs:label "Detailed Recording" .
+
+:NeedToKnowCommunication a :RegulationRequirement ;
+    rdfs:label "Need to Know Communication" .
+
+:SecureCommunication a :RegulationRequirement ;
+    rdfs:label "Secure Communication" ;
+    :encrypted true .
+
+:SignifyOrganization a :LegalEntity ;
+    rdfs:label "Signify Organization" .

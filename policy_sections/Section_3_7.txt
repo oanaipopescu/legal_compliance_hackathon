@@ -1,0 +1,19 @@
+3.7 Information security incident prioritization 
+Information security incidents must be assigned a severity level, i.e. high, medium, or low, based on functional impact, information impact, and recoverability effort, to determine prioritization.
+The severity level and prioritization can be determined by applying the table below. For determining the severity only one of the properties have to be met.
+1.	Severity: High 
+Properties: 
+• Functional Impact: some (critical) services cannot be delivered to any users and 10 or more users or assets are affected. 
+• Information Impact: confidentiality or integrity compromised of Secret Classified information. 
+• Recoverability Effort: recovery from the incident is not possible and time to recover is unpredictable and additional resources and external expertise might be needed. 
+• Response Time: Immediate
+2.	Severity: Medium 
+• Functional Impact: some (critical) services cannot be delivered to any users and 5 to 10 users or assets are affected. 
+• Information Impact: confidentiality or integrity compromised of Confidential Classified information. 
+• Recoverability Effort: time to recover is predictable and additional resources might be needed. 
+• Response Time: 1 hour 
+3.	Severity Low: 
+• Functional Impact: all (critical) services can still be delivered but with lost efficiency and less than 5 users or assets are affected. 
+• Information Impact: confidentiality or integrity compromised of Internal Classified information.  
+• Recoverability Effort: time to recover is predictable with existing resources.
+• Response time: 2 hours

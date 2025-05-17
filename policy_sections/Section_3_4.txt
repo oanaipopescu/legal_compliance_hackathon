@@ -1,0 +1,5 @@
+3.4 Information security incident identification 
+Service owner/ delivery manager is responsible for event logging, management, and monitoring of alerts regarding security for their services.
+Users must be instructed in the appropriate usage of information and IT technology, made aware of recognizing information security events, and are responsible for reporting information security events to the service desk.
+Service owner/ delivery manager is responsible for triaging whether security events for their services represent an actual information security incident.
+Service desk is responsible for initial triaging whether a security ticket raised by a user represents an actual information security incident.

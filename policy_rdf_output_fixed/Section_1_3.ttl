@@ -1,0 +1,21 @@
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Standard a :RegulationRule ;
+    rdfs:label "Standard" ;
+    :ownedBy :CorporateSecurityDepartment ;
+    :maintainedBy :CorporateSecurityDepartment ;
+    :issuedBy :ChiefSecurityOfficer , :HeadOfSecurityGRC .
+
+:CorporateSecurityDepartment a :LegalEntity ;
+    rdfs:label "CorporateSecurityDepartment" .
+
+:ChiefSecurityOfficer a :LegalEntity ;
+    rdfs:label "Chief Security Officer" .
+
+:HeadOfSecurityGRC a :LegalEntity ;
+    rdfs:label "Head of Security Governance, Risk & Compliance" .
+
+:ManagerSecurityPolicyProcedures a :LegalEntity ;
+    rdfs:label "Manager Security Policy & Procedures" ;
+    :delegateOf :HeadOfSecurityGRC .

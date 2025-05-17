@@ -1,0 +1,34 @@
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Standard a :RegulationRule ;
+    rdfs:label "Standard" ;
+    :appliesTo :Business , :Market , :Function , :Supplier ;
+    :excludes :OverallSOC , :CERT , :ForensicInvestigation , :DisasterRecoveryPlanning , :ProblemManagement .
+
+:Business a :LegalEntity ;
+    rdfs:label "Business" .
+
+:Market a :LegalEntity ;
+    rdfs:label "Market" .
+
+:Function a :LegalEntity ;
+    rdfs:label "Function" .
+
+:Supplier a :LegalEntity ;
+    rdfs:label "Supplier" .
+
+:OverallSOC a :LegalEntity ;
+    rdfs:label "Overall SOC" .
+
+:CERT a :LegalEntity ;
+    rdfs:label "CERT" .
+
+:ForensicInvestigation a :LegalEntity ;
+    rdfs:label "Forensic Investigation" .
+
+:DisasterRecoveryPlanning a :LegalEntity ;
+    rdfs:label "Disaster Recovery Planning" .
+
+:ProblemManagement a :LegalEntity ;
+    rdfs:label "Problem Management" .

@@ -41,7 +41,8 @@ Use classes such as `:RegulationRule`, `:PersonalData`, `:requires`, `:appliesTo
 Context from previous articles:
 {context}
 
-Here is the text to process:
+Do not generate any RDF triples for the text in the previous articles. Only use them for context.
+Here is the text to process and generate RDF triples for:
 {article_text}
 """
 

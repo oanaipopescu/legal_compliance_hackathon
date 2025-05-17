@@ -1,0 +1,3 @@
+2.4 Assessment of, and Decision on Security Events 
+To assure continuity of the Signify organization, standardization and escalation of security events is vital to ensure that major security breaches are handled responsibly. Each security event must be assessed in order to decide whether the event meets the criteria to be classified as a security incident. 
+Classification and prioritization of events shall take place in order to identify the impact and extent of an event. Results of the assessment and decision must be recorded in detail for the purpose of future reference and verification. Knowledge about a potential or ongoing security incident must be provided on a need to know basis and shall be communicated over secure channels.

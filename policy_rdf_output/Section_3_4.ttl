@@ -1,0 +1,39 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ServiceOwner a :LegalEntity ;
+    rdfs:label "Service owner/delivery manager" .
+
+:User a :LegalEntity ;
+    rdfs:label "User" .
+
+:ServiceDesk a :LegalEntity ;
+    rdfs:label "Service desk" .
+
+:InformationSecurityIncidentIdentification a :RegulationRule ;
+    rdfs:label "Information security incident identification" ;
+    :appliesTo :Service , :User ;
+    :requires :EventLogging , :AlertMonitoring , :UserTraining , :IncidentReporting .
+
+:EventLogging a :RegulationRequirement ;
+    rdfs:label "Event logging" ;
+    :responsibleParty :ServiceOwner .
+
+:AlertMonitoring a :RegulationRequirement ;
+    rdfs:label "Management and monitoring of alerts" ;
+    :responsibleParty :ServiceOwner .
+
+:UserTraining a :RegulationRequirement ;
+    rdfs:label "User training on information security event recognition and reporting" ;
+    :appliesTo :User .
+
+:IncidentReporting a :RegulationRequirement ;
+    rdfs:label "Reporting information security events to service desk" ;
+    :responsibleParty :User ;
+    :recipient :ServiceDesk .
+
+:SecurityEventTriage a :RegulationRequirement ;
+    rdfs:label "Triage of security events to determine if it represents an information security incident" ;
+    :responsibleParty :ServiceOwner , :ServiceDesk .
+```

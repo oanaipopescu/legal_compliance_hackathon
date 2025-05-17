@@ -1,0 +1,40 @@
+@prefix : <http://example.org#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:CollectionOfEvidence a :RegulationRule ;
+    rdfs:label "Collection of Evidence" ;
+    :appliesTo :Signify ;
+    :requires :AdmissibleEvidence , :CompleteEvidence ;
+    :coordinatedWith :LegalDepartment .
+
+:AdmissibleEvidence a :RegulationRequirement ;
+    rdfs:label "Admissible Evidence" .
+
+:CompleteEvidence a :RegulationRequirement ;
+    rdfs:label "Complete Evidence" .
+
+:LegalDepartment a :LegalEntity ;
+    rdfs:label "Legal Department" .
+
+:LocalOperationProcedures a :RegulationRule ;
+    rdfs:label "Local Operation Procedures" ;
+    :requires :EvidenceIdentification , :EvidenceCollection , :EvidenceAcquisition , :EvidencePreservation ;
+    :considers :JurisdictionalRequirements , :InternationalRequirements .
+
+:EvidenceIdentification a :RegulationRequirement ;
+    rdfs:label "Evidence Identification" .
+
+:EvidenceCollection a :RegulationRequirement ;
+    rdfs:label "Evidence Collection" .
+
+:EvidenceAcquisition a :RegulationRequirement ;
+    rdfs:label "Evidence Acquisition" .
+
+:EvidencePreservation a :RegulationRequirement ;
+    rdfs:label "Evidence Preservation" .
+
+:JurisdictionalRequirements a :RegulationRequirement ;
+    rdfs:label "Jurisdictional Requirements" .
+
+:InternationalRequirements a :RegulationRequirement ;
+    rdfs:label "International Requirements" .
