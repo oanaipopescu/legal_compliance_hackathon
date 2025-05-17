@@ -5,6 +5,7 @@
 
 :NIS2Law a :RegulationRule ;
     :appliesTo :EssentialEntity, :ImportantEntity, :EntityProvidingDomainNameRegistrationServices ;
+    :requires :periodicConformityAssessment, :riskAnalysis ;
     rdfs:label "Law establishing a framework for the cybersecurity of networks and information systems of general interest for public security" .
 
 :EssentialEntity a :EntityClass ;
@@ -19,9 +20,11 @@
 :PersonalData a :DataClass ;
     rdfs:label "Personal Data" .
 
-:requires :encryption a :Obligation ;
+:encryption a :Obligation ;
     rdfs:label "Encryption Requirement" ;
     rdfs:comment "Article 30, § 3, 8°: policies and procedures relating to the use of cryptography and, where applicable, encryption" .
+
+:NIS2Law :requires :encryption .
 
 :NationalCybersecurityAuthority a :Authority ;
     rdfs:label "National Cybersecurity Authority" ;
@@ -56,19 +59,16 @@
 :notificationToNationalCSIRT a :Obligation ;
     rdfs:label "Notification to National CSIRT" .
 
-
 :ConformityAssessmentBody a :EntityClass ;
     rdfs:label "Conformity Assessment Body" .
 
-:requires :periodicConformityAssessment a :Obligation ;
+:periodicConformityAssessment a :Obligation ;
     :appliesTo :EssentialEntity ;
     rdfs:label "Periodic Conformity Assessment" .
 
-:requires :riskAnalysis a :Obligation ;
+:riskAnalysis a :Obligation ;
     :appliesTo :EssentialEntity, :ImportantEntity ;
     rdfs:label "Risk Analysis Obligation" .
 
 :PSI a :Document ;
     rdfs:label "Security policy for information systems and networks" .
-
-
