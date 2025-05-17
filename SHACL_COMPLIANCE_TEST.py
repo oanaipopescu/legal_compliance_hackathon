@@ -1,4 +1,5 @@
 import os
+import re
 from rdflib import Graph
 from pyshacl import validate
 
@@ -8,19 +9,40 @@ SHACL_FOLDER = "shacl_output_fixed"
 REPORT_FOLDER = "compliance_reports"
 SUMMARY_FILE = "compliance_summary.txt"
 
+# Specify which articles you want to test (empty list means test all)
+# Example: [14, 15, 16, 26]
+SELECTED_ARTICLES = [14, 15, 16, 26]
+
 # === Ensure report folder exists ===
 os.makedirs(REPORT_FOLDER, exist_ok=True)
 
+# === Extract article number from filename ===
+def extract_article_number(filename):
+    match = re.search(r'Article_(\d+)', filename)
+    if match:
+        return int(match.group(1))
+    return None
+
 # === Get files ===
 policy_files = sorted([f for f in os.listdir(POLICY_FOLDER) if f.endswith(".ttl")])
-shacl_files = sorted([f for f in os.listdir(SHACL_FOLDER) if f.endswith(".ttl")])
+
+# Filter SHACL files based on selected articles
+all_shacl_files = [f for f in os.listdir(SHACL_FOLDER) if f.endswith(".ttl")]
+if SELECTED_ARTICLES:
+    shacl_files = [f for f in all_shacl_files 
+                   if extract_article_number(f) in SELECTED_ARTICLES]
+    print(f"Testing with selected articles: {', '.join(map(str, SELECTED_ARTICLES))}")
+    print(f"Found {len(shacl_files)} matching SHACL files")
+else:
+    shacl_files = all_shacl_files
+    print(f"Testing with all {len(shacl_files)} SHACL files")
 
 # === Track overall results ===
 summary_lines = []
 compliant_count = 0
 non_compliant_count = 0
 
-# === Check each policy section against each SHACL article ===
+# === Check each policy section against each selected SHACL article ===
 for policy_file in policy_files:
     policy_path = os.path.join(POLICY_FOLDER, policy_file)
     policy_graph = Graph()
