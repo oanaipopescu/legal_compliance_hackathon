@@ -1,0 +1,43 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ReportingSecurityIncidents a :RegulationRule ;
+    rdfs:label "Reporting Security Incidents 2.2" ;
+    :subject "Centralized Reporting of Security Incidents" ;
+    :requires :CentralizedReportingProcedure, :TimelyReporting, :EfficientReporting, :ConsistentReporting, :AppropriatePersonnelNotification, :SecuredCommunicationChannels, :ComplianceWithLegalRequirements, :EmployeeAwareness, :ContractorAwareness, :SupplierAwareness, :SignifyCrisisManagementSOPCompliance .
+
+:CentralizedReportingProcedure a :Obligation ;
+    rdfs:label "Centralized Reporting Procedure" .
+
+:TimelyReporting a :Obligation ;
+    rdfs:label "Timely Reporting" .
+
+:EfficientReporting a :Obligation ;
+    rdfs:label "Efficient Reporting" .
+
+:ConsistentReporting a :Obligation ;
+    rdfs:label "Consistent Reporting" .
+
+:AppropriatePersonnelNotification a :Obligation ;
+    rdfs:label "Appropriate Personnel and Organization Notification" .
+
+:SecuredCommunicationChannels a :Obligation ;
+    rdfs:label "Secured Communication Channels" .
+
+:ComplianceWithLegalRequirements a :Obligation ;
+    rdfs:label "Compliance with Legal and Regulatory Requirements" .
+
+:EmployeeAwareness a :Obligation ;
+    rdfs:label "Employee Awareness of Reporting Responsibility" .
+
+:ContractorAwareness a :Obligation ;
+    rdfs:label "Contractor Awareness of Reporting Responsibility" .
+
+:SupplierAwareness a :Obligation ;
+    rdfs:label "Supplier Awareness of Reporting Responsibility" .
+
+:SignifyCrisisManagementSOPCompliance a :Obligation ;
+    rdfs:label "Compliance with Signify Crisis Management SOP" .
+```

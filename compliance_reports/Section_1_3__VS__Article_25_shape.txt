@@ -1,0 +1,71 @@
+Conforms: False
+
+Validation Report
+Conforms: False
+Results (11):
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :Standard
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify what it applies to") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :appliesTo ]
+	Focus Node: :Standard
+	Result Path: :appliesTo
+	Message: Regulation Rule must specify what it applies to
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must require at least one obligation") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :requires ]
+	Focus Node: :Standard
+	Result Path: :requires
+	Message: Regulation Rule must require at least one obligation
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal Entity must have at least one competence") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :hasCompetence ]
+	Focus Node: :ManagerSecurityPolicyProcedures
+	Result Path: :hasCompetence
+	Message: Legal Entity must have at least one competence
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal Entity must have at least one competence") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :hasCompetence ]
+	Focus Node: :CorporateSecurityDepartment
+	Result Path: :hasCompetence
+	Message: Legal Entity must have at least one competence
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal Entity must have at least one competence") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :hasCompetence ]
+	Focus Node: :ChiefSecurityOfficer
+	Result Path: :hasCompetence
+	Message: Legal Entity must have at least one competence
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal Entity must have at least one competence") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :hasCompetence ]
+	Focus Node: :HeadOfSecurityGRC
+	Result Path: :hasCompetence
+	Message: Legal Entity must have at least one competence
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal Entity must have at least one responsibility") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :responsibilities ]
+	Focus Node: :ManagerSecurityPolicyProcedures
+	Result Path: :responsibilities
+	Message: Legal Entity must have at least one responsibility
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal Entity must have at least one responsibility") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :responsibilities ]
+	Focus Node: :CorporateSecurityDepartment
+	Result Path: :responsibilities
+	Message: Legal Entity must have at least one responsibility
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal Entity must have at least one responsibility") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :responsibilities ]
+	Focus Node: :ChiefSecurityOfficer
+	Result Path: :responsibilities
+	Message: Legal Entity must have at least one responsibility
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Legal Entity must have at least one responsibility") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :responsibilities ]
+	Focus Node: :HeadOfSecurityGRC
+	Result Path: :responsibilities
+	Message: Legal Entity must have at least one responsibility

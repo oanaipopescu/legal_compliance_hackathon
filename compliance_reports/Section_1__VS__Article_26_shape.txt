@@ -1,0 +1,47 @@
+Conforms: False
+
+Validation Report
+Conforms: False
+Results (7):
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify what it applies to") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :appliesTo ]
+	Focus Node: :LocalOperationProcedures
+	Result Path: :appliesTo
+	Message: Regulation Rule must specify what it applies to
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify what it applies to") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :appliesTo ]
+	Focus Node: :Standard
+	Result Path: :appliesTo
+	Message: Regulation Rule must specify what it applies to
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify what it applies to") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :appliesTo ]
+	Focus Node: :CorporateSecurityPolicy
+	Result Path: :appliesTo
+	Message: Regulation Rule must specify what it applies to
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must require at least one obligation") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :requires ]
+	Focus Node: :SecurityIncidentManagementStandard
+	Result Path: :requires
+	Message: Regulation Rule must require at least one obligation
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must require at least one obligation") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :requires ]
+	Focus Node: :LocalOperationProcedures
+	Result Path: :requires
+	Message: Regulation Rule must require at least one obligation
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must require at least one obligation") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :requires ]
+	Focus Node: :Standard
+	Result Path: :requires
+	Message: Regulation Rule must require at least one obligation
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must require at least one obligation") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :requires ]
+	Focus Node: :CorporateSecurityPolicy
+	Result Path: :requires
+	Message: Regulation Rule must require at least one obligation

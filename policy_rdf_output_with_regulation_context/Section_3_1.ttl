@@ -1,0 +1,60 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:NISTPhase1 a :NISTPhase ;
+    rdfs:label "NIST Phase 1: Preparation" ;
+    :description "Requirements for planning, building, and running security capabilities which are input for the information security incident management capability for identifying information security incidents are not part of the scope of this chapter." .
+
+:NISTPhase2 a :NISTPhase ;
+    rdfs:label "NIST Phase 2: Detection and Analysis" ;
+    :description "Requirements regarding analysis of security monitoring alerts, vulnerability scanning results, and threat intelligence are not part of the scope of this chapter but are addressed in the Information Security Monitoring Standard." .
+
+:NISTPhase3 a :NISTPhase ;
+    rdfs:label "NIST Phase 3: Containment, Eradication & Recovery" .
+
+:NISTPhase4 a :NISTPhase ;
+    rdfs:label "NIST Phase 4: Post-Incident Activity" .
+
+:InformationSecurityIncidentIdentification a :ProcessStep ;
+    rdfs:label "Information security incident identification" ;
+    :partOf :NISTPhase2 .
+
+:InformationSecurityIncidentRegistration a :ProcessStep ;
+    rdfs:label "Information security incident registration" ;
+    :partOf :NISTPhase2 .
+
+:InformationSecurityIncidentCategorization a :ProcessStep ;
+    rdfs:label "Information security incident categorization" ;
+    :partOf :NISTPhase2 .
+
+:InformationSecurityIncidentPrioritization a :ProcessStep ;
+    rdfs:label "Information security incident prioritization" ;
+    :partOf :NISTPhase2 .
+
+:InformationSecurityIncidentResponse a :ProcessStep ;
+    rdfs:label "Information security incident response" ;
+    :partOf :NISTPhase3 .
+
+:ReportingAndLearningFromInformationSecurityIncidents a :ProcessStep ;
+    rdfs:label "Reporting and learning from information security incidents" ;
+    :partOf :NISTPhase4 .
+
+:SecurityAlertTriage a :TriageType ;
+    rdfs:label "Triage of security alerts, events and security tickets" ;
+    :description "Analyzing security events and alerts, vulnerability scan results, and threat intelligence to identify potential information security incidents." ;
+    :partOf :InformationSecurityMonitoringStandard .
+
+:InformationSecurityIncidentTriage a :TriageType ;
+    rdfs:label "Triage of information security incidents" ;
+    :description "Determining severity and priority of information security incidents." ;
+    :partOf :SecurityIncidentManagementStandard .
+
+:InformationSecurityMonitoringStandard a :Standard ;
+    rdfs:label "Information Security Monitoring Standard" .
+
+:SecurityIncidentManagementStandard a :Standard ;
+    rdfs:label "Security Incident Management Standard" .
+
+```

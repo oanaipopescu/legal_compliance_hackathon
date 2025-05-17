@@ -1,0 +1,66 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:RegulationRuleShape a sh:NodeShape ;
+    sh:targetClass :RegulationRule ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
+    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
+    sh:property [ sh:path :amends ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it amends" ] ;
+    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] .
+
+:LegalProvisionShape a sh:NodeShape ;
+    sh:targetClass :LegalProvision ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Provision must have a label" ] ;
+    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Legal Provision must have a subject" ] .
+
+:ObligationShape a sh:NodeShape ;
+    sh:targetClass :Obligation ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
+    sh:property [ sh:path :details ; sh:message "Obligation may have details (optional)" ] ;
+    sh:property [ sh:path :requires ; sh:message "Obligation may require other elements (optional)" ] ;
+    sh:property [ sh:path :basedOn ; sh:message "Obligation may be based on legal basis (optional)" ] .
+
+:AmendmentShape a sh:NodeShape ;
+    sh:targetClass :Amendment ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Amendment must have a label" ] ;
+    sh:property [ sh:path :replaces ; sh:minCount 1 ; sh:message "Amendment must specify what it replaces" ] ;
+    sh:property [ sh:path :with ; sh:minCount 1 ; sh:message "Amendment must specify the replacement" ] .
+
+:ParagraphShape a sh:NodeShape ;
+    sh:targetClass :Paragraph ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Paragraph must have a label" ] ;
+    sh:property [ sh:path :text ; sh:minCount 1 ; sh:message "Paragraph must have text" ] .
+
+:DecisionShape a sh:NodeShape ;
+    sh:targetClass :Decision ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Decision must have a label" ] .
+
+:RecommendationShape a sh:NodeShape ;
+    sh:targetClass :Recommendation ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Recommendation must have a label" ] ;
+    sh:property [ sh:path :basedOn ; sh:message "Recommendation may be based on legal basis (optional)" ] .
+
+:LegalBasisShape a sh:NodeShape ;
+    sh:targetClass :LegalBasis ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Basis must have a label" ] .
+
+:EU_RegulationShape a sh:NodeShape ;
+    sh:targetClass :EU_Regulation ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "EU Regulation must have a label" ] ;
+    sh:property [ sh:path :concerns ; sh:minCount 1 ; sh:message "EU Regulation must specify what it concerns" ] .
+
+:LegalEntityShape a sh:NodeShape ;
+    sh:targetClass :LegalEntity ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] ;
+    sh:property [ sh:path :definedIn ; sh:message "Legal Entity may specify its definition (optional)" ] .
+
+:NationalLawShape a sh:NodeShape ;
+    sh:targetClass :NationalLaw ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "National Law must have a label" ] .
+
+:RoleShape a sh:NodeShape ;
+    sh:targetClass :Role ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Role must have a label" ] .

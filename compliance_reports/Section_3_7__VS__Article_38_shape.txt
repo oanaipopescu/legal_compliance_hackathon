@@ -1,0 +1,53 @@
+Conforms: False
+
+Validation Report
+Conforms: False
+Results (8):
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :InformationSecurityIncidentPrioritization
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :LowSeverityCriteria
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :HighSeverityCriteria
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :MediumSeverityCriteria
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify the law it is part of") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :partOf ]
+	Focus Node: :InformationSecurityIncidentPrioritization
+	Result Path: :partOf
+	Message: Regulation Rule must specify the law it is part of
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify the law it is part of") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :partOf ]
+	Focus Node: :LowSeverityCriteria
+	Result Path: :partOf
+	Message: Regulation Rule must specify the law it is part of
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify the law it is part of") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :partOf ]
+	Focus Node: :HighSeverityCriteria
+	Result Path: :partOf
+	Message: Regulation Rule must specify the law it is part of
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify the law it is part of") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :partOf ]
+	Focus Node: :MediumSeverityCriteria
+	Result Path: :partOf
+	Message: Regulation Rule must specify the law it is part of

@@ -1,0 +1,31 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:RegulationRuleShape a sh:NodeShape ;
+    sh:targetClass :RegulationRule ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
+    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
+    sh:property [ sh:path :effectiveDate ; sh:minCount 1 ; sh:message "Regulation Rule must have an effective date" ] ;
+    sh:property [ sh:path :delayedEffectiveDate ; sh:message "Regulation Rule may have a delayed effective date (optional)" ] .
+
+:DelayedEffectiveDateShape a sh:NodeShape ;
+    sh:targetClass :DelayedEffectiveDate ;
+    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "DelayedEffectiveDate must specify what it applies to" ] ;
+    sh:property [ sh:path :delay ; sh:minCount 1 ; sh:datatype xsd:duration ; sh:message "DelayedEffectiveDate must specify a delay" ] ;
+    sh:property [ sh:path :referenceDate ; sh:minCount 1 ; sh:message "DelayedEffectiveDate must specify a reference date" ] .
+
+:DateShape a sh:NodeShape ;
+    sh:targetClass :Date ;
+    sh:property [ sh:path :dateLiteral ; sh:minCount 1 ; sh:datatype xsd:date ; sh:message "Date must have a date literal" ] ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Date must have a label" ] .
+
+:LegalProvisionShape a sh:NodeShape ;
+    sh:targetClass :LegalProvision ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Provision must have a label" ] .
+
+:PublicationShape a sh:NodeShape ;
+    sh:targetClass :Publication ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Publication must have a label" ] .

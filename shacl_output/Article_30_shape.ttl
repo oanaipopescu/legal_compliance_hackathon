@@ -1,0 +1,103 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:AuthorizingProvisionShape a sh:NodeShape ;
+    sh:targetClass :AuthorizingProvision ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Authorizing Provision must have a label" ] ;
+    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Authorizing Provision must specify the required decision or approval" ] .
+
+:DecisionShape a sh:NodeShape ;
+    sh:targetClass :Decision ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Decision must have a label" ] .
+
+:OpinionShape a sh:NodeShape ;
+    sh:targetClass :Opinion ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Opinion must have a label" ] .
+
+:LegalEntityClassShape a sh:NodeShape ;
+    sh:targetClass :LegalEntityClass ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] .
+
+:ObligationShape a sh:NodeShape ;
+    sh:targetClass :Obligation ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] .
+
+:ExemptionShape a sh:NodeShape ;
+    sh:targetClass :Exemption ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Exemption must have a label" ] ;
+    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Exemption must specify what it applies to" ] ;
+    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Exemption must specify the required decision or approval" ] .
+
+:RegulationRuleShape a sh:NodeShape ;
+    sh:targetClass :RegulationRule ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] .
+
+:ListShape a sh:NodeShape ;
+    sh:targetClass :List ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "List must have a label" ] .
+
+:DigitalPlatformShape a sh:NodeShape ;
+    sh:targetClass :DigitalPlatform ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Digital Platform must have a label" ] .
+
+:NationalStrategyShape a sh:NodeShape ;
+    sh:targetClass :NationalStrategy ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "National Strategy must have a label" ] .
+
+:ResourceListShape a sh:NodeShape ;
+    sh:targetClass :ResourceList ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Resource List must have a label" ] .
+
+:PlanShape a sh:NodeShape ;
+    sh:targetClass :Plan ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Plan must have a label" ] .
+
+:ApprovalShape a sh:NodeShape ;
+    sh:targetClass :Approval ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Approval must have a label" ] .
+
+:TermsProceduresShape a sh:NodeShape ;
+    sh:targetClass :TermsProcedures ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Terms and Procedures must have a label" ] .
+
+:MeasuresActionsShape a sh:NodeShape ;
+    sh:targetClass :MeasuresActions ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Measures and Actions must have a label" ] .
+
+:DetailsShape a sh:NodeShape ;
+    sh:targetClass :Details ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Details must have a label" ] .
+
+:RegulationShape a sh:NodeShape ;
+    sh:targetClass :Regulation ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation must have a label" ] .
+
+:TasksShape a sh:NodeShape ;
+    sh:targetClass :Tasks ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Tasks must have a label" ] .
+
+:FrameworkShape a sh:NodeShape ;
+    sh:targetClass :Framework ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Framework must have a label" ] .
+
+:TemplateShape a sh:NodeShape ;
+    sh:targetClass :Template ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Template must have a label" ] .
+
+:ResponsibilitiesShape a sh:NodeShape ;
+    sh:targetClass :Responsibilities ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Responsibilities must have a label" ] .
+
+:ChapterShape a sh:NodeShape ;
+    sh:targetClass :Chapter ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Chapter must have a label" ] .
+
+:TermsConditionsProcedureShape a sh:NodeShape ;
+    sh:targetClass :TermsConditionsProcedure ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Terms, Conditions and Procedure must have a label" ] .
+
+```

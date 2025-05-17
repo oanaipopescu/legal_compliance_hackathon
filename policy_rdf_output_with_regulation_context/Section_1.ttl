@@ -1,0 +1,26 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:SecurityIncidentManagementStandard a :Standard ;
+    rdfs:label "Security Incident Management Standard" ;
+    :subject "incident management" ;
+    :relatedTo :CorporateSecurityPolicy ;
+    :incorporates :StandardOperatingProcedures, :Guidelines, :ReportTemplates, :Baselines .
+
+:CorporateSecurityPolicy a :Policy ;
+    rdfs:label "Corporate Security Policy" .
+
+:StandardOperatingProcedures a :Documentation ;
+    rdfs:label "Standard Operating Procedures" .
+
+:Guidelines a :Documentation ;
+    rdfs:label "Guidelines" .
+
+:ReportTemplates a :Documentation ;
+    rdfs:label "Report Templates" .
+
+:Baselines a :Documentation ;
+    rdfs:label "Baselines" .
+```

@@ -1,0 +1,46 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:MajorEventTeam a :Team ;
+    rdfs:label "Major Event Team" ;
+    :activatedInCaseOf :HighClassifiedInformationImpact .
+
+:HighClassifiedInformationImpact a :Condition ;
+    rdfs:label "High Classified Information Impact" ;
+    :impacts :ConfidentialInformation, :SecretInformation .
+
+:ConfidentialInformation a :InformationClass ;
+    rdfs:label "Confidential Information" .
+
+:SecretInformation a :InformationClass ;
+    rdfs:label "Secret Information" .
+
+:LegalCounsel a :Role ;
+    rdfs:label "Legal Counsel" ;
+    :supports :ChiefSecurityOfficer .
+
+:ChiefSecurityOfficer a :Role ;
+    rdfs:label "Chief Security Officer" .
+
+:PrivacyRelatedIncidentProcedures a :Procedure ;
+    rdfs:label "Privacy Related Incident Procedures" ;
+    :followedInCaseOf :PersonalDataImpact .
+
+:PersonalDataImpact a :Condition ;
+    rdfs:label "Personal Data Impact" ;
+    :impacts :PersonalData .
+
+:PersonalData a :InformationClass ;
+    rdfs:label "Personal Data" .
+
+:LegalObligations a :Obligation ;
+    rdfs:label "Legal Obligations" ;
+    :requires :LegalCounselNotification .
+
+:LegalCounselNotification a :Obligation ;
+    rdfs:label "Legal Counsel Notification" .
+
+
+```

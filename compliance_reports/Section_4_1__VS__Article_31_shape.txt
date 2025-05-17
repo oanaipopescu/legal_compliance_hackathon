@@ -1,0 +1,29 @@
+Conforms: False
+
+Validation Report
+Conforms: False
+Results (4):
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :IncidentManagementOfProductSecuritySOP
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :ProductSecurity
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have at least one paragraph") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :paragraph ]
+	Focus Node: :IncidentManagementOfProductSecuritySOP
+	Result Path: :paragraph
+	Message: Regulation Rule must have at least one paragraph
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have at least one paragraph") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :paragraph ]
+	Focus Node: :ProductSecurity
+	Result Path: :paragraph
+	Message: Regulation Rule must have at least one paragraph

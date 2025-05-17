@@ -1,0 +1,23 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+:RegulationRuleShape a sh:NodeShape ;
+    sh:targetClass :RegulationRule ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
+    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
+    sh:property [ sh:path :references ; sh:message "Regulation Rule may specify referenced legislation (optional)" ] ;
+    sh:property [ sh:path :defines ; sh:minCount 1 ; sh:message "Regulation Rule must define at least one term" ] .
+
+:LegalBasisShape a sh:NodeShape ;
+    sh:targetClass :LegalBasis ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Basis must have a label" ] .
+
+:DefinedTermShape a sh:NodeShape ;
+    sh:targetClass :DefinedTerm ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Defined Term must have a label" ] ;
+    sh:property [ sh:path :definedIn ; sh:message "Defined Term may specify where it is defined (optional)" ] .
+
+```

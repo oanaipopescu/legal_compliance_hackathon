@@ -1,0 +1,62 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:EvidenceCollection a :RegulationRule ;
+    rdfs:label "Collection of Evidence 2.7" ;
+    :subject "Collection of Evidence" ;
+    :appliesTo :Signify ;
+    :requires :AdmissibleEvidenceCollection, :CompleteEvidenceCollection, :LocalOperationProceduresCompliance .
+
+:AdmissibleEvidenceCollection a :Obligation ;
+    rdfs:label "Collection of Admissible Evidence" ;
+    :purpose "disciplinary and legal action" ;
+    :coordinatedWith :LegalDepartment .
+
+:LegalDepartment a :OrganizationalUnit ;
+    rdfs:label "Legal Department".
+
+:CompleteEvidenceCollection a :Obligation ;
+    rdfs:label "Collection of Complete Evidence" ;
+    :purpose "disciplinary and legal action" .
+
+:LocalOperationProceduresCompliance a :Obligation ;
+    rdfs:label "Compliance with Local Operation Procedures" ;
+    :details :EvidenceIdentification, :EvidenceCollection, :EvidenceAcquisition, :EvidencePreservation, :ChainOfCustodyMaintenance, :DataSafety, :PersonnelSafety, :AssetSafety, :EvidenceSafety ;
+    :considers :JurisdictionalRequirements, :NationalRequirements .
+
+:EvidenceIdentification a :Process ;
+    rdfs:label "Evidence Identification" .
+
+:EvidenceCollection a :Process ;
+    rdfs:label "Evidence Collection" .
+
+:EvidenceAcquisition a :Process ;
+    rdfs:label "Evidence Acquisition" .
+
+:EvidencePreservation a :Process ;
+    rdfs:label "Evidence Preservation" .
+
+:ChainOfCustodyMaintenance a :Process ;
+    rdfs:label "Chain of Custody Maintenance" .
+
+:DataSafety a :Obligation ;
+    rdfs:label "Data Safety" .
+
+:PersonnelSafety a :Obligation ;
+    rdfs:label "Personnel Safety" .
+
+:AssetSafety a :Obligation ;
+    rdfs:label "Asset Safety" .
+
+:EvidenceSafety a :Obligation ;
+    rdfs:label "Evidence Safety" .
+
+:JurisdictionalRequirements a :Condition ;
+    rdfs:label "Jurisdictional Requirements" .
+
+:NationalRequirements a :Condition ;
+    rdfs:label "National Requirements" .
+
+```
