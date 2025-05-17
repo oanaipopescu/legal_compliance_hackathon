@@ -1,0 +1,17 @@
+Conforms: False
+
+Validation Report
+Conforms: False
+Results (2):
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :InformationSecuritySpecificProcedure
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must define at least one term") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :defines ]
+	Focus Node: :InformationSecuritySpecificProcedure
+	Result Path: :defines
+	Message: Regulation Rule must define at least one term

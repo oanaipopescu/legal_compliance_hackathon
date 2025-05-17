@@ -1,0 +1,42 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:AssessmentDecisionSecurityEvents a :RegulationRule ;
+    rdfs:label "Assessment of, and Decision on Security Events 2.4" ;
+    :subject "Assessment of, and Decision on Security Events" ;
+    :purpose "assure continuity of the Signify organization, standardization and escalation of security events" ;
+    :requires :SecurityEventAssessment, :ClassificationPrioritization, :DetailedRecording, :NeedToKnowBasisCommunication, :SecureCommunication .
+
+:SecurityEventAssessment a :Obligation ;
+    rdfs:label "Security Event Assessment" ;
+    :determines :SecurityIncidentClassification .
+
+:SecurityIncidentClassification a :InformationElement ;
+    rdfs:label "Security Incident Classification" .
+
+:ClassificationPrioritization a :Obligation ;
+    rdfs:label "Classification and Prioritization of Events" ;
+    :identifies :ImpactExtent .
+
+:ImpactExtent a :InformationElement ;
+    rdfs:label "Impact and Extent of Event" .
+
+:DetailedRecording a :Obligation ;
+    rdfs:label "Detailed Recording of Assessment and Decision" ;
+    :purpose "future reference and verification" .
+
+:NeedToKnowBasisCommunication a :Obligation ;
+    rdfs:label "Need-to-Know Basis Communication" ;
+    :communicates :SecurityIncidentInformation .
+
+:SecurityIncidentInformation a :InformationElement ;
+    rdfs:label "Security Incident Information" .
+
+:SecureCommunication a :Obligation ;
+    rdfs:label "Secure Communication Channels" ;
+    :uses :SecuredCommunicationChannels .
+
+
+```

@@ -1,0 +1,38 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:StandardScope a :RegulationRule ;
+    rdfs:label "Standard Scope 1.2" ;
+    :subject "Scope of Security Incident Management Standard" ;
+    :appliesTo :SignifyBusinesses, :SignifyMarkets, :SignifyFunctions, :SignifySuppliers ;
+    :excludes :OverallSOC, :CERT, :ForensicInvestigation, :DisasterRecoveryPlanning, :ProblemManagementProcesses .
+
+:SignifyBusinesses a :LegalEntity ;
+    rdfs:label "Signify Businesses" .
+
+:SignifyMarkets a :LegalEntity ;
+    rdfs:label "Signify Markets" .
+
+:SignifyFunctions a :LegalEntity ;
+    rdfs:label "Signify Functions" .
+
+:SignifySuppliers a :LegalEntity ;
+    rdfs:label "Signify Suppliers" .
+
+:OverallSOC a :Process ;
+    rdfs:label "Overall Security Operations Center" .
+
+:CERT a :Process ;
+    rdfs:label "Computer Emergency Response Team" .
+
+:ForensicInvestigation a :Process ;
+    rdfs:label "Forensic Investigation" .
+
+:DisasterRecoveryPlanning a :Process ;
+    rdfs:label "Disaster Recovery Planning" .
+
+:ProblemManagementProcesses a :Process ;
+    rdfs:label "Problem Management Processes" .
+```

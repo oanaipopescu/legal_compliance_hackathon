@@ -1,0 +1,51 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:RegulationRuleShape a sh:NodeShape ;
+    sh:targetClass :RegulationRule ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
+    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
+    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it applies to" ] ;
+    sh:property [ sh:path :repeals ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it repeals" ] .
+
+:LegalEntityShape a sh:NodeShape ;
+    sh:targetClass :LegalEntity ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] ;
+    sh:property [ sh:path :finances ; sh:message "Legal Entity may specify what it finances (optional)" ] ;
+    sh:property [ sh:path :role ; sh:message "Legal Entity may specify its role (optional)" ] ;
+    sh:property [ sh:path :conducts ; sh:message "Legal Entity may specify what it conducts (optional)" ] ;
+    sh:property [ sh:path :responsibleFor ; sh:message "Legal Entity may specify what it is responsible for (optional)" ] ;
+    sh:property [ sh:path :mayActAs ; sh:message "Legal Entity may specify roles it may act as (optional)" ] .
+
+:CostShape a sh:NodeShape ;
+    sh:targetClass :Cost ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Cost must have a label" ] ;
+    sh:property [ sh:path :includes ; sh:minCount 1 ; sh:message "Cost must specify included items" ] .
+
+:CostItemShape a sh:NodeShape ;
+    sh:targetClass :CostItem ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Cost Item must have a label" ] .
+
+:RoleShape a sh:NodeShape ;
+    sh:targetClass :Role ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Role must have a label" ] .
+
+:StudyShape a sh:NodeShape ;
+    sh:targetClass :Study ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Study must have a label" ] .
+
+:ObligationShape a sh:NodeShape ;
+    sh:targetClass :Obligation ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] .
+
+:DecisionShape a sh:NodeShape ;
+    sh:targetClass :Decision ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Decision must have a label" ] ;
+    sh:property [ sh:path :issuedBy ; sh:minCount 1 ; sh:message "Decision must specify who issued it" ] .
+
+:LegalEntityClassShape a sh:NodeShape ;
+    sh:targetClass :LegalEntityClass ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] .

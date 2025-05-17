@@ -1,0 +1,41 @@
+Conforms: False
+
+Validation Report
+Conforms: False
+Results (6):
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :ConsistentIncidentManagement
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :EffectiveIncidentManagement
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :SecurityIncidentManagement
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have an effective date") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :effectiveDate ]
+	Focus Node: :ConsistentIncidentManagement
+	Result Path: :effectiveDate
+	Message: Regulation Rule must have an effective date
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have an effective date") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :effectiveDate ]
+	Focus Node: :EffectiveIncidentManagement
+	Result Path: :effectiveDate
+	Message: Regulation Rule must have an effective date
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have an effective date") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :effectiveDate ]
+	Focus Node: :SecurityIncidentManagement
+	Result Path: :effectiveDate
+	Message: Regulation Rule must have an effective date

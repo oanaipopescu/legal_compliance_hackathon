@@ -1,0 +1,52 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:RegulationRuleShape a sh:NodeShape ;
+    sh:targetClass :RegulationRule ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
+    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
+    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] .
+
+:ObligationShape a sh:NodeShape ;
+    sh:targetClass :Obligation ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
+    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Obligation must specify what it applies to" ] ;
+    sh:property [ sh:path :until ; sh:minCount 1 ; sh:message "Obligation must specify its end condition" ] ;
+    sh:property [ sh:path :maximumDuration ; sh:datatype xsd:date ; sh:minCount 1 ; sh:message "Obligation must have a maximum duration" ] ;
+    sh:property [ sh:path :employmentType ; sh:minCount 1 ; sh:message "Obligation must specify employment type" ] ;
+    sh:property [ sh:path :specialization ; sh:minCount 1 ; sh:message "Obligation must specify specialization" ] ;
+    sh:property [ sh:path :numberOfContracts ; sh:datatype xsd:integer ; sh:minCount 1 ; sh:message "Obligation must specify number of contracts" ] ;
+    sh:property [ sh:path :basedOn ; sh:minCount 1 ; sh:message "Obligation must specify its legal basis" ] .
+
+:LegalEntityClassShape a sh:NodeShape ;
+    sh:targetClass :LegalEntityClass ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] .
+
+:ConditionShape a sh:NodeShape ;
+    sh:targetClass :Condition ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Condition must have a label" ] .
+
+:LegalBasisShape a sh:NodeShape ;
+    sh:targetClass :LegalBasis ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Basis must have a label" ] .
+
+:AnnouncementShape a sh:NodeShape ;
+    sh:targetClass :Announcement ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Announcement must have a label" ] .
+
+:EmploymentTypeShape a sh:NodeShape ;
+    sh:targetClass :EmploymentType ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Employment Type must have a label" ] .
+
+:SpecializationShape a sh:NodeShape ;
+    sh:targetClass :Specialization ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Specialization must have a label" ] .
+
+:LegalEntityShape a sh:NodeShape ;
+  sh:targetClass :LegalEntity ;
+  sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] .
+```

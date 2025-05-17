@@ -1,0 +1,39 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ReportingSecurityWeaknesses a :RegulationRule ;
+    rdfs:label "Reporting Security Weaknesses 2.3" ;
+    :subject "Reporting Security Weaknesses" ;
+    :appliesTo :Signify, :Vendors, :Customers ;
+    :requires :PromptReporting, :AuthorizedTestingOnly .
+
+:PromptReporting a :Obligation ;
+    rdfs:label "Prompt Reporting of Security Weaknesses" ;
+    :through :AppropriateChannels .
+
+:AppropriateChannels a :InformationElement ;
+    rdfs:label "Appropriate Reporting Channels" .
+
+:AuthorizedTestingOnly a :Obligation ;
+    rdfs:label "Authorized Security Testing Only" ;
+    :excludes :UnauthorizedTesting .
+
+:UnauthorizedTesting a :Activity ;
+    rdfs:label "Unauthorized Security Weakness Testing" ;
+    :consideredAs :PotentialResourceMisuse .
+
+:PotentialResourceMisuse a :Risk ;
+    rdfs:label "Potential Misuse of Resources" .
+
+:Vendors a :LegalEntity ;
+    rdfs:label "Vendors".
+
+:Customers a :LegalEntity;
+    rdfs:label "Customers".
+
+:ResponsibleDisclosure a :Process;
+    rdfs:label "Responsible Disclosure Policy".
+
+```

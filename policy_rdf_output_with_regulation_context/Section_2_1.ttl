@@ -1,0 +1,35 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ResponsibilityProcedures a :RegulationRule ;
+    rdfs:label "Responsibilities and Procedures 2.1" ;
+    :subject "Responsibilities and Procedures for Security Incident Management" ;
+    :requires :AdequateResponseToSecurityEvents, :ConsistencyWithCorporatePolicies ;
+    :purpose "ensure adequate response to (suspected) security events and incidents, preventing and/or mitigating potential harm" ;
+    :appliesTo :Signify .
+
+:AdequateResponseToSecurityEvents a :Obligation ;
+    rdfs:label "Adequate Response to Security Events" ;
+    :mitigates :PotentialHarm .
+
+:PotentialHarm a :Risk ;
+    rdfs:label "Potential Harm to Company Assets" ;
+    :appliesTo :People, :Assets, :Information, :Products, :Brands, :Reputation, :Customers, :Partners, :ServiceProviders .
+
+:ConsistencyWithCorporatePolicies a :Obligation ;
+    rdfs:label "Consistency with Corporate Policies" ;
+    :consistentWith :CorporateSecurityPolicy .
+
+:People a :Asset .
+:Assets a :Asset .
+:Information a :Asset .
+:Products a :Asset .
+:Brands a :Asset .
+:Reputation a :Asset .
+:Customers a :Stakeholder .
+:Partners a :Stakeholder .
+:ServiceProviders a :Stakeholder .
+
+```

@@ -1,0 +1,34 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:ResponseToSecurityIncidents a :RegulationRule ;
+    rdfs:label "Response to Security Incidents 2.5" ;
+    :subject "Response to Security Incidents" ;
+    :requires :DocumentedProceduresCompliance, :EffectiveTimelyConsistentResponse, :SignifySOCInclusion, :SignifyCrisisManagementPlanCompliance, :BusinessContinuityManagementCompliance .
+
+:DocumentedProceduresCompliance a :Obligation ;
+    rdfs:label "Compliance with Documented Procedures" ;
+    :references :SubsequentChapters .
+
+:SubsequentChapters a :Documentation ;
+    rdfs:label "Subsequent Chapters detailing Procedures" .
+
+:EffectiveTimelyConsistentResponse a :Obligation ;
+    rdfs:label "Effective, Timely, and Consistent Response" ;
+    :purpose "Minimize impact of security incidents" .
+
+:SignifySOCInclusion a :Obligation ;
+    rdfs:label "Signify Security Operation Centers Inclusion" ;
+    :partOf :IncidentResolutionProcess .
+
+:IncidentResolutionProcess a :Process ;
+    rdfs:label "Incident Resolution Process" .
+
+:SignifyCrisisManagementPlanCompliance a :Obligation ;
+    rdfs:label "Compliance with Signify Crisis Management Plan" .
+
+:BusinessContinuityManagementCompliance a :Obligation ;
+    rdfs:label "Compliance with Business Continuity Management" .
+```

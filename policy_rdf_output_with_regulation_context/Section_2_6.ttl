@@ -1,0 +1,40 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:LearningFromSecurityIncidents a :RegulationRule ;
+    rdfs:label "Learning from Security Incidents 2.6" ;
+    :subject "Learning from Security Incidents" ;
+    :requires :ContinuousFeedbackLoops, :LessonsLearnedActivities ;
+    :purpose "create continuous feedback loops to improve security measures and incident handling" .
+
+:ContinuousFeedbackLoops a :Obligation ;
+    rdfs:label "Continuous Feedback Loops" ;
+    :achievedThrough :LessonsLearnedActivities .
+
+:LessonsLearnedActivities a :Obligation ;
+    rdfs:label "Lessons Learned Activities" ;
+    :conductedAfter :MajorIncident ;
+    :improves :SecurityMeasures, :IncidentHandlingProcess ;
+    :reviews :IncidentOccurrence, :RemediationActions, :RemediationEffectiveness .
+
+:MajorIncident a :SecurityEvent ;
+    rdfs:label "Major Security Incident" .
+
+:IncidentOccurrence a :InformationElement ;
+    rdfs:label "Incident Occurrence Details" .
+
+:RemediationActions a :InformationElement ;
+    rdfs:label "Remediation Actions Taken" .
+
+:RemediationEffectiveness a :InformationElement ;
+    rdfs:label "Remediation Effectiveness" .
+
+:SecurityMeasures a :Asset ;
+    rdfs:label "Security Measures".
+
+:IncidentHandlingProcess a :Process ;
+    rdfs:label "Incident Handling Process".
+
+```

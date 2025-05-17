@@ -1,0 +1,11 @@
+Conforms: False
+
+Validation Report
+Conforms: False
+Results (1):
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify what it applies to") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :appliesTo ]
+	Focus Node: :AssessmentOfSecurityEvents
+	Result Path: :appliesTo
+	Message: Regulation Rule must specify what it applies to

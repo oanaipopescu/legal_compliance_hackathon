@@ -1,0 +1,71 @@
+Conforms: False
+
+Validation Report
+Conforms: False
+Results (11):
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :ResponseToSecurityIncidents
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :BusinessContinuityManagement
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :SignifyCrisisManagementPlan
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :IncidentResolutionProcess
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify what it amends") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :amends ]
+	Focus Node: :ResponseToSecurityIncidents
+	Result Path: :amends
+	Message: Regulation Rule must specify what it amends
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify what it amends") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :amends ]
+	Focus Node: :BusinessContinuityManagement
+	Result Path: :amends
+	Message: Regulation Rule must specify what it amends
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify what it amends") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :amends ]
+	Focus Node: :SignifyCrisisManagementPlan
+	Result Path: :amends
+	Message: Regulation Rule must specify what it amends
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify what it amends") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :amends ]
+	Focus Node: :IncidentResolutionProcess
+	Result Path: :amends
+	Message: Regulation Rule must specify what it amends
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must require at least one obligation") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :requires ]
+	Focus Node: :BusinessContinuityManagement
+	Result Path: :requires
+	Message: Regulation Rule must require at least one obligation
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must require at least one obligation") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :requires ]
+	Focus Node: :SignifyCrisisManagementPlan
+	Result Path: :requires
+	Message: Regulation Rule must require at least one obligation
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must require at least one obligation") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :requires ]
+	Focus Node: :IncidentResolutionProcess
+	Result Path: :requires
+	Message: Regulation Rule must require at least one obligation

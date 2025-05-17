@@ -1,0 +1,53 @@
+Conforms: False
+
+Validation Report
+Conforms: False
+Results (8):
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :SecurityIncidentManagementStandard
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :LocalOperationProcedures
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :Standard
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must have a subject") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :subject ]
+	Focus Node: :CorporateSecurityPolicy
+	Result Path: :subject
+	Message: Regulation Rule must have a subject
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify what it repeals") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :repeals ]
+	Focus Node: :SecurityIncidentManagementStandard
+	Result Path: :repeals
+	Message: Regulation Rule must specify what it repeals
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify what it repeals") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :repeals ]
+	Focus Node: :LocalOperationProcedures
+	Result Path: :repeals
+	Message: Regulation Rule must specify what it repeals
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify what it repeals") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :repeals ]
+	Focus Node: :Standard
+	Result Path: :repeals
+	Message: Regulation Rule must specify what it repeals
+Constraint Violation in MinCountConstraintComponent (http://www.w3.org/ns/shacl#MinCountConstraintComponent):
+	Severity: sh:Violation
+	Source Shape: [ sh:message Literal("Regulation Rule must specify what it repeals") ; sh:minCount Literal("1", datatype=xsd:integer) ; sh:path :repeals ]
+	Focus Node: :CorporateSecurityPolicy
+	Result Path: :repeals
+	Message: Regulation Rule must specify what it repeals

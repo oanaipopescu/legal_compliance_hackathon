@@ -1,0 +1,18 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:AssessmentDecisionInformationSecurityEvents a :RegulationRule ;
+    rdfs:label "Assessment of, and Decision on Information Security Events 3.3" ;
+    :subject "Assessment of, and Decision on Information Security Events" ;
+    :appliesTo :ITSecurityOperationsCenter ;
+    :requires :InformationSecurityEventAssessment .
+
+:ITSecurityOperationsCenter a :OrganizationalUnit ;
+    rdfs:label "IT Security Operations Center (SOC)" ;
+    :responsibleFor :InformationSecurityEventAssessment .
+
+:InformationSecurityEventAssessment a :Obligation ;
+    rdfs:label "Information Security Event Assessment" .
+```

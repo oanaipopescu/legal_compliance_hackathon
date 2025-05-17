@@ -1,0 +1,13 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:DocumentPurpose a :RegulationRule ;
+    rdfs:label "Document Purpose 1.1" ;
+    :purpose "define the mandatory requirements and high-level approach for consistent and effective security incident management enabling Signify to minimize the impact of and learn from security incidents" ;
+    :appliesTo :Signify .
+
+:Signify a :LegalEntity ;
+    rdfs:label "Signify" .
+```

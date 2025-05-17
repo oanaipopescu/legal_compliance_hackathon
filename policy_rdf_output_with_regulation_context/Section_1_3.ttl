@@ -1,0 +1,38 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:CorporateSecurityDepartment a :OrganizationalUnit ;
+    rdfs:label "Corporate Security department" ;
+    :owns :SecurityIncidentManagementStandard .
+
+:SecurityIncidentManagementStandard a :Standard ;
+    rdfs:label "Security Incident Management Standard" .
+
+:ChiefSecurityOfficer a :Role ;
+    rdfs:label "Chief Security Officer (CSO)" ;
+    :issues :SecurityIncidentManagementStandard .
+
+:HeadOfSecurityGovernanceRiskCompliance a :Role ;
+    rdfs:label "Head of Security Governance, Risk & Compliance (GRC)" ;
+    :maintains :SecurityIncidentManagementStandard .
+
+:ManagerSecurityPolicyProcedures a :Role ;
+    rdfs:label "Manager Security Policy & Procedures" ;
+    :accepts :ChangeRequests .
+
+:ChangeRequests a :InformationElement ;
+    rdfs:label "Change Requests" .
+
+:HeadOfSecurityGRC a :Role ;
+    rdfs:label "Head of Security GRC" ;
+    :accepts :Input, :Comments, :ChangeRequests .
+
+:Input a :InformationElement ;
+    rdfs:label "Input" .
+
+:Comments a :InformationElement ;
+    rdfs:label "Comments" .
+
+```

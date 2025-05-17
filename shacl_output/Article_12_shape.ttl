@@ -1,0 +1,39 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+
+:RegulationRuleShape a sh:NodeShape ;
+    sh:targetClass :RegulationRule ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation Rule must have a label" ] ;
+    sh:property [ sh:path :subject ; sh:minCount 1 ; sh:message "Regulation Rule must have a subject" ] ;
+    sh:property [ sh:path :appliesTo ; sh:minCount 1 ; sh:message "Regulation Rule must specify what it applies to" ] ;
+    sh:property [ sh:path :requires ; sh:minCount 1 ; sh:message "Regulation Rule must require at least one obligation" ] ;
+    sh:property [ sh:path :references ; sh:message "Regulation Rule may specify referenced legislation (optional)" ] .
+
+:LegalBasisShape a sh:NodeShape ;
+    sh:targetClass :LegalBasis ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Basis must have a label" ] .
+
+:ObligationShape a sh:NodeShape ;
+    sh:targetClass :Obligation ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligation must have a label" ] ;
+    sh:property [ sh:path :appliesTo ; sh:message "Obligation may specify what it applies to (optional)" ] ;
+    sh:property [ sh:path :requires ; sh:message "Obligation may require other obligations (optional)" ] .
+
+:RoleShape a sh:NodeShape ;
+    sh:targetClass :Role ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Role must have a label" ] .
+
+:LegalEntityShape a sh:NodeShape ;
+    sh:targetClass :LegalEntity ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity must have a label" ] ;
+    sh:property [ sh:path :partOf ; sh:message "Legal Entity may specify parent organization (optional)" ] ;
+    sh:property [ sh:path :role ; sh:message "Legal Entity may specify its role (optional)" ] .
+
+:LegalEntityClassShape a sh:NodeShape ;
+    sh:targetClass :LegalEntityClass ;
+    sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Legal Entity Class must have a label" ] .
+
+```
