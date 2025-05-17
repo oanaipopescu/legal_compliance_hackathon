@@ -6,6 +6,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 :RegulationRuleShape a sh:NodeShape ;
     sh:targetClass :RegulationRule ;
     sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Regulation rules must have a label" ] ;
@@ -32,6 +33,8 @@
 =======
 =======
 >>>>>>> 489be9b (merged latest changes)
+=======
+>>>>>>> 2578f70 (uploaded)
 :EntityReportingShape a sh:NodeShape ;
     sh:targetClass :CoreEntities ;
     sh:property [
@@ -113,6 +116,7 @@
     .
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 >>>>>>> 2578f70 (uploaded)
 =======
 =======
@@ -141,4 +145,6 @@
     sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Information elements must have a label" ] .
 >>>>>>> b5ba7c6 (wip)
 >>>>>>> 489be9b (merged latest changes)
+=======
+>>>>>>> 2578f70 (uploaded)
 ```

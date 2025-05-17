@@ -6,6 +6,7 @@
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 >>>>>>> 489be9b (merged latest changes)
 :RegulationRuleShape a sh:NodeShape ;
@@ -20,6 +21,8 @@
     sh:targetClass :Obligation ;
     sh:property [ sh:path rdfs:label ; sh:minCount 1 ; sh:message "Obligations must have a label" ] .
 =======
+=======
+>>>>>>> 2578f70 (uploaded)
 :DataProtectionComplianceShape a sh:NodeShape ;
     sh:targetClass :LegalEntity ;
     sh:property [
@@ -28,6 +31,9 @@
         sh:message "Legal entities must comply with Regulation (EU) 2016/679" ;
         sh:severity sh:Violation
     ] .
+<<<<<<< HEAD
+>>>>>>> 2578f70 (uploaded)
+=======
 >>>>>>> 2578f70 (uploaded)
 
 =======
