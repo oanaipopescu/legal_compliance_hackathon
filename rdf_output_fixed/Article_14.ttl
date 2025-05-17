@@ -1,0 +1,27 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article14 a :RegulationRule ;
+    rdfs:label "Article 14" ;
+    :subject "Governance" ;
+    :references :Article20_Directive2022_2555 ;
+    :appliesTo :KeyEntities, :SignificantEntities ;
+    :requires :CybersecurityRiskManagementApproval .
+
+:Article20_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 20 of Directive (EU) 2022/2555" .
+
+:CybersecurityRiskManagementApproval a :Obligation ;
+    rdfs:label "Approval of Cybersecurity Risk Management Measures" ;
+    :timeLimit :ThreeMonths ;
+    :appliesTo :KeyEntitiesManagementBodies, :SignificantEntitiesManagementBodies .
+
+:KeyEntitiesManagementBodies a :LegalEntityClass ;
+    rdfs:label "Management Bodies of Key Entities" .
+
+:SignificantEntitiesManagementBodies a :LegalEntityClass ;
+    rdfs:label "Management Bodies of Significant Entities" .
+
+:ThreeMonths a :TimePeriod ;
+    rdfs:label "Three Months" .

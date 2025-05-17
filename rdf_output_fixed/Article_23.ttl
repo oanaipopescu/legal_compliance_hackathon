@@ -1,0 +1,143 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article23 a :RegulationRule ;
+    rdfs:label "Article 23" ;
+    :subject "General aspects concerning supervision and enforcement" ;
+    :references :paragraph5_article8_Directive2022_2555, :paragraph1_article9_Directive2022_2555, :paragraph2_article10_Directive2022_2555, :paragraph2_article11_Directive2022_2555, :Article31_Directive2022_2555 ;
+    :appliesTo :NationalCybersecurityAuthority, :EntitiesUnderNCSASupervision ;
+    :requires :SupervisionAndControl, :ProportionalSupervisionFee, :ProportionalAuditFee, :AssignmentOfControlTasks, :CompensationForControlBodies .
+
+:paragraph5_article8_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "paragraph 5 of article 8 of Directive (EU) 2022/2555" .
+
+:paragraph1_article9_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "paragraph 1 of article 9 of Directive (EU) 2022/2555" .
+
+:paragraph2_article10_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "paragraph 2 of article 10 of Directive (EU) 2022/2555" .
+
+:paragraph2_article11_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "paragraph 2 of article 11 of Directive (EU) 2022/2555" .
+
+:Article31_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 31 of Directive (EU) 2022/2555" .
+
+:SupervisionAndControl a :Obligation ;
+    rdfs:label "Supervision and Control" ;
+    :appliesTo :NationalCybersecurityAuthority ;
+    :inAccordanceWith :Article24, :Article25 .
+
+:Article24 a :RegulationRule ;
+    rdfs:label "Article 24".
+
+:Article25 a :RegulationRule ;
+    rdfs:label "Article 25".
+
+:ProportionalSupervisionFee a :Obligation ;
+    rdfs:label "Proportional Supervision Fee" ;
+    :appliesTo :EntitiesUnderNCSASupervision ;
+    :excludes :EntitiesUnderArticle3_paragraph2f ;
+    :determinedBy :paragraph20_article30 .
+
+:paragraph20_article30 a :LegalBasis ;
+    rdfs:label "paragraph 20 of article 30" .
+
+:ProportionalAuditFee a :Obligation ;
+    rdfs:label "Proportional Audit Fee" ;
+    :appliesTo :EntitiesUnderNCSASupervision ;
+    :excludes :EntitiesUnderArticle3_paragraph2f ;
+    :determinedBy :paragraph20_article30 .
+
+:EntitiesUnderNCSASupervision a :LegalEntityClass ;
+    rdfs:label "Entities under the supervision of the National Cybersecurity Authority" .
+
+:EntitiesUnderArticle3_paragraph2f a :LegalEntityClass ;
+    rdfs:label "Entities under point f) of paragraph 2 of article 3" ;
+    :definedIn :Article3 .
+
+:AssignmentOfControlTasks a :Obligation ;
+    rdfs:label "Assignment of Control Tasks" ;
+    :inAccordanceWith :paragraph21_article30 .
+
+:paragraph21_article30 a :LegalBasis ;
+    rdfs:label "paragraph 21 of article 30" .
+
+:CompensationForControlBodies a :Obligation ;
+    rdfs:label "Compensation for Control Bodies" ;
+    :determinedBy :paragraph20_article30 ;
+    :appliesTo :InspectorsOfNCSA, :InspectorsOfPublicAdministration, :CertifiedSME .
+
+:InspectorsOfNCSA a :LegalEntityClass ;
+    rdfs:label "Inspectors of the National Cybersecurity Authority" .
+
+:InspectorsOfPublicAdministration a :LegalEntityClass ;
+    rdfs:label "Inspectors of the public administration certified by the National Cybersecurity Authority" .
+
+:CertifiedSME a :LegalEntityClass ;
+    rdfs:label "SME certified by the National Cybersecurity Authority" .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" ;
+    :role :CompetentAuthorityForSupervision .
+
+:CompetentAuthorityForSupervision a :Role ;
+    rdfs:label "Competent Authority for Supervision and Control" .
+
+:RevenuesFromFinancialSanctions a :FinancialResource ;
+    rdfs:label "Revenues from Financial Sanctions" ;
+    :allocatedTo :NationalCybersecurityAuthority ;
+    :purpose "cover operating expenses and serve the purposes of its operation" .
+
+:CooperationWithPersonalDataProtectionAuthority a :Obligation ;
+    rdfs:label "Cooperation with Personal Data Protection Authority" ;
+    :concerns :PersonalDataBreaches ;
+    :basedOn :Regulation2016_679 .
+
+:PersonalDataProtectionAuthority a :LegalEntity ;
+    rdfs:label "Personal Data Protection Authority" .
+
+:Regulation2016_679 a :EU_Regulation ;
+    rdfs:label "Regulation (EU) 2016/679" .
+
+:FinesForViolation a :Obligation ;
+    rdfs:label "Fines for Violation" ;
+    :basedOn :Article26, :paragraph23_article30 .
+
+:Article26 a :RegulationRule ;
+    rdfs:label "Article 26".
+
+:paragraph23_article30 a :LegalBasis ;
+    rdfs:label "paragraph 23 of article 30" .
+
+:FunctionalIndependence a :Attribute ;
+    rdfs:label "Functional Independence" ;
+    :appliesTo :NationalCybersecurityAuthorityBodies .
+
+:NationalCybersecurityAuthorityBodies a :LegalEntityClass ;
+    rdfs:label "Bodies of the National Cybersecurity Authority" .
+
+:SupervisoryPowers a :Attribute ;
+    rdfs:label "Supervisory Powers" ;
+    :appliesTo :AuthorizedEmployeesOfNCSA ;
+    :includes :RightToVisitEntities, :RightToControlCollectData, :RightToConductInvestigations, :RightToSeizeObtainDocuments, :RightToSealPremises .
+
+:AuthorizedEmployeesOfNCSA a :LegalEntityClass ;
+    rdfs:label "Authorized Employees of the National Cybersecurity Authority" .
+
+:RightToVisitEntities a :Permission ;
+    rdfs:label "Right to visit entities" .
+
+:RightToControlCollectData a :Permission ;
+    rdfs:label "Right to control and collect information and data" .
+
+:RightToConductInvestigations a :Permission ;
+    rdfs:label "Right to conduct investigations" .
+
+:RightToSeizeObtainDocuments a :Permission ;
+    rdfs:label "Right to seize, receive or obtain documents" .
+
+:RightToSealPremises a :Permission ;
+    rdfs:label "Right to seal premises" .

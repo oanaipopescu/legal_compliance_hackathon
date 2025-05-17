@@ -1,0 +1,65 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article33 a :RegulationRule ;
+    rdfs:label "Article 33" ;
+    :subject "National Cybersecurity Authority personnel arrangements" ;
+    :amends :Article21_Law5086_2024 ;
+    :requires :AmendmentToArticle21_Law5086_2024 .
+
+:AmendmentToArticle21_Law5086_2024 a :Obligation ;
+    rdfs:label "Amendment to Article 21 of Law 5086/2024" ;
+    :details :Amendment_paragraph4_Article21_Law5086_2024 .
+
+:Amendment_paragraph4_Article21_Law5086_2024 a :Amendment ;
+    rdfs:label "Amendment to paragraph 4 of Article 21 of Law 5086/2024" ;
+    :changes :DateChange_December31_2024, :DateChange_January1_2025, :RephrasedParagraph4 .
+
+:DateChange_December31_2024 a :DateChange ;
+    rdfs:label "Change of date 'December 31, 2024' to 'December 31, 2025'" ;
+    :oldDate "2024-12-31"^^xsd:date ;
+    :newDate "2025-12-31"^^xsd:date .
+
+:DateChange_January1_2025 a :DateChange ;
+    rdfs:label "Change of date 'January 1, 2025' to 'January 1, 2026'" ;
+    :oldDate "2025-01-01"^^xsd:date ;
+    :newDate "2026-01-01"^^xsd:date .
+
+:RephrasedParagraph4 a :Rephrasing ;
+    rdfs:label "Rephrased paragraph 4" ;
+    :text """4. Until December 31, 2025, the total cost of payroll, as well as any type of remuneration, including the salary difference resulting from the implementation of this provision, shall be borne by the budget of the Ministry of Digital Governance and shall be paid by it. Without prejudice to paragraph b) of paragraph 3 of article 13, from January 1, 2026, the total cost of payroll, as well as any type of remuneration, shall be borne by the Authority and shall be paid by it.""" .
+
+:Article21_Law5086_2024 a :LegalProvision ;
+    rdfs:label "Article 21 of Law 5086/2024" ;
+    :partOf :PartA_Law5086_2024 ;
+    :subject "Transitional Provisions" .
+
+:PartA_Law5086_2024 a :Part ;
+    rdfs:label "Part A of Law 5086/2024" .
+
+:MinistryOfDigitalGovernance a :LegalEntity ;
+    rdfs:label "Ministry of Digital Governance" ;
+    :bearsCost :PayrollCosts_until_2025_12_31 .
+
+:PayrollCosts_until_2025_12_31 a :Cost ;
+    rdfs:label "Payroll costs until December 31, 2025" ;
+    :includes :Salaries, :Remuneration .
+
+:Salaries a :CostItem ;
+    rdfs:label "Salaries".
+
+:Remuneration a :CostItem ;
+    rdfs:label "Remuneration".
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" ;
+    :bearsCost :PayrollCosts_from_2026_01_01 .
+
+:PayrollCosts_from_2026_01_01 a :Cost ;
+    rdfs:label "Payroll costs from January 1, 2026" ;
+    :includes :Salaries, :Remuneration .
+
+:Article13_paragraph3b a :LegalProvision ;
+    rdfs:label "paragraph b) of paragraph 3 of article 13" .

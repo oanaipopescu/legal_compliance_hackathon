@@ -1,0 +1,155 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article6 a :RegulationRule ;
+    rdfs:label "Article 6" ;
+    :subject "Definitions" ;
+    :references :Article6_Directive2022_2555 ;
+    :defines :NetworkAndInformationSystem, :SecurityOfNetworkAndInformationSystems, :Cybersecurity, :NationalCybersecurityStrategy, :NearMissIncident, :Incident, :LargeScaleCybersecurityIncident, :IncidentManagement, :Risk, :CyberThreat, :SignificantCyberThreat, :ICTProduct, :ICTService, :ICTProcedure, :Vulnerability, :Standard, :TechnicalSpecification, :InternetExchangePoint, :DomainNameSystem, :DNSServiceProvider, :TopLevelDomainNameRegistry, :EntityProvidingDomainNameRegistrationServices, :DigitalService, :TrustService, :TrustServiceProvider, :QualifiedTrustService, :QualifiedTrustServiceProvider, :OnlineInternetMarket, :OnlineInternetSearchEngine, :CloudComputingService, :DataCentreService, :ContentDistributionNetwork, :SocialNetworkingServicePlatform, :Representative, :PublicAdministrationEntity, :PublicElectronicCommunicationsNetwork, :ElectronicCommunicationsService, :Entity, :ManagedServiceProvider, :ManagedSecurityServiceProvider, :ResearchOrganisation .
+
+:Article6_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 6 of Directive (EU) 2022/2555" .
+
+:NetworkAndInformationSystem a :DefinedTerm ;
+    rdfs:label "Network and Information System" .
+
+:SecurityOfNetworkAndInformationSystems a :DefinedTerm ;
+    rdfs:label "Security of Network and Information Systems" .
+
+:Cybersecurity a :DefinedTerm ;
+    rdfs:label "Cybersecurity" ;
+    :definedIn :Article2_Regulation2019_881 .
+
+:Article2_Regulation2019_881 a :LegalBasis ;
+    rdfs:label "Article 2 of Regulation (EU) 2019/881" .
+
+:NationalCybersecurityStrategy a :DefinedTerm ;
+    rdfs:label "National Cybersecurity Strategy" .
+
+:NearMissIncident a :DefinedTerm ;
+    rdfs:label "Near-miss incident" .
+
+:Incident a :DefinedTerm ;
+    rdfs:label "Incident" .
+
+:LargeScaleCybersecurityIncident a :DefinedTerm ;
+    rdfs:label "Large-scale cybersecurity incident" .
+
+:IncidentManagement a :DefinedTerm ;
+    rdfs:label "Incident Management" .
+
+:Risk a :DefinedTerm ;
+    rdfs:label "Risk" .
+
+:CyberThreat a :DefinedTerm ;
+    rdfs:label "Cyber threat" ;
+    :definedIn :Article2_Regulation2019_881 .
+
+:SignificantCyberThreat a :DefinedTerm ;
+    rdfs:label "Significant cyber threat" .
+
+:ICTProduct a :DefinedTerm ;
+    rdfs:label "ICT product" ;
+    :definedIn :Article2_Regulation2019_881 .
+
+:ICTService a :DefinedTerm ;
+    rdfs:label "ICT service" ;
+    :definedIn :Article2_Regulation2019_881 .
+
+:ICTProcedure a :DefinedTerm ;
+    rdfs:label "ICT procedure" ;
+    :definedIn :Article2_Regulation2019_881 .
+
+:Vulnerability a :DefinedTerm ;
+    rdfs:label "Vulnerability" .
+
+:Standard a :DefinedTerm ;
+    rdfs:label "Standard" ;
+    :definedIn :Article2_Regulation2012_1025 .
+
+:Article2_Regulation2012_1025 a :LegalBasis ;
+    rdfs:label "Article 2 of Regulation (EU) 1025/2012" .
+
+:TechnicalSpecification a :DefinedTerm ;
+    rdfs:label "Technical Specification" ;
+    :definedIn :Article2_Regulation2012_1025 .
+
+:InternetExchangePoint a :DefinedTerm ;
+    rdfs:label "Internet Exchange Point" .
+
+:DomainNameSystem a :DefinedTerm ;
+    rdfs:label "Domain Name System (DNS)" .
+
+:DNSServiceProvider a :DefinedTerm ;
+    rdfs:label "DNS Service Provider" .
+
+:TopLevelDomainNameRegistry a :DefinedTerm ;
+    rdfs:label "Top-Level Domain Name Registry" .
+
+:EntityProvidingDomainNameRegistrationServices a :DefinedTerm ;
+    rdfs:label "Entity Providing Domain Name Registration Services" .
+
+:DigitalService a :DefinedTerm ;
+    rdfs:label "Digital Service" .
+
+:TrustService a :DefinedTerm ;
+    rdfs:label "Trust Service" ;
+    :definedIn :Article3_Regulation910_2014 .
+
+:Article3_Regulation910_2014 a :LegalBasis ;
+    rdfs:label "Article 3 of Regulation (EU) 910/2014" .
+
+:TrustServiceProvider a :DefinedTerm ;
+    rdfs:label "Trust Service Provider" ;
+    :definedIn :Article3_Regulation910_2014 .
+
+:QualifiedTrustService a :DefinedTerm ;
+    rdfs:label "Qualified Trust Service" ;
+    :definedIn :Article3_Regulation910_2014 .
+
+:QualifiedTrustServiceProvider a :DefinedTerm ;
+    rdfs:label "Qualified Trust Service Provider" ;
+    :definedIn :Article3_Regulation910_2014 .
+
+:OnlineInternetMarket a :DefinedTerm ;
+    rdfs:label "Online/Internet Market" .
+
+:OnlineInternetSearchEngine a :DefinedTerm ;
+    rdfs:label "Online/Internet Search Engine" .
+
+:CloudComputingService a :DefinedTerm ;
+    rdfs:label "Cloud Computing Service" .
+
+:DataCentreService a :DefinedTerm ;
+    rdfs:label "Data Centre Service" .
+
+:ContentDistributionNetwork a :DefinedTerm ;
+    rdfs:label "Content Distribution Network" .
+
+:SocialNetworkingServicePlatform a :DefinedTerm ;
+    rdfs:label "Social Networking Service Platform" .
+
+:Representative a :DefinedTerm ;
+    rdfs:label "Representative" .
+
+:PublicAdministrationEntity a :DefinedTerm ;
+    rdfs:label "Public Administration Entity" .
+
+:PublicElectronicCommunicationsNetwork a :DefinedTerm ;
+    rdfs:label "Public Electronic Communications Network" .
+
+:ElectronicCommunicationsService a :DefinedTerm ;
+    rdfs:label "Electronic Communications Service" .
+
+:Entity a :DefinedTerm ;
+    rdfs:label "Entity" .
+
+:ManagedServiceProvider a :DefinedTerm ;
+    rdfs:label "Managed Service Provider" .
+
+:ManagedSecurityServiceProvider a :DefinedTerm ;
+    rdfs:label "Managed Security Service Provider" .
+
+:ResearchOrganisation a :DefinedTerm ;
+    rdfs:label "Research Organisation" .

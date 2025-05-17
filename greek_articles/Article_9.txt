@@ -1,0 +1,21 @@
+Article 9
+National cyber crisis management framework (article 9 of Directive (EU) 2022/2555)
+1. The National Cybersecurity Authority is designated as responsible for the management of large-scale incidents and crises in the field of cybersecurity (cyber crisis management authority) and participates in the European Network of Liaison Organizations for Cyber ​​Crises (EU-CyCLONe).
+
+2. In order to define the objectives and the procedure for the management of large-scale incidents and crises in the field of cybersecurity, a national plan for responding to large-scale incidents and crises in cyberspace shall be drawn up in accordance with paragraph 7 of article 30. This plan shall specify in particular:
+
+(a) the objectives of national preparedness measures and activities,
+
+b) the duties and responsibilities of the National Cybersecurity Authority as a cyber crisis management authority,
+
+c) cyber crisis management procedures, including their integration into the general national crisis management framework and information exchange channels,
+
+(d) national preparedness measures, including exercises and training activities,
+
+(e) public and private stakeholders and infrastructure, and
+
+f) the procedures between the competent authorities and bodies to ensure the effective participation and provision of support by the country in the coordinated management of large-scale incidents and crises in the field of cybersecurity at European Union level.
+
+The decision of par. 7 of article 30, by which the national plan for responding to large-scale incidents and crises in cyberspace is drawn up, is approved within an exclusive period of one (1) month from its submission to the Coordination Committee for Cybersecurity issues of article 23 of law 5002/2022 (A' 228), and in the event of inaction within the above period, it is presumed to have been tacitly approved. The legal effects of the decision of the Governor of the National Cybersecurity Authority occur either from the day following its explicit approval or from the day following the lapse of one (1) month from its submission to the Committee. The national emergency plan of par. c) of article 22 of law 5002/2022 is part of the national plan herein.
+
+3. The National Cybersecurity Authority shall notify the European Commission, within three (3) months from the entry into force of this Regulation, of its designation as the competent authority referred to in paragraph 1 and shall inform it, without delay, of any subsequent changes. In addition, the National Cybersecurity Authority shall submit to the European Commission and to the European Network of Cyber ​​Crisis Liaison Organisations (EU-CyCLONe), within three (3) months from the approval of the national plan for responding to large-scale incidents and crises in the field of cybersecurity, information on the requirements of paragraph 2 with regard to the national plan. Specific information shall be exempted from the provision of information, if deemed necessary for reasons of national security.

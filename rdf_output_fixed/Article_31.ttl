@@ -1,0 +1,134 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Law5002_2022 a :NationalLaw ;
+    rdfs:label "Law 5002/2022" ;
+    :article :Article31 .
+
+:Article31 a :RegulationRule ;
+    rdfs:label "Article 31" ;
+    rdfs:comment "Transitional and final provisions" ;
+    :subject "Transitional and final provisions" ;
+    :paragraph :paragraph1, :paragraph2, :paragraph3a, :paragraph3b .
+
+:paragraph1 a :TransitionalProvision ;
+    rdfs:label "Paragraph 1" ;
+    :subject "Interim CSIRT Designation" ;
+    :appliesTo :GeneralStaffCyberDefenseUnit ;
+    :until :CSIRT_AdequacyDeclaration ;
+    :requires :SupportToNationalCybersecurityAuthorityCSIRT .
+
+:GeneralStaffCyberDefenseUnit a :LegalEntity ;
+    rdfs:label "Organizational unit of the General Staff of National Defense responsible for cyber defense issues" ;
+    :role :CSIRT .
+
+:CSIRT_AdequacyDeclaration a :Declaration ;
+    rdfs:label "Declaration on the adequacy of the means and resources of the CSIRT of the National Cybersecurity Authority" ;
+    :issuedBy :CommanderNationalCybersecurityAuthority .
+
+:CommanderNationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "Commander of the National Cybersecurity Authority" .
+
+:SupportToNationalCybersecurityAuthorityCSIRT a :Obligation ;
+    rdfs:label "Support to the CSIRT of the National Cybersecurity Authority" ;
+    :concerns :Article10_paragraph1_tasks .
+
+:Article10_paragraph1_tasks a :Tasks ;
+    rdfs:label "Tasks of paragraph 1 of article 10" .
+
+
+:paragraph2 a :TransitionalProvision ;
+    rdfs:label "Paragraph 2" ;
+    :subject "References to Law 4577/2018" ;
+    :replaces :Law4577_2018_references ;
+    :with :Law5002_2022_references .
+
+:Law4577_2018_references a :References ;
+    rdfs:label "References to Law 4577/2018" .
+
+:Law5002_2022_references a :References ;
+    rdfs:label "References to this Law" ;
+    :concerns :Article4_paragraph1_entities .
+
+
+:Article4_paragraph1_entities a :LegalEntityClass ;
+    rdfs:label "Basic entities of paragraph 1 of Article 4 of this law" .
+
+:paragraph3a a :TransitionalProvision ;
+    rdfs:label "Paragraph 3a" ;
+    :subject "Temporary Application of Regulation on Security of Electronic Communications Networks and Services" ;
+    :appliesUntil :Decision30_paragraph13a ;
+    :appliesTo :PublicElectronicCommunicationsServiceProvider ;
+    :appliesRegulation :Regulation28_2024_ADAE ;
+    :maximumDuration "6 Months"^^xsd:duration .
+
+:Decision30_paragraph13a a :Decision ;
+    rdfs:label "Decision of paragraph a) of paragraph 13 of article 30" .
+
+:PublicElectronicCommunicationsServiceProvider a :LegalEntity ;
+    rdfs:label "Provider of public electronic communications networks or publicly available electronic communications services" .
+
+:Regulation28_2024_ADAE a :Regulation ;
+    rdfs:label "Regulation on the Security of Electronic Communications Networks and Services (Decision No. 28/2024 of ADAE)" .
+
+
+:paragraph3b a :TransitionalProvision ;
+    rdfs:label "Paragraph 3b" ;
+    :subject "Temporary Application of Regulation on Security of Electronic Communications Networks and Services" ;
+    :appliesUntil :Decision30_paragraph25 ;
+    :appliesTo :PublicElectronicCommunicationsServiceProvider ;
+    :appliesRegulation :Regulation28_2024_ADAE ;
+    :concerns :Article29_paragraph1_enhancedCybersecurityMeasures ;
+    :maximumDuration "6 Months"^^xsd:duration .
+
+:Decision30_paragraph25 a :Decision ;
+    rdfs:label "Decision of paragraph 25 of article 30" .
+
+:Article29_paragraph1_enhancedCybersecurityMeasures a :Obligation ;
+    rdfs:label "Enhanced cybersecurity measures of paragraph 1 of article 29" .
+
+:Law3115_2003 a :NationalLaw ;
+    rdfs:label "Law 3115/2003".
+
+:ADAE a :LegalEntity ;
+    rdfs:label "ADAE" ;
+    :adopts :RegulationForArticle29_paragraph1_implementation .
+
+:RegulationForArticle29_paragraph1_implementation a :Regulation ;
+    rdfs:label "Regulation for the implementation of paragraph 1 of article 29 of Law 5002/2022" ;
+    :applies :Law3115_2003_sanctions .
+
+:Law3115_2003_sanctions a :Sanctions ;
+    rdfs:label "Sanctions of Law 3115/2003" .
+
+:NACA a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority".
+
+:ADAE_NACA_CooperationDetails a :Details ;
+    rdfs:label "Details of cooperation between NACA and ADAE" ;
+    :determinedBy :JointDecisionMinistersDigitalGovernanceJustice ;
+    :concerns :InformationExchange, :CoordinatedSupervision, :ImplementationMonitoringFeedback, :CybersecurityMeasures .
+
+:JointDecisionMinistersDigitalGovernanceJustice a :Decision ;
+    rdfs:label "Joint Decision of the Ministers of Digital Governance and Justice" ;
+    :deadline "4 Months"^^xsd:duration .
+
+:InformationExchange a :Obligation ;
+    rdfs:label "Mutual exchange of information".
+
+:CoordinatedSupervision a :Obligation ;
+    rdfs:label "Coordinated supervision".
+
+:ImplementationMonitoringFeedback a :Obligation ;
+    rdfs:label "Effective implementation, monitoring and feedback of the national strategic planning".
+
+:CybersecurityMeasures a :Obligation ;
+    rdfs:label "Establishment of more specific cybersecurity measures".
+
+:NSFP a :Role ;
+    rdfs:label "National Sectorial Focal Point".
+
+:Law4577_2018 a :NationalLaw ;
+    rdfs:label "Law 4577/2018".

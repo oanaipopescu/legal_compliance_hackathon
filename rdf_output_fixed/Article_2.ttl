@@ -1,0 +1,34 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article2 a :RegulationRule ;
+    rdfs:label "Article 2" ;
+    :subject "National Cybersecurity Strategy, competent authority for cybersecurity and cyber crisis management, single point of contact for cybersecurity and CSIRT, risk management measures, reporting obligations, exchange of information on cybersecurity, general supervision and sanctions" ;
+    :appliesTo :CriticalEntities ;
+    :incorporates :Directive2022_2555, :Directive2022_2557 ;
+    :requires :RiskManagementMeasures, :ReportingObligations, :InformationExchange .
+
+:CriticalEntities a :LegalEntity ;
+    rdfs:label "Critical Entities" ;
+    :definedIn :Directive2022_2557 .
+
+:RiskManagementMeasures a :Obligation ;
+    rdfs:label "Risk Management Measures" .
+
+:ReportingObligations a :Obligation ;
+    rdfs:label "Reporting Obligations" .
+
+:InformationExchange a :Obligation ;
+    rdfs:label "Information Exchange" .
+
+:Directive2022_2557 a :EU_Directive ;
+    rdfs:label "Directive (EU) 2022/2557" ;
+    :concerns "resilience of critical entities" ;
+    :repeals :Directive2008_114 .
+
+:Directive2008_114 a :EU_Directive ;
+    rdfs:label "Directive 2008/114/EC" .
+
+:CSIRT a :LegalEntity ;
+    rdfs:label "Computer Security Incident Response Team" .

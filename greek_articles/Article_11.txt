@@ -1,0 +1,51 @@
+article 11, cover at least the sectors and sub-sectors referred to in Annexes I and II and shall be responsible for handling incidents. The CSIRTs shall handle incidents concerning the computer security of the relevant sector, if their assistance is requested by the National Cybersecurity Authority, in particular in cases of serious, urgent or significant number of incidents developing simultaneously. For incidents concerning the entities of par. f) of par. 2 of article 3, the Cybersecurity Response Team (National CERT) of the Cyberspace Directorate of the Hellenic Republic is directly involved. The CSIRTs are obliged to promptly inform the National Cybersecurity Authority of incidents that they detect and that concern cybersecurity, as well as to promptly assist it in the performance of its duties in accordance with par. 1, if requested by the same.
+
+4. CSIRTs shall exchange information with key and important entities and other relevant stakeholders, through secure information exchange tools. The CSIRT of the National Cybersecurity Authority and other CSIRTs shall cooperate and, where appropriate, exchange information through the National Cybersecurity Authority in accordance with Article 21 hereof with sectoral or cross-sectoral communities of key and important entities. In addition, they participate in peer reviews organised in accordance with Article 19 of Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 concerning measures for a high common level of cybersecurity across the Union, amending Regulation (EU) 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (L 333) and seek their effective, efficient and secure cooperation within the framework of the CSIRTs network.
+
+5. CSIRTs may establish cooperative relations with national computer incident response teams of a third country, in particular by exchanging information, using relevant information exchange protocols, including the traffic light protocol (TLP), and may exchange relevant information with them, including personal data in accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation, L 119). They may also cooperate with national computer incident response teams of a third country or equivalent third country bodies, in particular with a view to providing assistance in the field of cybersecurity.
+
+6. In order to deal with incidents in the field of cybersecurity, special response teams may be established, in accordance with paragraph 9 of article 30. These response teams shall consist of representatives of the National Cybersecurity Authority, and representatives of either the competent organizational unit of the General Staff of National Defence for cyber defence issues, or of the Cyberspace Directorate of the National Intelligence Service or, where applicable, of the National Sectorial Focal Points (NSFP) of paragraph 6 of article 13. The duties of Coordinator shall be assigned to a representative of the National Cybersecurity Authority. The representatives of the other services shall be designated by the competent bodies, as the case may be, upon request of the Commander of the National Cybersecurity Authority. In the event of failure to appoint a representative within the deadline set by the Director of the National Cybersecurity Authority, the Director's decision to establish the response team shall be issued without the participation of a representative of the relevant service. For each incident, each special response team shall submit to the competent organizational unit of the National Cybersecurity Authority a preliminary report within twenty-four (24) hours, a more complete updated report within seventy-two (72) hours, or whenever requested by the competent organizational unit of the National Cybersecurity Authority, as well as a detailed report on the incident and its management, within one (1) month from the issuance of the decision to establish the team. The expenses of the team members for the execution of the task assigned to them shall be borne by the budget of the National Cybersecurity Authority.
+
+7. The National Cybersecurity Authority shall notify the European Commission, without delay, of the identity of the CSIRTs referred to in paragraph 1, of any other CSIRTs designated by the decision referred to in paragraph 8 of Article 30, their respective tasks in relation to key and important entities, the CSIRT to which coordination tasks are assigned in accordance with this Article, as well as any subsequent changes.
+
+Article 11
+Requirements, technical capabilities and tasks of computer security incident response teams (CSIRTs) (Article 11 of Directive (EU) 2022/2555)
+1. Computer Security Incident Response Teams (CSIRTs) shall comply with the following requirements:
+
+a) ensure a high level of availability of their communication channels, avoiding single points of failure and have alternative ways for incoming and outgoing communication with third parties at all times, clearly identify the communication channels and communicate them to the members of their area of ​​responsibility and to cooperating partners,
+
+b) the CSIRTs' facilities and supporting information systems are located in secure areas,
+
+c) CSIRTs are equipped with an appropriate request management and routing system, in particular in order to facilitate the effective and efficient performance of tasks,
+
+d) CSIRTs ensure the confidentiality and reliability of their activities,
+
+e) CSIRTs are adequately staffed to ensure the availability of their services at all times and ensure that their personnel are appropriately trained,
+
+f) CSIRTs are equipped with backup systems and a backup workspace to ensure the continuity of their services.
+
+The CSIRT of the National Cybersecurity Authority, as well as other CSIRTs, may participate in international cooperation networks. In particular, the CSIRT of the National Cybersecurity Authority may be assisted by other CSIRTs for its participation in the above networks.
+
+2. CSIRTs are tasked with the following tasks:
+
+(a) monitoring and analysis of cyber threats, vulnerabilities and incidents at national level, exclusively for their sectors and organisations and, upon request, providing assistance to affected key and important entities regarding the monitoring of their network and information systems in real time or near real time;
+
+b) providing timely warnings, alerts, announcements and information to key and important entities involved, as well as to competent authorities and other relevant stakeholders regarding cyber threats, vulnerabilities and incidents, if possible in near real time,
+
+c) incident response and assistance to affected key and significant entities, as appropriate;
+
+d) collection and analysis of forensic data and dynamic analysis of risks and incidents and situational awareness in cybersecurity matters,
+
+(e) providing, upon request of a key or significant entity, a proactive scan of the network and information systems of that entity to identify vulnerabilities with a potential significant impact;
+
+f) participation, following a decision of the Director of the National Cybersecurity Authority, in the CSIRTs network of Article 15 of Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 concerning measures for a high common level of cybersecurity across the Union, amending Regulation (EU) 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (L 333) providing mutual assistance in accordance with their capabilities and responsibilities to other members of the CSIRTs network upon their request,
+
+g) contribution to the development of secure information exchange tools in accordance with paragraph 4 of article 10.
+
+CSIRTs may conduct proactive non-intrusive scanning of publicly accessible network and information systems of key and important entities, provided that it does not have a negative impact on the operation of the entities' services. Such scanning is carried out to identify vulnerable or insecurely configured network and information systems and to inform the entities concerned.
+
+When performing the tasks referred to in the first subparagraph, CSIRTs may prioritise specific tasks within the framework of a risk-based approach.
+
+3. CSIRTs may cooperate with private sector stakeholders, with a view to achieving the objectives of this law. In order to facilitate cooperation, CSIRTs shall promote the adoption and use of common or standardized practices, classification systems and taxonomies in relation to:
+
+a) incident management procedures, b) crisis management, and c) coordinated vulnerability disclosure in accordance with paragraph 1 of

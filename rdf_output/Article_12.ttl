@@ -1,0 +1,60 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article12 a :RegulationRule ;
+    rdfs:label "Article 12" ;
+    :subject "Coordinated vulnerability disclosure and European vulnerability database" ;
+    :references :Article12_Directive2022_2555 ;
+    :appliesTo :NationalCybersecurityAuthority, :CSIRT ;
+    :requires :VulnerabilityDisclosureCoordination .
+
+:Article12_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 12 of Directive (EU) 2022/2555" .
+
+:VulnerabilityDisclosureCoordination a :Obligation ;
+    rdfs:label "Coordinated Vulnerability Disclosure" ;
+    :appliesTo :NationalCybersecurityAuthority_CSIRT ;
+    :requires :VulnerabilityIdentification, :VulnerabilityReportingAssistance, :DisclosureScheduleNegotiation .
+
+:NationalCybersecurityAuthority_CSIRT a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority CSIRT" ;
+    :partOf :NationalCybersecurityAuthority ;
+    :role :VulnerabilityCoordinator .
+
+:VulnerabilityCoordinator a :Role ;
+    rdfs:label "Vulnerability Coordinator" .
+
+:VulnerabilityIdentification a :Obligation ;
+    rdfs:label "Identification of Relevant Entities" .
+
+:VulnerabilityReportingAssistance a :Obligation ;
+    rdfs:label "Assistance to Vulnerability Reporters" .
+
+:DisclosureScheduleNegotiation a :Obligation ;
+    rdfs:label "Negotiation of Disclosure Schedules" .
+
+:AnonymousVulnerabilityReporting a :Obligation ;
+    rdfs:label "Anonymous Vulnerability Reporting" ;
+    :appliesTo :CSIRT ;
+    :requires :AnonymityProtection .
+
+:AnonymityProtection a :Obligation ;
+    rdfs:label "Protection of Reporter Anonymity" .
+
+:CrossBorderVulnerabilityCooperation a :Obligation ;
+    rdfs:label "Cross-border Vulnerability Cooperation" ;
+    :appliesTo :NationalCybersecurityAuthority_CSIRT ;
+    :with :OtherCSIRTs .
+
+:OtherCSIRTs a :LegalEntityClass ;
+    rdfs:label "Other CSIRTs with Coordination Role" .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" .
+
+:CSIRT a :Role ;
+    rdfs:label "Computer Security Incident Response Team" .
+
+```

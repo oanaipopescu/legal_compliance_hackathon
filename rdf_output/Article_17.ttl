@@ -1,0 +1,38 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article17 a :RegulationRule ;
+    rdfs:label "Article 17" ;
+    :subject "Standardization" ;
+    :references :Article25_Directive2022_2555, :Article15_paragraphs1_2 ;
+    :appliesTo :NationalCybersecurityAuthority, :ENISA ;
+    :requires :StandardAdoptionMeasures .
+
+:Article25_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 25 of Directive (EU) 2022/2555" .
+
+:Article15_paragraphs1_2 a :LegalBasis ;
+    rdfs:label "paragraphs 1 and 2 of Article 15" .
+
+:StandardAdoptionMeasures a :Obligation ;
+    rdfs:label "Measures to encourage the use of European and internationally accepted standards" ;
+    :requires :ConsiderationOfENISAGuidlines ;
+    :prohibits :SpecificTechnologyImposition .
+
+:ConsiderationOfENISAGuidlines a :Obligation ;
+    rdfs:label "Consideration of ENISA Guidelines" .
+
+:SpecificTechnologyImposition a :Prohibition ;
+    rdfs:label "Imposition or favoring the use of a specific type of technology" .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" .
+
+:ENISA a :LegalEntity ;
+    rdfs:label "European Union Agency for Cybersecurity (ENISA)" .
+
+:ChapterE a :Chapter ;
+    rdfs:label "Chapter E: Jurisdiction and Registration" .
+```

@@ -1,0 +1,17 @@
+Article 19
+Register of entities (Article 27 of Directive (EU) 2022/2555)
+1. Domain Name System (DNS) service providers, top-level domain name (TLD) registries, entities providing domain name registration services, cloud computing service providers, data center service providers, content distribution network providers, managed service providers, managed security service providers, as well as providers of online marketplaces, online search engines or social networking service platforms, shall mandatorily submit to the National Cybersecurity Authority, no later than 17 January 2025, the following information:
+
+(a) the name of the entity, (b) the relevant sector, subsector and type of entity referred to in Annexes I and II, where applicable,
+
+c) the address of the entity's main establishment and its other legal establishments in the European Union or, if it is not established therein, the address of its representative, who has been designated in accordance with paragraph 3 of Article 18,
+
+(d) up-to-date contact details, including email addresses and telephone numbers, of the entity and, where applicable, of its representative, designated in accordance with paragraph 3 of Article 18;
+
+(e) the Member States in which the entity provides services; and
+
+f) the Internet Protocol (IP) range of the entity.
+
+2. The entities referred to in par. 1 shall notify the National Cybersecurity Authority, without delay and, in any case, within three (3) months from the date of occurrence of the change, of changes to the information they submitted.
+
+3. Upon receipt of the information referred to in paragraphs 1 and 2, except for the information referred to in point f) of paragraph 1, the National Cybersecurity Authority shall transmit it to the European Union Agency for Cybersecurity (ENISA).

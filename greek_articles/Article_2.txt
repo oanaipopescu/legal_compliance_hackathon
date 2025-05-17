@@ -1,0 +1,12 @@
+Article 2
+Subject matter (Article 1 of Directive (EU) 2022/2555)
+The subject of this Part is: a) the introduction of regulations for the National Cybersecurity Strategy, the designation of a competent authority for cybersecurity and cyber crisis management, the designation of a single point of contact for cybersecurity and response teams for incidents related to computer security [Computer Security Incident Response Team (CSIRT)],
+
+b) the definition of risk management measures in the field of cybersecurity and the imposition of reporting obligations for entities falling within the scope of this Part, including entities designated as critical in accordance with Directive (EU) 2022/2557 of the European Parliament and of the Council of 14 December 2022 on the resilience of critical entities and repealing Council Directive 2008/114/EC (L 333),
+
+c) the provision of rules and obligations regarding the exchange of information on cybersecurity and
+
+d) the establishment of provisions for the general supervision and imposition of measures and sanctions for the implementation of this Part, so as to achieve a high level of cybersecurity in Greece within the framework of the rules and objectives of Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 concerning measures for a high common level of cybersecurity across the Union, amending Regulation (EU) 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS Directive 2).
+
+CHAPTER B
+GENERAL PROVISIONS

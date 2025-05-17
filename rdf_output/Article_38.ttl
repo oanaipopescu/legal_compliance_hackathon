@@ -1,0 +1,187 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article63A a :RegulationRule ;
+    rdfs:label "Article 63A" ;
+    rdfs:comment "Local invitation for the recruitment of temporary substitute teachers" ;
+    :subject "Local invitation for the recruitment of temporary substitute teachers" ;
+    :partOf :Law4589_2019 ;
+    :requires :TemporarySubstituteTeacherHiring .
+
+:Law4589_2019 a :NationalLaw ;
+    rdfs:label "Law 4589/2019" .
+
+:TemporarySubstituteTeacherHiring a :Obligation ;
+    rdfs:label "Hiring of Temporary Substitute Teachers" ;
+    :employmentType :FixedTermContract ;
+    :maximumDuration "until the end of the academic year" ;
+    :conditions :Article86_Law4547_2018_ProcedureFollowed, :OperationalNeedsForTeachingPositions ;
+    :appliesTo :Teacher .
+
+:FixedTermContract a :EmploymentType ;
+    rdfs:label "Fixed-Term Contract" .
+
+:Article86_Law4547_2018_ProcedureFollowed a :Condition ;
+    rdfs:label "Procedure of Article 86 of Law 4547/2018 followed" ;
+    :references :Article86_Law4547_2018 .
+
+:Article86_Law4547_2018 a :LegalProvision ;
+    rdfs:label "Article 86 of Law 4547/2018" .
+
+:Law4547_2018 a :NationalLaw ;
+    rdfs:label "Law 4547/2018" .
+
+:OperationalNeedsForTeachingPositions a :Condition ;
+    rdfs:label "Operational needs for teaching positions in primary and secondary education school units in specific areas of the country, which cannot be covered by the ranking lists of the Supreme Personnel Selection Council (ASEP) due to the exhaustion of candidates" ;
+    :requires :ASEPRankingListsExhausted .
+
+:ASEPRankingListsExhausted a :Condition ;
+    rdfs:label "ASEP ranking lists exhausted" ;
+    :appliesTo :SupremePersonnelSelectionCouncil .
+
+:SupremePersonnelSelectionCouncil a :LegalEntity ;
+    rdfs:label "Supreme Personnel Selection Council (ASEP)" .
+
+:Teacher a :LegalEntity ;
+    rdfs:label "Teacher" ;
+    :mayBe :FullTime, :PartTime .
+
+:FullTime a :EmploymentStatus ;
+    rdfs:label "Full-Time" .
+
+:PartTime a :EmploymentStatus ;
+    rdfs:label "Part-Time" .
+
+:ExpressionOfInterestCall a :Process ;
+    rdfs:label "Call for expressions of interest" ;
+    :issuedBy :RegionalDirectorOfEducation ;
+    :requires :OpinionFromDirectorOfEducation ;
+    :publishedOn :Diavgeia, :MinistryOfEducationWebsite, :RegionalDirectorateOfEducationWebsite, :DirectorateOfEducationWebsite .
+
+:RegionalDirectorOfEducation a :LegalEntity ;
+    rdfs:label "Regional Director of Education" .
+
+:OpinionFromDirectorOfEducation a :Opinion ;
+    rdfs:label "Opinion from the Director of Education" .
+
+:DirectorOfEducation a :LegalEntity ;
+    rdfs:label "Director of Education" .
+
+:Diavgeia a :Website ;
+    rdfs:label "Diavgeia program" .
+
+:MinistryOfEducationWebsite a :Website ;
+    rdfs:label "Website of the Ministry of Education, Religious Affairs and Sports" .
+
+:RegionalDirectorateOfEducationWebsite a :Website ;
+    rdfs:label "Website of the Regional Directorate of Education" .
+
+:DirectorateOfEducationWebsite a :Website ;
+    rdfs:label "Website of the Directorate of Education" .
+
+:ApplicationSubmission a :Obligation ;
+    rdfs:label "Application Submission" ;
+    :to :SchoolUnits ;
+    :deadline :ExclusiveDeadline ;
+    :requires :FormalQualifications .
+
+:SchoolUnits a :LegalEntityClass ;
+    rdfs:label "School Units" .
+
+:ExclusiveDeadline a :TimePoint ;
+    rdfs:label "Exclusive Deadline" .
+
+:FormalQualifications a :Requirement ;
+    rdfs:label "Formal Qualifications for admission and appointment in the relevant branch/specialty" .
+
+:CandidateRanking a :Process ;
+    rdfs:label "Candidate Ranking" ;
+    :criteria :DegreeGrade, :DegreeAwardDate, :OPSYDRegistrationDate ;
+    :appliesTo :TeacherCandidate .
+
+:DegreeGrade a :Criterion ;
+    rdfs:label "Grade of Degree" .
+
+:DegreeAwardDate a :Criterion ;
+    rdfs:label "Date of Degree Award" .
+
+:OPSYDRegistrationDate a :Criterion ;
+    rdfs:label "Date of Registration in OPSYD" .
+
+:OPSYD a :InformationSystem ;
+    rdfs:label "Integrated Information System for Personnel Management of Primary and Secondary Education (O.P.S.Y.D.)" .
+
+:TeacherCandidate a :LegalEntity ;
+    rdfs:label "Teacher Candidate" ;
+    :maySpecializeIn :SpecialEducation .
+
+:SpecialEducation a :Specialization ;
+    rdfs:label "Special Education (SEE)" .
+
+:SelectionEvaluationTables a :Document ;
+    rdfs:label "Selection Evaluation Tables" ;
+    :validityPeriod "until the end of the academic year" .
+
+:Article8_Law1599_1986 a :LegalProvision ;
+    rdfs:label "Article 8 of Law 1599/1986" ;
+    :concerns "Solemn Declaration" .
+
+:Law1599_1986 a :NationalLaw ;
+    rdfs:label "Law 1599/1986" .
+
+:Article62_paragraph5A a :LegalProvision ;
+    rdfs:label "paragraph 5A of Article 62 of Law 4589/2019" ;
+    :concerns "Exclusion of teachers" .
+
+:Article63_paragraph5A a :LegalProvision ;
+    rdfs:label "paragraph 5A of Article 63 of Law 4589/2019" ;
+    :concerns "Exclusion of teachers" .
+
+:Article86_paragraph4_Law4547_2018 a :LegalProvision ;
+    rdfs:label "paragraph 4 of Article 86 of Law 4547/2018" ;
+    :concerns "Exclusion of teachers" .
+
+:RetiredTeacherHiring a :Obligation ;
+    rdfs:label "Hiring of Retired Teachers" ;
+    :maximumAge "67"^^xsd:integer ;
+    :conditionalOn :UnmetOperationalNeeds .
+
+:UnmetOperationalNeeds a :Condition ;
+    rdfs:label "Unmet operational needs for teacher positions" .
+
+:TeacherRecruitment a :Obligation ;
+    rdfs:label "Teacher Recruitment" ;
+    :carriedOutBy :DirectorOfEducation ;
+    :requires :ApprovedVacancies .
+
+:ApprovedVacancies a :Requirement ;
+    rdfs:label "Approved number of functional vacancies" ;
+    :approvedBy :MinisterOfEducationReligiousAffairsAndSports .
+
+:MinisterOfEducationReligiousAffairsAndSports a :LegalEntity ;
+    rdfs:label "Minister of Education, Religious Affairs and Sports" .
+
+:AdditionalOperationalNeeds a :Condition ;
+    rdfs:label "Additional operational needs for positions in a school unit and discipline/specialty" ;
+    :requires :ExpressionOfInterest .
+
+:ExpressionOfInterest a :Obligation ;
+    rdfs:label "Expression of Interest" .
+
+
+:PreviousServiceConsideration a :Obligation ;
+    rdfs:label "Consideration of Previous Service" ;
+    :notUsedIn :ASEPPriorityRanking ;
+    :consideredAs :ActualPublicEducationalService .
+
+:ASEPPriorityRanking a :Process ;
+    rdfs:label "ASEP Priority Ranking" .
+
+:ActualPublicEducationalService a :ServiceType ;
+    rdfs:label "Actual Public Educational Service" .
+
+
+```

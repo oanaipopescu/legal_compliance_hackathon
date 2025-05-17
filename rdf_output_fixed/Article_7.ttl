@@ -1,0 +1,92 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article7 a :RegulationRule ;
+    rdfs:label "Article 7" ;
+    :subject "National Cybersecurity Strategy" ;
+    :references :Article7_Directive2022_2555, :paragraph5_article7_Law4622_2019 ;
+    :appliesTo :NationalCybersecurityAuthority ;
+    :requires :NationalCybersecurityStrategyFormulation .
+
+:NationalCybersecurityStrategyFormulation a :Obligation ;
+    rdfs:label "Formulation of National Cybersecurity Strategy" ;
+    :requires :StrategicObjectives, :RequiredResources, :PolicyAndRegulatoryMeasures, :NCS_GovernanceFramework, :RiskAssessmentMechanism, :IncidentPreparednessResponseRecoveryMeasures, :StakeholderParticipationList, :EnhancedCoordinationPolicyFramework, :CybersecurityAwarenessPlan, :CriticalSuccessFactors, :CybersecuritySupplyChainEmbedding, :CybersecurityRequirementsInPublicProcurement, :VulnerabilityManagement, :PublicInternetAvailabilityIntegrityConfidentiality, :AdvancedTechnologyDevelopmentIntegration, :CybersecurityEducationAndTraining, :InformationExchangeSupport, :SMEResilienceSupport .
+
+:StrategicObjectives a :Obligation ;
+    rdfs:label "Strategic Objectives for NCS" .
+
+:RequiredResources a :Obligation ;
+    rdfs:label "Resources required to achieve NCS objectives" .
+
+:PolicyAndRegulatoryMeasures a :Obligation ;
+    rdfs:label "Policy and regulatory measures for NCS" .
+
+:NCS_GovernanceFramework a :Obligation ;
+    rdfs:label "Governance Framework for NCS" ;
+    :requires :StakeholderRolesAndResponsibilities .
+
+:StakeholderRolesAndResponsibilities a :Obligation ;
+    rdfs:label "Clarification of roles and responsibilities of stakeholders" .
+
+:RiskAssessmentMechanism a :Obligation ;
+    rdfs:label "Mechanism for identifying relevant assets and assessing risks" .
+
+:IncidentPreparednessResponseRecoveryMeasures a :Obligation ;
+    rdfs:label "Measures to ensure preparedness, response and recovery from incidents" .
+
+:StakeholderParticipationList a :Obligation ;
+    rdfs:label "List of authorities and stakeholders participating in NCS implementation" .
+
+:EnhancedCoordinationPolicyFramework a :Obligation ;
+    rdfs:label "Policy framework for enhanced coordination between competent authorities" .
+
+:CybersecurityAwarenessPlan a :Obligation ;
+    rdfs:label "Plan to enhance the general level of awareness of citizens in cybersecurity" .
+
+:CriticalSuccessFactors a :Obligation ;
+    rdfs:label "Critical success factors for achieving strategic and operational objectives" .
+
+:CybersecuritySupplyChainEmbedding a :Obligation ;
+    rdfs:label "Embedding cybersecurity in the ICT supply chain" .
+
+:CybersecurityRequirementsInPublicProcurement a :Obligation ;
+    rdfs:label "Inclusion of cybersecurity requirements in public procurement" ;
+    :requires :CybersecurityCertification, :Encryption .
+
+:CybersecurityCertification a :Obligation ;
+    rdfs:label "Cybersecurity Certification" .
+
+:Encryption a :Obligation ;
+    rdfs:label "Encryption" .
+
+:VulnerabilityManagement a :Obligation ;
+    rdfs:label "Vulnerability Management" ;
+    :references :paragraph1_Article12 .
+
+:paragraph1_Article12 a :LegalBasis ;
+    rdfs:label "paragraph 1 of Article 12" .
+
+:PublicInternetAvailabilityIntegrityConfidentiality a :Obligation ;
+    rdfs:label "Maintaining availability, integrity and confidentiality of the public internet" .
+
+:AdvancedTechnologyDevelopmentIntegration a :Obligation ;
+    rdfs:label "Promoting development and integration of advanced technologies for risk management" .
+
+:CybersecurityEducationAndTraining a :Obligation ;
+    rdfs:label "Promoting cybersecurity education and training" .
+
+:InformationExchangeSupport a :Obligation ;
+    rdfs:label "Support for voluntary exchange of cybersecurity information" .
+
+:SMEResilienceSupport a :Obligation ;
+    rdfs:label "Support for cyber resilience of small and medium-sized enterprises" .
+
+:Article7_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 7 of Directive (EU) 2022/2555" .
+
+:paragraph5_article7_Law4622_2019 a :LegalBasis ;
+    rdfs:label "paragraph 5 of article 7 of Law 4622/2019" .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" .

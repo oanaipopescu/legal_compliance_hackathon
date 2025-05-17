@@ -1,0 +1,13 @@
+Article 28
+Mutual assistance (Article 37 of Directive (EU) 2022/2555)
+1. When an entity provides services in more than one Member State or provides services in one or more Member States of the European Union and its network and information systems are located in one or more other Member States, provided that one of the Member States is Greece, the National Cybersecurity Authority shall cooperate with the competent authorities of the other Member States concerned and mutual assistance shall be provided, as necessary.
+
+This cooperation implies, at least, that: a) The National Cybersecurity Authority informs and consults with the competent authorities of the other Member States concerned regarding the supervisory and enforcement measures taken,
+
+b) the National Cybersecurity Authority may request another competent authority to take supervisory or enforcement measures and vice versa,
+
+c) the National Cybersecurity Authority, upon receipt of a substantiated request from another competent authority, shall provide the other competent authority with mutual assistance commensurate with the resources available to it, so that the supervisory and enforcement measures can be implemented in an effective, efficient and consistent manner.
+
+The mutual assistance referred to in point (c) may cover requests for information and supervisory measures, including requests to carry out on-site inspections or off-site supervision or targeted security checks. The National Cybersecurity Authority shall not refuse the request for assistance unless it is established that it is not competent to provide the requested assistance, that the requested assistance is not proportionate to its supervisory tasks or that the request concerns information or involves activities which, if disclosed or carried out, would be contrary to the essential interests of national security, public security or defence of Greece. Before refusing such a request, the National Cybersecurity Authority shall consult the other competent authorities concerned and, at the request of one of the Member States concerned, the European Commission and ENISA.
+
+2. Where appropriate and by mutual agreement, the competent authorities of the Member States referred to in paragraph 1 may undertake joint supervisory actions.

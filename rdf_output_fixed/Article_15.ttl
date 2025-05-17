@@ -1,0 +1,89 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article15 a :RegulationRule ;
+    rdfs:label "Article 15" ;
+    :subject "Risk management measures in the field of cybersecurity" ;
+    :references :Article21_Directive2022_2555, :paragraph1_article24_Directive2022_2555 ;
+    :appliesTo :KeyEntities, :SignificantEntities ;
+    :requires :AppropriateTechnicalOperationalOrganisationalMeasures .
+
+:AppropriateTechnicalOperationalOrganisationalMeasures a :Obligation ;
+    rdfs:label "Appropriate and proportionate technical, operational and organisational measures to manage cybersecurity risks" ;
+    :requires :RiskAnalysisPoliciesProcedures, :IncidentManagement, :BusinessContinuity, :SupplyChainSecurity, :SecureAcquisitionDevelopmentMaintenance, :RiskManagementEffectivenessAssessment, :CyberHygienePracticesCybersecurityTraining, :CryptographyEncryptionPoliciesProcedures, :HumanResourcesSecurityAccessControlPoliciesAssetManagement, :MultiFactorAuthenticationContinuousAuthentication .
+
+:RiskAnalysisPoliciesProcedures a :Obligation ;
+    rdfs:label "Policies and procedures for risk analysis and information systems security" .
+
+:IncidentManagement a :Obligation ;
+    rdfs:label "Incident Management" .
+
+:BusinessContinuity a :Obligation ;
+    rdfs:label "Business Continuity, including backup management and disaster recovery, as well as crisis management" .
+
+:SupplyChainSecurity a :Obligation ;
+    rdfs:label "Supply chain security, including security-related aspects concerning relationships between entity and its direct suppliers or service providers" ;
+    :requires :VulnerabilityConsiderationInSupplyChain .
+
+:VulnerabilityConsiderationInSupplyChain a :Obligation ;
+    rdfs:label "Consideration of vulnerabilities characterizing each direct supplier and service provider, overall quality of products and cybersecurity practices of suppliers and service providers, including their secure development processes, and results of coordinated risk assessments of critical supply chains" .
+
+:SecureAcquisitionDevelopmentMaintenance a :Obligation ;
+    rdfs:label "Security in the acquisition, development and maintenance of network and information systems, including the handling and disclosure of vulnerabilities" .
+
+:RiskManagementEffectivenessAssessment a :Obligation ;
+    rdfs:label "Policies and procedures for assessing the effectiveness of risk management measures in the field of cybersecurity" .
+
+:CyberHygienePracticesCybersecurityTraining a :Obligation ;
+    rdfs:label "Basic cyber hygiene practices and cybersecurity training" .
+
+:CryptographyEncryptionPoliciesProcedures a :Obligation ;
+    rdfs:label "Policies and procedures regarding the use of cryptography and, where applicable, encryption, in cooperation with the national CRYPTO authority, where required" ;
+    :requires :CooperationWithNationalCRYPTOAuthority .
+
+:CooperationWithNationalCRYPTOAuthority a :Obligation ;
+    rdfs:label "Cooperation with the national CRYPTO authority" .
+
+:HumanResourcesSecurityAccessControlPoliciesAssetManagement a :Obligation ;
+    rdfs:label "Human resources security, access control policies and asset management" .
+
+:MultiFactorAuthenticationContinuousAuthentication a :Obligation ;
+    rdfs:label "Use of multi-factor authentication or continuous authentication solutions, secure voice communications, video and text communications and secure emergency communications systems within the entity, as appropriate" .
+
+:Article21_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 21 of Directive (EU) 2022/2555" .
+
+:paragraph1_article24_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "paragraph 1 of article 24 of Directive (EU) 2022/2555" .
+
+:KeyEntities a :LegalEntityClass ;
+    rdfs:label "Key Entities" .
+
+:SignificantEntities a :LegalEntityClass ;
+    rdfs:label "Significant Entities" .
+
+:CorrectiveMeasures a :Obligation ;
+    rdfs:label "Necessary, appropriate and proportionate corrective measures to address non-compliance with measures in paragraph 2" ;
+    :appliesTo :KeyEntities, :SignificantEntities .
+
+:ManagementBodyTraining a :Obligation ;
+    rdfs:label "Training for members of management bodies of key and significant entities and their employees on cybersecurity risk management" ;
+    :appliesTo :KeyEntitiesManagementBodies, :SignificantEntitiesManagementBodies .
+
+:KeyEntitiesManagementBodies a :LegalEntityClass ;
+    rdfs:label "Management Bodies of Key Entities" .
+
+:SignificantEntitiesManagementBodies a :LegalEntityClass ;
+    rdfs:label "Management Bodies of Significant Entities" .
+
+:LiabilityForBreach a :Obligation ;
+    rdfs:label "Liability for breach of obligations by entities" ;
+    :appliesTo :KeyEntities, :SignificantEntities ;
+    :excludes :PublicAdministrationEntities, :PublicOfficialsElectedAppointedOfficials .
+
+:PublicAdministrationEntities a :LegalEntityClass ;
+    rdfs:label "Public Administration Entities" .
+
+:PublicOfficialsElectedAppointedOfficials a :LegalEntityClass ;
+    rdfs:label "Public Officials and Elected or Appointed Officials" .

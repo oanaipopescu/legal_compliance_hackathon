@@ -1,0 +1,12 @@
+Article 22
+Voluntary communication of relevant information (Article 30 of Directive (EU) 2022/2555)
+1. In addition to the notification obligation provided for in article 16, notifications may be submitted to the National Cybersecurity Authority on a voluntary basis, by:
+
+a) key and significant entities with regard to incidents, cyber threats and near misses,
+
+b) entities other than those referred to in paragraph a), regardless of whether they fall within the scope of this law, with regard to significant incidents, cyber threats and near misses.
+
+2. The National Cybersecurity Authority shall process the notifications referred to in paragraph 1 in accordance with the procedure laid down in Article 16, giving priority to the processing of mandatory notifications over voluntary notifications. The National Cybersecurity Authority shall ensure the confidentiality and appropriate protection of the information provided by the reporting entity. Without prejudice to the prevention, investigation, detection and prosecution of criminal offences, voluntary reporting shall not impose additional obligations on the reporting entity which it would not have been subject to if it had not submitted the notification.
+
+CHAPTER G'
+SUPERVISION AND SANCTIONS

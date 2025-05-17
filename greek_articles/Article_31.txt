@@ -1,0 +1,17 @@
+article 31 of Law 5002/2022 (Government Gazette A' 228) may be specified.
+
+25. By the procedure of paragraph l) of paragraph 1 of article 6 of law 3115/2003 (A' 47), ADAE may adopt a Regulation for the implementation of paragraph 1 of article 29 hereof, applying, as the case may be, the sanctions of the Regulation and law 3115/2003.
+
+26. Within four (4) months from the entry into force of this Act, by joint decision of the Ministers of Digital Governance and Justice, any specific issue related to the cooperation between the N.A.K. and the A.D.A.E. as NSFP shall be determined, in particular in the context of the mutual exchange of information, coordinated supervision, effective implementation, monitoring and feedback of the national strategic planning and the establishment of more specific cybersecurity measures for the relevant sector, any specific issue related to the cooperation of the relevant services in matters of management and investigation of cybersecurity incidents, significant incidents, as well as crisis management.
+
+Article 31
+Transitional and final provisions
+1. Until the issuance of the declaratory act of the Commander of the National Cybersecurity Authority on the adequacy of the means and resources of the Computer Security Incident Response Team (CSIRT) of the National Cybersecurity Authority, the organizational unit of the General Staff of National Defense responsible for cyber defense issues is designated as the Computer Security Incident Response Team (CSIRT) and supports the CSIRT of the National Cybersecurity Authority in the performance of the tasks of paragraph 1 of article 10.
+
+2. Where in the applicable legislation: a. reference is made to Law 4577/2018 (Government Gazette A' 199) on issues related to the security of network and information systems, this law is meant,
+
+b. reference is made to entities falling within the scope of application of Law 4577/2018 or to the operators of essential services of paragraph 4 of Article 3 of Law 4577/2018 or to the digital service providers of paragraph 6 of Article 3 of Law 4577/2018, meaning the basic entities of paragraph 1 of Article 4 of this law.
+
+3.a. Until the issuance of the decisions of paragraph a) of paragraph 13 and paragraph b) of paragraph 15 of article 30 and in any case no later than six (6) months from the publication of this, the Regulation on the Security of Electronic Communications Networks and Services (no. 28/2024 decision of the Authority for the Protection of Communications Privacy, B' 551) shall apply, to the extent that it concerns the issues of this Part regarding the obligations of providers of public electronic communications networks or publicly available electronic communications services.
+
+b. Until the issuance of the decision of par. 25 of article 30 and in any case no later than six (6) months from the publication of this, the Regulation on the Security of Electronic Communications Networks and Services (decision no. 28/2024 of the Authority for the Assurance of the Privacy of Communications) shall apply, to the extent that it concerns the enhanced cybersecurity measures of par. 1 of article 29.

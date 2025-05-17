@@ -1,0 +1,54 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article22 a :RegulationRule ;
+    rdfs:label "Article 22" ;
+    :subject "Voluntary communication of relevant information" ;
+    :references :Article30_Directive2022_2555 ;
+    :appliesTo :KeyEntities, :SignificantEntities, :OtherEntities ;
+    :requires :VoluntaryIncidentNotification .
+
+:Article30_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 30 of Directive (EU) 2022/2555" .
+
+:VoluntaryIncidentNotification a :Obligation ;
+    rdfs:label "Voluntary Incident Notification" ;
+    :concerns :Incidents, :CyberThreats, :NearMisses ;
+    :appliesTo :KeyEntities, :SignificantEntities, :OtherEntities ;
+    :priority lowerThan :MandatoryIncidentNotification .
+
+:MandatoryIncidentNotification a :Obligation ;
+    rdfs:label "Mandatory Incident Notification" ;
+    :definedIn :Article16 .
+
+:KeyEntities a :LegalEntityClass ;
+    rdfs:label "Key Entities" .
+
+:SignificantEntities a :LegalEntityClass ;
+    rdfs:label "Significant Entities" .
+
+:OtherEntities a :LegalEntityClass ;
+    rdfs:label "Other Entities" .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" ;
+    :processes :VoluntaryIncidentNotification ;
+    :ensures :ConfidentialityProtection .
+
+:ConfidentialityProtection a :Obligation ;
+    rdfs:label "Confidentiality and Protection of Information" .
+
+:Incidents a :InformationElement ;
+    rdfs:label "Incidents".
+
+:CyberThreats a :InformationElement ;
+    rdfs:label "Cyber Threats".
+
+:NearMisses a :InformationElement ;
+    rdfs:label "Near Misses".
+
+:ChapterG a :Chapter ;
+    rdfs:label "Chapter G: Supervision and Sanctions" .
+```

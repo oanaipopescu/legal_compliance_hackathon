@@ -1,0 +1,17 @@
+Article 18
+Jurisdiction and territoriality (Article 26 of Directive (EU) 2022/2555)
+1. Entities established or providing services or carrying out activities in the country and falling within the scope of this Part shall be deemed to be subject to its jurisdiction, unless:
+
+a) providers of public electronic communications networks or providers of publicly available electronic communications services, which are considered to fall under the jurisdiction of another Member State of the European Union in which they provide their services,
+
+b) Domain Name System (DNS) service providers, top-level domain name (TLD) registries, entities providing domain name registration services, cloud computing service providers, data center service providers, content distribution network providers, managed service providers, managed security service providers, as well as providers of online/online marketplaces, online/online search engines or social networking service platforms, which are considered to fall under the jurisdiction of another Member State of the European Union in which they have their main establishment in accordance with paragraph 2,
+
+c) public administration entities, which are considered to fall under the jurisdiction of another Member State of the European Union that has established them.
+
+2. For the purposes of this Part, an entity referred to in point (b) of paragraph 1 shall be deemed to have its main establishment in Greece where decisions relating to cybersecurity risk management measures are mainly taken. If the Member State cannot be determined in accordance with the previous paragraph, the main establishment shall be deemed to be located in Greece where cybersecurity operations are carried out. If the Member State cannot be determined in accordance with the previous paragraph, the main establishment shall be deemed to be located in Greece where the entity concerned has the establishment with the largest number of employees in the European Union in Greece.
+
+3. If an entity referred to in point b) of paragraph 1 is not established in the European Union, but offers services within it, it shall mandatorily appoint a representative in the European Union. Such an entity shall be deemed to be subject to the jurisdiction of Greece provided that the representative is established therein. In the absence of a representative, in accordance with this, in the European Union, the entity providing services in Greece shall be liable for a breach of the obligations of this Part.
+
+4. The appointment of a representative by an entity referred to in point b) of paragraph 1 does not affect the legal actions that may be taken against the entity itself.
+
+5. If a request for mutual assistance is submitted to the National Cybersecurity Authority in relation to an entity referred to in paragraph 1, the competent authorities under this Part shall take, within the limits of the said request, appropriate supervisory and enforcement measures in relation to the entity concerned, which provides services or has the network and information system in the Greek territory.

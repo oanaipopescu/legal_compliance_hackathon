@@ -1,0 +1,54 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article10 a :RegulationRule ;
+    rdfs:label "Article 10" ;
+    :subject "Computer Security Incident Response Teams (CSIRTs)" ;
+    :references :Article10_Directive2022_2555 ;
+    :appliesTo :NationalCybersecurityAuthority, :NationalCERT ;
+    :requires :CSIRTDesignation, :CSIRTCoordination .
+
+:Article10_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 10 of Directive (EU) 2022/2555" .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" ;
+    :role :NationalCSIRT .
+
+:NationalCSIRT a :Role ;
+    rdfs:label "National Computer Security Incident Response Team" .
+
+:NationalCERT a :LegalEntity ;
+    rdfs:label "National CERT (Cybersecurity Response Team)" ;
+    :partOf :NationalIntelligenceService ;
+    :role :CSIRT .
+
+:CSIRT a :Role ;
+    rdfs:label "Computer Security Incident Response Team" .
+
+:CSIRTDesignation a :Obligation ;
+    rdfs:label "CSIRT Designation" ;
+    :appliesTo :NationalCybersecurityAuthority, :NationalCERT ;
+    :basedOn :paragraph8_article30 .
+
+:paragraph8_article30 a :LegalBasis ;
+    rdfs:label "paragraph 8 of article 30" .
+
+:CSIRTCoordination a :Obligation ;
+    rdfs:label "CSIRT Coordination" ;
+    :appliesTo :NationalCybersecurityAuthority ;
+    :requires :ComplianceWithRequirements .
+
+:ComplianceWithRequirements a :Obligation ;
+    rdfs:label "Compliance with Requirements" ;
+    :references :paragraph1_Article10 .
+
+:paragraph1_Article10 a :LegalBasis ;
+    rdfs:label "paragraph 1 of Article 10" .
+
+:NationalIntelligenceService a :LegalEntity ;
+    rdfs:label "National Intelligence Service" .
+
+```

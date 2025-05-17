@@ -1,0 +1,87 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article4 a :RegulationRule ;
+    rdfs:label "Article 4" ;
+    :subject "Key and significant entities" ;
+    :references :Directive2022_2555, :CommissionRecommendation2003_361, :Directive2022_2557, :Law4577_2018, :Decision1027_2019 ;
+    :appliesTo :CoreEntities, :SignificantEntities, :NationalCybersecurityAuthority ;
+    :requires :EntityReporting .
+
+:CoreEntities a :LegalEntityClass ;
+    rdfs:label "Core Entities" ;
+    :includes :LargeEnterprise, :TrustServiceProvider, :Top_Level_Domain_Name_Registry, :DomainNameSystemServiceProvider, :PublicElectronicCommunicationsServiceProvider, :EssentialServiceProvider, :CriticalEntities, :OtherKeyEntities ;
+    :definedIn :Article4 .
+
+:LargeEnterprise a :LegalEntity ;
+    rdfs:label "Large Enterprises" ;
+    :definedBy :CommissionRecommendation2003_361 .
+
+:TrustServiceProvider a :LegalEntity ;
+    rdfs:label "Trust Service Provider" .
+
+:Top_Level_Domain_Name_Registry a :LegalEntity ;
+    rdfs:label "Top-Level Domain Name Registry" .
+
+:DomainNameSystemServiceProvider a :LegalEntity ;
+    rdfs:label "Domain Name System Service Provider" .
+
+:PublicElectronicCommunicationsServiceProvider a :LegalEntity ;
+    rdfs:label "Public Electronic Communications Service Provider" .
+
+:EssentialServiceProvider a :LegalEntity ;
+    rdfs:label "Essential Service Provider" .
+
+
+:CriticalEntities a :LegalEntity ;
+    rdfs:label "Critical Entities" ;
+    :definedIn :Directive2022_2557 .
+
+:OtherKeyEntities a :LegalEntity ;
+    rdfs:label "Other Key Entities" ;
+    :definedIn :Article4 .
+
+:SignificantEntities a :LegalEntityClass ;
+    rdfs:label "Significant Entities" ;
+    :definedIn :Article4 .
+
+:EntityReporting a :Obligation ;
+    rdfs:label "Entity Reporting" ;
+    :appliesTo :CoreEntities, :SignificantEntities ;
+    :requires :SubmissionOfInformation .
+
+
+:SubmissionOfInformation a :Obligation ;
+    rdfs:label "Submission of Information" ;
+    :requires :EntityName, :EntityAddress, :ContactDetails, :IPRanges, :DomainNames, :SectorSubsectorType, :EUCountriesServed .
+
+:EntityName a :InformationElement ;
+    rdfs:label "Entity Name" .
+
+:EntityAddress a :InformationElement ;
+    rdfs:label "Entity Address" .
+
+:ContactDetails a :InformationElement ;
+    rdfs:label "Contact Details" .
+
+:IPRanges a :InformationElement ;
+    rdfs:label "IP Address Ranges" .
+
+:DomainNames a :InformationElement ;
+    rdfs:label "Domain Names" .
+
+:SectorSubsectorType a :InformationElement ;
+    rdfs:label "Sector, Subsector, and Entity Type" .
+
+:EUCountriesServed a :InformationElement ;
+    rdfs:label "EU Countries Served" .
+
+:Law4577_2018 a :NationalLaw ;
+    rdfs:label "Law 4577/2018" .
+
+:Decision1027_2019 a :NationalDecision ;
+    rdfs:label "Decision No. 1027/4.10.2019" .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" .

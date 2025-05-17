@@ -1,0 +1,24 @@
+Article 20
+Domain name registration database (Article 28 of Directive (EU) 2022/2555)
+1. For the security, stability and resilience of the Domain Name System (DNS), top-level domain (TLD) registries and entities providing domain name registration services shall collect and maintain accurate and complete domain name registration data in a dedicated database with due diligence in accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation, L 119) GDPR and Law 4624/2019 (A' 137).
+
+2. For the purposes of paragraph 1, the domain name registration database shall contain the information necessary to identify and communicate with domain name holders and the contact points managing domain names under the TLDs. This information shall include:
+
+a) the domain name, b) the date of registration,
+
+c) the name, contact email address and telephone number of the registrant,
+
+(d) the contact email address and telephone number of the point of contact managing the domain name, if different from those of the registrant.
+
+3. TLD name registries and entities providing domain name registration services shall have policies and procedures, including verification procedures, to ensure that the databases referred to in paragraph 1 contain accurate and complete information.
+
+4. TLD registries and entities providing domain name registration services shall make publicly available, promptly and after the registration of a domain name, domain name registration data that is not personal data.
+
+5. TLD registries and entities providing domain name registration services shall provide access to specific domain name registration data upon lawful and duly substantiated requests from legitimate access seekers, in accordance with Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation, L 119) GDPR and Law 4624/2019 (A' 137). TLD registries and
+
+Entities providing domain name registration services shall respond without undue delay and in any event within seventy-two (72) hours of receipt of any access requests. They shall also make public their policies and procedures for the disclosure of such data.
+
+6. Compliance with the obligations set out herein shall not result in duplication of the collection of domain name registration data. To this end, TLD registries and entities providing domain name registration services shall cooperate with each other.
+
+CHAPTER FIVE
+INFORMATION EXCHANGE

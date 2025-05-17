@@ -1,0 +1,54 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article44 a :RegulationRule ;
+    rdfs:label "Article 44" ;
+    :subject "Financial statements and activity reports of construction companies" ;
+    :amends :Article41_paragraph7_PD71_2019 ;
+    :requires :DeadlineExtension_FinancialStatementsActivityReports .
+
+:Article41_paragraph7_PD71_2019 a :LegalProvision ;
+    rdfs:label "paragraph 7 of article 41 of PD 71/2019" .
+
+:PD71_2019 a :PresidentialDecree ;
+    rdfs:label "Presidential Decree 71/2019" .
+
+:DeadlineExtension_FinancialStatementsActivityReports a :Obligation ;
+    rdfs:label "Deadline Extension for Submitting Financial Statements and Activity Reports" ;
+    :appliesTo :ConstructionCompanies ;
+    :oldDeadline "2024-12-31"^^xsd:date ;
+    :newDeadline "2025-02-19"^^xsd:date ;
+    :concerns :AnnualFinancialStatements, :ActivityReport ;
+    :to :RegistersDirectorate .
+
+:ConstructionCompanies a :LegalEntityClass ;
+    rdfs:label "Contracting Companies" .
+
+:AnnualFinancialStatements a :Document ;
+    rdfs:label "Annual Financial Statements" .
+
+:ActivityReport a :Document ;
+    rdfs:label "Activity Report" .
+
+:RegistersDirectorate a :LegalEntity ;
+    rdfs:label "Registers Directorate of the General Secretariat of Infrastructure" ;
+    :partOf :GeneralSecretariatOfInfrastructure .
+
+:GeneralSecretariatOfInfrastructure a :LegalEntity ;
+    rdfs:label "General Secretariat of Infrastructure" ;
+    :partOf :MinistryOfInfrastructureAndTransport .
+
+:MinistryOfInfrastructureAndTransport a :LegalEntity ;
+    rdfs:label "Ministry of Infrastructure and Transport" .
+
+:MH_EEDE a :Register ;
+    rdfs:label "Register of Public Works Contracting Companies (MH.EEDE)" .
+
+:MH_EEDE_certificates a :Certificate ;
+    rdfs:label "MH.EEDE certificates" .
+
+
+:PartC a :Part ;
+    rdfs:label "Part C: Entry into Force" .

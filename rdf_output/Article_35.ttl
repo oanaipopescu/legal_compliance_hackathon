@@ -1,0 +1,72 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article35 a :RegulationRule ;
+    rdfs:label "Article 35" ;
+    :subject "Settings for areas outside television coverage" ;
+    :appliesTo :MinistryOfDigitalGovernance, :GeneralSecretariatOfTelecommunicationsAndPosts, :NationalNetworkOfTechnologyAndResearchInfrastructures, :DigitalTerrestrialBroadcastingNetworkProvider ;
+    :repeals :JointDecision_Eik14177_EX_14_5_2021 .
+
+:MinistryOfDigitalGovernance a :LegalEntity ;
+    rdfs:label "Ministry of Digital Governance" ;
+    :finances :SupplementaryCoverageStationsCosts .
+
+:SupplementaryCoverageStationsCosts a :Cost ;
+    rdfs:label "Costs for Supplementary Coverage Stations (S.S.K.)" ;
+    :includes :SupplyCosts, :InstallationCosts, :OperationCosts, :UpgradeCosts, :MaintenanceCosts, :AntennaLicensingCosts .
+
+:SupplyCosts a :CostItem ;
+    rdfs:label "Supply Costs" .
+
+:InstallationCosts a :CostItem ;
+    rdfs:label "Installation Costs" .
+
+:OperationCosts a :CostItem ;
+    rdfs:label "Operation Costs" .
+
+:UpgradeCosts a :CostItem ;
+    rdfs:label "Upgrade Costs" .
+
+:MaintenanceCosts a :CostItem ;
+    rdfs:label "Maintenance Costs" .
+
+:AntennaLicensingCosts a :CostItem ;
+    rdfs:label "Antenna Licensing Costs" .
+
+:GeneralSecretariatOfTelecommunicationsAndPosts a :LegalEntity ;
+    rdfs:label "General Secretariat of Telecommunications and Posts (GSPT)" ;
+    :role :CentralCoordinationBody ;
+    :conducts :AreaDeterminationStudy .
+
+:CentralCoordinationBody a :Role ;
+    rdfs:label "Central Coordination Body" .
+
+:AreaDeterminationStudy a :Study ;
+    rdfs:label "Study on areas needing television coverage" .
+
+:NationalNetworkOfTechnologyAndResearchInfrastructures a :LegalEntity ;
+    rdfs:label "National Network of Technology and Research Infrastructures (NTRI)" ;
+    :mayActAs :ImplementingBody .
+
+:ImplementingBody a :Role ;
+    rdfs:label "Implementing Body" .
+
+:DigitalTerrestrialBroadcastingNetworkProvider a :LegalEntity ;
+    rdfs:label "Digital Terrestrial Broadcasting Network Provider" ;
+    :responsibleFor :SupplementaryCoverageStationsInstallationCommissioningUseMaintenance .
+
+:SupplementaryCoverageStationsInstallationCommissioningUseMaintenance a :Obligation ;
+    rdfs:label "Installation, commissioning, use and maintenance of Supplementary Coverage Stations" .
+
+:JointDecision_Eik14177_EX_14_5_2021 a :Decision ;
+    rdfs:label "Joint Decision Είκ.14177 EX/14.5.2021" ;
+    :issuedBy :MinistersOfDevelopmentAndInvestmentInteriorDigitalGovernanceStateDeputyMinisterToPrimeMinister .
+
+:MinistersOfDevelopmentAndInvestmentInteriorDigitalGovernanceStateDeputyMinisterToPrimeMinister a :LegalEntityClass ;
+    rdfs:label "Ministers of Development and Investment, Interior, Digital Governance, State and the Deputy Minister to the Prime Minister" .
+
+
+```

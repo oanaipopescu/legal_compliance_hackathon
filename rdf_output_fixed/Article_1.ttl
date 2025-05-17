@@ -1,0 +1,23 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article1 a :RegulationRule ;
+    rdfs:label "Article 1" ;
+    :purpose "achieve a high level of cybersecurity" ;
+    :incorporates :Directive2022_2555 .
+
+:Directive2022_2555 a :EU_Directive ;
+    rdfs:label "Directive (EU) 2022/2555" ;
+    :concerns "measures for a high common level of cybersecurity" ;
+    :amends :Regulation910_2014, :Directive2018_1972 ;
+    :repeals :Directive2016_1148 .
+
+:Regulation910_2014 a :EU_Regulation ;
+    rdfs:label "Regulation (EU) 910/2014" .
+
+:Directive2018_1972 a :EU_Directive ;
+    rdfs:label "Directive (EU) 2018/1972" .
+
+:Directive2016_1148 a :EU_Directive ;
+    rdfs:label "Directive (EU) 2016/1148" .

@@ -1,0 +1,79 @@
+Article 24
+Supervisory and enforcement measures in relation to key entities (Article 32 of Directive (EU) 2022/2555)
+1. Supervisory or enforcement measures imposed on key entities in relation to the obligations set out in this Part shall be effective, proportionate and dissuasive, taking into account the circumstances of each individual case.
+
+2. The National Cybersecurity Authority, when exercising its supervisory duties in relation to key entities, has the competence to subject such entities to procedures concerning:
+
+a) on-site inspections and supervision outside the premises, including sample checks, carried out by the inspectors referred to in paragraph 1 of Article 23,
+
+b) regular and targeted security audits carried out by the National Cybersecurity Authority,
+
+c) extraordinary special inspections, inter alia, when this is justified due to a significant incident or violation of this law by the main entity or when a relevant complaint has been submitted or there is information or circumstantial evidence of the existence of such an incident or violation,
+
+(d) security scans based on objective, impartial, fair and transparent risk assessment criteria, where necessary with the cooperation of the entity concerned;
+
+e) requests for the provision of necessary information for the ex-post evaluation of the cybersecurity risk management measures taken by the entity concerned, including documented cybersecurity policies, as well as compliance with the obligation to transmit information to the National Cybersecurity Authority,
+
+f) requests for access to data, documents and information required for the performance of its supervisory tasks,
+
+g) requests for evidence concerning the implementation of cybersecurity policies, such as the results of security audits carried out by an authorized inspector of paragraph 1 of article 23 and the corresponding underlying evidence.
+
+The targeted security audits of item b) are based on risk assessments, carried out by the National Cybersecurity Authority or the audited entity, or on other risk-related information available.
+
+The results of each targeted security audit are made available to the competent Directorate of the National Cybersecurity Authority.
+
+3. The National Cybersecurity Authority, when exercising the powers of paragraphs e), f) and g) of paragraph 2, shall state the purpose of the request and specify the information requested.
+
+4. The National Cybersecurity Authority, when exercising its supervisory duties in relation to key entities, has the following responsibilities:
+
+(a) issue warnings or recommendations regarding violations of this Part by the entities concerned;
+
+(b) issue binding instructions and guidelines, including on measures necessary to prevent or remedy an incident, and set deadlines for the implementation of such measures and for reporting on their implementation, or order the entities concerned to remedy identified deficiencies or violations of this Part;
+
+(c) order the entities concerned to cease conduct that violates this Part and to refrain from repeating such conduct;
+
+(d) order the entities concerned to ensure that cybersecurity risk management measures are in line with Article 15 or to fulfil the reporting obligations set out in Article 16, in a specific manner and within a specific period of time;
+
+(e) instructs the relevant entities to inform natural or legal persons, in relation to whom they provide services or carry out activities that may be affected by a significant cyber threat, of the nature of the threat, as well as of any protective or remedial measures that such natural or legal persons may take to address that threat;
+
+(f) instruct the entities concerned to implement the recommendations made as a result of a security audit within a reasonable period of time;
+
+(g) appoint a competent supervisor with clearly defined tasks for a specified period of time, in order to supervise the compliance of the entities concerned with Articles 15 and 16;
+
+h) orders the relevant entities to make public information on violations of this part in a specific manner and procedure,
+
+i) impose administrative fines in accordance with article 26, in addition to the measures in paragraphs a) to h).
+
+5. When the enforcement measures adopted in accordance with paragraphs a) to d) and f) of paragraph 4 are deemed ineffective, the National Cybersecurity Authority shall set a deadline within which the main entity is required to take the necessary measures to remedy the deficiencies or to comply with it. If the requested measures are not taken within the specified deadline, the Director of the National Cybersecurity Authority, upon a recommendation from the competent organizational unit, may, by a specifically reasoned decision:
+
+a) temporarily suspend or request the competent certification body to suspend the certification or authorization concerning part or all of the relevant services provided or activities performed by the main entity,
+
+(b) temporarily prohibit any natural person responsible for exercising management functions at the level of managing director or legal representative in the main entity from exercising management functions in that entity.
+
+The temporary suspensions or prohibitions imposed pursuant to this shall be effective only until the entity concerned has taken the necessary measures to remedy the deficiencies or to comply with the requirements of the above competent authority for which such enforcement measures were applied. An application for annulment may be filed before the Council of State against the decision of the Director of the National Cybersecurity Authority imposing a temporary suspension or prohibition. The above decision of the Director of the National Cybersecurity Authority may be revoked, provided that the entity complies.
+
+The enforcement measures provided for herein do not apply to the entities referred to in point (f) of paragraph 2 of article 3 that are subject to this Part.
+
+6. Any natural person who, in accordance with the applicable legislation, is, as the case may be, responsible for or acts as the legal representative of a key entity based on its power of representation or has the authority to take decisions on its behalf or to exercise control over it, is responsible for ensuring its compliance with this law. Such natural persons shall be held liable for the breach of their obligations under this law. The application of this law shall not affect the existing provisions on liability applicable to public administration entities, as well as on the liability of public officials and elected or appointed members of their administration.
+
+7. The National Cybersecurity Authority, when taking any of the enforcement measures referred to in paragraphs 4 and 5, shall take into account the circumstances of each individual case. In particular, it shall take due account of:
+
+a) the seriousness of the infringement and the importance of the provisions infringed. Serious infringements are considered in any case in particular: aa) repeated infringements, ab) failure to notify or remedy significant incidents, ag) failure to remedy deficiencies in accordance with binding instructions from the competent authorities in each case, ad) obstruction of controls or supervisory activities ordered by the National Cybersecurity Authority following the detection of an infringement, ae) provision of false or grossly inaccurate information in relation to the risk management measures or reporting obligations set out in Articles 15 and 16,
+
+b) the duration of the infringement,
+
+(c) relevant previous infringements by the entity concerned; (d) any material or non-material damage caused, including financial or economic damage, the impact on other services and the number of users affected;
+
+e) any fault on the part of the perpetrator of the violation,
+
+(f) any measures taken by the entity to prevent or mitigate material or non-material damage,
+
+g) any adherence to approved codes of conduct or approved certification mechanisms,
+
+h) the degree of cooperation of the natural or legal persons responsible with the competent authorities.
+
+8. The National Cybersecurity Authority shall justify the enforcement measures and, before taking them, shall notify the entities concerned of its preliminary findings and any warnings. It shall provide a reasonable period of time, in the circumstances, for the entities concerned to submit observations, except in justified cases where taking immediate action to prevent or respond to incidents would otherwise be prevented.
+
+9. The National Cybersecurity Authority shall inform the authorities exercising relevant responsibilities, as appropriate, when exercising their supervisory and enforcement powers in accordance with Directive (EU) 2022/2557 of the European Parliament and of the Council of 14 December 2022 on the resilience of critical entities and repealing Council Directive 2008/114/EC (L 333), with the aim of ensuring the compliance of an entity identified as a critical entity under Directive (EU) 2022/2557 with the obligations of this Part. The competent authorities designated in accordance with Directive (EU) 2022/2557 may request in accordance with this Part the National Cybersecurity Authority to exercise its supervisory and enforcement powers in relation to an entity identified as a critical entity under Directive (EU) 2022/2557.
+
+10. The National Cybersecurity Authority shall cooperate with the national competent authorities designated in accordance with Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on digital operational resilience of the financial sector and amending Regulations (EC) 1060/2009, (EU) 648/2012, (EU) 600/2014, (EU) 909/2014 and (EU) 2016/1011 (L 333). In particular, the National Cybersecurity Authority shall inform the supervisory forum established in accordance with par. 1 of Article 32 of Regulation (EU) 2022/2554 in the exercise of its supervisory and enforcement powers aimed at ensuring compliance of a key entity, which has been designated as a critical third party provider of information and communication technology (ICT) services in accordance with Article 31 of Regulation (EU) 2022/2554, with the obligations of this law.

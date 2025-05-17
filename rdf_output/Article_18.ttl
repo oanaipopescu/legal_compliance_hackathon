@@ -1,0 +1,106 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+
+:Article18 a :RegulationRule ;
+    rdfs:label "Article 18" ;
+    :subject "Jurisdiction and territoriality" ;
+    :references :Article26_Directive2022_2555 ;
+    :appliesTo :EntityInGreece, :PublicElectronicCommunicationsServiceProvider, :DNSServiceProvider, :TopLevelDomainNameRegistry, :DomainNameRegistrationServiceProvider, :CloudComputingServiceProviders, :DataCentreServiceProviders, :ContentDistributionNetworkProviders, :ManagedServiceProvider, :ManagedSecurityServiceProvider, :OnlineInternetMarketProviders, :OnlineInternetSearchEngineProviders, :SocialNetworkingServicePlatformProviders, :PublicAdministrationEntity ;
+    :requires :JurisdictionCompliance .
+
+:Article26_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 26 of Directive (EU) 2022/2555" .
+
+:EntityInGreece a :LegalEntity ;
+    rdfs:label "Entity established or providing services in Greece" .
+
+:JurisdictionCompliance a :Obligation ;
+    rdfs:label "Compliance with Jurisdiction Rules" ;
+    :exceptions :EU_JurisdictionException .
+
+:EU_JurisdictionException a :Exception ;
+    rdfs:label "Exception for Entities under another EU Member State's Jurisdiction" ;
+    :appliesTo :PublicElectronicCommunicationsServiceProvider, :DNSServiceProvider, :TopLevelDomainNameRegistry, :DomainNameRegistrationServiceProvider, :CloudComputingServiceProviders, :DataCentreServiceProviders, :ContentDistributionNetworkProviders, :ManagedServiceProvider, :ManagedSecurityServiceProvider, :OnlineInternetMarketProviders, :OnlineInternetSearchEngineProviders, :SocialNetworkingServicePlatformProviders, :PublicAdministrationEntity .
+
+:PublicElectronicCommunicationsServiceProvider a :LegalEntity ;
+    rdfs:label "Public Electronic Communications Service Provider" .
+
+:DNSServiceProvider a :LegalEntity ;
+    rdfs:label "Domain Name System (DNS) Service Provider" .
+
+:TopLevelDomainNameRegistry a :LegalEntity ;
+    rdfs:label "Top-Level Domain Name Registry" .
+
+:DomainNameRegistrationServiceProvider a :LegalEntity ;
+    rdfs:label "Entity Providing Domain Name Registration Services" .
+
+:CloudComputingServiceProviders a :LegalEntity ;
+    rdfs:label "Cloud Computing Service Provider" .
+
+:DataCentreServiceProviders a :LegalEntity ;
+    rdfs:label "Data Centre Service Provider" .
+
+:ContentDistributionNetworkProviders a :LegalEntity ;
+    rdfs:label "Content Distribution Network Provider" .
+
+:ManagedServiceProvider a :LegalEntity ;
+    rdfs:label "Managed Service Provider" .
+
+:ManagedSecurityServiceProvider a :LegalEntity ;
+    rdfs:label "Managed Security Service Provider" .
+
+:OnlineInternetMarketProviders a :LegalEntity ;
+    rdfs:label "Online/Internet Market Provider" .
+
+:OnlineInternetSearchEngineProviders a :LegalEntity ;
+    rdfs:label "Online/Internet Search Engine Provider" .
+
+:SocialNetworkingServicePlatformProviders a :LegalEntity ;
+    rdfs:label "Social Networking Service Platform Provider" .
+
+:PublicAdministrationEntity a :LegalEntity ;
+    rdfs:label "Public Administration Entity" .
+
+:MainEstablishmentInGreece a :Condition ;
+    rdfs:label "Main Establishment in Greece" ;
+    :determines :Jurisdiction .
+
+:Jurisdiction a :Attribute ;
+    rdfs:label "Jurisdiction" .
+
+:RepresentativeAppointment a :Obligation ;
+    rdfs:label "Mandatory Representative Appointment in EU" ;
+    :appliesTo :NonEUEUEntity ;
+    :requires :EURepresentative .
+
+:NonEUEUEntity a :LegalEntity ;
+    rdfs:label "Entity not established in the EU but offering services within it" .
+
+:EURepresentative a :LegalEntity ;
+    rdfs:label "Representative in the European Union" .
+
+:LiabilityForBreach a :Obligation ;
+    rdfs:label "Liability for Breach of Obligations" ;
+    :appliesTo :NonEUEUEntityWithoutRepresentative .
+
+:NonEUEUEntityWithoutRepresentative a :LegalEntity ;
+    rdfs:label "Entity not established in the EU, offering services in Greece, and without a representative in the EU" .
+
+:MutualAssistance a :Obligation ;
+    rdfs:label "Mutual Assistance" ;
+    :appliesTo :NationalCybersecurityAuthority ;
+    :requires :SupervisoryEnforcementMeasures .
+
+:SupervisoryEnforcementMeasures a :Obligation ;
+    rdfs:label "Appropriate Supervisory and Enforcement Measures" ;
+    :appliesTo :EntityInGreeceProvidingServicesOrHavingNIS .
+
+:EntityInGreeceProvidingServicesOrHavingNIS a :LegalEntity ;
+    rdfs:label "Entity providing services or having network and information systems in Greek territory" .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" .
+
+```

@@ -1,0 +1,7 @@
+Article 8
+Competent authority and single point of contact (Article 8 of Directive (EU) 2022/2555)
+1. The National Cybersecurity Authority is designated as the competent authority responsible for cybersecurity and for the supervisory tasks referred to in Chapter G of this Part and participates in the Cooperation Group to support and facilitate strategic cooperation and the exchange of information between Member States, as well as to strengthen trust and confidence, in accordance with Article 14 of Directive 2022/2555.
+
+2. The National Cybersecurity Authority shall monitor the implementation of this Part and shall be the single point of contact for Greece. Within the framework of its responsibilities, the National Cybersecurity Authority shall act as a liaison to ensure cross-border cooperation of the country with the competent authorities of other Member States and, where appropriate, with the European Commission and the European Union Agency for Cybersecurity (ENISA), as well as to ensure cross-sectoral cooperation with other competent authorities within the country.
+
+3. The National Cybersecurity Authority shall notify the European Commission, without delay, of its designation as competent authority referred to in paragraph 1 and single point of contact referred to in paragraph 2, its tasks, as well as any subsequent changes. The National Cybersecurity Authority shall publish its designation as competent authority on its website.

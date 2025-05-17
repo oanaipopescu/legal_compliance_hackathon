@@ -1,0 +1,82 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article21 a :RegulationRule ;
+    rdfs:label "Article 21" ;
+    :subject "Arrangements for the exchange of information in the field of cybersecurity" ;
+    :references :Article29_Directive2022_2555 ;
+    :appliesTo :KeyEntities, :SignificantEntities, :Suppliers, :ServiceProviders ;
+    :requires :VoluntaryInformationExchange .
+
+:Article29_Directive2022_2555 a :LegalBasis ;
+    rdfs:label "Article 29 of Directive (EU) 2022/2555" .
+
+:VoluntaryInformationExchange a :Obligation ;
+    rdfs:label "Voluntary Exchange of Cybersecurity Information" ;
+    :concerns :CyberThreats, :NearMisses, :Vulnerabilities, :TechniquesAndProcedures, :IndicationsOfBreach, :MaliciousTactics, :ThreatActors, :CybersecurityAlerts, :CyberattackDetectionRecommendations ;
+    :purpose "prevent, detect, respond to, or recover from incidents or mitigate their effects; enhance the level of cybersecurity" ;
+    :appliesTo :KeyEntities, :SignificantEntities, :Suppliers, :ServiceProviders ;
+    :within :CommunitiesOfKeyAndSignificantEntities .
+
+:CyberThreats a :InformationElement ;
+    rdfs:label "Cyber Threats" .
+
+:NearMisses a :InformationElement ;
+    rdfs:label "Near-misses" .
+
+:Vulnerabilities a :InformationElement ;
+    rdfs:label "Vulnerabilities" .
+
+:TechniquesAndProcedures a :InformationElement ;
+    rdfs:label "Techniques and Procedures" .
+
+:IndicationsOfBreach a :InformationElement ;
+    rdfs:label "Indications of Breach" .
+
+:MaliciousTactics a :InformationElement ;
+    rdfs:label "Malicious Tactics" .
+
+:ThreatActors a :InformationElement ;
+    rdfs:label "Specific Threat Actors" .
+
+:CybersecurityAlerts a :InformationElement ;
+    rdfs:label "Cybersecurity Alerts" .
+
+:CyberattackDetectionRecommendations a :InformationElement ;
+    rdfs:label "Recommendations on the configuration of cybersecurity tools to detect cyberattacks" .
+
+:CommunitiesOfKeyAndSignificantEntities a :Community ;
+    rdfs:label "Communities of key and significant entities" ;
+    :includes :Suppliers, :ServiceProviders .
+
+:Suppliers a :LegalEntityClass ;
+    rdfs:label "Suppliers" .
+
+:ServiceProviders a :LegalEntityClass ;
+    rdfs:label "Service Providers" .
+
+:KeyEntities a :LegalEntityClass ;
+    rdfs:label "Key Entities" .
+
+:SignificantEntities a :LegalEntityClass ;
+    rdfs:label "Significant Entities" .
+
+:NotificationToNCSA a :Obligation ;
+    rdfs:label "Notification to National Cybersecurity Authority" ;
+    :requires :ParticipationInInformationExchange, :WithdrawalOfParticipation ;
+    :timeLimit "without delay"^^xsd:string ;
+    :appliesTo :KeyEntities, :SignificantEntities .
+
+:ParticipationInInformationExchange a :InformationElement ;
+    rdfs:label "Participation in Information Exchange Framework" .
+
+:WithdrawalOfParticipation a :InformationElement ;
+    rdfs:label "Withdrawal of Participation" .
+
+:NationalCybersecurityAuthority a :LegalEntity ;
+    rdfs:label "National Cybersecurity Authority" .
+
+```

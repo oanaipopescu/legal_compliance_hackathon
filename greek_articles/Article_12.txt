@@ -1,0 +1,13 @@
+article 12.
+
+Article 12
+Coordinated vulnerability disclosure and European vulnerability database (Article 12 of Directive 2022/2555)
+1. The CSIRT of the National Cybersecurity Authority is assigned the coordinating role for the purposes of coordinated vulnerability disclosure. The aforementioned CSIRT acts as a trusted intermediary, facilitating, where necessary, communication between the natural or legal person reporting the vulnerability and the manufacturer or provider of the potentially vulnerable ICT products or ICT services, upon request of one of the parties. The tasks of the aforementioned CSIRT to which the coordinating role has been assigned include:
+
+a) the identification of the relevant entities and communication with them,
+
+b) providing assistance to natural or legal persons who report vulnerabilities, and
+
+c) negotiating disclosure schedules and managing vulnerabilities affecting multiple entities.
+
+2. Natural or legal persons may, upon request, report vulnerabilities anonymously to the CSIRT referred to in paragraph 1. That CSIRT shall ensure that diligent follow-up actions are carried out with regard to the reported vulnerability and shall ensure the anonymity of the natural or legal person reporting the vulnerability. In cases where a reported vulnerability could have a significant impact on entities in more than one Member State, the CSIRT referred to in paragraph 1 shall cooperate, where appropriate, with other CSIRTs to which a coordination role has been assigned within the CSIRTs network.

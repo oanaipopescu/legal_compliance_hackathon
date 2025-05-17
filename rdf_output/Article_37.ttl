@@ -1,0 +1,43 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:Article37 a :RegulationRule ;
+    rdfs:label "Article 37" ;
+    :subject "Supporting Information Systems of Health Units" ;
+    :appliesTo :HIDIKA_SA, :NationalHealthSystem ;
+    :concerns :Contract2_30_1_2024 ;
+    :requires :AutomaticContractExtension .
+
+:HIDIKA_SA a :LegalEntity ;
+    rdfs:label "ELECTRONIC GOVERNANCE OF SOCIAL SECURITY S.A. (H.I.D.I.K.A. S.A.)" ;
+    :contract :Contract2_30_1_2024 .
+
+:NationalHealthSystem a :LegalEntity ;
+    rdfs:label "National Health System (EPSMY)" .
+
+:Contract2_30_1_2024 a :Contract ;
+    rdfs:label "Contract No. 2/30.1.2024" ;
+    :subject "Unified Information System for health units" ;
+    :subproject :Subproject3_InformationSystemProvision ;
+    :expiryDate "2025-04-29"^^xsd:date .
+
+:Subproject3_InformationSystemProvision a :Subproject ;
+    rdfs:label "Subproject 3: Information System Provision" ;
+    :concerns "Development and operation of H.I.D.I.K.A. S.A. information systems in the health sector" .
+
+:AutomaticContractExtension a :Obligation ;
+    rdfs:label "Automatic Contract Extension" ;
+    :until :NewContractSigning ;
+    :appliesTo :Contract2_30_1_2024 .
+
+:NewContractSigning a :Condition ;
+    rdfs:label "Signing of a new contract with the same subject matter" ;
+    :determinedBy :NewTenderProcedure .
+
+:NewTenderProcedure a :Process ;
+    rdfs:label "New tender procedure carried out by H.D.I.K.A. S.A." .
+
+```
