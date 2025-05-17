@@ -1,0 +1,74 @@
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:NIS2Law a :RegulationRule ;
+    :appliesTo :EssentialEntity, :ImportantEntity, :EntityProvidingDomainNameRegistrationServices ;
+    rdfs:label "Law establishing a framework for the cybersecurity of networks and information systems of general interest for public security" .
+
+:EssentialEntity a :EntityClass ;
+    rdfs:label "Essential Entity" .
+
+:ImportantEntity a :EntityClass ;
+    rdfs:label "Important Entity" .
+
+:EntityProvidingDomainNameRegistrationServices a :EntityClass ;
+    rdfs:label "Entity Providing Domain Name Registration Services" .
+
+:PersonalData a :DataClass ;
+    rdfs:label "Personal Data" .
+
+:requires :encryption a :Obligation ;
+    rdfs:label "Encryption Requirement" ;
+    rdfs:comment "Article 30, § 3, 8°: policies and procedures relating to the use of cryptography and, where applicable, encryption" .
+
+:NationalCybersecurityAuthority a :Authority ;
+    rdfs:label "National Cybersecurity Authority" ;
+    :responsibleFor :monitoringNIS2Implementation, :coordinatingNIS2Implementation, :managingCyberCrises .
+
+:monitoringNIS2Implementation a :Task ;
+    rdfs:label "Monitoring NIS2 Implementation" .
+
+:coordinatingNIS2Implementation a :Task ;
+    rdfs:label "Coordinating NIS2 Implementation" .
+
+:managingCyberCrises a :Task ;
+    rdfs:label "Managing Cyber Crises" .
+
+:NationalCSIRT a :Authority ;
+    rdfs:label "National Computer Security Incident Response Centre" ;
+    :obligatedTo :secureCommunicationInfrastructure, :ensureHighAvailability .
+
+:secureCommunicationInfrastructure a :Obligation ;
+    rdfs:label "Secure Communication Infrastructure" .
+
+:ensureHighAvailability a :Obligation ;
+    rdfs:label "Ensure High Availability" .
+
+:SectoralAuthority a :Authority ;
+    rdfs:label "Sectoral Authority" .
+
+:SignificantIncident a :IncidentClass ;
+    rdfs:label "Significant Incident" ;
+    :requires :notificationToNationalCSIRT .
+
+:notificationToNationalCSIRT a :Obligation ;
+    rdfs:label "Notification to National CSIRT" .
+
+
+:ConformityAssessmentBody a :EntityClass ;
+    rdfs:label "Conformity Assessment Body" .
+
+:requires :periodicConformityAssessment a :Obligation ;
+    :appliesTo :EssentialEntity ;
+    rdfs:label "Periodic Conformity Assessment" .
+
+:requires :riskAnalysis a :Obligation ;
+    :appliesTo :EssentialEntity, :ImportantEntity ;
+    rdfs:label "Risk Analysis Obligation" .
+
+:PSI a :Document ;
+    rdfs:label "Security policy for information systems and networks" .
+
+

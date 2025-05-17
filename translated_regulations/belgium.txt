@@ -1,0 +1,1009 @@
+Federal Public Service Chancellery of the Prime Minister
+APRIL 26, 2024. - Law establishing a framework for the cybersecurity of networks and information systems of general interest for public security (1)
+
+
+PHILIPPE, King of the Belgians,
+To all present and future, Greetings.
+The House of Representatives has adopted and We sanction the following:
+TITLE 1. - Definitions and general provisions
+CHAPTER 1. - Purpose and scope Section 1. - Purpose Article 1. This law regulates a matter referred to in Article 74 of the Constitution. Art. 2. This law aims in particular to transpose European Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 concerning measures to ensure a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148. This directive is hereinafter referred to as the "NIS2 Directive". Section 2. - Scope of application Art. 3. § 1. Within the limits of Article 4 and without prejudice to Article 6, this Act applies to public or private entities of a type referred to in Annex I or II and which constitute: 1° a medium-sized enterprise under Article 2 of the Annex to Recommendation No. 2003/361/EC; or 2° an enterprise which exceeds the ceilings provided for in paragraph 1 of the same Article of that Annex. Article 3, § 4, of the Annex to Recommendation No. 2003/361/EC does not apply for the purposes of this Act. § 2. In applying Article 6(2) of the Annex to Recommendation No 2003/361/EC, the national cybersecurity authority shall take into account the degree of independence enjoyed by an entity from its partners and affiliated undertakings, in particular with regard to the networks and information systems it uses to provide its services and with regard to the services it provides. On the basis of paragraph 1 , the national cybersecurity authority shall consider that such an entity does not constitute an average undertaking under Article 2 of the Annex to Recommendation No 2003/361/EC, or does not exceed the ceilings applicable to an average undertaking provided for in paragraph 1 of that Article, if, after taking into account the degree of independence of that entity, it would not have been considered as constituting an average undertaking or exceeding those ceilings if only its own data had been taken into account. The King may determine the criteria on the basis of which the degree of independence enjoyed by an entity with respect to its partners and related companies is assessed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+§ 3. Without prejudice to Article 6, this Law also applies to entities of a type referred to in Annex I or II, regardless of their size, in one of the following cases:
+1° the services are provided by:
+a) providers of public electronic communications networks or publicly available electronic communications services;
+b) trust service providers;
+c) top-level domain name registries and domain name system service providers;
+2° the entity is identified as an essential or important entity in accordance with Chapter 4 of this Title;
+3° the entity is a public administration entity:
+a) which depends on the federal State;
+b) which depends on the federated entities, identified in accordance with Article 11, § 2;
+(c) which is an emergency zone within the meaning of Article 14 of the Law of 15 May 2007 on civil security or the Fire and Emergency Medical Service of the Brussels-Capital Region within the meaning of the Ordinance of 19 July 1990 establishing a Fire and Emergency Medical Service of the Brussels-Capital Region.
+§ 4. Without prejudice to Article 6, regardless of their size, this Law applies to entities identified as operators of critical infrastructure within the meaning of the Law of 1 July 2011 on the security and protection of critical infrastructure.
+§ 5. Regardless of their size, this Law applies to entities providing domain name registration services.
+§ 6. After consultation with any relevant sectoral authorities and the national cybersecurity authority, the King may, by decree deliberated in the Council of Ministers, add other sectors and/or sub-sectors to Annex I or II or expand existing sectors and/or sub-sectors.
+
+Art. 4. § 1. This law applies to the entities referred to in Article 3 which are established in Belgium and which provide their services or carry out their activities within the European Union.
+§ 2. By way of exception to paragraph 1 , this law applies to:
+1° providers of public electronic communications networks or providers of publicly available electronic communications services, when they provide these services in Belgium;
+2° to DNS service providers, top-level domain name registries, entities providing domain name registration services, cloud computing service providers, data center service providers, content delivery network providers, managed service providers, managed security service providers, as well as providers of online marketplaces, online search engines or social networking service platforms, when they have their principal establishment in Belgium, in accordance with paragraphs 4 and 5.
+§ 3. If an entity referred to in paragraph 2, 2°, is not established in the European Union but provides services there, it shall appoint a representative in the Union. The representative shall be established in one of the Member States where the services are provided. § 4.
+For the purposes of this Act, the entities referred to in paragraph 2, 2°, have their principal establishment in Belgium when they mainly take decisions related to cybersecurity risk management measures there.
+If the place where these decisions are taken cannot be determined or is not located in the European Union, the entities referred to in paragraph 2, 2°, are deemed to have their principal establishment in Belgium when they conduct their cybersecurity operations there.
+If the place where these operations are conducted cannot be determined, the entities referred to in paragraph 2, 2°, are deemed to have their principal establishment in Belgium when their establishment with the largest number of employees is located there.
+§ 5. The entities referred to in paragraph 2, 2°, are deemed to have their principal establishment in Belgium, for the application of this law, when they are not established in the European Union but provide their services in the Union and their representative in the European Union is established in Belgium.
+§ 6. The designation of a representative by an entity referred to in paragraph 2, 2°, is without prejudice to legal actions that could be brought against the entity itself.
+
+Art. 5. § 1. This law does not prejudice the application of Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation), nor the legal and regulatory provisions which supplement or clarify said regulation, nor the law of 30 July 2018 on the protection of natural persons with regard to the processing of personal data.
+§ 2. This Act is without prejudice to the Act of 11 December 1998 on classification, security clearances, security certificates, security notices and regulated public service and does not apply to communication and information systems approved to use classified information in electronic form in accordance with the aforementioned Act.
+§ 3. This Act is without prejudice to the rules applicable to nuclear documents, within the meaning of the Act of 15 April 1994 on the protection of the population and the environment against the dangers resulting from ionising radiation and relating to the Federal Agency for Nuclear Control.
+§ 4. Subject to Articles 8 and 38 and Title 2, this Act does not apply to:
+1° the intelligence and security services referred to in Article 2 of the Act of 30 November 1998 on the organic structure of intelligence and security services;
+2° to the Coordination Body for Threat Analysis established by Article 5 of the Law of 10 July 2006 on threat analysis;
+3° to the Ministry of Defence referred to in Article 1 of the Royal Decree of 2 December 2018 determining the general structure of the Ministry of Defence and setting out the responsibilities of certain authorities;
+4° to the police services and the general inspectorate referred to in Article 2, 2° and 3°, of the Law of 7 December 1998 organizing an integrated police service, structured at two levels;
+5° to the judicial authorities, understood as the organs of the judiciary, including the public prosecutor's office;
+6° to the Federal Public Service Justice established by the Royal Decree of 23 May 2001 establishing the Federal Public Service Justice, when it manages databases for the judicial authorities referred to in 5°;
+7° to the networks and information systems of Belgian diplomatic and consular missions in countries outside the European Union;
+8° to Class I establishments within the meaning of Article 3.1 of the Royal Decree of 20 July 2001 laying down general regulations for the protection of the population, workers and the environment against the danger of ionising radiation.
+By way of derogation from paragraph 1 , 8 ° , this Act applies to the elements of a nuclear installation intended for the industrial production of electricity and which are used for the transmission of electricity.
+§ 5. The provisions of Title 3, Title 4 and Title 5 do not apply to:
+1° the NCCN;
+2° the national cybersecurity authority referred to in Article 16.
+§ 6. Paragraphs 4 and 5 do not apply when one of these entities acts as a trusted service provider.
+
+Art. 6. § 1. Where a sectoral legal instrument of the European Union requires entities falling within the scope of this Law to adopt cybersecurity risk management measures or to notify significant incidents and where such requirements have an effect at least equivalent to that of the obligations laid down in this Law, the relevant provisions of this Law shall not apply to such entities.
+Where a sectoral legal instrument of the European Union referred to in paragraph 1 does not cover all entities in a specific sector falling within the scope of this Law, the relevant provisions of this Law shall apply to entities not covered by that sectoral legal instrument of the European Union.
+§ 2. The requirements referred to in paragraph 1 , subparagraph 1 , shall be considered to have an effect equivalent to the obligations of this Law where:
+1° the cybersecurity risk management measures have an effect at least equivalent to that of the measures referred to in Article 30; or
+2° the sectoral legal instrument of the European Union provides for immediate access, where appropriate automatic and direct, to incident notifications for the national CSIRT and where the requirements relating to the notification of significant incidents are at least equivalent to the obligations referred to in Articles 34 to 37.
+§ 3. The provisions of Titles 3 to 5 do not apply to entities in the banking and financial market infrastructures sectors within the meaning of Annex I which fall within the scope of Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on the digital operational resilience of the financial sector and amending Regulations (EC) No 1060/2009, (EU) No 648/2012, (EU) No 600/2014, (EU) No 909/2014 and (EU) No 2016/1011, in that including the activity of central securities depository carried out by the National Bank of Belgium.
+§ 4. The provisions of Title 3, Chapter 1 , Title 4 and Title 5 do not apply:
+1° to the National Bank of Belgium, except for its activity as central securities depository to which paragraph 3 applies;
+2° to financial institutions subject to the supervision of the National Bank of Belgium under Articles 8 and 12bis of the Law of 22 February 1998 establishing the organic status of the National Bank of Belgium which do not fall under paragraph 3.
+
+Art. 7. The King may, by decree deliberated in the Council of Ministers:
+1° specify the equivalent sectoral legal instruments referred to in Article 6, § 1 ,paragraph 1 ;
+2° define specific rules relating to the coordination of the exchange of information, including requirements relating to the notification of significant incidents, between the entities referred to in Article 6, §§ 3 and 4, the relevant sectoral authority, the national cybersecurity authority and the authority responsible for cyber risk management.
+CHAPTER 2. - Definitions
+
+Art. 8. For the purposes of this law, the following terms shall be understood to mean:
+1° "network and information system":
+a) an electronic communications network within the meaning of Article 2, 3°, of the Law of 13 June 2005 on electronic communications;
+b) any device or set of interconnected or related devices, one or more elements of which ensure, in execution of a program, automated processing of digital data, including the digital, electronic or mechanical components of this device enabling in particular the automation of the operational process, remote control, or the obtaining of operating data in real time; or (
+c) digital data stored, processed, retrieved or transmitted by the elements referred to in points (a) and (b) for the purpose of their operation, use, protection and maintenance;
+2° "security of networks and information systems": the capacity of networks and information systems to withstand, at a given level of confidence, any event likely to compromise the availability, authenticity, integrity or confidentiality of data stored, transmitted or being processed, or of the services that these networks and information systems offer or make accessible;
+3° "cybersecurity": cybersecurity within the meaning of Article 2(1) of Regulation (EU) 2019/881 of the European Parliament and of the Council of 17 April 2019 on ENISA (European Union Agency for Cybersecurity) and on cybersecurity certification of information and communications technologies, and repealing Regulation (EU) No 526/2013 (Cybersecurity Regulation), hereinafter the "Cybersecurity Regulation";
+4° "national cybersecurity strategy": the coherent framework providing strategic objectives and priorities in the field of cybersecurity and governance with a view to achieving them in Belgium;
+5° "incident": an event compromising the availability, authenticity, integrity or confidentiality of data stored, transmitted or processed, or of the services that information networks and systems offer or make accessible;
+6° "missed incident": an event which could have compromised the availability, authenticity, integrity or confidentiality of data stored, transmitted or processed, or of the services which information networks and systems offer or make accessible, but which could have been prevented or did not occur;
+7° "major cybersecurity incident": an incident which causes disruptions beyond the response capabilities of the single Member State of the European Union concerned or which has a significant impact on at least two Member States of the European Union;
+8° "incident handling": all actions and procedures aimed at preventing, detecting, analysing and containing an incident or at responding to and remedying it;
+9° "risk": the potential for loss or disruption following an incident, to be expressed as a combination of the magnitude of such loss or disruption and the probability of such an incident occurring;
+10° "cyber threat": a cyber threat as referred to in Article 2(8) of the Cybersecurity Regulation;
+11° "significant cyber threat": a cyber threat which, given its technical characteristics, may be considered likely to have a serious impact on the networks and information systems of an entity or the users of the entity's services, causing considerable material, bodily or moral damage;
+12° "ICT product": an ICT product as defined in Article 2(12) of the Cybersecurity Regulation;
+13° "ICT service": an ICT service as defined in Article 2(13) of the Cybersecurity Regulation;
+14° "ICT process": an ICT process as defined in Article 2(14) of the Cybersecurity Regulation;
+15° "vulnerability": a weakness, susceptibility or flaw in ICT products or ICT services that can be exploited by a cyber threat;
+16° "standard" means a standard within the meaning of Article 2(1) of Regulation (EU) No 1025/2012 of the European Parliament and of the Council of 25 October 2012 on European standardisation, amending Council Directives 89/686/EEC and 93/15/EEC and Directives 94/9/EC, 94/25/EC, 95/16/EC, 97/23/EC, 98/34/EC, 2004/22/EC, 2007/23/EC, 2009/23/EC and 2009/105/EC of the European Parliament and of the Council and repealing Council Decision 87/95/EEC and Decision No 1673/2006/EC of the European Parliament and of the Council, hereinafter "Regulation (EU) No. 1025/2012";
+17° "Internet exchange point" means a network structure that allows the interconnection of more than two independent networks (Autonomous Systems), primarily for the purpose of facilitating the exchange of Internet traffic, that provides interconnection only for Autonomous Systems and that does not require Internet traffic passing between any pair of participating Autonomous Systems to pass through a third Autonomous System, nor does it otherwise modify or alter such traffic;
+18° "Domain Name System" or "DNS" means a hierarchical and distributed system of naming that allows the identification of Internet services and resources, thereby enabling the use of Internet routing and connectivity services by end-user devices to access those services and resources;
+19° "DNS service provider" means an entity that provides:
+(a) publicly available recursive domain name resolution services for Internet end-users; or (
+b) authoritative domain name resolution services for use by third parties, except for root name servers;
+20° "top-level domain name registry" means an entity to which a specific top-level domain has been delegated and which is responsible for the administration of the top-level domain, including the registration of domain names under the top-level domain and the technical operation of the top-level domain, including the operation of its name servers, the maintenance of its databases and the distribution of the top-level domain's zone files on the name servers, whether these operations are carried out by the entity itself or are subcontracted, but excluding situations where top-level domain names are used by a registry solely for its own use;
+21° "entity providing domain name registration services" means a registrar or an agent acting on behalf of registrars, such as a privacy or proxy service provider or reseller;
+22° “digital service” means a service within the meaning of Article 1 , paragraph 1 , point (b), of Directive (EU) 2015/1535 of the European Parliament and of the Council of 9 September 2015 laying down a procedure for the provision of information in the field of technical regulations and of rules on Information Society services;
+23° "trust service": a trust service within the meaning of Article 3, 16, of Regulation (EU) No 910/2014 of the European Parliament and of the Council of 23 July 2014 on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC, hereinafter the "eIDAS Regulation";
+24° "trust service provider": a trust service provider within the meaning of Article 3, 19, of the eIDAS Regulation;
+25° "qualified trust service": a qualified trust service within the meaning of Article 3, 17, of the eIDAS Regulation;
+26° "qualified trust service provider": a qualified trust service provider within the meaning of Article 3, 20, of the eIDAS Regulation;
+27° "online marketplace": an online marketplace within the meaning of Article I.8, 41°, of the Code of Economic Law;
+28° "online search engine": an online search engine within the meaning of Article 2, 5), of Regulation (EU) 2019/1150 of the European Parliament and of the Council of 20 June 2019 promoting fairness and transparency for businesses using online intermediation services;
+29° "cloud computing service": a digital service that allows on-demand administration and broad remote access to a modular and variable set of computing resources that can be shared, including when these resources are distributed across different locations;
+30° "data center service" means a service that encompasses structures, or groups of structures, dedicated to the centralized hosting, interconnection and operation of computing and network equipment providing data storage, processing and transport services, as well as all electricity distribution and environmental control facilities and infrastructure;
+31° "content delivery network" means a network of geographically distributed servers designed to ensure high availability, accessibility or rapid delivery of digital content and services to internet users on behalf of content and service providers;
+32° "social networking services platform" means a platform that allows end users to connect, share, discover and communicate with each other across multiple devices, including through online conversations, posts, videos and recommendations;
+33° "representative" means a natural or legal person established in the European Union who is expressly designated to act on behalf of a DNS service provider, a top-level domain name registry, an entity providing domain name registration services, a cloud computing provider, a data center service provider, a content delivery network provider, a managed service provider, a managed security service provider or a provider of online marketplaces, online search engines or social networking service platforms not established in the European Union, who may be contacted by the national cybersecurity authority in place of the entity itself regarding the obligations incumbent on that entity under this Law;
+34° "public administration entity": an administrative authority referred to in Article 14, § 1 , first paragraph , of the coordinated laws on the Council of State which meets the following criteria:
+a) it is not of an industrial or commercial nature;
+b) it does not carry out as its principal activity an activity listed in the entity type column of another sector or sub-sector of one of the annexes to the law;
+c) it is not a legal entity governed by private law.
+35° "public electronic communications network": a public electronic communications network within the meaning of Article 2, 10°, of the Law of 13 June 2005 on electronic communications;
+36° "electronic communications service": an electronic communications service within the meaning of Article 2, 5°, of the Law of 13 June 2005 on electronic communications;
+37° "entity" means a natural or legal person constituted and recognised as such under the national law of its place of incorporation, and having, in its own name, the capacity to hold rights and obligations;
+38° "managed service provider" means an entity that provides services related to the installation, management, operation or maintenance of ICT products, networks, infrastructure or applications or other information networks and systems, through active assistance or administration, either at customers' premises or remotely;
+39° "managed security service provider" means a managed service provider that carries out or provides assistance for activities related to cybersecurity risk management;
+40° "research organisation" meansan entity whose primary objective is to carry out applied research or experimental development activities with a view to exploiting the results of this research for commercial purposes, excluding educational establishments;
+41° "Recommendation No. 2003/361/EC": the Commission Recommendation of 6 May 2003 concerning the definition of micro, small and medium-sized enterprises;
+42° "Law of 13 June 2005": the Law of 13 June 2005 on electronic communications;
+43° "Law of 1 July 2011": the Law of 1 July 2011 on the security and protection of critical infrastructures;
+44° "Royal Decree of 18 April 1988": the Royal Decree of 18 April 1988 establishing the Governmental Coordination and Crisis Centre;
+45° "National Cybersecurity Authority": the authority referred to in Article 16;
+46° "National CSIRT": the National Computer Security Incident Response Centre;
+47° "ENISA": the European Union Agency for Cybersecurity established by the Cybersecurity Regulation;
+48° "NCCN": the Centre established by the Royal Decree of 18 April 1988;
+49° "Regulation (EU) 2016/679": Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (General Data Protection Regulation);
+50° "data protection authority": supervisory authority within the meaning of Article 4, 21°, of Regulation (EU) 2016/679;
+51° "national accreditation body": the body referred to in Article 2, point 11, of Regulation (EC) No 765/2008 of the European Parliament and of the Council of 9 July 2008 setting out the requirements for accreditation and market surveillance relating to the marketing of products and repealing Council Regulation (EEC) No 339/93, hereinafter "Regulation (EC) No 765/2008";
+52° "security policy for information systems and networks ("PSI")": the policy set out in a document referred to in Article 30, setting out the security measures for networks and information systems to be adopted by an essential or important entity;
+53° "conformity assessment body": the body referred to in Article 2, point 13, of Regulation (EC) No 765/2008;
+54° "sectoral authority": the authority referred to in Article 15, § 2;
+55° "CSIRT network": the network of national CSIRTs established by Article 15 of the NIS2 Directive;
+56° "cooperation group": the cooperation group established by Article 14 of the NIS2 Directive;
+57° "significant incident":any incident having a significant impact on the provision of any of the services provided in the sectors or sub-sectors listed in Annex I and II of the law and which:
+1° has caused or is likely to cause serious operational disruption to any of the services provided in the sectors or sub-sectors listed in Annex I and II or financial losses for the entity concerned; or
+2° has affected or is likely to affect other natural or legal persons by causing considerable material, bodily or moral damage.
+58° "cyber crisis": any cybersecurity incident which, by its nature or consequences:
+1° threatens the vital interests of the country or the essential needs of the population;
+2° requires urgent decisions;
+3° requires coordinated action by several departments and organizations.
+59° "Institute": the Belgian Institute for Postal Services and Telecommunications as referred to in Article 13 of the Law of 17 January 2003 on the status of the regulator of the Belgian postal and telecommunications sectors.
+CHAPTER 3. - Categories of entities
+
+Art. 9. Essential entities are:
+1° entities of a type referred to in Annex I which exceed the ceilings applicable to medium-sized enterprises provided for in Article 2, paragraph 1 , of the Annex to Recommendation No. 2003/361/EC;
+2° qualified trust service providers and top-level domain name registries and DNS service providers, regardless of their size;
+3° providers of public electronic communications networks or publicly available electronic communications services which are at least medium-sized enterprises, pursuant to Article 2 of the Annex to Recommendation No. 2003/361/EC;
+4° public administration entities which are dependent on the Federal State;
+5° entities referred to in Article 3, § 4;
+6° any other entity of a type referred to in Annex I or II which is identified as an essential entity in accordance with Article 11.
+
+Art. 10. Important entities are:
+1° entities of a type referred to in Annex I or II which are not qualified as essential entities on the basis of Article 9;
+2° entities identified as important entities in accordance with Article 11.
+CHAPTER 4. - Identification
+
+Art. 11. § 1. Without prejudice to Article 6, on its own initiative or on the proposal of the relevant sectoral authority, the national cybersecurity authority shall identify an entity as an essential or important entity, regardless of its size, in the following cases:
+1° the entity is the sole provider, in Belgium, of at least one service essential to the maintenance of critical societal or economic activities,in particular in one of the sectors or sub-sectors listed in Annexes I and II of the law;
+2° a disruption of the service provided by the entity could have a significant impact on public security, public safety or public health;
+3° a disruption of the service provided by the entity could induce a significant systemic risk, in particular for sectors where such an interruption could have a cross-border impact;
+4° the entity is critical due to its specific importance at national or regional level for the sector or type of service in question, or for other interdependent sectors, in Belgium.
+§ 2. With regard to entities that depend on federated entities, the national cybersecurity authority identifies public administrations which, following a risk-based assessment, provide services whose disruption could have a significant impact on critical societal or economic activities.
+§ 3. As part of the identification referred to in paragraphs 1 and 2, the national cybersecurity authority shall first submit a draft decision to the entity concerned and then to any federated entities concerned and sectoral authorities, which shall issue an unpublished opinion within sixty days.
+In the absence of an opinion issued within the period referred to in paragraph 1 , the absence of an opinion may be overridden.
+In the event of an unfavorable opinion from a sectoral authority and if the national cybersecurity authority wishes to maintain its draft decision, the draft decision, accompanied by the opinion, shall be submitted to the Strategic Intelligence and Security Committee, established by the Royal Decree of 22 December 2020 establishing the National Security Council, the Strategic Intelligence and Security Committee and the Intelligence and Security Coordination Committee, which shall issue a binding opinion.
+§ 4. The National Cybersecurity Authority shall assess and, where appropriate, update the identification of essential and important entities at least every two years, in accordance with the procedures referred to in paragraphs 1 to 3.
+The National Cybersecurity Authority shall send the identifications and updates of essential entities to the NCCN and to any relevant sectoral authority.
+The National Cybersecurity Authority shall send the identifications and updates of important entities to any relevant sectoral authority.
+§ 5. In the cases referred to in paragraph 1 , the King may, by decree deliberated in the Council of Ministers, designate as an essential or important entity an entity which is not part of the sectors referred to in the Annex.
+
+Art. 12. As part of the identification referred to in Article 11, the entity concerned shall transmit all information useful for its possible identification, at the request of the national cybersecurity authority or the sectoral authority.
+CHAPTER 5. - Registration of entities
+
+Art. 13. § 1. Within five months of the entry into force of the law or the identification referred to in Article 11, essential entities, important entities and entities providing domain name registration services shall register with the national cybersecurity authority in accordance with the practical arrangements laid down by that authority and shall provide it with the following information:
+1° their name and their registration number with the Crossroads Bank for Enterprises (CBE) or an equivalent registration in the European Union;
+2° their address and updated contact details, including their email address, IP ranges and telephone number;
+3° where applicable, the sector and sub-sector concerned referred to in Annex I or II; and
+4° where applicable, a list of the Member States in which they provide services falling within the scope of this law.
+The King may supplement this list of information.
+§ 2. By way of derogation from paragraph 1 , subparagraph 1 , where the entity referred to in the aforementioned paragraph already communicates to the relevant sectoral authority some of the information referred to in the aforementioned paragraph, by virtue of a legal obligation, the entity shall supplement this information with that sectoral authority.
+The entity referred to in paragraph 1 , subparagraph 1 , shall communicate the information within five months following the entry into force of the law, in accordance with the practical arrangements laid down by the aforementioned authority.
+§ 3. The entities referred to in paragraph 1 , subparagraph 1 , shall communicate without delay any modification to the information they have communicated in accordance with paragraph 1 , subparagraph 1 , and paragraph 2, subparagraph 1 , and, in any event, within two weeks of the date of the modification.
+§ 4. The sectoral authority concerned shall communicate the information collected under paragraphs 2 and 3 to the national cybersecurity authority.
+The national cybersecurity authority shall take the necessary measures to ensure that the sectoral authorities can consult, for the sectors which concern them, the data communicated.
+
+Art. 14. § 1. Within two months of the entry into force of the Act, DNS service providers, top-level domain name registries, entities providing domain name registration services, cloud computing service providers, data center service providers, content delivery network providers, managed service providers, managed security service providers, as well as providers of online marketplaces, online search engines and social networking service platforms shall provide the national cybersecurity authority, in accordance with the procedures referred to in Article 13, § 1 , first paragraph , at least the following information:
+1° their name;
+2° their sector, sub-sector and type of entity concerned, referred to in Annex I or II, where applicable;
+3° the address of their principal establishment and of their other legal establishments in the Union or, if they are not established in the Union, of their representative designated in accordance with Article 4, § 3;
+4° their updated contact details, including email addresses and telephone numbers and, where applicable, those of their representative designated in accordance with Article 4, § 3;
+5° the Member States in which they provide their services falling within the scope of this Law; and
+6° their IP ranges.
+§ 2. The entities referred to in paragraph 1 shall notify the national cybersecurity authority of any change to the information they have communicated pursuant to paragraph 1 without delay and, in any event, within three months of the date of the change.
+§ 3. By way of derogation from paragraph 1 , the data referred to in the same paragraph, relating to qualified trust service providers in Belgium, which have already been communicated to the supervisory body referred to in Article 17 of the eIDAS Regulation, shall be transmitted by that body to the national cybersecurity authority, in accordance with the procedures laid down by the King.
+TITLE 2. - Competent authorities and cooperation at national level
+CHAPTER 1. - Competent authorities
+Section 1. - Designation of competent authorities
+
+Art. 15. § 1. The King designates the national cybersecurity authority.
+§ 2. After consulting the national cybersecurity authority, the King may, by decree deliberated in the Council of Ministers, designate a sectoral authority and, where appropriate, a sectoral inspection service responsible, for a specific sector or sub-sector, for supervising the implementation of the additional sectoral or sub-sectoral cybersecurity risk management measures referred to in Article 33.
+In the context of the designation referred to in paragraph 1 , the King shall take into account the identity of the sectoral authorities and sectoral inspection services designated under the law of 1 July 2011.
+The King may, by decree deliberated in the Council of Ministers, create sectoral authorities, composed of representatives of the federal State, the Communities and the Regions, in accordance with the procedures provided for in Article 92ter of the special law of 8 August 1980 on institutional reforms.
+By way of derogation from paragraph 1 , this Act itself designates the sectoral authorities and inspection services created and governed by the Act.
+Section 2. - The National Cybersecurity Authority
+
+Art. 16. The National Cybersecurity Authority is responsible for monitoring and coordinating the implementation of this Act, ensuring the implementation of this Act by essential and important entities and managing cyber crises and cybersecurity incidents in accordance with Article 18.
+In this capacity, the National Cybersecurity Authority carries out the tasks of competent authority for essential and important entities, national CSIRT, single national point of contact for the implementation of this Act and representing Belgium within the cooperation group, the CSIRT network and the European Cyber ​​Crisis Preparedness and Response Network (EU-CyCLONe) referred to in Article 16 of the NIS2 Directive.
+Subsection 1. - Tasks relating to the role of competent authority responsible for cybersecurity
+
+Art. 17. The tasks of the national cybersecurity authority are as follows:
+1° to ensure coordination between the competent authorities in the context of the application of this law, as well as between the different services and authorities concerned with cybersecurity in Belgium;
+2° to supervise,coordinate and ensure the implementation of the national cybersecurity strategy referred to in Article 28;
+3° identify essential and important entities in accordance with Article 11;
+4° supervise the implementation of the law by essential and important entities in accordance with Title 4;
+5° ensure coordination between public authorities and the private sector or the scientific world;
+6° formulate proposals for the adaptation of the legal and regulatory framework in the field of cybersecurity;
+7° develop, disseminate and ensure the implementation of standards, directives and norms for the cybersecurity of the different types of information systems;
+8° coordinate Belgian representation at international forums on cybersecurity, the monitoring of international obligations and the presentation of the national point of view in this area;
+9° serve as a single point of contact exercising a liaison function aimed at ensuring, within the framework of the application of this law, cross-border cooperation between the Belgian authorities and the competent authorities of the other Member States of the European Union and, where appropriate, with the European Commission and ENISA, as well as guaranteeing intersectoral cooperation with the other competent Belgian authorities;
+10° coordinate the assessment and certification of the security of information and communication systems;
+11° inform and raise awareness among users of information and communication systems;
+12° grant subsidies for projects and activities related to cybersecurity, within the limits of its budgetary appropriations and under the conditions established by the King;
+13° facilitate and encourage the organization of cybersecurity training for staff members of essential or important entities;
+14° establish a list of essential and important entities as well as entities providing domain name registration services. Subsequently, review this list and, where appropriate, update it regularly and at least every two years.
+Subsection 2. - Tasks relating to the role of cyber crisis management
+
+Art. 18. Without prejudice to Articles 8 and 9 of the Law of 15 May 2007 on civil security and their implementing decrees and without prejudice to the powers of the NCCN, the tasks of the national cybersecurity authority relating to the role of cyber crisis management are as follows: 1°
+in collaboration with the NCCN, identify the capacities, means and procedures that can be deployed in the event of a cyber crisis;
+2° supervise, in collaboration with the NCCN, the drafting, updating and operationalization of the national plan for responding to cyber crises and cybersecurity incidents referred to in Article 29;
+3° ensure the role of coordinator in the management of cyber crises and cybersecurity incidents, where appropriate in accordance with the plan referred to in 2°.
+Subsection 3. - Tasks and obligations relating to the role of national CSIRT
+
+Art. 19. § 1. The tasks of the national CSIRT are as follows:
+1° monitor and analyse cyber threats, vulnerabilities and incidents at the national level and, upon request, provide assistance to the relevant essential and important entities to monitor their networks and information systems in real or near real time;
+2° activate the early warning mechanism, the dissemination of alert messages, announcements and the dissemination of information on cyber threats, vulnerabilities and incidents to the relevant essential and important entities as well as to the competent authorities and other relevant stakeholders, if possible in near real time;
+3° respond to incidents and provide assistance to the relevant essential and important entities, where appropriate;
+4° gather and analyse forensic data, and provide dynamic risk and incident analysis and cybersecurity situational awareness;
+5° carry out, upon request of an essential or important entity, a proactive scan of the relevant entity's networks and information systems to detect vulnerabilities that may have a significant impact;
+6° participate in the CSIRT network, cooperate effectively, efficiently and securely within that network and provide mutual assistance according to its capabilities and skills to other members of the CSIRT network at their request;
+7° where appropriate, act as coordinator for the purposes of the coordinated vulnerability disclosure process under Article 22;
+8° contribute to the deployment of secure information sharing tools;
+9° conduct proactive and non-intrusive scanning of publicly accessible networks and information systems where such scanning is carried out for the purpose of detecting vulnerable or insecurely configured networks and information systems and informing the relevant entities and where it does not have a negative impact on the functioning of the entities' services;
+10° detect, observe and analyse IT security issues;
+11° establish cooperative relationships with relevant private sector stakeholders, with a view to achieving the objectives of this Act;
+12° facilitate the cooperation referred to in 11° by encouraging the adoption and use of common or standardized practices, classification systems and taxonomies with regard to:
+a) incident management procedures;
+b) crisis management; and
+c) coordinated disclosure of vulnerabilities under Article 22;
+13° cooperate and, where appropriate,exchange relevant information in accordance with Article 27 with the communities referred to in the same Article;
+14° participate in peer reviews organised in accordance with Article 19 of the NIS2 Directive.
+After consulting the National CSIRT, the King may, by decree deliberated in the Council of Ministers, entrust it with additional tasks.
+§ 2. When carrying out the tasks referred to in paragraph 1 , the National CSIRT may give priority to certain tasks on the basis of a risk-based approach.
+
+Art. 20. The obligations of the National CSIRT are as follows:
+1° to have an appropriate, secure and resilient communication and information infrastructure enabling it to exchange information with essential and important entities and other stakeholders;
+2° to ensure a high level of availability of its communication channels by avoiding single points of failure and to have several means of being contacted and contacting others at any time; to clearly specify the communication channels and make them known to partners and collaborators;
+3° to have premises and information systems located on secure sites;
+4° to have an appropriate system for managing and routing requests in order, in particular, to facilitate effective and efficient transfers;
+5° guarantee the confidentiality and reliability of its operations;
+6° be equipped with adequate staff to ensure permanent availability of its services and ensure that its staff receive appropriate training;
+7° be equipped with redundant systems and a backup workspace to ensure the continuity of its services.
+
+Art. 21. § 1. In exercising its powers, the national CSIRT shall take all appropriate measures to achieve the objectives defined in Articles 19 and 20. These measures must be proportionate to these objectives and respect the principles of objectivity, transparency and non-discrimination.
+§ 2. When it proves strictly necessary for the performance of its tasks listed in Article 19, § 1 , 1° to 5°, the national CSIRT may obtain from an operator referred to in Article 2, 11°, of the Law of 13 June 2005, identification data referred to in Article 2, paragraph 1 , 5°, of the Law of 17 January 2003 on the status of the regulator of the Belgian postal and telecommunications sectors or electronic communications metadata within the meaning of Article 2, 93°, of the aforementioned Law of 13 June 2005 retained by the latter.
+Without undermining or interfering with the powers of persons exercising judicial police duties or judicial authorities, the purposes pursued by the aforementioned tasks are:
+1° without criminal purposes, the prevention, investigation and detection of offences committed online or via an electronic communications network or service, including acts that constitute serious crime;
+2° the prevention of serious threats to public security;
+3° the examination of security failures in electronic communications networks or services or information systems.
+The national CSIRT may determine the time limit within which the operator must respond to its request, depending on the urgency of the request.
+§ 3. When the national CSIRT sends an operator a request for identification data referred to in Article 2, paragraph 1 , 5°, of the Law of 17 January 2003 on the status of the regulator of the Belgian postal and telecommunications sectors, this request is authorized by the hierarchical superior.
+§ 4. When the national CSIRT sends an operator a request for electronic communications metadata within the meaning of Article 2, 93°, of the Law of 13 June 2005 other than those referred to in paragraph 3, this request shall be subject to prior control by the data protection authority.
+In the event of a duly justified urgent situation, the national CSIRT may dispense with the prior control referred to in paragraph 1 and request the data directly. This request shall be sent without delay to the authority referred to in paragraph 1 to allow for a subsequent control.
+When, following the control referred to in paragraph 2, the data protection authority refuses to confirm the validity of the request for electronic communications metadata referred to in paragraph 1 , the national CSIRT shall notify the operator concerned without delay and delete the metadata received.
+§ 5. The Director General of the national CSIRT shall expressly designate the persons authorized to process the electronic communications data referred to in this article.
+§ 6. The National CSIRT shall, where possible, inform the natural persons concerned of access to their electronic communications data when this is no longer likely to compromise the proper conduct of its tasks or an ongoing investigation and when these persons can be identified.
+§ 7. Without prejudice to Articles 28quinquies, § 1 , and 57, § 1 , of the Code of Criminal Procedure, to achieve these objectives, the National CSIRT is authorized to hold, disclose, disseminate or make use of all available information, even if it comes from unauthorized access to a computer system by a third party.
+§ 8. In carrying out its missions, the National CSIRT shall exercise the prudence that one is entitled to expect from a public authority, always ensuring as a priority not to disrupt the operation of the IT system and taking all reasonable precautions to ensure that no material damage is caused to the IT system.
+The Director General of the National CSIRT shall ensure, through the adoption of internal procedures, compliance with the conditions referred to in this Article.
+
+Art. 22. § 1. In its role as coordinator for the purposes of coordinated vulnerability disclosure, the National CSIRT shall act as a trusted intermediary by facilitating, if necessary, interactions between the natural or legal person reporting a potential vulnerability and the manufacturer or supplier of the potentially vulnerable ICT products or ICT services, at the request of one of the two parties.
+In this context, the tasks of the National CSIRT include in particular:
+1° identifying and contacting the entities concerned;
+2° providing assistance to natural or legal persons reporting a vulnerability; and
+3° negotiate disclosure deadlines and manage vulnerabilities that affect several entities.
+§ 2. Any natural or legal person may report, even anonymously when requested, to the national CSIRT the existence of a potential vulnerability.
+The report shall be made in writing, according to the procedure detailed on the national CSIRT website.
+This report is without prejudice to the application of the law of 28 November 2022 on the protection of persons who report violations of Union or national law found within a legal entity in the private sector or the legal provisions on the protection of persons who report violations of Union or national law found within a legal entity in the public sector.
+§ 3. The National CSIRT shall ensure that diligent follow-up measures are taken with regard to the reported vulnerability and shall ensure the anonymity of the natural or legal person reporting the vulnerability, provided that this person so requests and complies with the conditions referred to in Article 23.
+The National CSIRT shall preserve the completeness, integrity, long-term storage and confidentiality of the information transmitted through the report.
+Access to this information shall be limited to persons authorized by the Director General of the National CSIRT, except when sharing this information is necessary for the performance of the tasks listed in this Article.
+§ 4. While complying with the conditions listed in Article 21, § § 1and 4, the national CSIRT may observe, study or test the security of a network and information system in order to determine the existence of a potential vulnerability or to verify the methods used by the reporting party.
+§ 5. Where the reported vulnerability is likely to have a significant impact on entities in several Member States, the national CSIRT shall cooperate, where appropriate, with other CSIRTs designated as coordinators within the CSIRT network.
+§ 6. The Director General of the national CSIRT shall ensure, through the adoption of internal procedures, compliance with the conditions referred to in this Article. Art
+
+. 23. § 1 . In the context of the procedure referred to in Article 22, the authors of the report do not commit an offense under Articles 314bis, 458, 550bis, 550ter of the Criminal Code and Article 145 of the Law of June 13, 2005, provided that:
+1° they acted without fraudulent intent or intention to cause harm;
+2° they sent a simplified notification which includes the identification of the system concerned and a simple description of the potential vulnerability, without delay and at the latest within twenty-four hours of the discovery of a potential vulnerability, to the organization responsible for the system and to the national CSIRT;
+3° that they have sent a complete notification, without delay and at the latest within seventy-two hours of the discovery of a potential vulnerability, to the organization responsible for the system, where applicable in compliance with the reporting procedures established by this organization, and to the national CSIRT, in accordance with the procedure referred to in Article 22, § 2;
+4° that they have not acted beyond what was necessary and proportionate to verify the existence of a vulnerability and to report it;
+5° that they have not publicly disclosed information relating to the vulnerability discovered and to the vulnerable systems, without the agreement of the national CSIRT;
+6° with regard to the networks and systems of the organisations referred to in Article 5, §§ 4 and 5, and of judicial bodies as well as the information processed by them or on their behalf, that they have, before committing these acts, concluded a written agreement with the competent service on the methods and methodology to be used in the context of the search for potential vulnerabilities.
+§ 2. When persons report information on a potential vulnerability of which they have become aware in their professional context,they are not considered to have breached their obligation of professional secrecy and do not incur any liability of any kind regarding the transmission of information necessary to report a potential vulnerability to the national CSIRT.
+§ 3. Any other possible liability of reporting persons arising from acts or omissions which are not necessary for the completion of the procedure referred to in Article 22 and do not comply with the conditions of paragraph 1 shall continue to be governed by applicable law.
+Section 3. - Possible sectoral authorities
+
+Art. 24. Without prejudice to other provisions, the sectoral authority may:
+1° organize, coordinate or participate in sectoral exercises, with regard to the measures referred to in Articles 30 and 33;
+2° analyze and manage the consequences of an incident for the sector;
+3° participate in the work of the cooperation group with regard to matters relating to its competences;
+4° raise awareness among entities within its sector.
+CHAPTER 2. - Cooperation at national level
+
+Art. 25. § 1 . The authorities referred to in Chapter 1 of this Title shall cooperate with each other in order to comply with the obligations set out in this law.
+§ 2. Depending on the needs necessary for the implementation of this law, the authorities referred to in paragraph 1 shall also cooperate, at national level, with the NCCN, the administrative services of the State, the administrative authorities, including the national authorities under Regulations (EC) No 300/2008 and No 2018/1139, the supervisory bodies under Regulation (EU) No 910/2014 of the European Parliament and of the Council of 23 July 2014 on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC, the National Bank of Belgium, the Financial Services and Markets Authority, the Institute, the competent authorities under the Law of 1 July 2011, the judicial authorities, the intelligence and security services referred to in the Organic Law of 30 November 1998 on Intelligence Services and security, the police services referred to in the law of 7 December 1998 organizing an integrated police service, structured at two levels and with the data protection authorities.
+§ 3. The essential and important entities and the authorities referred to in Chapter 1 of this Title collaborate at all times, through an adequate exchange of information concerning the security of information systems and networks.
+§ 4. The authorities referred to in Chapter 1 of this Title and the competent authorities within the framework of the law of 1July 2011 cooperate and regularly exchange information on the identification of critical infrastructures, risks, cyber threats and incidents, as well as on non-cyber risks, threats and incidents affecting operators of infrastructures identified as critical infrastructures under the law of 1 July 2011 and on the measures taken to address these risks, threats and incidents.
+§ 5. The authorities referred to in Chapter 1 of this Title and the competent authorities under Regulation (EU) No 910/2014 of the European Parliament and of the Council of 23 July 2014 on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC, Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on the digital operational resilience of the financial sector and amending Regulations (EC) No 1060/2009, (EU) No 648/2012, (EU) No 600/2014, (EU) No 909/2014 and (EU) 2016/1011 and the Law of 13 June 2005, shall regularly exchange relevant information, including with regard to incidents and the cyber threats concerned.
+§ 6. The National Cybersecurity Authority shall create a coordination and assessment platform so that the authorities referred to in Article 15 and the NCCN exchange information and coordinate in the context of the implementation of this Act.
+CHAPTER 3. - Confidentiality and exchange of information
+
+Art. 26. § 1. This Article shall not prejudice the application of the Act of 15 April 1994 on the protection of the population and the environment against the dangers resulting from ionizing radiation and relating to the Federal Agency for Nuclear Control, the Act of 11 April 1994 on the publicity of the administration or other legal provisions guaranteeing the confidentiality of information related to the essential interests of national public security.
+§ 2. Any person who is called upon to provide professional assistance in conformity assessment or supervision shall be bound by secrecy. Anyone who violates this secrecy shall be punished by the penalties provided for in Article 458 of the Criminal Code.
+Persons who are custodians, by status or profession, of the secrets entrusted to them are authorized to make these secrets known for the execution of this law.
+These persons shall obtain the agreement of the authorities referred to in Article 5, § 4, when these authorities are concerned by the secrecy.
+§ 3. The authorities referred to in Chapter 1of this Title, essential or important entities, or their subcontractors, limit access to information under this Act to persons who need to know and have access to it for the exercise of their functions or their mission in connection with the execution of this Act.
+§ 4. The information provided to the authorities referred to in Chapter 1 of this Title by essential or important entities may be exchanged with authorities of the European Union, with Belgian or foreign authorities, when this exchange is necessary for the application of legal provisions.
+The information exchanged is limited to what is relevant and is proportionate to the objective of this exchange, in particular in compliance with Regulation (EU) 2016/679. This exchange of information preserves the confidentiality of the information concerned and protects the security and commercial interests of essential or important entities. Art
+
+. 27. § 1 . On a voluntary basis, entities falling within the scope of this Act and, where applicable, other relevant entities not falling within the scope of this Act may exchange, among themselves, within communities, relevant cybersecurity information, including information relating to cyber threats, incidents avoided, vulnerabilities, techniques and procedures, indicators of compromise, adversary tactics, as well as specific information on threat actors, cybersecurity alerts and recommendations concerning the configuration of cybersecurity tools to detect cyberattacks, where such sharing of information:
+1° aims to prevent and detect incidents, to respond to them, to recover from them or to mitigate their impact;
+2° strengthens the level of cybersecurity, in particular by raising awareness of cyber threats, limiting or preventing their ability to spread, supporting a range of defense capabilities, addressing and disclosing vulnerabilities, implementing threat detection, containment and prevention techniques, mitigation strategies or response and recovery steps, or encouraging collaborative research on cyber threats between public and private entities.
+§ 2. The exchange of information referred to in paragraph 1 shall be implemented through cybersecurity information sharing agreements, taking into account the potentially sensitive nature of the information shared.
+§ 3. The national cybersecurity authority shall facilitate the establishment of cybersecurity information sharing agreements referred to in paragraph 2. These agreements may specify the operational elements, including the use of specialized ICT platforms and automation tools, the content and conditions of the information sharing agreements. The national cybersecurity authority and any sectoral authorities may impose conditions for the use of the information they make available to the communities referred to in paragraph 1. § 4.
+Essential and important entities shall notify the national cybersecurity authority of their participation in the cybersecurity information sharing agreements referred to in paragraph 2, when they conclude such agreements or, where applicable, when they withdraw from these agreements, once the withdrawal takes effect. CHAPTER
+4. - National cybersecurity strategy
+
+Art. 28. § 1 . The Ministers meeting in Council shall adopt the national cybersecurity strategy and update it at least every five years, on the basis of performance indicators, after consulting the National Security Council, the authorities referred to in Article 15, the NCCN and, where appropriate, the data protection authorities.
+This strategy shall define the strategic objectives, the resources needed to achieve these objectives, as well as the appropriate policy and regulatory measures, with a view to achieving and maintaining a high level of cybersecurity.
+§ 2. The national cybersecurity strategy shall include, inter alia:
+1° the objectives and priorities of the national cybersecurity strategy, covering in particular the sectors referred to in Annexes I and II;
+2° a governance framework aimed at achieving the objectives and priorities referred to in 1°, including the tasks and responsibilities of the public authorities and other stakeholders concerned as well as the policies referred to in paragraph 3;
+3° a governance framework specifying the roles and responsibilities of stakeholders in Belgium, and on which cooperation and coordination in Belgium between the authorities referred to in Chapter 1 of this Title are based, as well as cooperation and coordination between those authorities and the competent authorities under sectoral legal instruments of the European Union;
+4° a mechanism for identifying relevant assets and a risk assessment in Belgium;
+5° an inventory of measures ensuring the preparation, response and recovery of services after an incident, including cooperation between the public and private sectors;
+6° a list of the various actors and authorities involved in the implementation of the national cybersecurity strategy;
+7° a policy framework aimed at enhanced coordination between the authorities referred to in Chapter 1 of this Title and the competent authorities under the Law of 1 July 2011 for the purpose of sharing information relating to risks, threats and incidents in the cyber and non-cyber domains and carrying out supervisory tasks, where appropriate;
+8° a plan including the necessary measures to improve the general level of awareness of citizens about cybersecurity;
+9° an overview of education, awareness-raising and training programmes related to the national cybersecurity strategy;
+10° an overview of research and development plans related to the national cybersecurity strategy.
+§ 3. Policies, as integral parts of the national cybersecurity strategy, shall be adopted and shall cover the following:
+1° cybersecurity in the supply chain of ICT products and services used by entities for the provision of their services;
+2° the inclusion and specification of cybersecurity-related requirements for ICT products and services in public procurement, including regarding cybersecurity certification, encryption and the use of open-source cybersecurity products;
+3° vulnerability management, including the promotion and facilitation of coordinated vulnerability disclosure in accordance with Article 22;
+4° maintaining the general availability, integrity and confidentiality of the public core of the open internet, including, where appropriate, the cybersecurity of submarine communication cables;
+5° promoting the development and integration of relevant advanced technologies aimed at implementing state-of-the-art measures in cybersecurity risk management;
+6° the promotion and development of cybersecurity education and training, cybersecurity skills, cybersecurity awareness and research and development initiatives, as well as guidance on good cyber hygiene practices and controls, for citizens, stakeholders and entities;
+7° support for academic and research institutions aimed at developing, improving and promoting the deployment of cybersecurity tools and securing network infrastructures;
+8° the establishment of relevant procedures and appropriate information sharing tools to support the voluntary sharing of cybersecurity information between entities;
+9° the strengthening of the cyber resilience and cyber hygiene values ​​of small and medium-sized enterprises, in particular those excluded from the scope of this law, by providing easily accessible guidance and support to meet their specific needs;
+10° the promotion of active cyber protection.
+CHAPTER 5. - The national plan for responding to cyber crises and cybersecurity incidents
+
+Art. 29. § 1. The King shall establish, by decree deliberated in the Council of Ministers, a national plan for responding to cyber crises and cybersecurity incidents. This plan constitutes a national plan within the meaning of Article 9, § 2, of the law of 15 May 2007 on civil security.
+§ 2. Without prejudice to the elements to be contained in national plans, the national cyber crisis and cybersecurity incident response plan shall contain at least the following elements:
+1° the objectives of the national preparedness measures and activities;
+2° the tasks and responsibilities of the cyber crisis management authorities;
+3° the cyber crisis management procedures, including their integration into the overall national crisis management framework and the channels for exchanging information;
+4° the national preparedness measures, including exercises and training activities;
+5° the stakeholders and infrastructure in the public and private sectors concerned;
+6° the national procedures and arrangements between the competent national authorities and bodies aimed at ensuring Belgium's effective participation and support in the coordinated management of cyber crises and cybersecurity incidents at European Union level.
+TITLE 3. - Cybersecurity risk management measures and information obligations
+CHAPTER 1. - Cybersecurity risk management measures
+
+Art. 30. § 1 . Essential and important entities shall take appropriate and proportionate technical, operational and organizational measures to manage the risks that threaten the security of the networks and information systems that these entities use in the course of their activities or the provision of their services, as well as to eliminate or reduce the consequences that incidents have on the recipients of their services and on other services.
+§ 2. The measures referred to in paragraph 1ensure, for networks and information systems, a level of security appropriate to the existing risk, taking into account the state of the art and, where appropriate, applicable European and international standards, as well as the cost of implementation. When assessing the proportionality of these measures, due account should be taken of the degree of exposure of the entity to risks, the size of the entity and the likelihood of incidents occurring and their severity, including their societal and economic consequences.
+§ 3. The measures referred to in paragraph 1 shall be based on an "all-hazards" approach which aims to protect networks and information systems and their physical environment against incidents, and shall cover at least:
+1° policies relating to risk analysis and the security of information systems;
+2° incident management;
+3° business continuity, for example backup management and disaster recovery, and crisis management;
+4° supply chain security, including security-related aspects of the relationship between each entity and its direct suppliers or service providers;
+5° security of the acquisition, development, and maintenance of networks and information systems, including the handling and disclosure of vulnerabilities;
+6° policies and procedures for assessing the effectiveness of cybersecurity risk management measures;
+7° basic cyber hygiene practices and cybersecurity training;
+8° policies and procedures relating to the use of cryptography and, where applicable, encryption;
+9° human resources security, access control policies, and asset management;
+10° the use of multi-factor authentication or continuous authentication solutions, secure voice, video, and text communications, and secure emergency communication systems within the entity, as appropriate;
+11° a coordinated vulnerability disclosure policy.
+§ 4. When essential and important entities consider which of the measures referred to in paragraph 3, 4°, are appropriate, they shall take into account the vulnerabilities specific to each direct supplier and service provider and the overall quality of the products and cybersecurity practices of their suppliers and service providers, including their secure development procedures.
+These measures must be appropriate in the light of the results of the coordinated assessments at European Union level of risks to the security of critical supply chains.
+§ 5. Each essential and important entity shall carry out a risk analysis based on an "all-hazards" approach which aims to protect networks and information systems and their physical environment against incidents and shall draw up, on the basis of this analysis, a PSI covering at least the aspects referred to in paragraph 3.
+§ 6. Where an essential or important entity finds that it is not complying with the measures referred to in paragraph 3, it shall take, without undue delay, all necessary appropriate and proportionate corrective measures.
+
+Art. 31. § 1. The management bodies of essential and important entities shall approve the cybersecurity risk management measures that those entities take to comply with Article 30, supervise their implementation and shall be responsible for the violation of that Article by those entities.
+This article is without prejudice to the rules on liability applicable to public institutions, as well as the liability of civil servants and elected or appointed officials.
+§ 2. The members of the management bodies of essential and important entities shall undergo training to ensure that their knowledge and skills are sufficient to determine risks and assess cybersecurity risk management practices and their impact on the services provided by the entity.
+
+Art. 32. The essential or important entity shall be responsible for the risk analysis carried out and for the selection and implementation of the measures referred to in Article 30, § 1. Art .
+
+33. After consultation with the national cybersecurity authority, any relevant sectoral authority and the relevant federated entities, the King may, by decree deliberated in the Council of Ministers, impose additional appropriate and proportionate cybersecurity risk management measures.
+CHAPTER 2. - Incident notification
+Section 1. - Mandatory notification
+
+Art. 34. § 1. Essential and important entities shall notify any significant incident without undue delay to the National CSIRT, in accordance with the terms established in a protocol concluded between it and the NCCN. These entities shall report, among other things, any information that enables the National CSIRT to determine whether the incident has a transboundary impact.
+Where applicable, the entities concerned shall notify, without undue delay, the recipients of their services of significant incidents likely to affect the provision of services relating to the sectors or sub-sectors listed in Annex I and II.
+The national CSIRT shall immediately communicate the notifications referred to in paragraph 1 to any competent sectoral authorities. Notifications from essential entities shall also be transmitted to the NCCN.
+§ 2. Where applicable, the entities concerned shall notify, without undue delay, the recipients of their services who are potentially affected by a significant cyber threat of all measures or corrections that these recipients can apply in response to this threat. Where applicable, the entities shall also inform these recipients of the significant cyber threat itself.
+§ 3. After consultation with the national cybersecurity authority, the sectoral authorities, the NCCN and the federated entities, the King may determine, by decree deliberated in the Council of Ministers, specific notification thresholds depending on the degree of impact or urgency of the incident.
+§ 4. The mere fact of notifying an incident does not increase the liability of the entity that is the originator of the notification.
+
+Art. 35. § 1. For the purposes of the notification referred to in Article 34, § 1 , first paragraph , the entities concerned shall submit to the national CSIRT:
+1° without undue delay and in any event within twenty-four hours of becoming aware of the significant incident, an early warning which, where appropriate, indicates whether it is suspected that the significant incident was caused by unlawful or malicious acts or whether it could have a cross-border impact;
+2° without undue delay and in any event within seventy-two hours of becoming aware of the significant incident, an incident notification which, where appropriate, updates the information referred to in 1° and provides an initial assessment of the significant incident, including its severity and impact, as well as indicators of compromise, where available;
+3° at the request of the national CSIRT or any relevant sectoral authority, an interim report on relevant updates to the situation;
+4° a final report no later than one month after the submission of the incident notification referred to in 2°, including the following:
+a) a detailed description of the incident,including its severity and impact;
+(b) the type of threat or root cause that likely triggered the incident;
+(c) the mitigation measures implemented and underway;
+(d) where applicable, the cross-border impact of the incident;
+5° in the event of an incident in progress at the time of submission of the final report referred to in 4°, the entities concerned shall provide at that time a progress report and then a final report within one month of the final processing of the incident.
+§ 2. By way of derogation from paragraph 1 , 2°, a trust service provider shall notify the national CSIRT of significant incidents which have an impact on the provision of its trust services, without undue delay and in any event within twenty-four hours of becoming aware of the significant incident.
+§ 3. The national CSIRT shall immediately communicate the notifications referred to in paragraphs 1 and 2 to any competent sectoral authorities. Notifications from essential entities shall also be transmitted to the NCCN.
+
+Art. 36. § 1 . The national CSIRT shall provide, without undue delay and if possible within 24 hours of receiving the early warning referred to in Article 35, § 1 , 1°, a response to the notifying entity, including initial feedback on the significant incident and, at the entity's request, operational guidance or advice on the implementation of possible mitigating measures.
+§ 2. The national CSIRT shall provide additional technical support if requested by the entity concerned. Where there is reason to suspect that the incident is of a criminal nature, the national CSIRT shall also provide guidance on how to notify the law enforcement authorities of the significant incident.
+
+Art. 37. § 1. Where appropriate, and in particular if the significant incident concerns two or more Member States, the national CSIRT shall inform the other affected Member States and ENISA of the significant incident without undue delay. Information of the type received in accordance with Article 35 shall then be shared. In doing so, the national CSIRT must, in accordance with European Union or national law, preserve the security and commercial interests of the entity and the confidentiality of the information communicated.
+§ 2. Where public awareness is necessary to prevent a significant incident or to address an ongoing significant incident, or where disclosure of the significant incident is otherwise in the public interest, the national CSIRT may, after consulting the entity concerned, the NCCN, any relevant sectoral authority and the relevant minister,inform the public of the significant incident or require the entity to do so.
+§ 3. At the request of any relevant sectoral authority, the national cybersecurity authority shall forward the notifications received pursuant to Article 34, § 1 , first paragraph , to the single points of contact of the other affected Member States.
+§ 4. The national cybersecurity authority shall submit to ENISA every three months a summary report including anonymised and aggregated data on significant incidents, incidents, cyber threats and avoided incidents notified in accordance with Article 34, § 1 , first paragraph , and Article 38, § 1 .
+§ 5. The national CSIRT provides the competent authorities under the law of 1 July 2011 with information on significant incidents, incidents, cyber threats and avoided incidents notified in accordance with Article 34, § 1 , paragraph 1 , and Article 38, § 1 , by operators of infrastructures identified as critical infrastructures under the law of 1 July 2011.
+Section 2. - Voluntary notification
+
+Art. 38. § 1. In addition to the notification obligations referred to in Article 34, the following may be notified voluntarily to the national CSIRT by:
+1° essential and important entities, incidents, cyber threats and avoided incidents;
+2° entities other than those referred to in 1°, regardless of whether or not they fall within the scope of this law, significant incidents, cyber threats and avoided incidents.
+§ 2. Voluntary notifications referred to in paragraph 1 shall be treated in the same way as mandatory notifications referred to in Section 1 of this Chapter.
+Mandatory notifications may nevertheless be treated as a priority over voluntary notifications.
+Without prejudice to the prevention, detection, investigation and prosecution of criminal offences, a voluntary report shall not have the direct effect of launching an inspection referred to in Article 44 or of imposing on the entity that made the notification additional obligations to which it would not have been subject if it had not submitted the notification.
+TITLE 4. - Supervision and sanctions
+CHAPTER 1. - Supervision
+Section 1. - Periodic assessment of compliance
+
+Art. 39. Essential entities shall submit to a periodic assessment of the conformity of the implementation of the cybersecurity risk management measures referred to in Article 30, on the basis of the terms and reference frameworks determined by the King:
+1° Either by choosing a periodic assessment of conformity referred to in Article 40, on the basis of one of the reference frameworks determined by the King;
+2° Or by submitting to an inspection by the national cybersecurity authority, on the basis of the terms and conditions determined by the King.
+By way of derogation from paragraph 1 , and at the request of the sectoral authority concerned, the inspections referred to in paragraph 1 , 2°, shall be carried out jointly, under the direction of the national cybersecurity authority or shall be delegated to the relevant inspection service with the agreement of the national cybersecurity authority.
+Where the King determines several reference frameworks, essential entities shall choose the reference framework to which they shall submit.
+
+Art. 40. § 1. The periodic conformity assessment referred to in Article 39, paragraph 1 , 1°, is carried out by a conformity assessment body approved by the National Cybersecurity Authority under the conditions set by the King.
+For the control of entities identified as operators of critical infrastructure within the meaning of the Law of 1 July 2011 and public administration entities, the conformity assessment body and the natural persons who assess conformity shall have security clearance.
+§ 2. The inspection service of the National Cybersecurity Authority may at any time verify compliance with the approval conditions referred to in paragraph 1 by conformity assessment bodies, in accordance with the provisions of this chapter.
+
+Art. 41. Important entities may, on a voluntary basis, undergo a periodic assessment of compliance referred to in Article 39, paragraph 1 , 1°, of the implementation of the cybersecurity risk management measures referred to in Article 30, § 3, on the basis of the terms and reference frameworks determined by the King.
+
+Art. 42. Essential and important entities which undergo a periodic assessment of compliance referred to in Article 39, paragraph 1 , 1°, respectively in accordance with Articles 39 and 41 are, until proven otherwise, presumed to comply with the obligations referred to in Article 30.
+
+Art. 43. A list of conformity assessment bodies approved by the National Cybersecurity Authority in accordance with Article 40 is available from the National Cybersecurity Authority, which shall keep it up to date.
+Section 2. - General provisions relating to the inspection service
+
+Art. 44. § 1. The inspection service of the National Cybersecurity Authority shall carry out checks on compliance by essential and important entities with cybersecurity risk management measures and incident reporting rules.
+By way of derogation from paragraph 1 , and at the request of the relevant sectoral authority, these checks shall be carried out jointly, under the direction of the National Cybersecurity Authority, or shall be delegated to the relevant inspection service, if any, with the agreement of the National Cybersecurity Authority.
+The competent sectoral authority or sectoral inspection service, or, where no sectoral inspection service has been designated by law or by the King, the inspection service of the national cybersecurity authority may carry out checks on compliance by essential and important entities with the additional sectoral or sub-sectoral cybersecurity risk management measures referred to in Article 33.
+§ 2. When making a request for information or evidence, the inspection service of the national cybersecurity authority and the competent sectoral authority or sectoral inspection service, if any, shall state the purpose of the request, the specific information or evidence requested and the time limit within which it must be provided.
+The inspection service of the national cybersecurity authority and the competent sectoral authority or sectoral inspection service, if any, may call upon experts.
+§ 3. The National Cybersecurity Authority Inspectorate and any sectoral authorities and sectoral inspectorates may set priorities for the supervisory tasks referred to in this Title using a risk-based approach.
+§ 4. When dealing with incidents giving rise to personal data breaches as defined in Article 4(12) of Regulation (EU) 2016/679, the National Cybersecurity Authority Inspectorate and any sectoral authorities and sectoral inspectorates shall cooperate closely with the data protection authorities, without prejudice to the competence and tasks of the latter.
+
+Art. 45. § 1The inspection service of the national cybersecurity authority and any relevant sectoral authority or sectoral inspection service shall inform the competent authorities under the law of 1 July 2011 when they exercise their supervisory and enforcement powers with the aim of ensuring that an operator of an infrastructure identified as critical under the law of 1 July 2011 complies with this law. Where appropriate, the competent authorities under the Law of 1 July 2011 may request the National Cybersecurity Authority Inspectorate and the relevant sectoral authority or sectoral inspectorate to exercise their supervisory and enforcement powers with respect to an operator of an infrastructure that is identified as critical infrastructure under the Law of 1 July 2011. § 2. The National Cybersecurity Authority Inspectorate and the relevant sectoral authority or
+sectoral inspectorate shall cooperate with the relevant competent authorities under Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on the digital operational resilience of the financial sector and amending Regulations (EC) No 1060/2009, (EU) No 648/2012, (EU) No 600/2014, (EU) No 909/2014 and (EU) 2016/1011. In particular, the National Cybersecurity Authority Inspectorate and any relevant sectoral authority or sectoral inspectorate shall inform the Oversight Forum established under Article 32(1) of that Regulation when exercising their supervisory and enforcement powers to ensure that an essential or important entity that has been designated as a critical third-party ICT service provider under Article 31 of that Regulation complies with this Act. Art
+
+. 46. § 1 . Where the networks and information systems of an entity are located outside Belgian territory, the inspection service of the national cybersecurity authority and any competent sectoral authority or sectoral inspection service, in consultation with the national cybersecurity authority, may request the cooperation and assistance of the competent supervisory authorities of other Member States.
+In the context of the request referred to in paragraph 1 :
+1° the inspection service of the national cybersecurity authority and any competent sectoral authority or sectoral inspection service may request the competent supervisory authorities of other Member States to take supervisory or enforcement measures;
+2° the inspection service of the national cybersecurity authority and any competent sectoral authority or sectoral inspection service may request, in a reasoned manner, the competent supervisory authorities of other Member States for mutual assistance so that supervisory or enforcement measures can be implemented in an effective, efficient and consistent manner.
+The mutual assistance referred to in paragraph 2, 2°, may relate to requests for information and control measures, including requests to carry out on-site inspections, remote controls or targeted security audits.
+§ 2. In a manner proportionate to their resources and to the extent that this falls within the scope of their competences, the inspection service of the national cybersecurity authority and any competent sectoral authority or sectoral inspection service shall cooperate and provide assistance to the competent cybersecurity supervisory authorities of other Member States that so request, when the networks and information systems of the entity concerned are located in Belgian territory.
+In the context of the request referred to in paragraph 1 : 1 °
+the national cybersecurity authority shall centralise information and consultations regarding the supervisory and enforcement measures taken by itself, by any competent sectoral authority and by any competent sectoral inspection service and shall communicate them to the competent cybersecurity supervisory authorities of other Member States;
+2° the said request may relate to supervisory or enforcement measures;
+3° the said request may, in a reasoned manner, relate to mutual assistance so that the supervisory or enforcement measures can be implemented in an effective, efficient and consistent manner.
+The mutual assistance referred to in paragraph 2, 3°, may relate to requests for information and control measures, including requests to carry out on-site inspections, remote controls or targeted security audits.
+The authority to which a request for assistance is addressed may only refuse this request if it is established that the said authority is not competent to provide the requested assistance, that the requested assistance is not proportionate to the supervisory tasks of the said authority or that the request concerns information or involves activities the disclosure or exercise of which would be contrary to the essential interests of national security, public security or the defence of Belgium. Before refusing such a request,the said authority shall consult the other competent authorities concerned and, at the request of one of the Member States concerned, the European Commission and ENISA.
+§ 3. By mutual agreement, the inspection service of the national cybersecurity authority and any competent sectoral authority or sectoral inspection service may carry out joint supervision actions between themselves and/or with the competent supervisory authorities of other Member States.
+§ 4. This Article shall not apply to diplomatic and consular missions.
+
+Art. 47. § 1. The members of the inspection service of the national cybersecurity authority and any competent sectoral authority or sectoral inspection service shall be provided with a legitimation card, the model of which shall be set by the King.
+§ 2. The members of the inspection service of the national cybersecurity authority and of any relevant sectoral authority or sectoral inspection service and the experts called upon to participate in the inspection may not have any interest, direct or indirect, in the companies or institutions they are responsible for inspecting, which could compromise their objectivity. They shall take an oath before the leading official of their service.
+The authorities referred to in Article 44, § 1 , shall take the necessary measures to ensure the independence of their staff members and to prevent, identify and effectively resolve conflicts of interest in the performance of their duties.
+The concept of conflict of interest covers at least situations in which a staff member of the authorities referred to in Article 44, § 1 , has, directly or indirectly, a financial, economic or other personal interest which could be perceived as compromising their impartiality and independence in the context of their mission or duties.
+§ 3. The staff members of the authorities referred to in Article 44, § 1 , shall not, within the limits of their responsibilities, receive or seek instructions directly or indirectly from third parties.
+They are prohibited from being present during a deliberation or decision on matters in which they have a personal or direct interest or in which their relatives or relatives up to the third degree have a personal or direct interest.
+The King may also designate other situations as conflicts of interest.
+Section 3. - Supervision of entities by the inspection service
+
+Art. 48. § 1. Without prejudice to the powers of judicial police officers referred to in Article 8 of the Code of Criminal Procedure, the sworn members of the inspection service of the national cybersecurity authority and the sworn members of any competent sectoral authority or sectoral inspection service have, in the exercise of their supervisory mission, the following control powers, both in the context of administrative procedures and in the context of the identification of violations of this law:
+1° request access to and obtain a copy of any document or information necessary for the exercise of their supervisory mission, in particular evidence of the implementation of cybersecurity policies, such as the results of compliance assessments or security audits or the corresponding underlying evidence;
+2° carry out, on site or remotely, any examination, control and hearing, including random controls carried out by trained professionals;
+3° subject essential entities to regular and targeted security audits carried out by an independent body, based on risk assessments carried out by the relevant inspection service or the audited entity, or on other available risk-related information;
+4° request all information they consider necessary for the assessment of the cybersecurity risk management measures adopted by the relevant entity, in particular the cybersecurity policies recorded in writing, compliance with the obligation to submit information to the national cybersecurity authority or any sectoral authority in accordance with Title 1 and the implementation of this Law;
+5° carry out an ad hoc audit, in particular when justified due to a significant incident or a violation of this Law;
+6° carry out security scans based on objective, non-discriminatory, fair and transparent risk assessment criteria, if necessary with the cooperation of the relevant entity;
+7° take the identity of persons who are on the premises used by the entity and whose hearing they consider necessary for the exercise of their mission. To this end, they may require these persons to present official identification documents;
+8° where appropriate, request assistance from the federal or local police services in the context of the use of force;
+9° request information from the staff members referred to in Article 9 of the Law of 15 April 1994 on the protection of the population and the environment against the dangers resulting from ionising radiation and relating to the Federal Agency for Nuclear Control, for the purposes of implementing the provisions of this Law;
+10° enter without prior warning, upon presentation of their legitimation card, all the places used by the entity; they may only access inhabited premises with prior authorisation issued by the investigating judge.
+§ 2. In the context of the inspection of significant entities, the control powers referred to in paragraph 1 shall be carried out ex post, on the basis of evidence, indications or information that a significant entity is not complying with this Law.
+§ 3. To obtain authorization to enter inhabited premises, members of the inspection service of the national cybersecurity authority and any competent sectoral authority or sectoral inspection service shall send a reasoned request to the investigating judge. This request shall contain at least the following data:
+1° the identification of the inhabited spaces to which they wish to have access;
+2° any deficiencies that are the subject of the inspection;
+3° all documents and information from which it appears that the use of this means is necessary.
+The investigating judge shall decide within a maximum of forty-eight hours after receipt of the request. The investigating judge's decision shall be reasoned. In the absence of a decision within the prescribed period, the visit to the premises shall be deemed to have been refused. The inspection service of the national cybersecurity authority or the relevant sectoral authority or sectoral inspection service may appeal the refusal decision or the absence of a decision before the indictment chamber within fifteen days of notification of the decision or the expiry of the deadline.
+Visits without the occupant's authorization to inhabited premises shall be made between five and nine o'clock in the afternoon by at least two members of the inspection service acting jointly.
+§ 4. At the start of any hearing, the person being questioned shall be informed:
+1° that their statements may be used as evidence in court;
+2° that they may request that all questions put to them and the answers they give be recorded in the terms used;
+3° that they have the right to remain silent and not to contribute to their own incrimination.
+Any person questioned may use the documents in their possession, without this leading to the postponement of the hearing. They may, during the hearing or subsequently, require that these documents be attached to the hearing.
+The hearing shall state precisely the time at which it began, may be interrupted and resumed, and shall end. It shall state the identity of the persons who intervene during the hearing or during a part of it.
+At the end of the hearing, the person questioned has the right to reread it or to request that it be read to them. They may request that their statements be corrected or supplemented.
+The members of the inspection service of the national cybersecurity authority and of the relevant sectoral authority or sectoral inspection service who question a person shall inform them that they may request a copy of the text of their hearing. This copy shall be provided free of charge.
+§ 5. The members of the inspection service of the national cybersecurity authority and of the competent sectoral authority or sectoral inspection service may consult all information media and the data they contain. They may have the computer system and the data it contains produced on site that they require for their examinations and findings, and take or request extracts, duplicates or copies thereof free of charge, in a legible and intelligible form that they have requested.
+If it is not possible to take copies on site, the members of the inspection service of the national cybersecurity authority and of the competent sectoral authority or sectoral inspection service may seize, against receipt containing an inventory, the computer system and the data it contains.
+§ 6. To extend the searches in a computer system or part thereof, initiated on the basis of paragraph 5, to a computer system or part thereof which is located in a place other than that where the search is carried out, the inspection service of the national cybersecurity authority or the competent sectoral authority or sectoral inspection service may request the intervention of an investigating judge.
+§ 7. Where the inspectorate of the national cybersecurity authority or the relevant sectoral authority or sectoral inspectorate becomes aware, in the course of supervision or enforcement, that a breach by an essential or important entity of the obligations set out in Articles 30 and 34 to 37 may give rise to a personal data breach within the meaning of Article 4(12) of Regulation (EU) 2016/679, which must be notified pursuant to Article 33 of that Regulation, they shall inform the data protection authorities without undue delay.
+Where the competent data protection authority is established in a Member State other than Belgium, the inspection service of the national cybersecurity authority or the competent sectoral authority or sectoral inspection service, if any, shall inform the competent data protection authority established in Belgium of the potential breach of personal data referred to in paragraph 1. § 8.
+When exercising their supervisory powers referred to in this Article, the sworn members of the authorities referred to in Article 44, § 1 , shall ensure that the means they use are appropriate and necessary for the said supervision.
+
+Art. 49. § 1. After each inspection, the members of the inspection service of the national cybersecurity authority and of the competent sectoral authority or sectoral inspection service, if any, shall draw up a report and send a copy to the inspected entity.
+§ 2. The national cybersecurity authority and any sectoral authority shall communicate their inspection reports to each other.
+
+Art. 50. § 1. The supervised entity shall provide its full cooperation to the members of the inspection service of the national cybersecurity authority and any sectoral authority or any competent sectoral inspection service in the exercise of their functions and in particular to inform them as best as possible of all existing security measures.
+If necessary, the entity shall provide the members of the inspection service of the national cybersecurity authority and any competent sectoral authority or any competent sectoral inspection service with the necessary equipment so that they can comply with the security instructions during inspections.
+§ 2. The costs of inspections shall not be borne by the entities.
+By way of derogation from the preceding paragraph, the King may determine, by sector or sub-sector, by decree deliberated in the Council of Ministers and after consulting the national cybersecurity authority and any relevant sectoral authority, remuneration relating to inspection services. He shall set out the terms of calculation and payment.
+§ 3. Any person who willfully prevents or obstructs the performance of an inspection carried out by members of the inspection service of the national cybersecurity authority or any relevant sectoral authority or any relevant sectoral inspection service, refuses to provide the information requested during this inspection, or knowingly provides inaccurate or incomplete information shall be recorded in a report by the sworn members of the inspection service of the national cybersecurity authority or any relevant sectoral authority or any relevant sectoral inspection service.
+CHAPTER 2. - Administrative measures and fines
+Section 1. - Procedure
+
+Art. 51. § 1 . Where one or more breaches of the requirements imposed by this Act, its implementing decrees or the individual administrative decisions relating thereto are observed, the facts may be recorded in a report drawn up by the sworn members of the inspection service of the national cybersecurity authority, of the possible sectoral inspection service or of the possible sectoral authority concerned, in accordance with Article 44, § 1. With
+the agreement of the national cybersecurity authority, the sectoral authority may impose on an entity administrative measures and fines referred to in Section 2.
+The national cybersecurity authority shall inform the sectoral authority concerned when it intends to impose on an entity administrative measures and fines referred to in Articles 58 and 59.
+Where the authorities referred to in paragraphs 1 and 2 become aware, in the course of their supervisory mission, of the fact that a breach referred to in paragraph 1 or 2, committed by an essential or important entity, may give rise to a personal data breach within the meaning of Article 4, point 12, of Regulation (EU) 2016/679, which must be notified pursuant to Article 33 of that Regulation, they shall inform the competent data protection authorities without undue delay.
+§ 2. On the basis of the report referred to in paragraph 1 and , where applicable, the relevant reports referred to in Article 49, § 1, the national cybersecurity authority or any competent sectoral authority may draw up a draft decision containing at least the references of the report which establishes the infringement and which relates the facts in respect of which the procedure is initiated and one or more administrative measures or fines referred to in Article 58 and/or 59 envisaged as well as the time limit within which the entity concerned would implement the administrative measures.
+The time limit referred to in paragraph 1 is determined taking into account the operating conditions of the entity and the measures to be implemented.
+§ 3. The national cybersecurity authority or any competent sectoral authority shall send the draft decision referred to in paragraph 2 to the entity concerned, setting out, in detail, the reasons relating to the administrative measures and/or fines envisaged and informing it of its right, within thirty days of receipt of this information, to formulate its means of defense in writing or to request to be heard. The information is presumed to have been received by the offender on the sixth day following the sending of the aforementioned draft decision.
+By way of exception to paragraph 1 , the draft decision shall not be sent in advance to the entity concerned in exceptional, duly justified cases where this would hinder immediate intervention to prevent or respond to an incident.
+§ 4. After the entity concerned has been able to assert its means of defense, at the end of the period referred to in paragraph 3, subparagraph 1 , or in the case referred to in paragraph 3, subparagraph 2, the national cybersecurity authority or any competent sectoral authority shall maintain or amend the draft decision referred to in paragraph 2, subparagraph 1 or waive it, taking into account the category of entity to which the entity concerned belongs, the latter's means of defense and the elements referred to in Article 54. Art
+
+. 52. § 1 . Where the implementing measures adopted pursuant to Article 58, 1° to 4°, and 6°, are ineffective, the national cybersecurity authority or any competent sectoral authority may set a deadline within which an essential entity is invited to take the necessary measures to remedy the deficiencies or meet its requirements.
+§ 2. Where an essential entity does not comply with the measure(s) contained in the decision referred to in Article 51, § 4, the authority which took that decision shall record the facts in a report.
+§ 3. On the basis of the report referred to in paragraph 2,the national cybersecurity authority or any competent sectoral authority draws up a draft decision containing at least one or more administrative measures or fines referred to in Articles 59 and/or 60 envisaged.
+§ 4. The national cybersecurity authority or any competent sectoral authority shall send the draft decision referred to in paragraph 3 to the entity concerned, setting out, in detail, the reasons for the administrative measures and/or fines envisaged and informing it of its right, within thirty days of receiving this information, to formulate its means of defense in writing or to request a hearing. The information shall be presumed to have been received by the offender on the sixth day following the sending of the aforementioned draft decision.
+By way of exception to paragraph 1 , the draft decision shall not be sent in advance to the entity concerned in exceptional, duly justified cases where this would hinder immediate intervention to prevent or respond to an incident.
+§ 5. After the entity concerned has been able to put forward its means of defense, at the end of the period referred to in paragraph 4, subparagraph 1 , or in the case referred to in paragraph 4, subparagraph 2, the national cybersecurity authority or any competent sectoral authority shall maintain or amend the draft decision referred to in paragraph 3 or waive it, taking into account the means of defense of the entity concerned and the elements referred to in Article 54.
+
+Art. 53. The minutes drawn up by the sworn members of the inspection service shall be authentic until proven otherwise.
+
+Art. 54. § 1 . When taking any enforcement action under the procedures referred to in Articles 51 and 52, the national cybersecurity authority or any competent sectoral authority shall respect the rights of the defence, take into account the circumstances of each case and, at a minimum, take due account of:
+1° the category referred to in Articles 9 and 10 to which the entity concerned belongs;
+2° the seriousness of the breach and the significance of the provisions infringed, the following facts, inter alia, being considered in any event as serious:
+(a) repeated violations;
+(b) failure to notify or remedy significant incidents;
+(c) failure to address deficiencies following binding instructions from the competent authorities;
+(d) obstructing audits or control activities ordered by the national cybersecurity authority's inspection service or the relevant sectoral authority or sectoral inspection service following the discovery of a violation; (
+e) providing false or manifestly inaccurate information relating to cybersecurity risk management measures or incident notifications provided for in Title 3;
+3° the duration of the violation;
+4° any relevant previous breach committed by the entity concerned;
+5° the material, bodily or moral damage caused, including financial or economic losses, the effects on other services and the number of users affected;
+6° whether the perpetrator of the breach acted deliberately or negligently;
+7° the measures taken by the entity to prevent or mitigate material, bodily or moral damage;
+8° the application of approved codes of conduct or approved certification mechanisms;
+9° the degree of cooperation with the inspection service of the national cybersecurity authority or with the possible sectoral authority or the possible sectoral inspection service competent for the natural or legal persons held responsible.
+§ 2. Where data protection authorities impose an administrative fine pursuant to Article 58(2)(i) of Regulation (EU) 2016/679, the national cybersecurity authority or any competent sectoral authority shall not impose an administrative fine for an infringement arising from the same conduct as that for which an administrative fine was imposed pursuant to Article 58(2)(i) of that Regulation.
+
+Art. 55. § 1. The decisions referred to in Articles 51 and 52 shall be notified by registered mail to the infringer.
+§ 2. Administrative fines imposed by a decision referred to in Article 51 or 52 shall be paid within sixty days of receipt of the registered mail referred to in paragraph 1. This period
+may be increased depending on the amount of the administrative fine.
+The period referred to in paragraph 1 shall be deemed to begin no later than six days after the registered mail referred to in paragraph 1. § 3.
+Where a decision referred to in Article 51 or 52 imposes an administrative measure other than an administrative fine, that decision shall specify the period within which the measure must be implemented.
+§ 4. The national cybersecurity authority and, where applicable, any sectoral authority shall notify each other of their decision referred to in Article 51 or 52.
+
+Art. 56. § 1. Where the entity concerned remains in default of paying the administrative fine within the time limit set, the decision to impose an administrative fine shall be enforceable and the national cybersecurity authority or any competent sectoral authority may issue a constraint.
+The constraint is issued by a legal representative of the national cybersecurity authority or any competent sectoral authority or by a member of staff authorized for this purpose.
+§ 2. The enforcement order is served on the offender by bailiff's writ. The service contains a demand to pay within forty-eight hours, under penalty of execution by seizure, as well as an accounting justification of the sums demanded and a copy of the enforcement order.
+§ 3. The offender may file an objection to the enforcement order before the seizure judge.
+The objection must be justified under penalty of nullity. It is made by means of a summons from the national cybersecurity authority or any competent sectoral authority served by bailiff's writ within fifteen days from the service of the enforcement order.
+The provisions of Chapter VIII of Part One of the Judicial Code are applicable to this period, including the extensions provided for in Article 50, paragraph 2, and Article 55 of this Code.
+The exercise of opposition to the constraint suspends the execution of the latter, as well as the limitation period of the claims contained in the constraint, until a ruling on its merits has been made. Seizures already carried out previously retain their precautionary character.
+§ 4. The national cybersecurity authority or any competent sectoral authority may carry out the precautionary seizure and enforce the constraint using the enforcement procedures provided for in Part V of the Judicial Code.
+Partial payments made following the service of a constraint do not prevent the continuation of proceedings.
+§ 5. The costs of serving the constraint as well as the costs of execution or precautionary measures are the responsibility of the offender.
+They are determined according to the rules established for acts performed by bailiffs in civil and commercial matters.
+
+Art. 57. The facts are prescribed three years after their commission. The limitation period is interrupted only by acts of investigation or prosecution by an inspection service. These acts shall cause a new period of equal duration to run, even with regard to persons not involved in them.
+Administrative measures or administrative fines shall be prescribed five years from the date on which they must be executed. The limitation period shall be suspended in the event of an appeal against the administrative decision.
+Section 2. - Administrative measures and fines
+
+Art. 58. The following administrative measures may be imposed on entities on the basis of Article 51:
+1° issue warnings regarding violations of this Law by the entities concerned;
+2° adopt binding instructions or an injunction requiring the entities concerned to remedy the deficiencies noted or violations of this Law;
+3° order the entities concerned to cease conduct that violates this Act and not to repeat it;
+4° order the entities concerned to ensure that their cybersecurity risk management measures comply with Title 3 or to comply with the incident notification obligations set out in the same Title, specifically and within a specified timeframe; 5° order the
+entities concerned to inform the natural or legal persons to whom they provide services or carry out activities that may be affected by a significant cyber threat of the nature of the threat, as well as of any preventive or remedial measures that these natural or legal persons could take in response to this threat;
+6° order the entities concerned to implement the recommendations made following a security audit within a reasonable timeframe;
+7° order the entities concerned to make public aspects of violations of this Act specifically;
+8° where the entity concerned is an essential entity, designate, for a specified period, a supervisory officer with clearly defined tasks to supervise compliance by the entities concerned with the cybersecurity risk management and incident reporting measures referred to in Title 3.
+Where the entity concerned is an essential entity, the binding instructions referred to in paragraph 1 , 2 ° , also concern the measures necessary to prevent or remedy an incident, as well as the deadlines for implementing these measures and reporting on this implementation.
+
+Art. 59. The following administrative fines may be imposed on entities on the basis of Article 51 or 52:
+1° anyone who fails to comply with the information obligations referred to in Article 12 shall be punished with a fine of 500 to 125,000 euros;
+2° any entity which causes negative consequences to a person acting on its behalf as a result of the execution, in good faith and within the scope of its functions, of the obligations arising from this law shall be punished with a fine of 500 to 200,000 euros;
+3° without prejudice to Article 48, § 4, first paragraph , 3°, any person who fails to comply with the control obligations referred to in this Title shall be punished with a fine of 500 to 200,000 euros;
+4° shall be punished with a fine of 500 to 7,000,000 euros or 1.4 percent of the total worldwide annual turnover of the previous financial year of the company to which the significant entity belongs, whichever is the higher, the significant entity that does not comply with the obligations relating to cybersecurity risk management measures and/or incident notification referred to in Title 3;
+5° shall be punished with a fine of 500 to 10,000,000 euros or 2 percent of the total worldwide annual turnover of the previous financial year of the company to which the significant entity belongs, whichever is the higher, the significant entity that does not comply with the obligations relating to cybersecurity risk management measures and/or incident notification referred to in Title 3.
+The administrative fine shall be doubled in the event of a repeat offense for the same facts within three years.
+The concurrence of several breaches may give rise to a single administrative fine proportional to the seriousness of the facts as a whole.
+
+Art. 60. If the requested measures are not taken within the time limit, the following administrative measures may be imposed on essential entities on the basis of Article 52:
+1° request the national cybersecurity authority to temporarily suspend a certification or authorization concerning all or part of the relevant services provided or relevant activities carried out by the entity concerned;
+2° temporarily prohibit any natural person exercising managerial responsibilities at the level of general manager or legal representative in the entity concerned from exercising managerial responsibilities in that entity.
+The temporary suspensions or prohibitions referred to in paragraph 1 shall only be applied until the entity concerned has taken the necessary measures to remedy the deficiencies or comply with the requirements of the competent authority that initiated the application of these enforcement measures.
+
+Art. 61. Any natural person responsible for a critical or important entity or acting as a legal representative of a critical or important entity based on the power to represent it, make decisions on its behalf or exercise control over it has the power to ensure compliance by the entity with this Law. Such persons shall be liable for breaches of their duty to ensure compliance with this Law.
+This Article is without prejudice to the rules on liability applicable to public institutions, as well as the liability of public officials and elected or appointed officials.
+TITLE 5.- Provisions specific to the public administration sector
+
+Art. 62. The administrative measures and fines referred to in Articles 59 and 60 do not apply to entities forming part of the public administration sector.
+
+Art. 63. § 1. The King is empowered to designate an authority as a conformity assessment body for all or part of the entities of the public administration.
+§ 2. The authority referred to in paragraph 1 shall be approved by the national cybersecurity authority, in accordance with the procedures laid down by the King, in order to carry out the periodic conformity assessment referred to in Article 39, paragraph 1 , 1°.
+The approval referred to in paragraph 1 shall relate to one or more of the reference frameworks referred to in Article 39.
+
+Art. 64. The inspection service of the national cybersecurity authority or, where applicable, the sectoral inspection service designated by the King for the public administration sector shall carry out its supervisory tasks while enjoying operational independence from the supervised public administration entities.
+
+Art. 65. Article 47 shall apply to the inspection service referred to in Article 64.
+TITLE 6. - Processing of personal data
+CHAPTER 1. - Principles relating to processing
+
+Art. 66. The definitions of Regulation (EU) 2016/679 shall apply to this Title.
+
+Art. 67. The purposes for which personal data are processed are as follows:
+1° improving cybersecurity by seeking a higher level of protection for networks and information systems, strengthening prevention and security policies, preventing security incidents and defending against cyber threats;
+2° the performance of the tasks of the national cybersecurity authority, in particular the identification of entities, information and awareness-raising of users of information and communication systems, the granting of subsidies, international cooperation between the national cybersecurity authority, competent authorities of other Member States, international cybersecurity forums, ENISA and the European Commission;
+3° the management of cyber crises and cybersecurity incidents;
+4° the performance of the tasks of the national CSIRT referred to in the following articles:
+a) 19, § 1 ; b
+) 21, § 2, paragraph 2, 1° to 3°;
+c) 22, § § 2 to 6;
+d) 37, § § 1 to 3 and § 5;
+5° cooperation, in particular the exchange of information between the national cybersecurity authority,any sectoral authorities, the NCCN and the competent authorities within the framework of the law of 1July 1 , 2011, as well as the authorities referred to in Article 25, § 2, in the context of the implementation of this law and the law of July 1, 2011 ;
+6° cooperation between essential and important entities and the authorities referred to in Title 2, Chapter 1 ; 7
+° sharing of information between the authorities referred to in Article 25, § 5;
+8° continuity of services provided by important or essential entities;
+9° notification of incidents and avoided incidents;
+10° control and supervision of essential and important entities, as well as the preparation, organization, management and monitoring of administrative measures and fines.
+
+Art. 68. The categories of personal data processed by the data controllers are as follows:
+1° for the purpose referred to in Article 67, 1°: identification, connection, location and electronic communications data within the meaning of Article 2, 91°, of the Law of 13 June 2005, of persons concerned by the missions of improving cybersecurity, strengthening prevention and security policies, preventing security incidents and defending against cyber threats referred to in Article 67, 1°;
+2° for the purpose referred to in Article 67, 2°: identification, connection, location and electronic communications data within the meaning of Article 2, 91°, of the Law of 13 June 2005, of persons concerned by the performance of the tasks of the national cybersecurity authority;
+3° for the purpose referred to in Article 67, 3°: identification, connection, location and electronic communications data within the meaning of Article 2, 91°, of the Law of 13 June 2005, of persons affected by cyber crises and cybersecurity incidents;
+4° for the purpose referred to in Article 67, 4°: identification, connection, location and electronic communications data within the meaning of Article 2, 91°, of the Law of 13 June 2005 and electronic communications metadata within the meaning of Article 2, 93°, of the aforementioned Law of 13 June 2005, of persons concerned by the performance of the CSIRT’s tasks;
+5° for the purpose referred to in Article 67, 5°: identification data of persons concerned by cooperation within the framework of the Law of 1 July 2011;
+6° for the purpose referred to in Article 67, 6°: the identification data of the persons concerned by the cooperation;
+7° for the purpose referred to in Article 67, 7°: the identification data of the persons concerned by the sharing of information;
+8° for the purpose referred to in Article 67, 8°: the identification data of the persons concerned by the assurance of continuity of services;
+9° for the purpose referred to in Article 67, 9°: the identification, connection, location and electronic communications data within the meaning of Article 2, 91°, of the Law of 13 June 2005, of the persons concerned by the notification exercise;
+10° for the purpose referred to in Article 67, 10°: the personal data necessary and relevant to the exercise of the control, supervision and sanction missions, of the persons concerned by these controls, this supervision or these sanctions.
+
+Art. 69. The categories of persons whose personal data may be processed are the following:
+1° persons directly participating in the missions entrusted to the national cybersecurity authority under Title 2;
+2° the persons covered by the obligations incumbent on essential and important entities under Title 3;
+3° the persons involved in an incident;
+4° the persons directly involved in the supervision, control and sanction exercises referred to in Title 4.
+
+Art. 70. The following entities are responsible for the processing they carry out to achieve the purposes referred to in Article 67:
+1° the national cybersecurity authority;
+2° the NCCN;
+3° any sectoral authority;
+4° any sectoral inspection service;
+5° the essential and important entities;
+6° the entities providing domain name registration services;
+7° the authorities referred to in Article 23, § 1 , 6°.
+CHAPTER 2. - Retention period
+
+Art. 71. Personal data processed in the context of the processing referred to in this law in order to achieve the purposes set out in Article 67, shall be retained, without prejudice to any possible appeals, by the data controller for five years after the end of the last processing carried out and a maximum of ten years after the first processing carried out.
+CHAPTER 3. - Limitation of the rights of data subjects
+
+Art. 72. § 1. Pursuant to Article 23.1, points a) to e) and h), of Regulation (EU) 2016/679, certain obligations and rights provided for by said regulation are limited or excluded, in accordance with the provisions of this chapter. These limitations or exclusions may not prejudice the essence of fundamental freedoms and rights and must be applied to the extent strictly necessary for the purpose pursued.
+§ 2. Articles 12 to 16, 18 and 19 of the said Regulation shall not apply to the processing of personal data carried out by an authority referred to in Article 15 for the purpose referred to in Article 67, 10°, to the extent that the exercise of the rights enshrined in those Articles would harm the needs of control, supervision or acts preparatory thereto.
+§ 3. The exemption applies to the categories of personal data referred to in Article 68, 10°. This exemption also applies to preparatory acts or procedures aimed at the possible application of an administrative sanction.
+§ 4. The exemption shall apply only during the period in which the person concerned is subject to control, supervision or acts preparatory thereto, to the extent that the exercise of the rights subject to the exemption referred to in this Article would harm the needs of the control, supervision or acts preparatory thereto and, in any case, shall apply only up to one year after the start of control, supervision or acts preparatory thereto.
+The duration of the preparatory acts, referred to in paragraph 1 , during which the articles referred to in paragraph 2 are not applicable, may not exceed one year from the receipt of a request relating to the application of one of the rights enshrined in those articles.
+§ 5. The data controller who does not comply with all the provisions of this Title and in particular Article 73, may not benefit from the exemption.
+
+Art. 73. § 1. The data controller concerned shall give the data subject access to limited information concerning the processing of his or her personal data, provided that this communication does not compromise the achievement of the objectives of this law and in such a way that the data subject is unable to know whether he or she is the subject of an investigation or not, and without being able under any circumstances to rectify, erase, limit, notify, transmit to a third party personal data, or cease any form of processing of said data which is necessary within the framework defined above.
+§ 2. The measure of refusal or limitation of the rights enshrined in the articles referred to in Article 72, § 2, must be lifted:
+1° for measures justified by obligations regarding incident notification, upon closure of the processing of an incident by the authorities referred to in Articles 34 and 38;
+2° for measures justified by the obligations under Title 4, upon closure of the control, supervision or preparatory acts for these carried out by the inspection service, as well as during the period during which the possible sectoral authority processes the documents coming from the inspection service with a view to carrying out proceedings;
+3° at the latest one year from receipt of the request submitted pursuant to the articles referred to in Article 72, § 2, unless a control or supervision is in progress.
+§ 3. The data controller concerned shall also lift the measure of refusal or limitation of the rights enshrined in the articles referred to in Article 72, § 2, as soon as such a measure is no longer necessary to comply with one of the purposes referred to in Article 67.
+§ 4. In all cases of application of paragraphs 2 and 3, the data protection officer shall inform the data subject(s) in writing of the lifting of the measure of refusal or limitation.
+CHAPTER 4. - Limitations to the obligations to notify personal data breaches
+
+Art. 74. The controller concerned is exempt from notifying a personal data breach to one or more specific data subjects, within the meaning of Article 34 of Regulation (EU) 2016/679, subject to the authorisation of the national cybersecurity authority, provided that and to the extent that such individual notification risks compromising the achievement of the purposes referred to in Article 72, § 2.
+TITLE 7. - Final provisions
+CHAPTER 1. - Transitional provision
+
+Art. 75. The King shall set the deadlines within which essential entities shall carry out their first periodic conformity assessments referred to in Article 39.
+CHAPTER 2. - Amending provisions
+Section 1. - Amendments to the Act of 15 April 1994 on the protection of the population and the environment against the dangers arising from ionising radiation and on the Federal Agency for Nuclear Control
+
+Art. 76. In Article 1 of the Law of 15 April 1994 on the protection of the population and the environment against the dangers resulting from ionising radiation and on the Federal Agency for Nuclear Control, as last amended by the Law of 7 February 2024, the words "- "the Law of 7 April 2019": the Law of 7 April 2019 establishing a framework for the security of networks and information systems of general interest for public security;" are replaced by the words "- the NIS2 Law:the law of April 26, 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security;".
+
+Art. 77. In Chapter III, Section 1, of the same Act, Article 15ter, inserted by the Act of 7 April 2019, is replaced by the following:
+"Art. 15ter. The Agency is designated as a sectoral inspection service, within the meaning of the NIS2 Act, for the energy sector, with regard to additional cybersecurity risk management measures applicable to the elements of a nuclear installation intended for the industrial production of electricity and which are used for the transmission of electricity.
+The King shall determine the practical arrangements for the inspections, after consulting the Agency."
+Section 2. - Amendments to the Act of 22 February 1998 establishing the organic status of the National Bank of Belgium
+
+Art. 78. In Article 36/1 of the Law of 22 February 1998 establishing the organic status of the National Bank of Belgium, last amended by the Law of 20 December 2023, 28° is replaced by the following:
+"28° "the NIS2 Law": the Law of 26 April 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security;".
+
+Art. 79. In Article 36/14 of the same law, last amended by the law of 20 December 2023, the following amendments are made:
+1° in paragraph 1 , 20°, the words "to the authority referred to in Article 7, § 1 , of the law of 7 April 2019" are replaced by the words "to the national cybersecurity authority referred to in Article 8, 45°, of the NIS2 law";
+2° in the same paragraph, 20° /1, the words "to the authority referred to in Article 7, § 1 , of the Law of 7 April 2019 establishing a framework for the security of networks and information systems of general interest for public security - NIS Law" are replaced by the words "to the national cybersecurity authority referred to in Article 8, 45°, of the NIS2 Law and to the national CSIRT referred to in Article 8, 46°, of the same Law";
+3° in the same paragraph, 24°, the words "to the authorities referred to in Article 7 of the Law of 7 April 2019 for the purposes of implementing the provisions of the Law of 7 April 2019" are replaced by the words "to the authorities referred to in Article 15 of the NIS2 Law for the purposes of implementing the provisions of the NIS2 Law".
+
+Art. 80. Article 36/47 of the same law, inserted by the law of 7 April 2019, is replaced by the following:
+"Art. 36/47. For the application of the NIS2 law, the Bank is designated as the sectoral authority and sectoral inspection service for entities in the financial sector, with the exception of trading platform operators within the meaning of Article 3, 6°,of the law of 21 November 2017 relating to financial instrument market infrastructures and transposing Directive 2014/65/EU.
+If it deems it useful, the Bank shall share with the ECB as soon as possible relevant information on incident notifications it receives under the NIS2 Act or Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on the digital operational resilience of the financial sector and amending Regulations (EC) No 1060/2009, (EU) No 648/2012, (EU) No 600/2014, (EU) No 909/2014 and (EU) 2016/1011.".
+Section 3. - Amendment of the Law of 2 August 2002 on the supervision of the financial sector and financial services
+
+Art. 81. In Article 75, § 1 , 15°, of the Law of 2 August 2002 on the supervision of the financial sector and financial services, as last amended by the law of 20 July 2020, the words "Article 7 of the law of 7 April 2019 establishing a framework for the security of networks and information systems of general interest for public security" are replaced by the words "Article 15 of the law of 26 April 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security".
+Section 4. - Amendments to the law of 17 January 2003 on the status of the regulator of the Belgian postal and telecommunications sectors
+
+Art. 82. In Article 1 / 1 of the law of 17 January 2003 on the status of the regulator of the Belgian postal and telecommunications sectors, replaced by the law of 21 December 2021, the 1° is replaced by the following:
+"1° Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 concerning measures to ensure a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148;".
+
+Art. 83. In Article 14 of the same Act, as last amended by the Act of 17 December 2023, the following amendments are made:
+1° in paragraph 1 , subparagraph 1 , the words "Act of 7 April 2019 establishing a framework for the security of networks and information systems of general interest for public security" are replaced by the words "Act of 26 April 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security";
+2° in the same paragraph, subparagraph 1 , 3°, the h), is replaced by the following:
+"(h) the law of 26 April 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security, with regard to the tasks assigned to the sectoral authority and the sectoral inspection service for the digital infrastructure sector, with the exception of trusted service providers within the meaning of Article 8, 24°, of the same law;";
+3° in the same paragraph, paragraph 2 is replaced by the following:
+"For the application of the law of April 26, 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security, the Institute is designated as a sectoral authority within the meaning of Article 8, 54°, of the same law and a sectoral inspection service within the meaning of Article 44, § 1 , paragraph 2, of the same law for the digital infrastructure sector, with the exception of trusted service providers within the meaning of Article 8, 24°, of the same law, and for the postal and shipping services sector.".
+Section 5. - Amendments to the law of June 13, 2005 on electronic communications
+
+Art. 84. Article 1 , paragraph 2, of the Law of 13 June 2005 on electronic communications, last amended by the Law of 21 December 2021, is supplemented by 7° worded as follows:
+"7° Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 concerning measures to ensure a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148.".
+
+Art. 85. In Article 2 of the same Act, as last amended by the Act of 20 July 2022, the following amendments are made:
+1° 48/1° is replaced by the following:
+"48/1° "top-level domain name registry": an entity to which a specific top-level domain has been delegated and which is responsible for the administration of the top-level domain, including the registration of domain names falling under the top-level domain and the technical operation of the top-level domain, including the operation of its name servers, the maintenance of its databases and the distribution of the top-level domain's zone files on the name servers, whether these operations are carried out by the entity itself or are subcontracted, but excluding situations where top-level domain names are used by a registry solely for its own use;";
+2° 48/3° is inserted as follows:
+"48/3° "entity providing domain name registration services": a registrar or an agent acting on behalf of registrars, such as a provider or reseller of anonymization or proxy registration services;";
+3° 62/2° and 62/3° are replaced by the following:
+"62/2° "network and information system":
+a) an electronic communications network referred to in 3°;
+b) any device or set of interconnected or related devices, one or more elements of which ensure, in execution of a program, automated processing of digital data, including the digital, electronic or mechanical components of this device allowing in particular the automation of the operational process, remote control, or the obtaining of operating data in real time; or
+c) digital data stored, processed, retrieved or transmitted by the elements referred to in points a) and b) for the purpose of their operation, use, protection and maintenance;
+62/3° "security of networks and information systems": the capacity of networks and information systems to withstand, at a given level of confidence, any event likely to compromise the availability, authenticity, integrity or confidentiality of data stored, transmitted or subject to of a treatment, or of the services that these networks and information systems offer or make accessible;";
+4° 62/4° to 62/8° are inserted as follows:
+"62/4° "security incident": an event compromising the availability, authenticity, integrity or confidentiality of data stored, transmitted or processed, or of the services that networks and information systems offer or make accessible;
+62/5° "cybersecurity": cybersecurity as referred to in Article 2, point 1, of Regulation (EU) 2019/881 of the European Parliament and of the Council of 17 April 2019 on ENISA (European Union Agency for Cybersecurity) and on cybersecurity certification of information and communications technologies, and repealing Regulation (EU) No 526/2013 (Cybersecurity Regulation);
+62/6° "incident handling": all actions and procedures aimed at preventing, detecting, analysing, containing, responding to and remedying an incident;
+62/7° "cyber threat": a cyber threat within the meaning of Article 2, point 8, of Regulation (EU) 2019/881;
+62/8° "significant cyber threat": a cyber threat which, taking into account its technical characteristics,may be considered likely to have a serious impact on the networks and information systems of an entity or the users of the entity's services, causing considerable material, bodily or moral damage;";
+5° the article is supplemented by 94°, worded as follows:
+"94° "digital infrastructure provider": an entity that falls within the digital infrastructure sector, with the exception of trusted service providers, within the meaning of Article 8, 24°, of the law of 26 April 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security.".
+
+Art. 86. In Article 6, 4°, of the same law, replaced by the law of 21 December 2021, the words "networks and services" are replaced by the words "networks and information systems".
+
+Art. 87. In Article 105, § 2, 2°, of the same law, replaced by the law of 17 February 2022, the words "or as an operator of essential services within the meaning of the law of 7 April 2019 establishing a framework for the security of networks and information systems of general interest for public security" are repealed.
+
+Art. 88. In the same law, Article 107/2, inserted by the law of 21 December 2021, is replaced by the following:
+"Art. 107/2. § 1. Without prejudice to the provisions of the law of 26 April 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security, digital infrastructure providers analyze the risks to the security of their networks and information systems. The Institute may establish the procedures for this risk analysis.
+§ 2. Without prejudice to Regulation (EU) 2016/679 of the European Parliament and of the Council of 27 April 2016 on the protection of natural persons with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC, hereinafter referred to as the GDPR and the law of 30 July 2018 on the protection of individuals with regard to the processing of personal data, hereinafter referred to as the law of 30 July 2018, operators shall at least:
+1° guarantee that only persons authorized to act for legally authorized purposes may have access to the personal data they process;
+2° protect personal data stored or transmitted against accidental or unlawful destruction, accidental loss or alteration and unauthorized or unlawful storage, processing, access and disclosure; and
+3° ensure the implementation of a security policy relating to the processing of personal data.
+The Institute is authorized to verify the measures taken by these operators and to issue recommendations on best practices regarding the level of security that these measures should achieve.
+§ 3. Operators shall take all necessary measures, including preventive measures, to ensure the fullest possible availability of voice communications services and internet access services in the event of exceptional network failure or force majeure.
+The King, on the proposal of the Institute or on its own initiative, upon its advice, may specify these measures.
+§ 4. Operators shall offer their subscribers, taking into account technical possibilities, adequate secure services free of charge, in order to enable end users to avoid any form of unwanted electronic communication.".
+
+Art. 89. In the same law, Article 107/3, inserted by the law of 21 December 2021, is replaced by the following:
+
+Art. 107/3. § 1. In the event of a significant cyber threat, the digital infrastructure provider shall inform the Institute of the cyber threat, of any protective or corrective measures that its users may take as well as of the measures that it has taken or plans to take.
+The Institute may specify the cases in which information must be notified as well as the procedures for this communication.
+§ 2. In the event of a personal data breach, the operator of electronic communications services shall immediately notify the Data Protection Authority, which shall immediately notify the Institute.
+When the personal data breach is likely to negatively affect the personal data or privacy of a subscriber or individual, the electronic communications service operator shall also promptly notify the subscriber or individual concerned of the breach.
+The Data Protection Authority shall examine whether the operator complies with this obligation and inform the Institute where it considers that this is not the case.
+Notification of a personal data breach to the subscriber or individual concerned is not necessary if the electronic communications service operator has proven, to the satisfaction of the Institute, that it has implemented appropriate technological protection measures and that these have been applied to the data concerned by the said breach. Such technological protection measures render the data incomprehensible to any person who is not authorized to have access to it.
+Without prejudice to the obligation of the electronic communications service operator to inform the subscribers and individuals concerned, if this operator has not already notified the subscriber or individual of the personal data breach, the Institute may, at the request of the Data Protection Authority data,after considering the potentially negative effects of this violation, require that he comply.
+The notification to the subscriber or individual shall at least describe the nature of the personal data breach and the contact points from which additional information may be obtained and shall recommend measures to be taken to mitigate the possible negative consequences of the personal data breach.
+The notification to the Data Protection Authority shall further describe the consequences of the personal data breach and the measures proposed or taken by the operator of electronic communications services to address them.
+§ 3. Subject to technical implementing measures from the European Commission in accordance with Article 4(5) of Directive 2002/58/EC, and after consulting the Data Protection Authority, the Institute may adopt guidelines and, where appropriate, issue instructions specifying the circumstances in which operators of electronic communications services are required to notify the personal data breach.
+Subject to technical implementing measures from the European Commission in accordance with Article 4, point 5, of Directive 2002/58/EC, and after consulting the Institute, the Data Protection Authority may adopt guidelines and, where appropriate, issue instructions specifying the format applicable to this notification and its transmission procedure.
+Operators of electronic communications services shall maintain an inventory of personal data breaches, including their context, their effects and the measures taken to remedy them, so that the Data Protection Authority and the Institute can verify compliance with the provisions of paragraph 2. This inventory shall only include the information necessary for this purpose.".
+
+Art. 90. In the same law, Article 107/4, inserted by the law of 21 December 2021, is replaced by the following:
+"Art. 107/4. § 1 . This Article applies without prejudice to the provisions of the Law of 26 April 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security, in particular with regard to the supervisory powers granted to the sectoral authority or the sectoral inspection service.
+§ 2. The Institute may give binding instructions within the framework of Articles 107/2, 107/3 as well as Articles 30 and 33 of the aforementioned Law of 26 April 2024 to a digital infrastructure provider, including the measures required to remedy a security incident or prevent such an incident from occurring when a significant cyber threat has been identified,as well as the deadlines for implementing these instructions.
+§ 3. Within the framework of the supervision of Articles 107/2 and 107/3 as well as Articles 30 and 33 of the Law of 26 April 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security, the Institute may subject the digital infrastructure provider to:
+a) on-site inspections and remote checks, including random checks carried out by trained professionals;
+b) regular and targeted security audits carried out by an independent body or by the Institute;
+c) ad hoc audits;
+d) security scans based on objective, non-discriminatory, fair and transparent risk assessment criteria, if necessary with the cooperation of the digital infrastructure provider;
+e) requests for information necessary for the assessment of the cybersecurity risk management measures adopted by the digital infrastructure provider concerned;
+(f) requests for access to data, documents and any information that the Institute considers necessary for the performance of its supervisory tasks; (
+g) requests for evidence of the implementation of cybersecurity policies, such as the results of security audits carried out by a qualified auditor and the corresponding underlying evidence.
+The targeted security audits referred to in paragraph 1 , b), shall be based on risk assessments carried out by the Institute or the audited entity, or on other available risk-related information.
+Where the security audit referred to in paragraph 1 , b), is carried out by an independent body, the digital infrastructure provider shall propose one or more bodies to the Institute for approval. The Institute shall give its approval where the independent body is qualified to carry out the audit and is independent of the digital infrastructure provider. In the absence of agreement from the Institute within the time limit it set at the time of the request, the Institute shall designate the independent body itself. The latter shall provide the Institute with the full report and the results of this audit. The costs of the audit shall be borne by the digital infrastructure provider, unless the Institute decides otherwise in duly justified cases.
+When exercising its powers under paragraph 1, e), f) or g), the Institute shall specify the purpose of the request and the information required.
+The Institute may determine the terms and conditions for the provision by the digital infrastructure provider of information concerning the risk analysis.
+At the request of the Institute, a digital infrastructure provider participates in an exercise relating to the security of networks and information systems or organizes such an exercise.
+At the request of the Institute and as part of the management of security incidents, a digital infrastructure provider provides the Institute with a permanently available point of contact.
+§ 4. At the request of the Institute and to investigate a case of non-compliance with Articles 30 and 33 of the Law of 26 April 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security or an implementing measure as well as its effect on the security of networks and information systems, the digital infrastructure provider grants it access to any element of its network.
+§ 5. Without prejudice to the powers of the national cybersecurity authority, the Institute coordinates initiatives relating to the security of public electronic communications networks and publicly available electronic communications services.
+It oversees the detection, observation and analysis of security issues, and can provide users with information on these issues.
+§ 6. Failure by a digital infrastructure provider to comply with this Article or with a decision of the Institute taken on the basis of this Article may be subject to the administrative measures or fines referred to in Title 4, Chapter 2, of the Law of 26 April 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security.".
+
+Art. 91. In Article 126/3, § 3, l), of the same Law, inserted by the Law of 20 July 2022, the words "essential essential service providers designated on the basis of the Law of 7 April 2019 establishing a framework for the security of networks and information systems of general interest for public security" are replaced by the words "essential entities within the meaning of the Law of 26 April 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security".
+
+Art. 92. In Article 164/1 of the same law, inserted by the law of 10 July 2012, the following amendments are made:
+1° the words "Internet domain name registrar of the top-level domain" are replaced by the words "registry of top-level domain names of the top-level domain";
+2° in 4°, the words "domain name registrar" are replaced by the words "registry of top-level domain names".
+3° in 4°,the words "Internet domain name registry" are replaced by the words "top-level domain name registry";
+4° to 5°, in the Dutch text, the word "topniveaudomein" is replaced by the word "topleveldomein".
+
+Art. 93. In Article 164/2 of the same Act, the following amendments are made:
+1° the words "Internet domain name registrar" are replaced each time by the words "top-level domain name registry";
+2° in the Dutch text, the word "topniveaudomein" is replaced each time by the word "topleveldomein".
+
+Art. 94. In Title VI, Chapter III of the same law, an Article 164/3 is inserted, worded as follows:
+"Art. 164/3. § 1. Top -level domain name registries and entities providing domain name registration services shall collect, with all due diligence, domain name registration data and keep them accurate and complete in a specialised database in accordance with Union law on the protection of personal data.
+§ 2. The domain name registration data referred to in paragraph 1 shall contain the information necessary to identify and contact domain name holders and the contact points that manage domain names falling under top-level domains. This information shall include at least the following:
+1° the domain name;
+2° the registration date;
+3° the domain name holder's name, email address and telephone number;
+4° the postal address email address and telephone number for contacting the point of contact that manages the domain name, if these contact details are different from those of the holder.
+After consulting the Institute, the King may order providers and resellers of anonymization or proxy registration services to share domain name registration data with registrars and define the terms and conditions for doing so.
+Compliance with the obligations referred to in this article must not result in unnecessary duplication of the collection of domain name registration data from the person concerned. To this end, top-level domain name registries and entities providing domain name registration services shall cooperate with each other.
+After consulting the Institute, the King may specify the terms and conditions for this cooperation.
+§ 2. Top-level domain name registries and entities providing domain name registration services shall have policies and procedures, including verification procedures,aimed at ensuring that the databases referred to in paragraph 1 , subparagraph 1, contain accurate and complete information. These policies and procedures are made available to the public.
+If the domain name registration data listed in paragraph 1 , subparagraph 2, for a domain name is incorrect, inaccurate or incomplete, top-level domain name registries and entities providing domain name registration services shall immediately block the operation of that domain name until the domain name holder corrects the registration data so that it becomes correct, accurate and complete.
+If the domain name holder fails to do so within the time limit set by the top-level domain name registry or entity providing domain name registration services, the domain name shall be canceled.
+Transfer of a blocked domain name to another entity providing domain name registration services is prohibited.
+§ 3. Top-level domain name registries and entities providing domain name registration services shall make public, without undue delay after the registration of a domain name, domain name registration data that are not personal data.
+§ 4. Upon duly substantiated request, top-level domain name registries and entities providing domain name registration services shall provide the data listed in paragraph 1, subparagraph 2, free of charge to legitimate access applicants, without undue delay and in any event within seventy-two hours of receipt of any request for access, or twenty-four hours of receipt of any request for access in urgent cases. Legitimate access
+applicants include any natural or legal person who makes a request for the examination, establishment, exercise or defence of criminal, civil or other provisions of Union or Belgian law.
+The following are considered legitimate access applicants:
+1° any person in the context of violations of intellectual property rights or related rights;
+2° the Institute;
+3° the CCB;
+4° the national CSIRT; 5
+° the police services;
+6° the judicial authorities;
+7° the intelligence and security services;
+8° the FPS Economy;
+9° the FPS Finance.
+After consulting the Institute, the King may add additional legitimate access applicants to this list.
+Top-level domain name registries and entities providing domain name registration services,provide the applicant with the opportunity to easily submit their application.
+An emergency is considered if the use of a domain name may lead to life-threatening situations and/or irreparable damage.
+Any refusal of a duly motivated request shall be justified.
+The policies and procedures for disclosing this data shall be made public.
+Top-level domain name registries and entities providing domain name registration services may not inform the holder of a domain name when a request referred to in paragraph 1 has been made.
+§ 5. The Institute may issue binding instructions to a top-level domain name registry or an entity providing domain name registration services, with a view to compliance with this article.
+§ 6. If a top-level domain name registry or an entity providing domain name registration services fails to comply with this Article, a Royal Decree adopted pursuant to this Article, or a binding instruction issued by the Institute, the Institute may impose the administrative measures or fines referred to in Chapter 2 of the Law of 26 April 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security.".
+Section 6. - Amendments to the Law of 21 November 2017 on financial instrument market infrastructures and transposing Directive 2014/65/EU
+
+Art. 95. In Article 71 of the Law of 21 November 2017 on financial instrument market infrastructures and transposing Directive 2014/65/EU, amended by the Law of 7 April 2019, the words "and Title 2 of the Law of April 7, 2019 establishing a framework for the security of networks and information systems of general interest for public security. For the execution of the aforementioned missions concerning the law of 7 April 2019, the FSMA may nevertheless charge a specialized external service provider with the execution of specific control tasks or obtain the assistance of such a service provider" are repealed.
+
+Art. 96. Article 79, § 4, of the same law, inserted by the law of 7 April 2019, is repealed.
+CHAPTER 3. - Repeal provision
+
+Art. 97. The law of 7 April 2019 establishing a framework for the security of networks and information systems of general interest for public security is repealed.
+CHAPTER 4. - Entry into force
+
+Art. 98. This law enters into force on 18 October 2024.
+We promulgate this law, order that it be affixed to the Seal of the State and published in the Belgian Official Gazette.
+
+Given in Brussels, 26 April 2024.
+PHILIPPE
+By the King:
+The Prime Minister,
+A. DE CROO
+The Minister of the Interior,
+A. VERLINDEN
+Sealed with the seal of the State:
+The Minister of Justice,
+P. VAN TIGCHELT
+_______
+Note
+(1) Chambers of Representatives (www.lachambre.be):
+Documents: 55 3862
+Full report: April 18, 2024.
+
+
+Annex I to the law of April 26, 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security
+
+Annex I - Highly critical sectors
+Sector
+Subsector
+Entity type
+1. Energy	a) Electricity	- Electricity undertakings within the meaning of Article 2(57) of Directive (EU) 2019/944 of the European Parliament and of the Council of 5 June 2019 concerning common rules for the internal market in electricity and amending Directive 2012/27/EU, which perform the function of "supply" within the meaning of Article 2(12) of that Directive
+ 	 	- Distribution system operators within the meaning of Article 2(29) of Directive (EU) 2019/944 of the European Parliament and of the Council of 5 June 2019 concerning common rules for the internal market in electricity and amending Directive 2012/27/EU
+ 	 	- Transmission system operators within the meaning of Article 2(35) of Directive (EU) 2019/944 of the European Parliament and of the Council of 5 June 2019 concerning common rules for the internal market in electricity and amending Directive 2012/27/EU
+ 	 	- Producers within the meaning of Article 2(38) of Directive (EU) 2019/944 of the European Parliament and of the Council of 5 June 2019 concerning common rules for the internal market in electricity and amending Directive 2012/27/EU
+ 	 	- Designated electricity market operators within the meaning of Article 2(8) of Regulation (EU) 2019/943 of the European Parliament and of the Council of 5 June 2019 on the internal market in electricity
+ 	 	- Market participants within the meaning of Article 2(25) of Regulation (EU) 2019/943 providing aggregation, demand response or energy storage services within the meaning of Article 2(18), (20) and (59) of Directive (EU) 2019/944 of the European Parliament and of the Council of 5 June 2019 concerning common rules for the internal market in electricity and amending Directive 2012/27/EU
+ 	 	- Charging point operators who are responsible for the management and operation of a charging point, which provides a charging service to end users, including in the name and on behalf of a mobility service provider
+ 	 b) Heating and cooling network	- Heat network or cooling network operators within the meaning of Article 2, point 19, of Directive (EU) 2018/2001 of the European Parliament and of the Council of 11 December 2018 on the promotion of the use of energy from renewable sources
+ 	 c) Oil	- Oil pipeline operators
+ 	 	- Operators of oil production, refining, processing, storage and transportation facilities
+ 	 	- Central storage entities within the meaning of Article 2(f) of Council Directive 2009/119/EC of 14 September 2009 requiring Member States to maintain a minimum level of stocks of crude oil and/or petroleum products
+ 	 d) Gas	- Supply companies within the meaning of Article 2, point 8, of Directive 2009/73/EC of the European Parliament and of the Council of 13 July 2009 concerning common rules for the internal market in natural gas and repealing Directive 2003/55/EC
+ 	 	- Distribution system operators within the meaning of Article 2, point 6, of Directive 2009/73/EC of the European Parliament and of the Council of 13 July 2009 concerning common rules for the internal market in natural gas and repealing Directive 2003/55/EC
+ 	 	- Transmission system operators within the meaning of Article 2, point 4, of Directive 2009/73/EC of the European Parliament and of the Council of 13 July 2009 concerning common rules for the internal market in natural gas and repealing Directive 2003/55/EC
+ 	 	- Storage facility operators within the meaning of Article 2, point 10, of Directive 2009/73/EC of the European Parliament and of the Council of 13 July 2009 concerning common rules for the internal market in natural gas and repealing Directive 2003/55/EC
+ 	 	- LNG installation operators within the meaning of Article 2, point 12, of Directive 2009/73/EC of the European Parliament and of the Council of 13 July 2009 concerning common rules for the internal market in natural gas and repealing Directive 2003/55/EC
+ 	 	- Natural gas undertakings within the meaning of Article 2, point 1, of Directive 2009/73/EC of the European Parliament and of the Council of 13 July 2009 concerning common rules for the internal market in natural gas and repealing Directive 2003/55/EC
+ 	 	- Operators of natural gas refining and processing facilities
+ 	 e) Hydrogen
+- Operators of hydrogen production, storage and transport systems
+2. Transport	a) Air transport	- Air carriers within the meaning of Article 3(4) of Regulation (EC) No 300/2008 of the European Parliament and of the Council of 11 March 2008 establishing common rules in the field of civil aviation security and repealing Regulation (EC) No 2320/2002, used for commercial purposes
+ 	 	- Airport managing bodies within the meaning of Article 2(2) of Directive 2009/12/EC of the European Parliament and of the Council of 11 March 2009 on airport charges, airports within the meaning of Article 2(1) of that Directive, including core network airports listed in Section 2 of Annex II to Regulation (EU) No 1315/2013 of the European Parliament and of the Council of 11 December 2013 on Union guidelines for the development of the trans-European transport network and repealing Decision No 661/2010/EU, and entities operating ancillary facilities at airports
+ 	 	- Air traffic control services within the meaning of Article 2(1) of Regulation (EC) No 549/2004 of the European Parliament and of the Council of 10 March 2004 laying down the framework for the creation of the Single European Sky
+ 	 b) Rail transport	- Infrastructure managers within the meaning of Article 3(2) of Directive 2012/34/EU of the European Parliament and of the Council of 21 November 2012 establishing a single European railway area
+ 	 	- Railway undertakings within the meaning of Article 3(1) of Directive 2012/34/EU of the European Parliament and of the Council of 21 November 2012 establishing a single European railway area, including service facility operators within the meaning of Article 3(12) of that Directive
+ 	 (c) Water transport	- Inland waterway, sea and coastal passenger and freight transport companies, as defined for the maritime transport sector in Annex I to Regulation (EC) No 725/2004 of the European Parliament and of the Council of 31 March 2004 on enhancing ship and port facility security, excluding ships operated individually by these companies
+ 	 	- Port managing bodies within the meaning of Article 3(1) of Directive 2005/65/EC of the European Parliament and of the Council of 26 October 2005 on enhancing port security, including port facilities within the meaning of Article 2(11) of Regulation (EC) No 725/2004 of the European Parliament and of the Council of 31 March 2004 on enhancing ship and port facility security, as well as entities operating infrastructure and equipment within ports
+ 	 	- Vessel traffic service (VTS) operators within the meaning of Article 3(o) of Directive 2002/59/EC of the European Parliament and of the Council of 27 June 2002 establishing a Community vessel traffic monitoring and information system and repealing Council Directive 93/75/EEC
+ 	 d) Road transport	- Road authorities within the meaning of Article 2(12) of Commission Delegated Regulation (EU) 2015/962 of 18 December 2014 supplementing Directive 2010/40/EU of the European Parliament and of the Council with regard to the provision of real-time traffic information services throughout the Union, responsible for the control of traffic management, excluding public entities for which traffic management or the operation of intelligent transport systems constitutes a non-core part of their general activity
+ 	 	- Operators of intelligent transport systems within the meaning of Article 4(1) of Directive 2010/40/EU of the European Parliament and of the Council of 7 July 2010 on the framework for the deployment of intelligent transport systems in the field of road transport and interfaces with other modes of transport
+3. Banking sector	 	 - Credit institutions within the meaning of Article 4, point 1, of Regulation (EU) No 575/2013 of the European Parliament and of the Council of 26 June 2013 on prudential requirements for credit institutions and investment firms and amending Regulation (EU) No 648/2012
+4. Financial market infrastructures	 	 - Operators of trading venues within the meaning of Article 4(24) of Directive 2014/65/EU of the European Parliament and of the Council of 15 May 2014 on markets in financial instruments and amending Directive 2002/92/EC and Directive 2011/61/EU
+ 	 	- Central counterparties within the meaning of Article 2(1) of Regulation (EU) No 648/2012 of the European Parliament and of the Council of 4 July 2012 on OTC derivatives, central counterparties and trade repositories
+5. Health	 	 - Healthcare providers within the meaning of Article 3(g) of Directive 2011/24/EU of the European Parliament and of the Council of 9 March 2011 on the application of patients' rights in cross-border healthcare
+ 	 	- European Union reference laboratories referred to in Article 15 of Regulation (EU) 2022/2371 of the European Parliament and of the Council of 23 November 2022 concerning serious cross-border threats to health and repealing Decision No 1082/2013/EU
+ 	 	- Entities carrying out research and development activities in the field of medicinal products within the meaning of Article 1 , point 2, of Directive 2001/83/EC of the European Parliament and of the Council of 6 November 2001 on the Community code relating to medicinal products for human use
+ 	 	- Entities manufacturing basic pharmaceutical products and pharmaceutical preparations within the meaning of Annex I, Section C, Division 21 of Regulation (EC) No 1893/2006 of the European Parliament and of the Council of 20 December 2006 establishing the statistical classification of economic activities NACE Rev. 2 and amending Council Regulation (EEC) No 3037/90 and certain EC Regulations relating to specific statistical domains
+ 	 	- Entities manufacturing medical devices considered critical in the event of a public health emergency (list of critical medical devices in the event of a public health emergency) within the meaning of Article 22 of Regulation (EU) 2022/123 of the European Parliament and of the Council of 25 January 2022 on a strengthened role of the European Medicines Agency in crisis preparedness and management for medicinal products and medical devices
+6. Drinking water	 	 - Suppliers and distributors of water intended for human consumption within the meaning of Article 2(1)(a) of Directive (EU) 2020/2184 of the European Parliament and of the Council of 16 December 2020 on the quality of water intended for human consumption, excluding distributors for whom the distribution of water intended for human consumption constitutes a non-essential part of their general activity of distribution of other products and goods
+7. Wastewater	 	 - Undertakings collecting, discharging or treating urban waste water, domestic waste water or industrial waste water within the meaning of Article 2(1), (2) and (3) of Council Directive 91/271/EEC of 21 May 1991 concerning urban waste water treatment, excluding undertakings for which the collection, discharge or treatment of urban waste water, domestic waste water or industrial waste water constitutes a non-essential part of their general business
+8. Digital infrastructure	 	 - Internet exchange point providers
+ 	 	- DNS service providers, excluding domain name root server operators
+ 	 	- Top-level domain name registries
+ 	 	- Cloud computing service providers
+ 	 	- Data center service providers
+ 	 	- Content delivery network providers
+ 	 	- Trusted service providers
+ 	 	- Providers of public electronic communications networks
+ 	 	- Providers of publicly available electronic communications services
+9. ICT service management (intercompany)	 	 - Managed Service Providers
+ 	 	- Managed Security Service Providers
+10. Public administration	 	 - Public administration entities that depend on the federal state
+ 	 	- Entities of the public administration which depend on the federated entities, identified in accordance with Article 11, § 2 of the law
+ 	 	- Emergency zones within the meaning of Article 14 of the Law of 15 May 2007 on civil security or the Fire and Emergency Medical Aid Service of the Brussels-Capital Region created by the Ordinance of 19 July 1990 establishing a Fire and Emergency Medical Aid Service of the Brussels-Capital Region
+11. Space	 	 - Operators of terrestrial infrastructure, owned, managed and operated by Member States or by private parties, which support the provision of space services, excluding providers of public electronic communications networks
+
+Seen to be annexed to the law of April 26, 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security
+PHILIPPE
+By the King:
+The Prime Minister,
+A. DE CROO
+The Minister of the Interior,
+A. VERLINDEN
+
+
+Annex II to the law of April 26, 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security
+
+Annex II - Other critical sectors
+Sector
+Subsector
+Entity type
+1. Postal and shipping services	 	 - Postal service providers within the meaning of Article 2, point 1a), of Directive 97/67/EC of the European Parliament and of the Council of 15 December 1997 on common rules for the development of the internal market of Community postal services and the improvement of quality of service, including dispatch service providers
+2. Waste management	 	 - Undertakings carrying out waste management operations within the meaning of Article 3(9) of Directive 2008/98/EC of the European Parliament and of the Council of 19 November 2008 on waste and repealing certain Directives, excluding undertakings for which waste management is not the main economic activity
+3. Manufacture, production and distribution of chemical products	 	 - Undertakings engaged in the manufacture of substances and the distribution of substances or mixtures within the meaning of Article 3(9) and (14) of Regulation (EC) No 1907/2006 of the European Parliament and of the Council of 18 December 2006 concerning the Registration, Evaluation, Authorisation and Restriction of Chemicals (REACH), establishing a European Chemicals Agency, amending Directive 1999/45/EC and repealing Council Regulation (EEC) No 793/93 and Commission Regulation (EC) No 1488/94 as well as Council Directive 76/769/EEC and Commission Directives 91/155/EEC, 93/67/EEC, 93/105/EC and 2000/21/EC and undertakings engaged in the production of articles within the meaning of Article 3(9) 3), of the said regulation, from substances or mixtures
+4. Production, processing and distribution of foodstuffs	 	 - Food businesses within the meaning of Article 3(2) of Regulation (EC) No 178/2002 of the European Parliament and of the Council of 28 January 2002 laying down the general principles and requirements of food law, establishing the European Food Safety Authority and laying down procedures in matters of food safety which carry out wholesale distribution and industrial production and processing activities
+5. Manufacturing	(a) Manufacture of medical devices and in vitro diagnostic medical devices	- Entities manufacturing medical devices within the meaning of Article 2(1) of Regulation (EU) 2017/745 of the European Parliament and of the Council of 5 April 2017 on medical devices, amending Directive 2001/83/EC, Regulation (EC) No 178/2002 and Regulation (EC) No 1223/2009 and repealing Council Directives 90/385/EEC and 93/42/EEC and entities manufacturing in vitro diagnostic medical devices within the meaning of Article 2(2) of Regulation (EU) 2017/746 of the European Parliament and of the Council of 5 April 2017 on in vitro diagnostic medical devices and repealing Directive 98/79/EC and Commission Decision 2010/227/EU, with the exception of entities manufacturing medical devices listed in the Annex I, point 5, fifth indent, of this Directive
+ 	 (b) Manufacture of computer, electronic and optical products	- Enterprises carrying out one of the economic activities referred to in Annex I, Section C, Division 26 of Regulation (EC) No 1893/2006 of the European Parliament and of the Council of 20 December 2006 establishing the statistical classification of economic activities NACE Rev. 2 and amending Council Regulation (EEC) No 3037/90 and certain EC Regulations relating to specific statistical domains
+ 	 (c) Manufacture of electrical equipment	- Enterprises carrying out one of the economic activities referred to in Annex I, Section C, Division 27 of Regulation (EC) No 1893/2006 of the European Parliament and of the Council of 20 December 2006 establishing the statistical classification of economic activities NACE Rev. 2 and amending Council Regulation (EEC) No 3037/90 and certain EC Regulations relating to specific statistical domains
+ 	 (d) Manufacture of machinery and equipment nec	- Enterprises carrying out one of the economic activities referred to in Annex I, Section C, Division 28 of Regulation (EC) No 1893/2006 of the European Parliament and of the Council of 20 December 2006 establishing the statistical classification of economic activities NACE Rev. 2 and amending Council Regulation (EEC) No 3037/90 and certain EC Regulations relating to specific statistical domains
+ 	 (e) Construction of motor vehicles, trailers and semi-trailers	- Enterprises carrying out one of the economic activities referred to in Annex I, Section C, Division 29 of Regulation (EC) No 1893/2006 of the European Parliament and of the Council of 20 December 2006 establishing the statistical classification of economic activities NACE Rev. 2 and amending Council Regulation (EEC) No 3037/90 and certain EC Regulations relating to specific statistical domains
+ 	 (f) Manufacture of other transport equipment	- Enterprises carrying out one of the economic activities referred to in Annex I, Section C, Division 30 of Regulation (EC) No 1893/2006 of the European Parliament and of the Council of 20 December 2006 establishing the statistical classification of economic activities NACE Rev. 2 and amending Council Regulation (EEC) No 3037/90 and certain EC Regulations relating to specific statistical domains
+6. Digital Suppliers	 	 - Online marketplace providers
+ 	 	- Online search engine providers
+ 	 	- Providers of social networking service platforms
+7. Research	 	 - Research organizations
+
+Seen to be annexed to the law of April 26, 2024 establishing a framework for the cybersecurity of networks and information systems of general interest for public security
+PHILIPPE
+By the King:
+The Prime Minister,
+A. DE CROO
+The Minister of the Interior,
+A. VERLINDEN
