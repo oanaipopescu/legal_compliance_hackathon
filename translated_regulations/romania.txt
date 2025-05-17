@@ -1,0 +1,1018 @@
+EMERGENCY ORDINANCE No. 155 of December 30, 2024
+on the establishment of a framework for the cybersecurity of networks and information systems in the national civil cyberspace
+ISSUER	
+GOVERNMENT OF ROMANIA
+Published in  the OFFICIAL GAZETTE no. 1332 of December 31, 2024
+
+
+
+
+Taking into account the fact that the rapid evolution and adoption of emerging technologies create new types of interdependencies and expose the state's critical infrastructure to complex, previously unforeseen risks, likely to generate significant effects on cybersecurity, effects that also extend to authorities and institutions in public administration,
+considering that the diversification and use of services provided in the online environment have experienced a major acceleration due to a set of factors, including the Russian-Ukrainian conflict, the COVID-19 pandemic, the development and globalization of the business environment, as well as the reduction of costs for accessing new markets, have generated both benefits and a new spectrum of threats, risks and vulnerabilities related to cybersecurity, vulnerabilities that are intrinsically associated with smart technologies, such as 5G networks, the Internet of Things (IoT) and artificial intelligence (AI),
+taking into account the fact that since the outbreak of the armed conflict in the vicinity of the territory of Romania, an intensified use of cyber attacks has been observed as part of military operations, with cross-border effects that also affect states not directly involved in the conflict, for example, the cyber attack on the KA-SAT satellite communications network, operated by the VIASAT company, the effects of which have extended to the European level, the impact also being felt in Romania,
+also mentioning the involvement of new cyber actors in the conflict, including hacker groups supporting one of the camps involved in the conflicts, such as the Killnet Group, which carried out cyber attacks directed against essential infrastructure and services in European Union member states supporting Ukraine, including Romania,
+taking into account the increasing level of digitalization and interconnection of information systems, combined with the development of the capabilities of malicious actors in the online environment, which has led to an intensification of incidents that generate a significant impact on infrastructures in areas of critical importance by compromising the supply chain,
+highlighting major incidents, such as the one in the first quarter of 2024, which affected 26 hospitals, nationally, through a managed services provider, with a direct impact on vital services offered to the population, which revealed the limits of the coverage of current legislation in the field of cybersecurity and the need to implement updated European regulations regarding supply chain security and the imposition of obligations on the management of entities, in order to increase their level of resilience, in correlation with their level of risk in a societal plan,
+considering that the prompt adoption of the measures and mechanisms provided for by the NIS2 Directive becomes imperative for increasing Romania's resilience to cyber threats, given the crucial role of this directive in strengthening national defense and response capabilities to cyber incidents, and also that the application of the provisions of the NIS2 Directive contributes to Romania's alignment with international standards, thus strengthening the national capacity to react effectively to regional and global developments in the field of cybersecurity,
+taking into account the fact that the aspects presented constitute an objective, quantifiable, extraordinary state of affairs, independent of the will of the Government, which endangers the public interest and whose regulation cannot be postponed,
+pursuant to art. 115 paragraph (4) of the Constitution of Romania, republished ,
+The Government of Romania adopts this emergency ordinance.
+Chapter I General provisions
+Section 1 Object and purpose
+Article 1
+This emergency ordinance establishes the legal and institutional framework, measures and mechanisms necessary to ensure a high common level of cybersecurity at national level.
+Article 2
+(1) The purpose of this emergency ordinance is:
+a) establishing cybersecurity risk management measures for the national civil cyberspace and incident reporting obligations for essential and important entities;
+b) establishing the framework for cooperation at national level and participation at European and international level in the field of ensuring cybersecurity;
+c) the designation of the National Directorate for Cyber ​​Security, hereinafter referred to as DNSC, as the competent authority responsible for cybersecurity and for the tasks of supervising and ensuring compliance with the measures for a high common level of cybersecurity, as well as other public or private law entities with powers and responsibilities in applying the provisions of this emergency ordinance;
+d) designation of the single point of contact at national level and the national cybersecurity incident response team.
+(2) This emergency ordinance does not apply to institutions in the field of defense, public order and national security, according to the provisions of art. 6 of Law no. 51/1991 on the national security of Romania, republished, with subsequent amendments and completions, the Ministry of Foreign Affairs, the Office of the National Register of State Secret Information and entities with powers in the field of law enforcement, including the prevention, investigation, detection and prosecution of crimes. The information and communication systems that circulate classified information are also exempted from the application of this emergency ordinance.
+(3) Entities to which Regulation (EU) 2022/2554 of the European Parliament and of the Council of 14 December 2022 on digital operational resilience of the financial sector and amending Regulations (EC) No 1060/2009, (EU) No 648/2012, (EU) No 600/2014, (EU) No 909/2014 and (EU) 2016/1011, hereinafter referred to as the DORA Regulation, apply shall be subject only to the provisions of Articles 5-10 and 18 .
+(4) By way of exception to paragraph (2) , in the event that entities within them act as trusted service providers, the institutions in the field of defense, public order and national security, the Ministry of Foreign Affairs, as well as the Office of the National Register of State Secret Information shall ensure the achievement of a high common level of cybersecurity by applying Law no. 58/2023 on cybersecurity and defense of Romania, as well as for the amendment and completion of certain normative acts.
+(5) This emergency ordinance shall apply without prejudice to the provisions of Law No. 506/2004 on the processing of personal data and the protection of privacy in the electronic communications sector, as subsequently amended and supplemented, Regulation (EU) 2016/679 on the protection of individuals with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC ( General Data Protection Regulation), Law No. 286/2009 on the Criminal Code , as subsequently amended and supplemented, and the legal provisions on the resilience of critical entities.
+Section 2 Principles and definitions
+Article 3
+(1) In applying this emergency ordinance, the following principles shall be observed:
+a) the principle of responsibility and awareness - consists of the continuous effort made by public and private law entities to raise awareness of the individual role and responsibility for achieving a high common level of cybersecurity at the national level;
+b) the principle of proportionality - consists in ensuring a balance between the risks to which networks and information systems are subject and the security measures implemented;
+c) the principle of cooperation and coordination - consists of timely exchange of information regarding security risks to networks and information systems and ensuring a synchronized response to incidents;
+d) the principle of minimizing effects - in the event of an incident, measures are taken to avoid amplifying or extending the effects to other networks and IT systems;
+e) the principle of satisfying the public interest - the aim is to satisfy the public interest before the individual or group interest.
+(2) In the application of this Emergency Ordinance, confidential information and information concerning trade secrets may be exchanged with the European Commission and other authorities. The exchange of information shall be limited to relevant information, proportionate to the purpose pursued. The exchange of information shall preserve the confidentiality of that information and protect the security and commercial interests of the entities concerned.
+Article 4
+For the purposes of this emergency ordinance, the terms and expressions below have the following meanings:
+a) cyber threat means a threat, as defined in art. 2 letter f) of Government Emergency Ordinance no. 104/2021 on the Establishment of the National Cyber ​​Security Directorate, approved with amendments and completions by Law no. 11/2022 , with subsequent amendments;
+b) significant cyber threat means a cyber threat that can be assumed, based on its technical characteristics, to have the potential to seriously affect the network and information systems of an entity or the users of the services provided by the entity, causing considerable material or moral damage;
+c) cybersecurity audit, as defined in art. 2 letter d) of Law no. 58/2023 ;
+d) sectoral competent authority in the field of cybersecurity is that public institution which has either a regulatory role or a supervisory and control role, or a regulatory, supervisory and control role in the fields corresponding to the sectors provided for in the annexes and which, according to the powers and attributions established by its own organizational and operational normative acts, has attributions in the field of cybersecurity at the level of the entities within the sectors provided for in annexes no. 1 and 2 ;
+e) cyber crisis, as defined in art. 2 letter k) of Government Emergency Ordinance no. 104/2021 ;
+f) entity means a natural or legal person constituted and recognised as such under the domestic law of its place of establishment, which may, acting in its own name, exercise rights and be subject to obligations;
+g) public administration entity means an authority or institution in the public administration, according to the provisions of art. 5 letters k) , l) , w) and kk) of Government Emergency Ordinance no. 57/2019 on the Administrative Code, with subsequent amendments and supplements, as well as an administrative-territorial unit, a public law body or an association formed by one or more such authorities or institutions in the public sector or by one or more such public law bodies;
+h) entity providing domain name registration services means a registry operator or an agent acting on behalf of registry operators, such as a provider or reseller of privacy protection services or proxy services;
+i) DNS service provider means an entity that provides:
+1. publicly accessible recursive domain name resolution services for internet end users;
+2. authoritative domain name resolution services intended for use by third parties, excluding root name servers;
+j) managed service provider means an entity that provides services related to the installation, management, operation or maintenance of information and communications technology products, networks, infrastructures or applications, hereinafter referred to as ICT, or other IT networks and systems, through active assistance or administration, either at the client's premises or remotely;
+k) managed security service provider means a managed service provider that performs or provides assistance for activities related to cybersecurity risk management;
+l) incident management means all actions and procedures aimed at preventing, detecting, analyzing and limiting an incident or aimed at responding to it and recovering from the incident;
+m) incident means an event that compromises the availability, authenticity, integrity or confidentiality of data stored, transmitted or processed or of the services offered by or accessible through computer networks and systems;
+n) large-scale cybersecurity incident means an incident that causes disruptions that exceed the response capabilities of a single Member State of the European Union or that has a significant impact on at least two Member States of the European Union;
+o) near-miss incident means an event that could have compromised the availability, authenticity, integrity or confidentiality of data stored, transmitted or processed or of services provided by or accessible through networks and IT systems, but which was successfully prevented from materializing or which did not materialize;
+p) internet exchange point means a network facility that allows the interconnection of more than two independent autonomous networks, in particular for the purpose of facilitating the exchange of internet traffic, which provides interconnection only for autonomous systems and which does not require the passage of internet traffic between any pair of participating autonomous systems through a third autonomous system, nor does it modify or otherwise interact with such traffic;
+q) online search engine means an online search engine as defined in Article 2(5) of Regulation (EU) 2019/1150 of the European Parliament and of the Council of 20 June 2019 on promoting fairness and transparency for businesses using online intermediation services;
+r) research body means an entity whose main objective is to carry out applied research or experimental development activities with a view to exploiting the results of that research for commercial purposes, but which does not include educational institutions;
+s) conformity assessment body means the body referred to in art. 2 point 13 of Regulation (EC) No. 765/2008 of the European Parliament and of the Council of 9 July 2008 setting out the requirements for accreditation and market surveillance relating to the marketing of products and repealing Regulation (EEC) No. 339/93;
+t) national accreditation body means the body referred to in Article 2(11) of Regulation (EC) No 765/2008;
+u) online marketplace means a service, as defined in art. 2 letter o) of Law no. 363/2007 on combating unfair practices of traders in relations with consumers and harmonizing regulations with European legislation on consumer protection, as subsequently amended and supplemented;
+v) social networking service platform means a platform that enables end users to connect, share, discover and communicate with each other across multiple devices, including through online conversations, posts, videos and recommendations;
+w) security policy for information systems and networks means a policy that establishes the security measures for information systems and networks that must be adopted by an essential or important entity;
+x) trust service provider means a trust service provider within the meaning of Article 3(19) of Regulation (EU) No 910/2014 of the European Parliament and of the Council of 23 July 2014 on electronic identification and trust services for electronic transactions in the internal market and repealing Directive 1999/93/EC;
+y) qualified trust service provider means a qualified trust service provider within the meaning of Article 3(20) of Regulation (EU) No 910/2014;
+z) ICT process means an ICT process within the meaning of Article 2 point 14 of Regulation (EU) 2019/881 of the European Parliament and of the Council of 17 April 2019 on ENISA (the European Union Agency for Cybersecurity) and on information and communication technology cybersecurity certification and repealing Regulation (EU) No 526/2013 (Cybersecurity Regulation);
+aa) ICT product means an ICT product within the meaning of Article 2(12) of Regulation (EU) 2019/881;
+bb) TLD name registry means an entity to which a specific top-level domain has been delegated and which is responsible for the administration of the top-level domain, including the registration of domain names under the top-level domain and the technical operation of the top-level domain, including the operation of its name servers, the maintenance of its databases and the distribution of top-level domain zone files between name servers, whether performed by the entity itself or outsourced, but excluding situations where top-level domain names are used by a registry exclusively for its own use;
+cc) representative means a natural or legal person established in the European Union who is expressly designated to act on behalf of a DNS service provider, a TLD name registry, an entity providing domain name registration services, a cloud computing service provider, a data center service provider, a content distribution network provider, a managed service provider, a managed security service provider, an online marketplace provider, an online search engine provider or a social networking service platform provider not established in the European Union, who may be contacted by the competent authority in the field of cybersecurity in relation to the obligations of that entity under the provisions of this emergency ordinance;
+dd) content delivery network means a geographically distributed network of servers designed to ensure high availability, accessibility or rapid delivery of digital content and services to internet users on behalf of content and service providers;
+ee) public electronic communications network means a public electronic communications network within the meaning of art. 4 para. (1) point 10 of Government Emergency Ordinance no. 111/2011 on electronic communications, approved with amendments and completions by Law no. 140/2012 , with subsequent amendments and completions;
+ff) network and computer system means:
+1. electronic communications network within the meaning of the provisions of art. 4 para. (1) point 6 of Government Emergency Ordinance no. 111/2011 ;
+2. any device or set of interconnected or functionally related devices, one or more of which ensures the automatic processing of digital data by means of a computer program; or
+3. digital data stored, processed, retrieved or transmitted by the elements provided for in points 1 and 2 for their operation, use, protection and maintenance;
+gg) risk means the potential for loss or disruption caused by an incident and should be expressed as a combination of the magnitude of such loss or disruption and the probability of the incident occurring;
+hh) cyber security means cyber security, as defined in art. 2 letter y) of Law no. 58/2023 on cyber security and defense of Romania, as well as for the amendment and completion of certain normative acts;
+ii) security of networks and information systems means the ability of networks and information systems to withstand, at a certain level of confidence, any event that could compromise the availability, authenticity, integrity or confidentiality of data stored, transmitted or processed or of the services provided by these networks and information systems;
+jj) digital service means a service within the meaning of the provisions of art. 4 paragraph (1) point 2 of Government Decision no. 1.016/2004 on measures for the organization and implementation of the exchange of information in the field of standards and technical regulations, as well as of the rules relating to information society services between Romania and the Member States of the European Union, as well as the European Commission, with subsequent amendments and supplements;
+kk) data center service means a service comprising structures or groups of structures dedicated to the hosting, interconnection and centralized operation of IT and network equipment that provides data storage, processing and transport services, together with all electricity distribution and environmental control facilities and infrastructures;
+ll) cloud computing service means a digital service that enables on-demand management and broad remote access to a scalable and variable set of computing resources that can be shared, including where those resources are distributed across different locations;
+mm) electronic communications service means an electronic communications service within the meaning of art. 4 para. (1) point 9 of Government Emergency Ordinance no. 111/2011 ;
+nn) trust service means a trust service within the meaning of Article 3 point 16 of Regulation (EU) No 910/2014;
+oo) qualified trust service means a qualified trust service within the meaning of Article 3 point 17 of Regulation (EU) No 910/2014;
+pp) ICT service means an ICT service within the meaning of Article 2(13) of Regulation (EU) 2019/881;
+qq) domain name system or DNS means a hierarchical and distributed naming system for assigning names that allows the identification of Internet services and resources, which allows end-user devices to use Internet routing and connectivity services to access these services and resources;
+rr) technical specification means a technical specification as defined in Article 2(4) of Regulation (EU) No 1025/2012 of the European Parliament and of the Council of 25 October 2012 on European standardisation, amending Council Directives 89/686/EEC and 93/15/EEC and Directives 94/9/EC, 94/25/EC, 95/16/EC, 97/23/EC, 98/34/EC, 2004/22/EC, 2007/23/EC, 2009/23/EC and 2009/105/EC of the European Parliament and of the Council and repealing Council Decision 87/95/EEC and Decision No 1673/2006/EC of the European Parliament and of the Council;
+ss) standard means a standard within the meaning of Article 2(1) of Regulation (EU) No 1025/2012 of the European Parliament and of the Council of 25 October 2012 on European standardisation, amending Council Directives 89/686/EEC and 93/15/EEC and Directives 94/9/EC, 94/25/EC, 95/16/EC, 97/23/EC, 98/34/EC, 2004/22/EC, 2007/23/EC, 2009/23/EC and 2009/105/EC of the European Parliament and of the Council and repealing Council Decision 87/95/EEC and Decision No 1673/2006/EC of the European Parliament and of the Council;
+tt) vulnerability means a weak point, susceptibility or deficiency of ICT products or ICT services that can be exploited by a cyber threat.
+Chapter II Scope
+Section 1 Essential Entities
+Article 5
+(1) The following entities are considered essential, regardless of their size:
+a) central public administration entities in accordance with Annex No. 1 ;
+b) entities in Annex No. 1 or No. 2 identified in accordance with Article 9 ;
+c) entities identified as critical entities according to the legal provisions regarding the resilience of critical entities;
+d) DNS service providers;
+e) qualified trust service providers;
+f) TLD name registries.
+(2) Entities in the category of large enterprises according to art. 8 and which fall within the sectors provided for in annex no. 1 are considered essential .
+(3) Entities in the category of medium-sized enterprises according to art. 8 and which are providers of public electronic communications networks or providers of publicly available electronic communications services are considered essential.
+(4) Entities in the category of medium-sized enterprises according to Article 8 and which are providers of managed security services are considered essential .
+Section 2 Important entities
+Article 6
+(1) Entities in the categories of large and medium-sized enterprises according to art. 8 , which fall under annexes no. 1 and 2 and which are not identified as essential entities according to art. 5 , are considered important entities.
+(2) The following entities are considered significant if they have not been identified as essential entities in accordance with Article 5 and regardless of their size:
+a) the entities in Annexes No. 1 and 2 identified in accordance with Article 9 ;
+b) providers of public electronic communications networks and providers of publicly available electronic communications services;
+c) trusted service providers.
+Section 3 Special provisions
+Article 7
+(1) The entities falling within the scope of this emergency ordinance are the entities in the sectors provided for in Annexes No. 1 and 2 , established and registered on the territory of Romania in accordance with the legal provisions.
+(2) By way of exception to paragraph (1) , providers of public electronic communications networks or providers of publicly available electronic communications services fall within the scope of this emergency ordinance when they provide services on the territory of Romania, regardless of their place of establishment or registration.
+(3) DNS service providers, TLD name registries, entities providing domain name registration services, cloud computing service providers, data center service providers, content delivery network providers, managed service providers, managed security service providers, as well as providers of online marketplaces, online search engines and social networking service platforms fall within the scope of this emergency ordinance when their main headquarters in the European Union is located on the territory of Romania.
+(4) Foreign public administration entities are under the jurisdiction of the state that established them.
+(5) For the purposes of this emergency ordinance, the main office as referred to in paragraph (3) is determined as follows:
+a) is the headquarters where decisions related to cybersecurity risk management measures are predominantly made;
+b) when the main office cannot be established according to letter a) or if such decisions are not taken in the European Union, it is considered to be the office where it carries out its cybersecurity operations;
+c) when the main office cannot be established according to letter b) , it is considered to be in the state where the entity in question has its headquarters with the largest number of employees.
+(6) Where, in the situation described in paragraph (3) , the entity is not established in the European Union but provides services within its territory, the entity is required to designate a representative in the European Union, within one of the Member States in which it provides its services. In such a case, the entity shall be deemed to be under the jurisdiction of the Member State in which the representative is established.
+(7) When the entity provides services on the territory of Romania, DNSC may bring legal action in accordance with the legal provisions against the entity in question for failure to comply with the provisions of this emergency ordinance, including if the entity has not designated a representative according to paragraph (6) .
+Article 8
+(1) An entity is considered a large enterprise if it exceeds the criteria established for medium-sized enterprises as provided for in art. 4 para. (1) letter c) of Law no. 346/2004 on stimulating the establishment and development of small and medium-sized enterprises, as subsequently amended and supplemented, without however applying the provisions of art. 4^5 of the same law.
+(2) An entity is considered a medium-sized enterprise if it meets the criteria set out in art. 4 paragraph (1) letter c) of the law set out in paragraph (1) , without however applying the provisions of art. 4^5 of the same law.
+Article 9
+An entity is considered essential or important if:
+a) the entity is the sole provider of a service that is essential for supporting critical societal and economic activities;
+b) the disruption of the service provided by the entity could have a significant impact on public safety, public security or public health;
+c) disruption of the service provided by the entity could generate significant systemic risk, in particular for sectors where such disruption could have a cross-border impact;
+d) the entity is critical due to its specific importance at national or regional level for the sector or type of services in question or for other interdependent sectors.
+Article 10
+(1) The determination of the impact generated by the disruption of the service provided by the entity, provided for in art. 9 , is carried out based on:
+a) the impact on fundamental rights and freedoms;
+b) the impact on the national economy;
+c) the impact on the health and life of people;
+d) financial impact;
+e) the impact on defense, public order and national security;
+f) cross-sectoral or cross-border impact.
+(2) The criteria provided for in paragraph (1) , their corresponding thresholds and the methodology for assessing the risk level of entities shall be established by order of the DNSC director.
+Chapter III Cybersecurity risk management measures and reporting obligations
+Article 11
+(1) Essential entities and significant entities shall take proportionate and appropriate technical, operational and organisational measures to identify, assess and manage the risks related to the security of the networks and information systems that they use in carrying out their activities or providing their services, as well as to eliminate or, where appropriate, reduce the effects of incidents on the recipients of their services and on other services.
+(2) The measures provided for in paragraph (1) must ensure a level of cybersecurity appropriate to the level of risk of the entity, taking into account the current state of technology and, where appropriate, the most relevant national, European and international standards and good practices, as well as the costs of implementing these measures.
+(3) The risk level of the entity is assessed according to the methodology for assessing the risk level of entities included in the order of the DNSC director provided for in art. 10 para. (2) .
+(4) The measures provided for in paragraph (1) must include a comprehensive approach to cyber threats in order to ensure the protection of networks and information systems at both logical and physical levels against incidents, including by logging and ensuring the traceability of all activities within networks and information systems.
+(5) Essential entities and important entities are required to undergo a cybersecurity audit under the conditions and with the periodicity established by the order of the DNSC director provided for in art. 12 paragraph (1) , depending on the level of risk provided for in paragraph (3) .
+(6) When there is an authority with sectoral competences, the conditions and periodicity of the security audit provided for in paragraph (5) will be established by joint order under the conditions of art. 37 paragraph (8) letter b) , depending on the level of risk provided for in paragraph (3) .
+(7) Essential and important entities shall make available to DNSC, upon request, the list of relevant assets and the list of risks identified following the risk analysis, provided for in paragraph (1) .
+(8) With regard to supply chain security, the measures provided for in paragraph (1) must take into account:
+a) the specific vulnerabilities of each direct supplier and each service provider, the overall quality of the products and the quality of the cybersecurity practices of the direct suppliers and service providers, including the security of their development processes;
+b) the results of the coordinated risk assessments carried out which take into account the results of the coordinated risk assessments of the security of critical supply chains developed at European Union level within the Cooperation Group.
+(9) In order to ensure the security of the supply chain, essential entities and important entities are required to transmit to the DNSC, upon request, data on trust service providers, qualified trust service providers, DNS service providers, TLD name registries or entities offering domain name registration services, cloud computing service providers, data center service providers, managed service providers and managed security service providers that provide these types of services to them, within the deadline set out in the DNSC request.
+(10) When assessing the proportionality of risk management measures in accordance with the provisions of paragraph (1) , due account shall be taken of the extent of the risk exposure of the entity and the services it provides, the size of the entity, the likelihood of incidents occurring and their severity, including their social and economic impact.
+Article 12
+(1) The Director of DNSC shall issue an order on the risk management measures provided for in art. 11 para. (1) with regard to the technical, operational and organizational requirements, in accordance with art. 13 .
+(2) Without prejudice to the provisions of art. 37 para. (8) letter b) and para. (17) , the order issued pursuant to para. (1) may also include sector-specific requirements for these risk management measures following consultation with the competent authorities at sectoral level with regulatory powers.
+(3) If the management bodies of essential entities and significant entities find that they do not comply with the measures provided for in the order in paragraph (1) or, as the case may be, those provided for in the order in art. 37 paragraph (8) letter b) , they shall apply, without undue delay, the necessary corrective measures.
+(4) Essential entities and important entities shall carry out and transmit to the DNSC and, where applicable, to the competent sectoral authority, annually, a self-assessment of the maturity level of the cybersecurity risk management measures in accordance with the order provided for in paragraph (1) or, where applicable, in accordance with the order provided for in art. 37 paragraph (8) letter b) , undertaken by the entity's management.
+(5) Within 30 days of completing the self-assessment, essential entities shall draw up and submit to the DNSC and, where appropriate, to the competent sectoral authority, a plan of measures to remedy the identified deficiencies, assumed by the entity's management, in accordance with the risk management measures applicable to them.
+Article 13
+The measures provided for in Article 11(1) shall include at least the following:
+a) policies and procedures relating to risk analysis and information systems security and their periodic review;
+b) policies and procedures for evaluating the effectiveness of cybersecurity risk management measures;
+c) policies and procedures relating to the use of cryptography and, where applicable, encryption;
+d) supply chain security, including aspects related to the security of the relationship between the entity and its direct providers and suppliers;
+e) security of the acquisition, development, maintenance and disposal of networks and information systems, including the management and disclosure of vulnerabilities;
+f) human resources security, access control policies and asset management;
+g) incident management;
+h) business continuity, including backup management, disaster recovery and crisis management;
+i) basic cyber hygiene practices and cybersecurity training;
+j) use of multifactor authentication solutions or continuous authentication of voice, video and text communications, of secure and secure emergency communications systems within the entity, as appropriate.
+Article 14
+(1) The management bodies of essential entities and significant entities shall approve the cybersecurity risk management measures they take to comply with Articles 11-13 and, where applicable, the provisions of the common order provided for in Article 37 paragraph (8) letter b) , supervise their implementation and are liable for breaches of these provisions, without prejudice to the legal provisions on the liability of public institutions, public officials and elected or appointed persons.
+(2) The members of the management bodies of essential and significant entities shall undergo accredited training courses to ensure a sufficient level of knowledge and skills to identify risks and assess cybersecurity risk management practices and their impact on the services provided by the entity. Essential and significant entities shall provide training to all staff to ensure a sufficient level of knowledge and skills.
+(3) The management bodies of essential entities and important entities shall establish permanent means of contact, ensure the allocation of the necessary resources for the implementation of cybersecurity risk management measures and, where appropriate, designate network and information systems security officers who have the role of implementing and supervising cybersecurity risk management measures at the entity level.
+(4) The person responsible for the security of networks and information systems, provided for in paragraph (3) , designated within essential entities, with the exception of public administration entities, as well as micro-enterprises and small enterprises, as established in accordance with the provisions of art. 4 paragraph (1) letters a) and b) of Law no. 346/2004 , must cumulatively fulfill at least the following:
+a) has managerial authority;
+b) is directly subordinated to the entity's management bodies;
+c) operates independently of the IT structures and operational technology within the entity;
+d) has access to the resources necessary for the effective supervision and implementation of cybersecurity risk management measures;
+e) to have obtained an accredited specialty course, recognized by DNSC, in the field of cybersecurity, within 12 months of designation.
+Article 15
+(1) Essential entities and important entities shall report, without undue delay, to the national cybersecurity incident response team any incident that has a significant impact on the provision of their services and, where applicable, the entities concerned shall notify, without undue delay, the recipients of their services of significant incidents that could affect the provision of those services.
+(2) Reporting is done through the National Platform for Reporting Cybersecurity Incidents, hereinafter referred to as PNRISC, as provided for in art. 20 of Law no. 58/2023 .
+(3) Essential entities and important entities shall report, without undue delay, but no later than 6 hours from the time they became aware of any information that allows the national cybersecurity incident response team to determine a cross-border impact of the incident. The mere reporting shall not expose the entity to increased liability.
+(4) In the event of a significant cross-border incident, the national single point of contact shall ensure that the counterpart authorities in the respective states receive the relevant information reported in accordance with paragraph (7) in a timely manner .
+(5) Where appropriate, essential entities and important entities shall communicate, without undue delay, to recipients of their services that may be affected by a significant cyber threat any measures or remedial actions that those recipients may take in response to that threat and, where appropriate, the entities shall also inform the recipients concerned of the significant threat itself.
+(6) An incident is considered significant or the impact of an incident is considered significant if:
+a) has caused or may cause serious operational disruption of services or financial losses for the entity concerned;
+b) has affected or may affect other natural or legal persons, causing considerable material or non-material damage.
+(7) For the purposes of reporting pursuant to paragraph (1) , the entities concerned shall submit to the national cybersecurity incident response team:
+a) without undue delay, but no later than 24 hours from the date on which they became aware of the significant incident, an early warning indicating, where appropriate, whether there are suspicions that the incident is caused by unlawful or malicious actions or that it could have a cross-border impact;
+b) without undue delay, but no later than 72 hours from the moment they became aware of the significant incident, an incident report, which, where appropriate, updates the information referred to in letter a) and presents an initial assessment of the significant incident, including its severity and impact, as well as indicators of compromise, if available;
+c) an interim report on the relevant update of the situation, at the request of the national cybersecurity incident response team;
+d) a final report, within one month at the latest from the transmission of the notification of the incident pursuant to letter b) , which shall include at least the following elements:
+1. a detailed description of the incident, including its severity and impact;
+2. the type of threat or root cause that likely triggered the incident;
+3. mitigation measures applied and ongoing;
+4. if applicable, the cross-border impact of the incident;
+e) in the case of an ongoing incident at the time of submission of the report referred to in letter d) , the entities concerned shall submit a progress report and a final report within one month of handling the incident.
+(8) By way of exception to paragraph (7) letter b) , a trust service provider shall report, in respect of significant incidents affecting the provision of its trust services, to the national cybersecurity incident response team, without undue delay and, in any case, within 24 hours of becoming aware of the significant incident.
+(9) The national cybersecurity incident response team shall provide, without undue delay and, where possible, within 24 hours of receiving the early warning pursuant to paragraph (7) letter a) , a response to the reporting entity, including an initial response to the significant incident and, at the entity's request, operational guidelines or instructions on the implementation of any mitigation measures.
+(10) The national cybersecurity incident response team may provide additional technical support if requested by the entity concerned. Where the incident is considered to be of a criminal nature, the national cybersecurity incident response team shall also provide guidance on the referral of the incident to law enforcement authorities.
+(11) Where appropriate and in particular where the significant incident involves two or more States, the DNSC shall inform, without undue delay, the other affected States and the European Union Agency for Cybersecurity, hereinafter referred to as ENISA, of the significant incident. This information shall include the type of information received pursuant to paragraph (7) .
+(12) In the case of paragraph (11) , the DNSC, in accordance with national legislation and European Union rules, protects the security and commercial interests of the entity, such as privileged information, business-related data and ensures the confidentiality of the information provided.
+(13) Where public information is necessary to prevent a significant incident or to manage an ongoing significant incident or where disclosure of the significant incident is otherwise in the public interest, the DNSC or, where appropriate, the DNSC together with the counterpart authorities of other states concerned may, after consulting the entity concerned, inform the public about the significant incident or require the entity to do so.
+(14) The national single point of contact shall forward, as appropriate, the reports received pursuant to paragraph (1) to the single points of contact in the other affected Member States.
+(15) The national single point of contact shall submit to ENISA, every three months, a summary report that includes aggregated anonymised data on significant incidents, incidents, cyber threats and near misses reported in accordance with paragraph (1) and those on voluntary reporting.
+(16) DNSC shall provide the National Coordination Center for Critical Infrastructure Protection, hereinafter referred to as CNCPIC, with information on significant incidents, incidents, cyber threats and near misses reported in accordance with paragraph (1) and with the provisions regarding voluntary reporting by entities identified as critical entities under the legal provisions on the resilience of critical entities.
+(17) Without prejudice to the provisions of art. 37 paragraph (8) letter b) , methodological norms regarding incident reporting shall be established by order of the DNSC director.
+Article 16
+(1) They can report to the national cybersecurity incident response team:
+a) essential entities and important entities, regarding incidents, cyber threats and near misses;
+b) entities other than those mentioned in letter a) , regardless of whether they fall within the scope of this emergency ordinance, with regard to significant incidents, cyber threats and near-miss incidents.
+(2) The voluntary reporting referred to in paragraph (1) shall be carried out in accordance with art. 15 .
+(3) The national cybersecurity incident response team shall process mandatory notifications with priority when it deems necessary.
+(4) Voluntary reporting does not impose any additional obligations on the notifying entity that would not have been imposed if it had not submitted the report.
+Article 17
+By way of derogation from the provisions of art. 21 para. (1) and (2) of Law no. 58/2023 , the persons referred to in art. 3 para. (1) letter b) and c) of the same law, who are identified as essential entities and important entities, shall apply the provisions of art. 15 and 16 regarding incident reporting.
+Chapter IV Registration
+Section 1 Register of Entities
+Article 18
+(1) The DNSC shall maintain a register of identified essential entities and important entities.
+(2) Entities carrying out activities in the sectors in Annex No. 1 or Annex No. 2 shall notify DNSC for registration no later than 30 days from the date of entry into force of this emergency ordinance or no later than 30 days from the date on which the provisions of this emergency ordinance are applicable to them, when, according to Art. 5 and 6 , they are classified as essential entities or important entities.
+(3) The notification referred to in paragraph (2) consists of providing the following types of information to the DNSC:
+a) the name;
+b) the address of the main registered office and updated contact details, including e-mail addresses and telephone numbers;
+c) the addresses of the other registered offices in the European Union, as the case may be;
+d) permanent means of contact and the person within the entity responsible for monitoring the means of contact;
+e) the person designated as representative of the entity, his/her address and contact details, if the entity is not established in the European Union;
+f) sector, subsector and type of entity, as they fall under Annex No. 1 or Annex No. 2 ;
+g) the Member States in which they provide services, as appropriate;
+h) the entity's public IP address ranges, in the case of DNS service providers, TLD name registries, entities providing domain name registration services, cloud computing service providers, content delivery network operators, data center service providers, managed service providers, managed security service providers and digital service providers;
+i) the entity's public IP address ranges, for entities other than those provided for in letter h) , as the case may be;
+j) necessary and sufficient information to demonstrate that the conditions for identification as an essential entity or important entity are met according to art. 5 and, respectively, art. 6 .
+(4) Within 60 days of receiving the notification provided for in paragraph (2) , the DNSC management shall issue a decision to identify and register essential entities.
+(5) Within 150 days of receiving the notification provided for in paragraph (2) , the DNSC management shall issue a decision to identify and register significant entities.
+(6) Within 60 days from the date of communication of the decision of the DNSC director provided for in paragraph (4) and paragraph (5) , respectively , essential entities and important entities shall submit to the DNSC the assessment of the entity's risk level in accordance with art. 10 paragraph (2) .
+(7) Within 60 days of the submission of the risk level assessment provided for in paragraph (6) , entities shall carry out a self-assessment of the maturity level of the cybersecurity risk management measures provided for in Article 12 paragraph (4) .
+(8) The entities referred to in paragraph (2) shall communicate to DNSC the changes made to the information referred to in paragraph (3) , as follows:
+a) for the information provided for in paragraph (3) letters a)-d) , letters f) and j) , without undue delay and, in any case, within 2 weeks from the date of the change;
+b) for the information provided for in paragraph (3) letter e) and letter g)-i) , without undue delay and, in any case, within three months from the date of the modification.
+(9) The requirements regarding paragraph (3) shall be established by order of the DNSC director , including the method of transmitting information and the use of forms.
+(10) The national single point of contact shall transmit, in relation to DNS service providers, TLD name registries, entities providing domain name registration services, cloud computing service providers, content delivery network operators, data centre service providers, managed service providers, managed security service providers and digital service providers, the information provided for in paragraph (3) to ENISA, upon receipt thereof, with the exception of the information contained in paragraph (3) letters i) and j) by 17 January 2025 at the latest and whenever there are changes in relation to them. The single point of contact shall review the information provided for regularly and at least every two years. By 17 April 2025 and at the request of the European Commission, the national single point of contact shall notify the European Commission of the names of the essential entities and the important entities identified in accordance with Article 9 .
+(11) The entity shall ensure that it can be contacted via the contact details submitted in accordance with paragraph (3) .
+(12) After the expiry of the term provided for in paragraph (2) , the DNSC, ex officio or following a complaint regarding the evasion of an obligation to notify and register made by any interested person, shall notify the entity in question regarding compliance with the obligation to undergo the identification process in order to register in the register of essential or important entities.
+(13) Entities that no longer meet the conditions and criteria set out in the provisions of this emergency ordinance shall notify DNSC for deletion from the register and provide supporting documents within 30 days from the date on which the changes are noted.
+(14) DNSC shall order, by decision of the management, the deletion from the register following the evaluation of the documentation provided for in paragraph (13) and shall communicate the decision to the entity.
+(15) Entities may request DNSC assistance with the identification, modification or deletion process.
+(16) When an entity provides an essential service also within other Member States of the European Union, DNSC shall consult with the counterpart authorities in those states before adopting a decision on deregistration.
+(17) Entities other than those mentioned in paragraph (2) may also register with the DNSC , regardless of their size, in accordance with paragraphs (2)-(16) .
+(18) In order to fulfill their duties, the competent sectoral authorities may request and obtain, free of charge, following the conclusion of a protocol, information regarding data recorded in the register of essential entities and important entities, corresponding to their fields of activity, in compliance with the legislation in force, in particular that regarding the protection of personal data.
+Article 19
+(1) In order to contribute to the security, stability and resilience of the domain name systems, TLD registries and entities providing domain name registration services shall exercise due diligence to collect accurate and complete domain name registration data in a dedicated database, in accordance with European Union data protection law.
+(2) A database pursuant to paragraph (1) shall contain the information necessary to identify and contact domain name holders and contact points administering domain names in the TLD and shall include the following:
+a) the domain name;
+b) date of registration;
+c) the name, email address and telephone number of the registrant;
+d) the contact email address and telephone number of the point of contact administering the domain name, if different from those of the registrant.
+(3) TLD name registries and entities providing domain name registration services shall establish policies and procedures, including verification procedures, to ensure that the databases referred to in paragraph (1) contain accurate and complete information and shall make such policies and procedures publicly available.
+(4) TLD registries and entities providing domain name registration services shall make non-personal domain name registration data available to the public immediately after the registration of a domain name.
+(5) To the extent that the data provided by the domain name holder is incorrect, inaccurate or incomplete, TLD name registries and entities providing domain name registration services shall notify the holder of the right to use the domain name in order to provide the correct, accurate and complete data within the communicated deadline.
+(6) If the deadline granted under paragraph (5) is not respected, the domain name is blocked.
+(7) The transfer of a blocked domain name is prohibited, and when the requested data has not been properly corrected, the domain name is canceled.
+(8) TLD name registries and entities providing domain name registration services shall provide access to the data required for domain name registration, based on legally founded and duly motivated requests, to persons who justify a legitimate interest in accordance with the legal provisions.
+(9) TLD registries and entities providing domain name registration services shall make their data disclosure policies and procedures publicly available and shall respond to all access requests expeditiously, but no later than 72 hours after receipt of a request.
+(10) TLD name registries and entities providing domain name registration services shall cooperate with each other, including to avoid overlaps in the collection of domain name registration data, in the context of fulfilling the obligations set out in paragraphs (1)-(9) .
+(11) DNSC may request, on a justified basis, access to domain name registration data and may conclude appropriate protocols with TLD registry operators and domain name registration service providers.
+Section 2 Exchange of information in the field of cybersecurity
+Article 20
+(1) Essential entities, important entities and, where appropriate, other entities may mutually exchange relevant information in the field of cybersecurity, on a voluntary basis, including information on cyber threats, near misses, vulnerabilities, techniques and procedures, indicators of compromise, adversarial tactics, threat actor-specific information, cybersecurity alerts and recommendations on the configuration of cybersecurity tools for detecting cyber attacks.
+(2) The exchange of information provided for in paragraph (1) shall be carried out within associations of essential entities and important entities and, where appropriate, of their service providers or service providers, through agreements on the exchange of information in the field of cybersecurity, in compliance with all provisions on the protection of personal data.
+(3) The exchange of information shall be carried out for the following purposes:
+a) preventing and detecting incidents, responding to or recovering from incidents or mitigating their impact;
+b) increasing the level of cybersecurity, in particular by raising awareness of cyber threats, limiting or preventing the possibility of the spread of such threats, supporting the range of defensive capabilities, remediating and disclosing vulnerabilities, detecting threats, techniques for limiting and preventing threats, mitigation strategies or stages of response and recovery processes, or promoting collaboration between public and private entities in the field of research into cyber threats.
+(4) Cybersecurity information exchange agreements shall also include information on operational elements, including the use of dedicated ICT platforms and automation tools, the content and conditions of the information exchange agreements, and the DNSC shall be notified of both the conclusion and withdrawal from them.
+(5) The DNSC may support interested entities in concluding an agreement on the exchange of information in the field of cybersecurity and may request the limitation of the exchange of information when it refers to information made available by competent authorities or cybersecurity incident response teams.
+Chapter V Roles and Responsibilities
+Section 1 Coordination at national level
+Article 21
+(1) The vision, main guidelines and general approaches regarding the field of cybersecurity at national level are defined and assumed in the Cybersecurity Strategy of Romania, approved by Government Decision no. 1.321/2021 on the approval of the Cybersecurity Strategy of Romania, for the period 2022-2027, as well as in the Action Plan for the implementation of the Cybersecurity Strategy of Romania, for the period 2022-2027, hereinafter referred to as the Strategy, and in the Action Plan for its implementation.
+(2) The general framework for cooperation in the field of cybersecurity at national level is the National Cybersecurity System, hereinafter referred to as SNSC, in accordance with the provisions of Law No. 58/2023 .
+Article 22
+(1) The national cybersecurity strategy is developed by the DNSC, in consultation with the other authorities with responsibilities in the field of cybersecurity according to the provisions of Law No. 58/2023 , with the opinion of the Cyber ​​Security Operational Council, hereinafter referred to as the COSC, and is adopted by Government decision, together with the action plan for the implementation of the strategy, which is annexed hereto.
+(2) In developing or updating the national cybersecurity strategy, DNSC may request the assistance of ENISA.
+(3) The national cybersecurity strategy shall provide for the strategic objectives, the resources necessary to achieve those objectives and the appropriate policy and regulatory measures to achieve and maintain a high level of cybersecurity.
+(4) The national cybersecurity strategy shall be evaluated periodically and at least once every five years, based on key performance indicators and, if necessary, shall be updated and adopted, following the same mechanism.
+(5) Within three months from the date of adoption of the national cybersecurity strategy, DNSC shall transmit it to the European Commission.
+Article 23
+(1) The national cybersecurity strategy developed in accordance with art. 22 shall include at least the following:
+a) the objectives and priorities of the national cybersecurity strategy, covering in particular the sectors mentioned in Annexes 1 and 2 ;
+b) a governance framework for achieving the objectives and priorities referred to in letter a) , including public policies;
+c) a governance framework clarifying the roles and responsibilities of relevant stakeholders at national level, supporting cooperation and coordination at national level between competent authorities, single points of contact and cybersecurity incident response teams under this Emergency Ordinance, as well as coordination and cooperation between these bodies and competent authorities under sectoral legal acts of the European Union;
+d) a mechanism to identify relevant assets and a risk assessment at national level;
+e) an identification of measures to ensure national incident preparedness, response and recovery capacity, including cooperation between the public and private sectors;
+f) a list of the various authorities and stakeholders participating in the implementation of the national cybersecurity strategy;
+g) a policy framework aimed at ensuring better coordination between competent authorities under this emergency ordinance and the legal provisions on the resilience of critical entities for the purpose of exchanging information on risks, cyber threats and incidents, as well as on non-cyber risks, threats and incidents and exercising supervisory tasks, as appropriate;
+h) a plan that also includes the necessary measures to increase the general level of awareness of citizens regarding cybersecurity.
+(2) The national cybersecurity strategy shall provide for at least the following public policies:
+a) addressing the cybersecurity of the supply chain for ICT products and ICT services used by entities to provide their services;
+b) concerning the inclusion and specification of cybersecurity requirements for ICT products and ICT services in public procurement, including in relation to cybersecurity certification, encryption and the use of open source cybersecurity products;
+c) vulnerability management, including promoting and facilitating coordinated vulnerability disclosure;
+d) related to maintaining the availability, integrity and general confidentiality of the public core of the open internet, including the cybersecurity of submarine communications cables, as applicable;
+e) promoting the development and integration of relevant advanced technologies aimed at implementing state-of-the-art cybersecurity risk management measures;
+f) promoting and developing cybersecurity education and training, skills, awareness-raising and cybersecurity research and development initiatives, as well as guidelines on good practices and controls in cyber hygiene, for citizens, stakeholders and entities;
+g) supporting academic and research institutions in order to develop, strengthen and promote the implementation of cybersecurity tools and a secure network infrastructure;
+h) which includes relevant procedures and appropriate information exchange tools to support the voluntary exchange of cybersecurity information between entities, in accordance with European Union law;
+i) strengthening cyber resilience and cyber hygiene benchmarks for small and medium-sized enterprises, in particular those excluded from the scope of this emergency ordinance, by providing easily accessible guidance and assistance for their specific needs;
+j) promoting active cyber protection.
+Section 2 Competent authority at national level
+Article 24
+(1) The DNSC is the competent authority responsible for cybersecurity and for the tasks of supervising and ensuring compliance with measures for a high common level of cybersecurity.
+(2) DNSC performs the function of national cybersecurity incident response team, hereinafter referred to as national CSIRT, pursuant to the provisions of Government Emergency Ordinance No. 104/2021.
+(3) In order to fulfill its duties under the provisions of this emergency ordinance, DNSC shall ensure that it has sufficient and competent staff and that it has adequate resources to effectively and efficiently fulfill its duties.
+(4) For the application of paragraph (3) , the following categories of expenses are provided from the DNSC budget, in compliance with the legal provisions:
+a) purchasing specialized services;
+b) the acquisition of equipment and software, including custom-developed software;
+c) affiliation to international networks and organizations in the field and participation through representatives in their work, as well as in other events in the field;
+d) training and advanced training courses, as well as certifications of our own personnel;
+e) editing publications, specialized guides, awareness videos;
+f) organizing conferences, seminars and other related events;
+g) conducting statistical studies and research activities.
+Article 25
+(1) DNSC, in exercising its capacity as competent authority responsible for cybersecurity and for the tasks of supervision and enforcement of measures for a high common level of cybersecurity under this emergency ordinance, has the following powers:
+a) develops and ensures the implementation of the national cybersecurity strategy together with the other competent authorities;
+b) develops norms and requirements within the scope of this emergency ordinance;
+c) develops and updates guides, recommendations and good practices within the scope of this emergency ordinance;
+d) administers and manages the resources for the implementation of this emergency ordinance;
+e) participates, through representatives, in cooperation formats at European level;
+f) supervises, verifies and controls compliance with the provisions of this emergency ordinance;
+g) receives notifications regarding the failure to fulfill obligations by essential and important entities;
+h) cooperate with the competent authorities of the other Member States of the European Union and provide them with assistance, by exchanging information, sending requests and notifications, carrying out controls or taking measures to supervise and remedy the deficiencies found, in the case of entities that are the subject of this emergency ordinance;
+i) authorizes, revokes or renews the authorization of cybersecurity incident response teams serving essential and important entities;
+j) issues, revokes or renews the certificates of cybersecurity auditors who can perform audits within networks and information systems that support essential services or important services, under the terms of this emergency ordinance;
+k) authorizes, revokes or renews the authorization of cybersecurity training service providers for the training of cybersecurity auditors and cybersecurity incident response teams;
+l) ensures the fulfillment of the incident reporting obligations by essential and important entities under the terms of this emergency ordinance;
+m) encourage the use by essential and important entities of ICT products, ICT services and ICT processes that comply with the cybersecurity standardisation and certification requirements adopted pursuant to Article 49 of Regulation (EU) 2019/881 and of qualified trust services, in compliance with European and international standards and technical specifications relevant to the security of networks and information systems;
+n) regulates and manages the process of coordinated vulnerability disclosure.
+(2) The DNSC is responsible for managing the process of identifying essential entities and important entities and maintains a register thereof in accordance with art. 18 .
+(3) The DNSC shall be responsible for managing the identification process of DNS service providers, TLD name registries, cloud computing service providers, data centre service providers, content delivery network providers, managed service providers, managed security service providers, as well as providers of online marketplaces, online search engines and social networking service platforms and shall transmit their identification data to ENISA by 17 January 2025.
+(4) The DNSC identifies the ICT services, systems and products that may be subject to the national supply chain risk assessment that it prepares and submits to ENISA, the results of the assessment being transmitted to the essential entities and important entities and to the sectoral competent authorities.
+(5) DNSC keeps records of the data provided for in paragraph (3) , updates them periodically and transmits the changes to ENISA.
+(6) The DNSC carries out, whenever necessary and at least once a year, an assessment of the cybersecurity of the national civil cyberspace, the assessment being also transmitted to the competent sectoral authorities.
+Article 26
+(1) DNSC, in exercising its supervisory and control duties, in the event of failure by essential entities and important entities to fulfill their obligations under the provisions of this emergency ordinance, shall verify compliance with the provisions of this emergency ordinance and carry out controls, issue binding provisions for essential entities and important entities in order to comply and remedy the deficiencies found and establish deadlines for this, establish supervisory measures for essential entities and important entities and apply sanctions.
+(2) DNSC ensures the evaluation of the training and specialization process of auditors for certification as cybersecurity auditors, members of cybersecurity incident response teams, cybersecurity managers and cybersecurity training service providers.
+Article 27
+(1) The DNSC cooperates with the institutions of the COSC and may request security risk checks, including from a national security perspective, on the auditor certification applicant, members of cybersecurity incident response teams and service providers specific to cybersecurity incident response teams.
+(2) Following the application of paragraph (1) , DNSC assesses the security risks and, depending on the situation, orders the continuation or interruption of the assessment and certification procedure.
+Section 3 National Cyber ​​Crisis Management Framework
+Article 28
+(1) DNSC is the national authority for cyber crisis management and is responsible at national level for the management of large-scale cybersecurity incidents and cybersecurity crises, a role it performs through the National Cyber ​​Security Crisis Management Center, hereinafter referred to as CNGCSC, in accordance with the provisions of art. 5 letter o) of Government Emergency Ordinance no. 104/2021 .
+(2) In fulfilling the capacity provided for in paragraph (1) , DNSC has the following duties:
+a) identifies the capabilities, means and procedures that can be used in case of crisis, based on which it develops, updates and coordinates the application of the National Cybersecurity Crisis Management Plan in peacetime, adopted by order of the DNSC director;
+b) adopt the technical and organizational measures necessary for establishing the critical cyber alert level and for its management, according to the provisions of Law no. 58/2023 ;
+c) ensures and coordinates the exchange of information regarding cybersecurity crises with all relevant stakeholders from the public and private sectors;
+d) participates, through the CNGCSC, in the coordinated management of large-scale cybersecurity incidents and cybersecurity crises at European Union level and provides support to Member State authorities;
+e) organizes and participates, through the CNGCSC, in exercises, training activities and other national preparedness measures in the field of cybersecurity crises.
+Article 29
+(1) The national management of cybersecurity incidents and crises is carried out in accordance with the National Peacetime Cybersecurity Crisis Management Plan.
+(2) The national peacetime cybersecurity crisis management plan aims to manage large-scale cybersecurity incidents and cyber crises and provides at least:
+a) the objectives of the measures and training activities;
+b) the tasks and responsibilities of cyber crisis management authorities;
+c) cyber crisis management procedures, including their integration into the overall national crisis management framework and information exchange channels;
+d) preparedness measures, including exercises and training activities;
+e) relevant public and private sector stakeholders and the infrastructure involved;
+f) national procedures and agreements between relevant national authorities and bodies aimed at ensuring Romania's effective participation in the coordinated management of large-scale cybersecurity incidents and crises at the level of the European Union and the support provided by it.
+(3) Within three months of the adoption or amendment of the plan provided for in paragraph (1) , the DNSC shall transmit to the European Commission and the European Network of Cyber ​​Crisis Liaison Organizations, hereinafter referred to as EU-CyCLONe, relevant information relating to it, with the exception of information that may prejudice national security.
+(4) Within three months of the entry into force of this emergency ordinance, the national single point of contact shall notify the European Commission and EU-CyCLONe of the DNSC's status as national cyber crisis management authority, as well as any subsequent changes to this status.
+Section 4 Cybersecurity Incident Response Teams
+Article 30
+(1) Essential entities, important entities and sectoral competent authorities may establish their own or sectoral cybersecurity incident response teams, hereinafter referred to as CSIRTs, or may purchase specialized services from specific CSIRT service providers, authorized by the DNSC.
+(2) The CSIRTs provided for in paragraph (1) are authorized by the DNSC following the assessment of the fulfillment of the specific conditions for authorization of this type of service, according to paragraph (3) and art. 31-33 .
+(3) In order to obtain authorization, the CSIRTs referred to in paragraph (1) must demonstrate that they have an adequate, secure and resilient communication and information infrastructure that allows the exchange of information with the entities they serve and with other relevant stakeholders, as well as the existence of adequate resources for the effective performance of their tasks.
+(4) The CSIRTs referred to in paragraph (1) shall cooperate and exchange relevant information with sectoral or cross-sectoral communities consisting of essential entities and important entities, as well as with CSIRTs from third countries, including to provide them with assistance in cybersecurity matters.
+(5) The CSIRTs referred to in paragraph (1) shall participate in national and international cooperation groups, peer reviews, the CSIRT Network or other similar formats at the request of the national CSIRT.
+(6) The CSIRTs referred to in paragraph (1) shall cooperate both with each other and with the national CSIRT.
+(7) DNSC may delegate one or more persons from both its own control and specialized personnel to temporarily exercise its duties within a CSIRT provided for in paragraph (1) .
+Article 31
+(1) Own, sectoral CSIRTs or CSIRT-specific service providers serving essential entities or important entities shall have the following obligations:
+a) be authorized by the DNSC;
+b) ensure the compatibility and interoperability of the systems, procedures and methods used with those of the national CSIRT;
+c) to provide at least the minimum package of CSIRT-type services necessary to ensure at national level a unitary protection of essential entities and important entities, under the conditions of paragraph (2) ;
+d) use an appropriate number of qualified people within the teams;
+e) to interconnect with the DNSC alert, monitoring and cooperation service and ensure a prompt response to alerts and requests transmitted by the national CSIRT;
+f) have adequate staff to ensure the permanent availability of their services;
+g) to allocate annually the necessary budget to maintain a high level of capabilities both in terms of human and technical resources.
+(2) The technical norms regarding compatibility and interoperability provided for in paragraph (1) letter b) , the minimum package of CSIRT-type services provided for in paragraph (1) letter c) and the criteria for establishing the number of qualified persons provided for in paragraph (1) letter d) shall be approved by order of the DNSC director.
+(3) DNSC shall develop the topics for the specialization of CSIRT personnel for authorization pursuant to art. 30 para. (2) , by decision of the DNSC director.
+Article 32
+(1) CSIRTs shall meet the following requirements:
+a) ensure high availability of its own communication channels, avoiding single points of failure, having multiple means to be connected and to contact other entities at any time;
+b) to specify the communication channels provided for in letter a) and to make them known to the user base and cooperation partners;
+c) maintain the headquarters and support IT systems in secure locations;
+d) have an adequate system for managing and routing requests;
+e) ensure the confidentiality and credibility of their operations;
+f) have adequate staff to ensure the permanent availability of their services;
+g) be equipped with redundant systems and backup workspace to ensure the continuity of their services, even after an incident;
+h) to protect the confidential and sensitive data of the beneficiaries of their services from unauthorized access, theft, alteration or destruction, through sufficient, appropriate and proportionate technical and procedural measures.
+(2) CSIRTs may prioritise requests for support based on a risk-based approach.
+(3) CSIRTs shall establish cooperative relations with relevant stakeholders in order to fulfil their tasks.
+(4) In order to facilitate the cooperation referred to in paragraph (3) , CSIRTs shall promote the adoption and use of common or standardised practices, classification systems and taxonomies in relation to:
+a) incident management procedures;
+b) crisis management;
+c) coordinated disclosure of vulnerabilities, pursuant to art. 36 .
+(5) The minimum CSIRT service package must cover at least the functions and controls or elements related to the functions, of medium and high priority, as defined by internationally recognized standards and frameworks or platforms in the field of incident response and cybersecurity risk management, which will be specified and periodically updated by order of the DNSC director.
+Article 33
+(1) CSIRTs shall have the following responsibilities:
+a) monitoring and analysis of cyber threats, vulnerabilities and incidents at national level and, upon request, providing assistance to essential entities and important entities involved with real-time or near-real-time monitoring of their network and information systems in accordance with their needs;
+b) ensuring early warning mechanisms, alerts, announcements and dissemination of information to essential entities and important entities, as well as to competent authorities and other relevant stakeholders regarding cyber threats, vulnerabilities and incidents in near real time;
+c) responding to incidents and providing assistance to essential entities and important entities involved, as appropriate;
+d) collecting and analyzing data and providing dynamic risk and incident analysis and cybersecurity situational awareness;
+e) providing, at the request of an essential entity or an important entity, a security scan of the networks and information systems of the entity involved to detect vulnerabilities with a potentially significant impact;
+f) participation in the implementation of secure information exchange tools, in accordance with art. 20 .
+(2) The scans provided for in paragraph (1) letter e) are non-intrusive and are performed to detect vulnerable or insecurely configured networks and computer systems and do not have any negative effect on the functionality of the services of the entities concerned.
+Article 34
+(1) CSIRTs serving essential entities or important entities shall be authorized by the DNSC.
+(2) In this regard, DNSC has the following general powers:
+a) develops and adopts, by order of the DNSC director, the regulation on the authorization and verification of CSIRTs serving essential entities and important entities and establishes the validity conditions for the granted authorizations, as well as the topics for the training of CSIRTs' personnel;
+b) grants, extends, suspends or withdraws, by decision of the DNSC director, the authorization for CSIRTs;
+c) grants, extends, suspends or withdraws, by decision of the DNSC director, the authorization of training service providers for specific CSIRT activities;
+d) verifies, following notifications or ex officio, the fulfillment by authorized CSIRTs of their obligations.
+(3) The authorizations provided for in paragraph (2) letter b) are valid for three years.
+Article 35
+(1) DNSC, as a national CSIRT, may provide incident management support:
+a) essential entities and important entities, at their request;
+b) cybersecurity incident response teams.
+(2) The national CSIRT shall meet the requirements set out in Article 30(3) and Article 32(1) .
+(3) The national CSIRT may establish cooperative relations with CSIRTs from third countries, including to provide them with mutual assistance in cybersecurity matters. Such cooperative relations shall facilitate effective, efficient and secure information exchange with those CSIRTs, using the relevant information exchange protocols.
+(4) The national CSIRT may exchange relevant information with CSIRTs in third countries, including personal data in accordance with data protection legislation.
+Article 36
+(1) DNSC, as a national CSIRT, is responsible for managing the process of coordinated vulnerability disclosure and is designated as a coordinator acting as a trusted intermediary, facilitating, when necessary, the interaction between the natural or legal person reporting a vulnerability and the manufacturer or provider of potentially vulnerable ICT products or ICT services, at the request of either party.
+(2) In fulfilling the provisions of paragraph (1) , DNSC:
+a) ensures the receipt, storage and evaluation of reports relating to any vulnerability of an ICT product or service, submitted under the conditions of paragraph (3) ;
+b) ensures the anonymity of the person reporting a vulnerability;
+c) identifies and contacts the entities that produce, own or manage ICT products or services that are the subject of reporting according to paragraph (3) , to whom it communicates the reported vulnerabilities;
+d) facilitate, to the extent necessary, when acting as a trusted intermediary, the interaction between the person reporting a vulnerability and the manufacturer, owner, administrator or provider of potentially vulnerable ICT products or services, at the request of one of the parties and with the consent of the other party;
+e) order appropriate measures, in accordance with its legal powers, in relation to the management of vulnerabilities reported by entities that produce, own, manage or provide ICT products or services that are the subject of reporting according to paragraph (3) ;
+f) carries out, as appropriate, checks on vulnerabilities in information systems, with the support of producers, owners, administrators or suppliers of potentially vulnerable ICT products or services;
+g) negotiate with affected entities the disclosure and management schedules for vulnerabilities affecting multiple entities;
+h) when a reported vulnerability could have a significant cross-border impact, cooperate, as appropriate, with designated CSIRTs within the CSIRTs Network;
+i) issue procedures, technical norms and guides containing minimum requirements and recommendations for vulnerability reporting and the conduct of reporters, their management by entities and the fulfillment by them of related obligations, private vulnerability disclosure programs and relations between entities and reporters;
+j) may assist persons reporting a vulnerability.
+(3) Any natural or legal person may report vulnerabilities of ICT products or services to DNSC, in compliance with legal provisions.
+(4) Manufacturers and suppliers of ICT products or services have the obligation to transmit to DNSC all information regarding the vulnerabilities they identify, as well as regarding the vulnerabilities reported to them by third parties and affecting their own products or services, and to remedy those vulnerabilities within a period established in agreement with DNSC.
+(5) The natural or legal person reporting under paragraph (3) shall comply with at least the following:
+a) the research activity to discover the reported vulnerability is carried out in good faith, exclusively with the aim of contributing to improving cybersecurity and in compliance with legal provisions;
+b) the research activity is carried out without unauthorized access or copying of the content of files in the computer systems that are the subject of the research activity;
+c) within the framework of the research activity, no data from the computer systems that are the subject of the research activity are deleted or modified;
+d) the research activity is carried out without violating or circumventing technical barriers such as passwords or identification details, through techniques such as brute-force attacks, phishing or other social engineering procedures;
+e) no disruption or damage to third party ICT products or services is caused;
+f) the research activity is not carried out to carry out attacks, does not cause damage and does not use malware products or techniques likely to affect the availability of ICT services;
+g) did not publicly disclose information regarding the identified vulnerability, before or after the time of reporting, without the consent of DNSC.
+(6) The reporting referred to in paragraph (3) shall be made within 48 hours of the vulnerability being identified.
+(7) The entities subject to this emergency ordinance are required to establish ICT vulnerability management processes related to the products and services they offer, which include at least the following measures:
+a) ensures the receipt of vulnerability reports, their analysis in order to confirm or refute the validity of those reported, as well as to remedy confirmed vulnerabilities, including temporary solutions until remediation for affected persons;
+b) cooperation with DNSC in vulnerability management and coordinated vulnerability disclosure processes;
+c) establishing and publishing in the technical contact details in documents and on the website the contact and communication methods regarding vulnerabilities, as well as the terms and conditions for reporting vulnerabilities;
+d) ensuring communication and cooperation with reporters and DNSC in the process of coordinated disclosure of vulnerabilities, as well as, as appropriate, with users of potentially vulnerable products or services.
+Chapter VI Cooperation
+Section 1 Cooperation at national level
+Article 37
+(1) In order to ensure a high common level of cybersecurity at national level, the DNSC shall consult and cooperate with the following:
+a) The National Authority for Administration and Regulation in Communications, hereinafter referred to as ANCOM, which is the sectoral competent authority in the field of cybersecurity, according to the provisions of this emergency ordinance, for the sector "8. Digital infrastructure": "IXP (internet exchange point) providers", "Data center service providers", "Providers of public electronic communications networks" and "Providers of electronic communications services intended for the public" in Annex no. 1 and for the sector "1. Postal and courier services" in Annex no. 2 ;
+b) authorities, as they are identified under Article 2(2) of Commission Delegated Regulation (EU) 2024/1366 of 11 March 2024 supplementing Regulation (EU) 2019/943 of the European Parliament and of the Council by establishing a network code on sectoral rules for cybersecurity aspects of cross-border flows of electricity;
+c) The Authority for the Digitalization of Romania, hereinafter referred to as the ADR, which is the sectoral competent authority in the field of cybersecurity, according to the provisions of this emergency ordinance, for the sector "8. Digital infrastructure": "Trust service providers";
+d) other sectoral competent authorities in the field of cybersecurity, according to Annexes No. 1 and 2 .
+(2) In order to ensure a high common level of cybersecurity at national level, DNSC coordinates with CNCPIC and periodically exchanges information to identify essential entities identified as critical entities with regard to the cyber and non-cyber risks, incidents and threats that concern and affect them, as well as with regard to the measures taken in response to them.
+(3) DNSC cooperates and collaborates with the National Bank of Romania, hereinafter referred to as the NBR, and the Financial Supervisory Authority, hereinafter referred to as the ASF, to assess and manage cyber risks, identify vulnerabilities and implement appropriate protection measures for essential entities and important entities in the banking and financial market infrastructures sector, as follows:
+a) The NBR and the ASF shall transmit to the DNSC in a timely manner information on major ICT-related incidents and significant cyber threats, reported by the entities to which the requirements of the DORA Regulation apply, and the DNSC shall transmit to the NBR and the ASF information on major incidents and cyber threats, reported by the essential or important entities to which this emergency ordinance applies and which have been designated under the DORA Regulation as essential third-party providers of ICT services;
+b) The NBR and the ASF may request any type of relevant consultancy and technical assistance from the DNSC, within the limits of the DNSC's capacities and resources, and may establish cooperation agreements to allow the creation of effective and rapid coordination mechanisms.
+(4) DNSC applies the provisions of art. 3 paragraph (4) and art. 5 letter h) points 8 and 9 of Government Emergency Ordinance no. 104/2021 .
+(5) The competent sectoral authority will be designated by the relevant ministries, by Government decision.
+(6) When an entity carries out activity in two or more sectors, as provided for in Annexes No. 1 and 2 , it shall be subject to proportionate and appropriate technical, operational and organisational measures to manage the risks related to the security of networks and information systems at the highest level.
+(7) The authorities, as established in paragraph (1) , may:
+a) establish sectoral CSIRTs, meaning that they monitor, identify, analyze and respond to cybersecurity threats in the corresponding sector and offer preventive, reactive or consulting public services for cybersecurity management or may purchase specialized services from CSIRT-specific service providers, authorized by the DNSC;
+b) collect incident reports from its own sector, according to the common orders provided for in paragraph (8) letter b) ;
+c) carry out incident investigation activities, under the coordination of the national CSIRT;
+d) carry out specific technical activities to identify vulnerabilities in the networks and information systems of entities operating in their areas of competence, in which sense they consult and cooperate with the national CSIRT;
+e) carry out incident assessment activities in order to identify the main causes, so as to reduce the risk of such incidents occurring;
+f) develop guidelines and recommendations in the field of cybersecurity in the field of competence to ensure an adequate capacity to identify, assess and adopt risk management measures, respond to incidents and cyber attacks, ensure supply chain security, as well as manage crisis situations.
+(8) The authorities, as established in paragraph (1) , have the following powers:
+a) transmit to the DNSC, to the extent they possess it, information and data on cyber threats, including indicators of compromise, tactics, techniques and procedures, cybersecurity alerts and configuration tools when these exchanges of information and data aim to increase the digital operational resilience of entities within their area of ​​competence by raising awareness of cyber threats, limiting or preventing the spread of cyber threats, supporting the range of defensive capabilities of entities, threat detection techniques, mitigation strategies or stages of response and recovery processes;
+b) issue joint orders, together with DNSC, in the field of cybersecurity in the field of competence, in order to ensure a high common level of cybersecurity at national level, including with regard to the proportionate and appropriate technical, operational and organizational risk management measures that entities in the field of competence are obliged to take in carrying out their activity, the notification and response procedure to cybersecurity incidents applicable to entities in the field of competence, the specific thresholds and criteria for establishing the impact of security incidents in the field of competence;
+c) monitors compliance with the regulatory acts in the field of cybersecurity, developed according to letter b) , by the entities in the field of competence and carries out supervision and control activities, according to the provisions of this emergency ordinance, applying accordingly art. 46 para. (1) and (4)-(9) , art. 47 para. (1)-(7) , art. 48-50 , art. 51 para. (1) and art. 57 .
+(9) The authorities, as established in paragraph (1) , have the following obligations:
+a) supports DNSC in identifying essential entities and important entities in the field of competence according to art. 5-10 ;
+b) participates in the development of criteria for determining the impact of incidents, at the request of DNSC;
+c) ensures the harmonization of sectoral regulations in the field of cybersecurity with the provisions of regulatory acts issued by the DNSC;
+d) coordinates with DNSC regarding the planning and implementation of control activities that have as their object cybersecurity aspects;
+e) transmit to the DNSC information regarding violations of the provisions of this emergency ordinance, in order to support the DNSC in establishing remedial measures and sanctions.
+(10) The sectoral competent authorities are also empowered to ensure supervision, control and sanctioning in the application of the provisions of this emergency ordinance, as well as of the European Union regulations in the field of cybersecurity and of the implementing acts of the provisions of Directive (EU) 2022/2.555 which target the entities in their sector of competence according to this emergency ordinance, if the powers of supervision, control and sanctioning of the Regulations, respectively of the implementing acts, have not been granted to another authority.
+(11) The control carried out pursuant to paragraph (10) shall be carried out, as appropriate, together with control or specialist personnel from the DNSC.
+(12) The competent sectoral authorities may exercise their supervisory and control powers provided for by this emergency ordinance, including at the reasoned request of the CNCPIC, for entities identified as critical according to the legal provisions regarding the resilience of critical entities.
+(13) The application of the legal acts of the European Union does not derogate from the other obligations incumbent on essential entities and important entities under the provisions of this emergency ordinance.
+(14) Where sectoral legal acts of the European Union require essential entities or important entities to adopt cybersecurity risk management measures or to report significant incidents and those requirements have an effect at least equivalent to the effect of the obligations laid down in this Emergency Ordinance, the provisions of this Emergency Ordinance on risk management measures, incident reporting, and supervision, verification and control shall not apply to such entities. Where sectoral legal acts of the European Union do not cover all entities in a given sector falling within the scope of this Emergency Ordinance, the relevant provisions of this Emergency Ordinance shall continue to apply to entities not subject to those sectoral legal acts of the European Union.
+(15) The requirements referred to in paragraph (14) are considered equivalent in effect to the obligations provided for in this emergency ordinance, if they meet at least one of the following conditions:
+a) the cybersecurity risk management measures are at least equivalent in effect to those provided for in Article 13 ;
+b) the sectoral legal act of the European Union provides for immediate, where appropriate, automatic and direct access to incident reporting for CSIRTs, competent authorities or single points of contact under this emergency ordinance and whether the reporting requirements for significant incidents have an effect at least equivalent to those provided for in Article 15 .
+(16) The provisions of paragraphs (7)-(14) do not apply to the NBR and the ASF.
+(17) The joint order provided for in paragraph (8) letter b) may establish the modalities for implementing the provisions of art. 11 , art. 13 , art. 15 paragraphs (1) , (3) , (5)-(10) and art. 16 .
+(18) DNSC cooperates and collaborates with the Romanian Civil Aeronautical Authority, hereinafter referred to as AACR, the competent authority pursuant to art. 6 paragraph (1) of Commission Implementing Regulation (EU) 2023/203 of 27 October 2022 laying down detailed rules for the implementation of Regulation (EU) 2018/1.139 of the European Parliament and of the Council with regard to the requirements relating to the management of information security risks with a potential impact on aviation safety, imposed on organisations falling under Regulations (EU) No. 1.321/2014, (EU) No. 965/2012, (EU) No. 1.178/2011, (EU) 2015/340 of the Commission and of the Commission Implementing Regulations (EU) 2017/373 and (EU) 2021/664, as well as the competent authorities falling under the scope of Regulations (EU) No. 748/2012, (EU) No. 1.321/2014, (EU) No. 965/2012, (EU) No. 1.178/2011, (EU) 2015/340 and (EU) No. 139/2014 of the Commission and of the Commission Implementing Regulations (EU) 2017/373 and (EU) 2021/664, and amending Regulations (EU) No. 1.178/2011, (EU) No. 748/2012, (EU) No. 965/2012, (EU) No. 139/2014, (EU) No. 1321/2014, (EU) 2015/340 and Commission Implementing Regulations (EU) 2017/373 and (EU) 2021/664 and to Article 5(1) of Commission Delegated Regulation (EU) 2022/1645 of 14 July 2022 laying down detailed rules for the implementation of Regulation (EU) 2018/1139 of the European Parliament and of the Council with regard to requirements for the management of information security risks with a potential impact on aviation safety imposed on organisations subject to Regulations (EU) No. 748/2012 and (EU) No. 139/2014 of the Commission and amending Regulations (EU) No. 748/2012 and (EU) No. 139/2014 of the Commission, for the assessment and management of cyber risks, the identification of vulnerabilities and the implementation of appropriate protection measures for entities in the field of air transport provided for in Annex No. 1 , Transport sector, Air transport subsector to this emergency ordinance, as follows:
+a) AACR and DNSC cooperate to manage significant cyber incidents and threats reported by entities falling under the competence of AACR, and DNSC transmits to AACR information on cyber incidents and threats reported by entities falling under the competence of AACR and to which this emergency ordinance applies;
+b) AACR may request relevant technical advice and assistance from DNSC, within the limits of DNSC's capabilities and resources, and cooperation agreements may be established between the two authorities to allow for the creation of effective and rapid coordination mechanisms.
+(19) The DNSC shall inform the Supervisory Forum established under Article 32(1) of Regulation (EU) 2022/2.554 when exercising its supervisory and control powers aimed at ensuring compliance with this emergency ordinance by an essential or important entity, which is designated as a third-party provider of critical ICT services under Article 31 of Regulation (EU) 2022/2.554.
+(20) In order to ensure a high common level of cybersecurity at national level in the field of digital transformation and information society, DNSC cooperates with ADR regarding cyber risks, incidents and threats.
+(21) In order to fulfill their duties under the provisions of this emergency ordinance, the competent sectoral authorities shall ensure that they have sufficient and competent staff and that they have adequate resources to effectively and efficiently fulfill their duties.
+Article 38
+(1) In exercising the powers provided for in art. 37 para. (8) letter b) , the DNSC and the competent sectoral authority shall be obliged to comply with the consultation procedure established by this article whenever the measures they intend to adopt are likely to have a significant impact on cybersecurity in the corresponding sector.
+(2) DNSC and the competent sectoral authority are obliged to publish the text subject to consultation on their own websites, also specifying: the date of publication of the document, the date on which the deadline for submitting observations expires and the estimated date on which they intend to adopt the measure subject to consultation.
+(3) From the date on which the text subject to consultation is published on the internet pages, the DNSC and the competent sectoral authority shall grant a period of at least 30 days for the submission of observations, in writing, by any interested person. In situations where it is necessary to adopt emergency measures, the DNSC and the competent sectoral authority shall grant a period of 10 to 30 days for the submission of observations.
+(4) No later than the date of publication on the website of the draft order adopting the measure, the DNSC and the competent sectoral authority are obliged to publish a joint summary material with the observations received, in which they will also specify their position on these observations.
+(5) The DNSC and the competent sectoral authority may decide, by mutual agreement, that only the DNSC or only the competent sectoral authority shall carry out the public consultation procedure. In this case, each authority shall apply the procedure applicable to its own acts, while respecting a permanent dialogue between the two institutions involved.
+Article 39
+(1) In order to ensure a high common level of cybersecurity at national level, DNSC shall consult and cooperate with:
+a) The Romanian Intelligence Service, for the security of networks and information systems that ensure essential services whose disruption would harm national security;
+b) the Ministry of National Defense, for the security of networks and information systems that provide essential services in support of national defense activities;
+c) The Ministry of Internal Affairs, the Office of the National Register of State Secret Information, the Foreign Intelligence Service, the Special Telecommunications Service and the Protection and Guard Service, for the security of networks and information systems that provide essential services in their field of activity and responsibility.
+(2) DNSC shall consult and cooperate, as appropriate, with:
+a) criminal investigation bodies;
+b) The National Supervisory Authority for Personal Data Processing, hereinafter referred to as ANSPDCP, in the case of incidents resulting in a breach of personal data security, under the terms of the law.
+Section 2 Cooperation at European and international level
+Article 40
+(1) DNSC serves as a single point of contact at national level, in which capacity it facilitates cooperation on the security of networks and information systems with relevant authorities in Member States, with the European Commission and with ENISA, including for other competent authorities in Romania.
+(2) As the single point of contact at national level, DNSC has the following responsibilities:
+a) exercise the liaison function between the competent authorities in Romania and the authorities with competences in implementing measures for a high common level of cybersecurity in the Member States, as well as, where appropriate, with the European Commission, ENISA, the Cooperation Group and the CSIRT Network;
+b) inform the other affected Member States or partners if the incident has a significant impact on the continuity of essential services or important services in those states;
+c) submit to the Cooperation Group summary reports on notifications received and actions taken;
+d) transmit to the authorities or national CSIRTs of other Member States, to the CSIRTs authorized by the DNSC according to the provisions of this emergency ordinance, to the EU-CyCLONe Network, to the single points of contact in the other Member States, according to the area of ​​responsibility, notifications and requests regarding incidents affecting the functioning of essential services in one or more sectors set out in Annexes No. 1 and 2 ;
+e) transmits to the competent authorities the notifications and requests received from other Member States, according to the area of ​​responsibility;
+f) submit to ENISA, every three months, a summary report including anonymized and aggregated data on significant incidents, incidents, significant cyber threats and near misses reported by essential entities and important entities to the DNSC, as well as by any other entity, in accordance with Articles 15 and 16 .
+Article 41
+(1) DNSC, as a national CSIRT, participates in the CSIRT Network for operational purposes.
+(2) In fulfilling this capacity, DNSC has the following responsibilities:
+a) participate in the sharing, transfer and exchange of technology between the CSIRTs that are part of the Network;
+b) participate in the exchange of information on relevant measures, policies, tools, processes, good practices and frameworks between the CSIRTs that are part of the Network;
+c) participate in the exchange of relevant information regarding incidents, near misses, cyber threats, risks and vulnerabilities;
+d) participate in the exchange of information regarding publications and recommendations in the field of cybersecurity;
+e) participate in the development of a coordinated response of the Network for the management of an incident identified on the territory of another Member State;
+f) implement and use specifications and protocols relating to information exchange that ensure interoperability with other CSIRTs within the European Union;
+g) collaborates with the national CSIRT of the state affected by an incident to facilitate the exchange of information regarding the incident, the cyber threats, risks and vulnerabilities associated with it, at the request of the affected state, member of the Network;
+h) supports Member States in addressing cross-border incidents, under the terms of Law No. 58/2023 ;
+i) participate in the exchange of best practices and cooperate with other designated CSIRTs in managing the coordinated disclosure of vulnerabilities that could have a significant cross-border impact;
+j) participate in the assessment of cybersecurity exercises, including those carried out by ENISA;
+k) cooperate and participate in the exchange of information with regional and European Union security operational centres to improve common situational awareness of cyber incidents and threats;
+l) evaluates peer review reports, as appropriate;
+m) provide guidelines to facilitate the convergence of operational practices regarding the application of the provisions of this emergency ordinance relating to operational cooperation;
+n) transmits, as appropriate, requests for support to the other members of the Network for the development of a coordinated response of the Network for the management of an incident identified on the territory of Romania.
+Article 42
+In order to facilitate strategic cooperation and information exchange between Member States, the DNSC, in its capacity as the competent authority responsible for cybersecurity and for the tasks of supervising and ensuring compliance with measures for a high common level of cybersecurity, participates in the Cooperation Group established at European Union level.
+Article 43
+The DNSC, as CNGCSC, participates in EU-CyCLONe to support the coordinated management, at operational level, of large-scale cybersecurity incidents and crises and to ensure the regular exchange of relevant information between Member States and the European Union institutions, organisations, offices and agencies.
+Article 44
+(1) Peer reviews are voluntary and cooperative processes between Member States in which cybersecurity experts, designated by at least two States other than the State being evaluated, review each other's implementation of cybersecurity measures and operational capabilities and involve physical or virtual visits and exchanges of data and information. The Cooperation Group, in collaboration with the European Commission and ENISA, shall develop appropriate codes of conduct underpinning the working methods of the designated experts.
+(2) In accordance with the principle of good cooperation, the DNSC shall provide the designated cybersecurity experts with the information necessary for the assessment, without prejudice to national or Union law on the protection of confidential or classified information and the protection of essential State functions, such as national security.
+(3) Peer reviews shall cover at least one of the following:
+a) the level of implementation of cybersecurity risk management measures and reporting obligations established under this emergency ordinance;
+b) the level of capabilities, including the financial, technical and human resources available, as well as the effectiveness of the exercise of the tasks of the competent authorities;
+c) operational capabilities of CSIRTs;
+d) the level of implementation of mutual assistance;
+e) the level of implementation of agreements on the exchange of information in the field of cybersecurity;
+f) specific issues of a cross-border or cross-sectoral nature.
+(4) The DNSC shall appoint cybersecurity experts to conduct peer reviews based on a methodology that includes objective, non-discriminatory, fair and transparent criteria developed by the Cooperation Group.
+(5) The DNSC shall ensure that any risk of conflict of interest regarding the designated cybersecurity experts is disclosed to the other Member States, the Cooperation Group, the Commission and ENISA before the start of the peer review.
+(6) When Romania is subject to peer review, the DNSC may object to the designation of certain cybersecurity experts for duly justified reasons communicated to the Member State that designated them. When another Member State is subject to peer review, it may object to the designation of certain cybersecurity experts under the same conditions as the DNSC.
+(7) Cybersecurity experts participating in peer reviews shall prepare reports on the findings and conclusions of the peer reviews. The reports shall include recommendations to facilitate the improvement of the aspects covered by the peer review and shall be submitted to the Cooperation Group and the CSIRTs Network where appropriate.
+(8) DNSC, when subject to peer review, may submit comments on the draft reports concerning it, and these comments shall be annexed to the reports.
+(9) The DNSC, when subject to a peer review, may decide to make its report or an anonymised version thereof publicly available.
+(10) Before starting a peer review, the DNSC shall inform the participating Member States of its scope, including the specific aspects referred to in paragraph (3)(f) .
+(11) Before the start of the peer review, the DNSC may conduct a self-assessment of the issues under review and provide that self-assessment to the designated cybersecurity experts.
+(12) Any information obtained through the peer review shall be used exclusively for that purpose. Cybersecurity experts participating in the peer review shall not disclose to third parties any sensitive or confidential information obtained during that peer review.
+(13) Once they have been subject to a peer review, the same aspects assessed in Romania may not be subject to a new peer review for two years after the conclusion of the peer review, unless the DNSC decides otherwise or agrees to the proposal of the Cooperation Group.
+Article 45
+(1) When an entity registered in Romania as an essential or important entity provides services in several Member States or provides services in one or more Member States, and its network and IT systems are located in one or more other Member States, DNSC shall cooperate with the other equivalent competent authorities at European Union level and provide mutual assistance.
+(2) In the situation referred to in paragraph (1) , DNSC may request the competent authorities at the level of the European Union to exercise supervisory and control powers and, where appropriate, DNSC may impose fines for the irregularities found by them.
+(3) When an entity provides services in several Member States, including Romania, or provides services in one or more Member States and its network and IT systems are located in one or more other Member States, including Romania, DNSC cooperates with the other competent authorities at European Union level and provides mutual assistance.
+(4) In the situation referred to in paragraph (3) , the DNSC may exercise supervisory and control powers at the express request of the competent authorities of the European Union. Upon receipt of such a request, the DNSC may provide mutual assistance to the other authority in proportion to its resources, so that the measures adopted can be implemented in an effective, efficient and consistent manner.
+(5) DNSC refuses the request referred to in paragraph (4) when:
+a) it is established that it does not have the competence to provide the requested assistance;
+b) the requested assistance exceeds the DNSC's competences according to legal provisions;
+c) the request concerns information or involves activities which, if disclosed or carried out, would be contrary to the interests of Romania, respectively in the field of defense, public order and national security.
+(6) Before refusing the request referred to in paragraph (4) , the DNSC shall consult, where appropriate, the other competent authorities concerned, as well as, at the request of one of the Member States concerned, the European Commission and ENISA.
+(7) The application of the provisions relating to mutual assistance shall be carried out in compliance with the provisions of Law No. 58/2023 .
+Chapter VII Supervision, verification and control
+Section 1 Essential Entities and Important Entities
+Article 46
+(1) In order to ensure compliance with the provisions of this emergency ordinance, as well as subsequent normative acts by entities, DNSC may:
+a) carry out supervision, verification and control activities carried out by persons designated for this purpose by decision of the DNSC director;
+b) orders the performance of ad-hoc security audits, carried out by a certified cybersecurity auditor;
+c) request information necessary to assess the cybersecurity risk management measures adopted by the entity concerned, including documented cybersecurity policies, as well as compliance with the obligation to transmit information to the DNSC under Article 18 ;
+d) request access to data, documents and any information necessary for the performance of their supervisory tasks;
+e) request data, documents and any information that attests to the implementation of cybersecurity policies, such as the results of cybersecurity audits carried out by a certified auditor and the evidence underlying them.
+(2) The control activity is carried out based on the annual control plan approved by decision of the DNSC director, after its approval by the deputy director of the DNSC who coordinates the regulatory and control activity, or in the following cases, without being limited to these:
+a) a significant incident;
+b) solid evidence regarding the violation of the provisions of this emergency ordinance by an entity.
+(3) The supervision and control activity is carried out by the DNSC, including at the motivated request of the CNCPIC for entities identified as critical according to the legal provisions regarding the resilience of critical entities.
+(4) In the case of significant entities, supervision pursuant to paragraph (1) letter a) shall be carried out only for the implementation of Article 48 paragraph (2) letters b)-g) .
+(5) In order to implement paragraph (1)(a) with regard to essential entities and important entities, the DNSC may carry out non-intrusive and proactive cybersecurity scans, based on objective, non-discriminatory, fair and transparent criteria for risk assessment, with prior notification to the entity concerned and, where appropriate, in cooperation with it.
+(6) In order to implement paragraph (2) , DNSC may request access to data, hardware and software equipment, as well as information from the personnel of the entities in order to carry out its supervisory and control tasks.
+(7) When conducting a cybersecurity audit under the conditions provided for in art. 11 paragraph (5) or, as the case may be, paragraph (6) , a systematic assessment of all policies, procedures and protection measures implemented at the level of information networks and systems is carried out, in order to identify malfunctions and vulnerabilities and recommend measures to remedy them.
+(8) Within 5 days of the completion of any cybersecurity audit, the audited entity shall submit its results to the DNSC and, where applicable, to the competent sectoral authority.
+(9) The costs generated by the cybersecurity audit, including the ad-hoc one, are borne by the audited entity.
+Article 47
+(1) In applying the provisions regarding the requests provided for in art. 46 para. (1) lett. c)-e) , DNSC shall specify the purpose and the information requested, as well as the deadline within which the entity must comply, taking into account the urgency of the request.
+(2) The findings resulting from the performance of the supervision, verification and control activities provided for in art. 46 paragraph (1) are recorded by the designated control personnel in the finding note.
+(3) If the finding note provided for in paragraph (2) identifies facts that could constitute one of the contraventions provided for in art. 60 , the finding note shall be communicated to the entity in question in order to submit a point of view on the deficiencies found, requesting, if applicable, a plan of measures to remedy them.
+(4) The point of view provided for in paragraph (3) shall be communicated within 3 days of receiving the finding note sent by the DNSC, except in the case where the notified entity requests an extension of the deadline in order to obtain evidence in support of the said point of view, in which case the deadline may not exceed 10 days.
+(5) Within 15 working days from the date of receipt of the finding note according to paragraph (3) or the submission of the point of view according to paragraph (3) , as the case may be, the entities are obliged to draw up and submit to the DNSC the plan of measures to remedy all deficiencies found and the deadlines assumed for their implementation.
+(6) The deadlines provided for in paragraph (5) must be justified in light of the circumstances of the measure by which the deficiency is remedied.
+(7) The finding note provided for in paragraph (2) , the point of view provided for in paragraph (3) , as well as the action plan provided for in paragraph (5) , when they have been provided, shall form the basis of the decision of the DNSC director by which the contravention is found and the appropriate sanction is ordered.
+(8) The implementing rules and the methodology for risk-based prioritization of supervision, verification and control activities are issued by order of the DNSC director.
+Article 48
+(1) In order to fulfill its duties, as well as to ensure compliance with the provisions of this emergency ordinance by entities, DNSC applies the following sanctions:
+a) warning;
+b) misdemeanor fine.
+(2) DNSC may order, as appropriate, the following:
+a) adopting measures when necessary to prevent or remedy an incident, as well as deadlines for the implementation of these measures, including an ad-hoc audit;
+b) remedying the deficiencies identified in the application of letter a) ;
+c) cessation of the conduct of entities that violate the provisions of this emergency ordinance;
+d) implementing recommendations made following a security audit;
+e) the designation of a person from the control staff with well-defined tasks for a determined period of time, responsible for supervising compliance by the essential entity in question with the provisions of Articles 11-14 ;
+f) compliance with the cybersecurity risk management measures provided for in Articles 11-14 and the reporting obligations provided for in Article 15 , in a specific manner and within a specific time frame;
+g) that violations of the provisions of this emergency ordinance be made public by the responsible entity.
+(3) When, following the application of the provisions of art. 46 paragraph (1) letter b) , the ad-hoc audit reveals a violation of the provisions of this emergency ordinance, it is punishable according to paragraph (1) letter a) .
+(4) DNSC may order entities to inform, within a specific time limit, the persons to whom they provide a service or with whom they carry out activities, if they have been or may be affected by a significant cyber threat, of the following:
+a) the nature of the threat;
+b) the protective or remedial measures that the affected persons can adopt in order to prevent the occurrence of the significant incident or in order to remedy it.
+(5) The measures provided for in paragraphs (1) and (2) shall be ordered by decision of the DNSC director and shall be communicated to the entity in question no later than 60 days from the issuance of the decision.
+Article 49
+(1) When the measures provided for in art. 48 are not sufficient to ensure compliance by essential entities with requests to remedy deficiencies within a reasonable time, by decision of the DNSC director, the following may be ordered:
+a) notification of the authorities, institutions or entities competent in the sector with a view to temporarily suspending the certification or authorization issued for the entity in question, for part or all of the relevant services provided or for the relevant activities carried out by the entity in question;
+b) notification of the competent authorities, institutions or entities to impose a temporary ban on exercising the management function at the level of executive director or legal representative in the entity in question.
+(2) The suspension and temporary prohibition imposed pursuant to paragraph (1) shall apply until the DNSC notifies the competent authorities, institutions or entities pursuant to paragraph (1) of the cessation of the cause for which they were ordered.
+(3) The measures provided for in paragraph (1) shall not apply to public administration entities falling within the scope of this emergency ordinance.
+Article 50
+(1) The establishment of the measures provided for in Articles 48 and 49 shall be done by evaluating at least:
+a) the duration of the act;
+b) the existence of a previous offense;
+c) material or non-material damages caused by the act;
+d) the measures adopted by the entity in order to prevent or remedy the effects of the act;
+e) the entity's conduct in relation to the certification mechanisms it has joined or the codes of conduct assumed;
+f) the conduct of responsible persons in relation to the competent authorities.
+(2) The following acts constitute serious violations:
+a) repeated violations;
+b) failure to comply with the obligation to notify or remedy significant incidents;
+c) failure to fulfill the obligation to remedy the deficiencies found by the competent authorities;
+d) obstructing audits or monitoring activities ordered by DNSC following findings;
+e) providing false or manifestly distorted information regarding the cybersecurity risk management measures provided for in Articles 11-14 or the reporting obligations provided for in Article 15 ;
+f) restricting the access of personnel designated for this purpose by the DNSC to the areas subject to control, as well as to the data and information necessary for the control;
+g) failure to comply with the provisions of the DNSC issued pursuant to art. 48 paragraph (2) .
+(3) The entity's management bodies are responsible for allowing access to personnel, designated for this purpose by the DNSC, to the areas subject to control, as well as to the data and information necessary for the control.
+(4) The general meeting of shareholders is not a management body of essential and important entities within the meaning of this emergency ordinance.
+Article 51
+(1) The DNSC or, as the case may be, the competent sectoral authority shall inform the CNCPIC when it exercises its supervisory and control powers over an essential entity identified as a critical entity in accordance with the legal provisions on the resilience of critical entities.
+(2) CNCPIC may request DNSC to exercise its supervisory and control powers over an essential entity identified as a critical entity in accordance with the legal provisions on the resilience of critical entities.
+Article 52
+DNSC may propose the empowerment by Government decision of other sectoral competent authorities in the field of cybersecurity for the corresponding field of competence in order to fulfill the duties provided for in art. 46-51 and art. 60-63 .
+Section 2 CSIRTs, auditors and cybersecurity training providers
+Article 53
+(1) The DNSC supervises, verifies and controls the activity of the CSIRTs of essential entities and important entities or sectoral CSIRTs, of CSIRT-specific service providers, as well as of cybersecurity auditors, when they provide specialized services to essential entities and important entities.
+(2) DNSC, in exercising its supervisory, verification and control duties, in the event of non-fulfillment of obligations by the CSIRTs of essential entities and important entities or sectoral CSIRTs, CSIRT-specific service providers, as well as cybersecurity auditors, shall carry out control activities with the aim of verifying the fulfillment of the obligations, requirements and responsibilities provided for in art. 31-33 , issue binding provisions for compliance and remedying the deficiencies found and establish deadlines for their compliance, establish supervisory measures and apply sanctions.
+Article 54
+(1) DNSC supervises, verifies and controls the activity of providers of cybersecurity training services for auditors and CSIRTs.
+(2) DNSC, in exercising its supervisory, verification and control duties, in the event of non-fulfillment of obligations by providers of cybersecurity training services for auditors and CSIRTs, carries out control activities with the aim of verifying compliance with the provisions of the order in paragraph (3) , issues mandatory provisions for compliance and remedying the deficiencies found and establishes deadlines for their compliance, establishes supervisory measures and applies sanctions.
+(3) DNSC shall develop the regulation on the authorization, verification and revocation of providers of cybersecurity training services for auditors and CSIRTs and shall establish the validity conditions for the authorizations granted to them by order of the DNSC director.
+Article 55
+(1) If, following the checks, serious violations are found, DNSC may order the suspension of the cybersecurity auditors' certificate or the CSIRTs' authorization for a determined period of time, in order to remedy them, or, as the case may be, their withdrawal.
+(2) Annually, by March 31, cybersecurity auditors shall submit to DNSC, in electronic format, a statement of the security audits carried out in the previous calendar year, namely the number, beneficiaries, periods, serious irregularities found and vulnerabilities found.
+Article 56
+(1) DNSC exercises supervision, verification and control of compliance with the provisions of this emergency ordinance regarding the obligations arising from their authorization and certification activities for the CSIRTs of essential entities and important entities or sectoral CSIRTs, providers of specific CSIRT services, as well as cybersecurity auditors.
+(2) The rules for the implementation of the provisions on supervision, verification and control for the CSIRTs of essential entities and important entities or sectoral CSIRTs, CSIRT-specific service providers, as well as cybersecurity auditors shall be approved by order of the DNSC director.
+(3) The authorization, suspension and withdrawal of authorization, as well as the re-authorization of providers of cybersecurity training services for auditors and CSIRTs, shall be ordered by decision of the DNSC director.
+(4) The authorization of a cybersecurity training service provider for auditors and CSIRTs is issued by the DNSC based on evaluation criteria, with a limited validity of four years.
+Chapter VIII Cybersecurity Audit
+Article 57
+(1) The cybersecurity audit may be:
+a) periodically, which is carried out regularly, according to the order in art. 11 paragraph (5) or, as the case may be, paragraph (6) ;
+b) ad-hoc, based on the decision of the DNSC director according to paragraph (2) .
+(2) The ad-hoc cybersecurity audit is exceptional in nature and represents that auditing activity carried out by an auditor certified according to the provisions of this emergency ordinance, with regard to an essential entity or an important entity, at the reasoned request of the DNSC, as a result of:
+a) a significant incident;
+b) a change with a significant impact on networks and IT systems, but no later than 180 days from its occurrence;
+c) solid evidence of a violation of the provisions of this emergency ordinance by an essential entity.
+(3) When an ad-hoc audit is ordered, the DNSC communicates to the entity both the reasons and the objectives of the audit.
+(4) The audited entity has the right to select the auditor.
+(5) The change with significant impact at the level of networks and information systems provided for in paragraph (2) letter b) is generated by:
+a) the introduction of a new network or a new computer system involved in the provision of the service;
+b) introduction of a new technology for providing the service;
+c) changing the way the service operates;
+d) changing the quality of the entity, from important entity to essential entity.
+(6) The solid indications provided for in paragraph (2) letter c) may result from the implementation of the control measure carried out by the DNSC staff, from the information received from the authorities provided for in art. 10 of Law no. 58/2023 , CNCPIC, the sectoral competent authorities provided for in art. 37 , as well as from other entities according to art. 25 of Law no. 58/2023 or as a result of the analyses of the incidents reported through the incident reporting platform.
+(7) During the periodic cybersecurity audit, a systematic assessment of all policies, procedures and protection measures implemented at the level of networks and IT systems is carried out, in order to identify malfunctions and vulnerabilities and recommend measures to remedy them.
+(8) Within 15 working days from the date of receipt of the audit report, entities are required to prepare and submit to the DNSC and, where appropriate, to the competent sectoral authority, based on the recommendations issued by the auditor, the plan of measures to remedy all deficiencies found and the deadlines assumed for their implementation.
+(9) The entities are obliged to implement the plan of measures provided for in paragraph (8) within the agreed deadline.
+(10) The entity in question shall notify the DNSC and, where appropriate, the competent sectoral authority regarding the implementation of all measures provided for in paragraph (8) and shall provide supporting documents in this regard, no later than five days after the expiry of the assumed deadline.
+(11) The deadlines provided for in paragraph (9) must be justified in light of the circumstances of the measure by which the deficiency is remedied.
+Article 58
+(1) The cybersecurity audit is carried out by cybersecurity auditors holding a valid certificate issued by the DNSC, with the exception of the cybersecurity audit carried out at the level of institutions with responsibilities in the field of defense, public order and national security, as well as for the services provided by them.
+(2) In this regard, DNSC:
+a) maintain records of cybersecurity auditors;
+b) develops the regulation on the certification and verification of cybersecurity auditors and establishes the validity conditions for the certificates granted to them by order of the DNSC director;
+c) grants, extends, suspends or withdraws the certification of cybersecurity auditors, according to the regulation provided for in letter b) ;
+d) verifies, following notifications or ex officio, the fulfillment by certified auditors of their legal obligations;
+e) develops the topics for the specialization of auditors for the certification provided for in letter c) , by decision of the DNSC director.
+(3) I cannot perform a cybersecurity audit:
+a) certified auditors who routinely provide cybersecurity services or CSIRT-type services to the essential entities or important entities concerned or are their employees;
+b) the auditor who has a service contract for the network or system being audited that is ongoing at the time the audit is performed or within a period of less than one year;
+c) the auditor who has previously performed 3 consecutive audits at the same essential entity or important entity.
+(4) The audit activity is carried out according to the European and international standards and specifications applicable in the field.
+(5) The audit topics will take into account the technical rules in force regarding the security of networks and information systems of essential entities and important entities, developed pursuant to this emergency ordinance.
+(6) The certificates are valid for 3 years.
+(7) The list of European and international standards and specifications provided for in paragraph (4) shall be drawn up and approved by decision of the DNSC director, which shall be updated whenever necessary.
+(8) When conducting a security audit activity, the cybersecurity auditor must:
+a) demonstrate professional integrity, acting honestly and fairly in all professional engagements, providing true and accurate assessments;
+b) to comply with the ethical codes issued by DNSC and the Romanian Information Systems Auditors Corps, to demonstrate and maintain transparency in communications;
+c) not be in a conflict of interest that could affect their independence, whether of a financial, personal or professional nature, in order to be able to make decisions independently and without any influence from the audited entity or other interested parties;
+d) protect the confidentiality of information obtained during the audit process, meaning that it must be ensured that access to sensitive information is restricted only to authorized personnel and that this information is stored securely, in accordance with the relevant regulations governing audit practices, including those specific to cybersecurity.
+Article 59
+(1) In order to award and withdraw the cybersecurity auditor certificate, as well as to organize and coordinate cybersecurity audit activity, the Romanian Information Systems Auditors Corps is established by Government Decision drafted by DNSC, within two years from the entry into force of this emergency ordinance.
+(2) The Romanian Information Systems Auditors Body is organized and will function as a non-profit professional public utility organization, with legal personality, under the coordination of the DNSC.
+(3) The Romanian Information Systems Auditors Body has as its main object of activity the regulation of standards, as well as the Code of Ethics for the professional practice of cybersecurity auditing and the continuous monitoring of information systems auditing activities in Romania.
+(4) The organizational structure of the Romanian Information Systems Auditors Corps is approved by order of the DNSC director.
+(5) DNSC coordinates the activity of drafting the organization and functioning regulations and internal order.
+(6) The Romanian Information Systems Auditors Body may have subunits with or without legal personality, departments, sections and may acquire the status of associate or founding shareholder within other commercial companies or organizational structures necessary for the achievement of its object of activity.
+Chapter IX Sanctions
+Article 60
+(1) The following acts constitute contraventions if they were not committed under such conditions as to be considered crimes according to the law:
+a) failure by essential and important entities to comply with the obligation to take technical, operational and organizational measures provided for in art. 11 paragraph (1) under the conditions and in compliance with the imposed requirements;
+b) failure by essential and important entities to comply with the obligation to undergo a cybersecurity audit under the conditions established in accordance with art. 11 paragraph (5) or, as the case may be, paragraph (6) and within the indicated deadline;
+c) failure by essential and important entities to comply with the obligation to transmit the data requested pursuant to art. 11 paragraph (7) within the time limit and under the conditions established in the request;
+d) failure by essential and important entities to comply with the obligation to transmit the data requested pursuant to art. 11 paragraph (9) within the time limit and under the conditions established in the request;
+e) failure by essential and important entities to comply with the obligation to carry out and submit the annual self-assessment of the maturity level according to art. 12 paragraph (4) ;
+f) failure by essential entities to comply with the obligation to draw up and submit the plan of measures to remedy deficiencies according to art. 12 paragraph (5) , within 30 days of carrying out the self-assessment;
+g) failure by members of the management bodies of essential and important entities to comply with the obligation to supervise the implementation of risk management measures pursuant to art. 14 para. (1) ;
+h) failure by members of the management bodies of essential and important entities to comply with the obligation to attend professional training courses in the field of cybersecurity in accordance with art. 14 paragraph (2) ;
+i) failure by members of the management bodies of essential and important entities to comply with the obligation to establish permanent means of contact pursuant to art. 14 para. (3) ;
+j) failure by members of the management bodies of essential and important entities to comply with the obligation to allocate resources according to art. 14 para. (3) ;
+k) failure by members of the management bodies of essential and important entities to comply with the obligation to designate those responsible for the security of networks and information systems according to art. 14 paragraph (3) ;
+l) failure by essential and important entities to comply with the reporting obligation pursuant to art. 15 paragraph (1) in compliance with the terms and conditions established pursuant to art. 15 ;
+m) failure by essential and important entities to comply with the obligation to notify recipients of services in compliance with the terms and conditions established in accordance with art. 15 paragraph (1) ;
+n) failure by essential and important entities to comply with the obligation to report information in compliance with the terms and conditions established in accordance with art. 15 paragraph (3) ;
+o) failure by entities in the sectors provided for in Annexes No. 1 and 2 to comply with the notification obligation pursuant to Art. 18 para. (2) within the indicated deadline;
+p) failure by entities in the sectors provided for in Annexes No. 1 and 2 to comply with the obligation to provide information according to Art. 18 para. (3) within the indicated deadline;
+q) failure by essential and important entities to comply with the obligation to submit the risk assessment according to art. 18 para. (6) within the indicated deadline;
+r) failure by essential and important entities to comply with the obligation to self-assess the maturity level according to art. 18 paragraph (7) within the indicated deadline;
+s) failure by essential and important entities to comply with the obligation to communicate changes pursuant to art. 18 paragraph (8) within the indicated deadlines;
+t) failure by essential and important entities to comply with the notification obligation according to art. 18 paragraph (13) within the indicated deadline;
+u) failure by TLD name registries and entities providing domain name registration services to comply with the obligation to collect data pursuant to art. 19 para. (1) ;
+v) failure by TLD name registries and entities providing domain name registration services to establish policies and procedures pursuant to art. 19 para. (3) ;
+w) failure by TLD name registries and entities providing domain name registration services to make data publicly available pursuant to art. 19 para. (4) ;
+x) failure by TLD name registries and entities providing domain name registration services to comply with the obligation to provide access to data pursuant to art. 19 para. (8) ;
+y) failure by TLD name registries and entities providing domain name registration services to make publicly available their data disclosure policies and procedures pursuant to art. 19 para. (9) ;
+z) failure by TLD name registries and entities providing domain name registration services to comply with the obligation to respond to access requests pursuant to art. 19 para. (9) ;
+aa) carrying out activities specific to CSIRT teams, by entities that do not hold the authorization according to art. 34 ;
+bb) failure by producers and suppliers of ICT products or services to comply with the obligation to transmit information pursuant to art. 36 paragraph (4) ;
+cc) failure by producers and suppliers of ICT products or services to comply with the obligation to remedy vulnerabilities according to art. 36 paragraph (4) within the mutually agreed deadline;
+dd) failure by essential and important entities to comply with the obligation to establish vulnerability management processes according to art. 36 paragraph (7) ;
+ee) failure by essential and important entities to comply with the obligation to transmit audit results according to art. 46 paragraph (8) , within the indicated deadline;
+ff) failure by essential and important entities to comply with the obligation to provide information when ordered by the DNSC in accordance with art. 48 paragraph (4) , within the indicated deadline;
+gg) failure by the CSIRTs of essential and important entities, sectoral CSIRTs, CSIRT-specific service providers and cybersecurity auditors to comply with the provisions issued by the DNSC pursuant to art. 53 para. (2) , within the indicated deadlines;
+hh) failure by providers of cybersecurity training services for auditors and CSIRTs to comply with the provisions issued by the DNSC pursuant to art. 54 para. (2) , within the indicated deadlines;
+ii) failure by cybersecurity auditors to comply with the obligation to transmit information according to art. 55 paragraph (2) , within 30 days from the expiry of the given deadline;
+jj) failure by essential and important entities to comply with the obligation to draw up and submit the action plan according to art. 57 paragraph (8) , within the indicated deadline;
+kk) failure by essential and important entities to comply with the implementation obligation according to art. 57 paragraph (9) , within the assumed deadline;
+ll) failure by essential and important entities to comply with the obligation to notify and make available the supporting documents pursuant to art. 57 paragraph (10) , within the indicated deadline;
+mm) failure by essential and important entities to comply with the modalities for implementing the provisions of art. 11 para. (2) , (4) , (8) and (10) , art. 13 , art. 15 para. (1) , (3) , (5)-(10) and art. 16 established by joint orders issued in accordance with the provisions of art. 37 ;
+nn) failure by essential and important entities to comply with the obligation to transmit to DNSC or, as the case may be, to the competent sectoral authority, the information requested according to art. 46 para. (1) let. c)-e) ;
+oo) failure by essential and important entities to comply with the obligation to prepare and submit to the DNSC or, as the case may be, to the competent sectoral authority, the plan of measures to remedy all deficiencies found and the deadlines assumed for their implementation, according to art. 47 para. (5) .
+(2) By way of derogation from the provisions of art. 8 para. (2) letter a) of Government Ordinance no. 2/2001 on the legal regime of contraventions, approved with amendments and completions by Law no. 180/2002 , with subsequent amendments and completions, the contraventions provided for in para. 1 shall be sanctioned as follows:
+a) for large entities, a fine from 5,000 lei to a maximum of 7,000,000 euros in the lei equivalent or a maximum of 1.4% of the net turnover, taking into account the higher value of these, for the contraventions provided for in paragraph (1) letters a)-d) , f)-m) , dd) , jj) and mm );
+b) for essential entities, a fine from 10,000 lei to a maximum of 10,000,000 euros in the equivalent in lei or a maximum of 2% of the net turnover, taking into account the higher value of these, for the contraventions provided for in paragraph (1) letters a)-m) , dd), jj) and mm);
+c) for important entities, a fine from 1,000 lei to 300,000 lei for the contraventions provided for in paragraph (1) letters n)-t) , ee)-ff) , kk)-ll) and nn)-oo) ;
+d) for essential entities, a fine from 1,500 lei to 500,000 lei, in the case of paragraph (1) letters n)-t) , ee)-ff) , kk)-ll) and nn)-oo) ;
+e) fine from 1,000 lei to 100,000 lei, for the contraventions provided for in paragraph (1) letters u)-z) , aa)-cc) and gg)-ii) .
+(3) The net turnover provided for in paragraph (2) letters a) and b) is that recorded by the important or essential entity in the last financial year.
+(4) In order to individualize the sanction provided for in paragraph (2) , the criteria provided for in art. 50 paragraph (1) shall be taken into account , and when the provisions of art. 50 paragraph (2) are applicable , the amount of the fine may be established up to double the limits provided for in paragraph (2) .
+(5) For newly established legal entities and for legal entities that did not register a turnover in the financial year prior to the sanction, the fine provided for in paragraph (2) shall be set at a minimum of one and a maximum of 50 gross minimum salaries per economy.
+(6) To the extent that this emergency ordinance does not provide otherwise, the provisions of Government Ordinance no. 2/2001 shall apply to the contraventions provided for in paragraph (1) .
+(7) By way of derogation from the provisions of art. 16 paragraph (1) , art. 28 paragraph (1) and art. 29 of Government Ordinance no. 2/2001 , in the case of sanctions applied for the commission of contraventions provided for in paragraph (1) , the offender may pay, within a maximum of 15 days from the date of delivery or communication of the act establishing the contravention and applying the sanction, half of the amount of the fine applied, the ascertaining agent making a mention of this possibility in the report, a mention which is also repeated in the decision by which the sanction is applied.
+Article 61
+(1) The detection of contraventions provided for in art. 60 paragraph (1) shall be carried out in accordance with the provisions of art. 46-50 .
+(2) The detection of contraventions provided for in art. 60 par. (1) letters a)-n) , ee) , ff) , jj)-oo) is carried out by the DNSC or by the control staff of the competent sectoral authorities according to art. 37 par. (1) , for essential or important entities, as the case may be, which carry out their activity in the field of competence of these authorities, the application of the sanction being carried out, in the case of the competent sectoral authorities, by decision of their management, with the corresponding application of par. (3)-(8) . The detection of contraventions provided for in art. 60 par. (1) letters o)-dd) , gg)-ii) is carried out by the DNSC, the application of the sanction being carried out by decision of the DNSC director.
+(3) The decision of the DNSC director to find the contravention and to apply the sanction shall include the following:
+a) the identification data of the offender;
+b) the date of the commission of the act;
+c) description of the contravention and the circumstances that were taken into account when individualizing the sanction;
+d) indication of the legal basis according to which the contravention is established and sanctioned;
+e) the sanction applied;
+f) the deadline and method of payment of the fine, in the event of the application of the fine sanction;
+g) the deadline for exercising the appeal and the competent court.
+(4) By way of derogation from the provisions of art. 13 of Government Ordinance no. 2/2001 , the application of the sanction established under this emergency ordinance shall be prescribed within three years from the date of the commission of the act. In the case of violations that last over time or those consisting of the commission, based on the same resolution, at different intervals of time, of several actions or inactions, each of which presents the content of the same contravention, the prescription shall begin to run from the date of the finding or from the date of cessation of the last act or act committed, if this moment occurs prior to the finding.
+(5) The offender shall also be notified of the payment notice, which shall contain the mention regarding the obligation to pay the fine within 30 days from the date of notification of the document.
+(6) The decision to establish the contravention and to apply the sanction provided for in paragraph (2) , not appealed within the term provided for in paragraph (8) , as well as the final court decision by which the administrative action was resolved, constitutes an enforceable title, without any other formality. The administrative action under the conditions provided for in paragraph (8) suspends the execution only as regards the payment of the fine, until the court issues a final decision.
+(7) The amounts from the fines applied in accordance with the provisions of this article shall be fully transferred to the state budget. The enforcement shall be carried out in accordance with the legal provisions on the forced execution of tax receivables. In order to enforce the sanction, the DNSC and the competent sectoral authorities provided for in art. 37 shall, ex officio, communicate to the specialized bodies of the National Agency for Fiscal Administration the decision to establish the contravention and to apply the sanction provided for in para. (2) or (3), not appealed within the term provided for in para. (8) , after the expiry of the term provided for in the payment notice or after the court decision by which the administrative litigation action was resolved has become final.
+(8) By way of derogation from the provisions of art. 7 of the Administrative Litigation Law no. 554/2004 , as subsequently amended and supplemented, and from the provisions of art. 32 paragraph (1) of Government Ordinance no. 2/2001 , administrative acts, decisions and decisions establishing the contravention and applying the sanction adopted according to the provisions of this emergency ordinance may be appealed in administrative litigation at the Bucharest Court of Appeal, without going through the preliminary procedure, within 30 days of their communication.
+Article 62
+(1) DNSC shall inform, without undue delay, ANSPDCP when, in exercising its supervisory and control powers under the provisions of this emergency ordinance, it finds specific aspects of cybersecurity policies or incidents that may have an impact on the protection of personal data.
+(2) DNSC does not apply the provisions of art. 48 paragraph (1) for acts with an impact in the field of personal data protection regarding which an investigation has been or is being conducted by ANSPDCP.
+(3) The processing of personal data falling under the scope of this emergency ordinance shall be carried out in compliance with the legal regulations on the protection of natural persons with regard to the processing of personal data.
+(4) The reports made pursuant to this emergency ordinance do not affect the obligations of personal data controllers established under Articles 33 and 34 of Regulation (EU) 2016/679 .
+(5) When the competent supervisory authority under Regulation (EU) 2016/679 is established in another Member State, the DNSC shall inform the ANSPDCP of the potential data security breach pursuant to paragraph (1) .
+Article 63
+DNSC informs the institutions with responsibilities for coordinating the activity and control in the field of classified information protection as established by Law No. 182/2002 on the protection of classified information, with subsequent amendments and supplements, and subsequent normative acts if it is found that cyber security incidents may have an impact on the protection of state secret or official secret data and information.
+Chapter X Transitional and final provisions
+Article 64
+(1) The measures adopted or imposed by ANCOM pursuant to the provisions of Chapter IV of Government Emergency Ordinance No. 111/2011 , by Decision No. 70/2024 of the President of ANCOM regarding the security of public electronic communications networks and publicly available electronic communications services, shall remain in force until their revision.
+(2) The provisions of this emergency ordinance apply to all acts and facts concluded or, as the case may be, produced or committed after its entry into force, as well as to legal situations arising after its entry into force.
+(3) Subsequent acts adopted pursuant to this emergency ordinance shall produce legal effects to the extent that they do not contravene the legal regulations in force.
+(4) The provisions of Articles 60 and 61 shall enter into force 30 days from the date of publication of this emergency ordinance in the Official Gazette of Romania, Part I.
+Article 65
+(1) By order of the DNSC director, which is published in the Official Gazette of Romania, Part I, the following is approved:
+a) The criteria and thresholds for determining the degree of disruption of a service and the methodology for assessing the risk level of entities, pursuant to art. 10 paragraph (2) , within 20 days from the date of entry into force of this emergency ordinance;
+b) Risk management measures, pursuant to art. 12 paragraph (1) , within 120 days from the date of entry into force of this emergency ordinance;
+c) Methodological norms regarding incident reporting, pursuant to art. 15 paragraph (17) , within 120 days from the date of entry into force of this emergency ordinance;
+d) The requirements regarding the notification process for registration and the method of transmitting information, pursuant to art. 18 paragraph (9) , within 15 days from the date of entry into force of this emergency ordinance;
+e) The national peacetime cybersecurity crisis management plan, pursuant to art. 28 paragraph (2) , within 180 days from the date of entry into force of this emergency ordinance;
+f) Technical rules on the compatibility and interoperability of systems, procedures and methods used by CSIRTs and the criteria for establishing the number of qualified persons, pursuant to art. 31 paragraph (2) , within 120 days from the date of entry into force of this emergency ordinance;
+g) The minimum package of CSIRT-type services, pursuant to art. 32 paragraph (5) , within 120 days from the date of entry into force of this emergency ordinance;
+h) Regulation on the authorization and verification of CSIRTs, the validity conditions for the authorizations granted and the topics for the training of CSIRTs staff, pursuant to art. 34 para. (2) letter a) , within 120 days from the date of entry into force of this emergency ordinance;
+i) The implementing rules and methodology for risk-based prioritization of supervision, verification and control activities, pursuant to art. 47 paragraph (8) , within 120 days from the date of entry into force of this emergency ordinance;
+j) Regulation on the authorization, verification and revocation of providers of cybersecurity training services for auditors and CSIRTs and the validity conditions for the authorizations granted to them, pursuant to art. 54 paragraph (3) , within 120 days from the date of entry into force of this emergency ordinance;
+k) The rules for the application of the provisions on supervision, verification and control for CSIRTs, CSIRT-specific service providers, as well as for cybersecurity auditors, pursuant to art. 56 para. (2) , within 120 days from the date of entry into force of this emergency ordinance;
+l) Regulation on the certification and verification of cybersecurity auditors and the conditions of validity for the certificates granted, pursuant to art. 58 para. (2) letter b) , within 120 days from the date of entry into force of this emergency ordinance.
+(2) By decision of the DNSC director, which is published in the Official Gazette of Romania, Part I, the following is approved:
+a) the topics for the specialization of auditors for certification, pursuant to art. 58 paragraph (2) letter e) , within 180 days from the date of entry into force of this emergency ordinance;
+b) the topics for the specialization of CSIRTs personnel for authorization, pursuant to art. 31 paragraph (3) , within 180 days from the date of entry into force of this emergency ordinance.
+Article 66
+(1) On the date of entry into force of this emergency ordinance, the following shall be repealed:
+a) Law no. 362/2018 on ensuring a high common level of security of networks and information systems, published in the Official Gazette of Romania, Part I, no. 21 of 9 January 2019, with the exception of measures adopted or imposed pursuant to the provisions of Chapters IV and V, which remain in force until their revision, according to art. 65 ;
+b) art. 4 para. (1) points 54^1 and 54^2 , as well as chapter IV : Security of electronic communications networks and services of Government Emergency Ordinance no. 111/2011 ;
+c) Law No. 146/2014 on authorizing the payment of contributions to the International Forum of Incident Response and Security Teams (FIRST) and to the TF/CSIRT Trusted Introducer (TI) Forum within the Transeuropean Research and Education Network Association (TERENA) in order to maintain the participation of the National Cybersecurity Incident Response Center CERT-RO in these two non-governmental organizations, with subsequent amendments and supplements.
+(2) References made by other normative acts to Law No. 362/2018 on ensuring a high common level of security of networks and information systems shall be deemed to be made to this emergency ordinance.
+Article 67
+(1) Until December 31, 2027, in order to obtain an adequate level of qualified personnel, for positions that, according to the job description, contribute to the fulfillment of the duties provided for by this emergency ordinance, DNSC, AACR, ANCOM and other authorities with competences at sectoral level shall not apply the provisions:
+a) art. VII of Government Emergency Ordinance no. 115/2023 regarding some fiscal-budgetary measures in the field of public expenditure, for fiscal consolidation, combating tax evasion, for amending and supplementing certain normative acts, as well as for extending certain deadlines, with subsequent amendments and supplements, as well as the provisions of general normative acts concerning restrictions on the filling of vacant or temporarily vacant positions in the budgetary sector through competition or examination;
+b) art. XVII paragraph (7) or, as the case may be, art. XXXII of Law no. 296/2023 on certain fiscal-budgetary measures to ensure the long-term financial sustainability of Romania, with subsequent amendments and supplements.
+(2) By way of derogation from the provisions of art. III of Government Emergency Ordinance no. 1/2020 on certain fiscal-budgetary measures and for the amendment and completion of certain normative acts, with subsequent amendments and completions, until 31 December 2027, in order to obtain an adequate level of qualified personnel, for the positions which, according to the job description, contribute to the fulfillment of the duties provided for by this emergency ordinance, the filling by secondment of vacant or temporarily vacant positions within ANCOM and other authorities with sectoral competences will be carried out exclusively under the conditions of Law no. 53/2003 - Labour Code, republished , with subsequent amendments and completions.
+(3) In order to obtain an adequate level of qualified personnel, until December 31, 2027, the filling of vacant and temporarily vacant positions provided for in paragraphs (1)-(2) through competition shall be carried out exclusively under the conditions of Law no. 53/2003, republished , with subsequent amendments and supplements, of Government Emergency Ordinance no. 57/2019 on the Administrative Code, with subsequent amendments and supplements, as the case may be, and of the normative acts specific to each authority.
+(4) By way of derogation from art. 47 paragraph (2) of Law no. 53/2003, republished , as subsequently amended and supplemented, in the case of personnel who are not salaried under Law no. 153/2017 on the remuneration of personnel paid from public funds, the rights due to the seconded employee may not exceed the level of rights that the personnel of the public authority or institution to which he is seconded may benefit. If the salary rights from the employer who ordered the secondment are more favorable, the employee may refuse the secondment.
+(5) In application, as the case may be, of the provisions of paragraph (2) , by way of derogation from the provisions of art. 505 paragraph (2) of Government Emergency Ordinance no. 57/2019 on the Administrative Code, as subsequently amended and supplemented, vacant or temporarily vacant contractual positions may be filled by secondment, including personnel with civil servant status or civil servant with special status. The secondment shall be carried out with prior notification of the National Agency of Civil Servants in accordance with the provisions of art. 505 paragraph (6) and (7) of Government Emergency Ordinance no. 57/2019 , as subsequently amended and supplemented.
+(6) The secondment provided for in paragraph (5) shall be ordered for a fixed period, under the conditions provided for in art. 46 paragraph (1) and (2) of Law no. 53/2003, republished , with subsequent amendments and completions, only with the written consent of the civil servant or civil servant with special status to be seconded, in compliance with the provisions of art. 505 paragraph (8) of Government Emergency Ordinance no. 57/2019 , with subsequent amendments and completions, at least 10 days before ordering the measure.
+(7) By way of derogation from the provisions of art. 505 para. (3) and (5) of Government Emergency Ordinance no. 57/2019 , as subsequently amended and supplemented, secondment under the conditions of para. (5) may be ordered from a public executive or management position to a contractual executive or management position, if the civil servant or civil servant with special status meets the employment conditions provided for in the job description of the contractual position to which he/she is seconded.
+(8) During the period of secondment under the conditions of paragraph (5) , the civil servant or civil servant with special status shall benefit from more favorable salary rights, namely either the rights corresponding to the civil service position from which he was seconded, or the contractual position to which he was seconded.
+(9) The period for which the secondment was ordered under the terms of this article is considered seniority in the civil service, respectively in the civil service with special status, as the case may be, as well as seniority in the study specialty.
+(10) For executive civil servants, the period of secondment under the terms of this article is considered seniority in the professional grade of the civil service from which they are seconded and is taken into account for promotion.
+(11) The secondment of civil servants and civil servants with special status, under the terms of this article, does not represent, by way of derogation from the provisions of art. 94 paragraph (2) letter a) of Law no. 161/2003 on certain measures to ensure transparency in the exercise of public dignities, public functions and in the business environment, the prevention and sanctioning of corruption, with subsequent amendments and supplements, a situation of incompatibility.
+(12) The secondment of civil servants with special status - police officers shall be carried out under the terms of Law no. 360/2002 on the Police Officer's Status, as subsequently amended and supplemented. The secondment may be ordered, with the written consent of the civil servant with special status - police officer, for a period of no more than one year.
+Exceptionally, the period of secondment may be extended for objective reasons requiring the presence of the civil servant with special status - police officer within the authorities provided for in paragraph (1) , with his written consent, every six months, but no later than December 31, 2027.
+(13) In the event that, in order to obtain an adequate level of qualified personnel, it is necessary to establish new positions that, according to the job description, contribute to the fulfillment of duties in the field of cybersecurity, AACR and other authorities with sectoral competences, as appropriate, may program in the 2025 revenue and expenditure budget the increase in salary-related expenses as a result of the increase in the number of personnel compared to that achieved in 2024, in accordance with the legal provisions in force.
+Article 68
+Annexes No. 1 "Sectors of high critical importance" and No. 2 "Other sectors of critical importance" are an integral part of this law.
+This emergency ordinance transposes Directive (EU) 2022/2555 of the European Parliament and of the Council of 14 December 2022 concerning measures for a high common level of cybersecurity across the Union, amending Regulation (EU) No 910/2014 and Directive (EU) 2018/1972, and repealing Directive (EU) 2016/1148 (NIS Directive 2) (Text with EEA relevance), published in the Official Journal of the European Union (OJEU) No L333/80 of 27 December 2022.
+
+PRIME MINISTER
+ION-MARCEL CIOLACU
+Countersigned by:
+Deputy Prime Minister,
+Marian Neacșu
+Deputy Prime Minister, Minister of Finance,
+Tánczos Barna
+Deputy Prime Minister, Minister of Internal Affairs,
+Marian-Cătălin Predoiu
+p. Director of the National Cyber ​​Security Directorate,
+Gabriel Cătălin Dinu
+p. Secretary General of the Government,
+Mihnea-Claudiu Drumea
+p. Minister of Labor, Family, Youth and Social Solidarity,
+Francisc Oscar Gal,
+Secretary of State
+Minister of Transport and Infrastructure,
+Sorin-Mihai Grindeanu
+Minister of Education and Research,
+Daniel-Ovidiu David
+Minister of National Defense,
+Angel Tîlvăr
+Minister of Environment, Waters and Forests,
+Mircea Fechet
+Minister of Economy, Digitalization, Entrepreneurship and Tourism,
+Bogdan-Gruia Ivan
+Minister of Health,
+Alexandru Rafila
+Minister of Development, Public Works and Administration,
+Cseke Attila-Zoltan
+Minister of Foreign Affairs,
+Emilian-Horațiu Hurezeanu
+Minister of Energy,
+Sebastian-Ioan Burduja
+Bucharest, December 30, 2024.
+No. 155.
+Annex No. 1
+
+Sectors of high critical importance
+sector
+subsector
+Entity type
+1
+2
+3
+1. Energy
+a) Electricity
+- Enterprises in the field of electricity, as defined as "economic operators" in art. 3 point 73 of the Law on Electricity and Natural Gas no. 123/2012 that perform the function of "supply of electricity", as defined in art. 3 point 46 of the Law on Electricity and Natural Gas no. 123/2012 , with subsequent amendments and completions
+- Distribution operators, as defined in art. 3 point 70 of Law no. 123/2012
+- Transmission and system operators, as defined in art. 3 point 71 of Law no. 123/2012
+- Producers, as defined as "electricity producers" in art. 3 point 92 of Law no. 123/2012
+- Designated electricity market operators, as defined in art. 3 point 68 of Law no. 123/2012
+- Market participants, as defined in art. 3 point 79 of Law no. 123/2012 , who provide aggregation, dispatchable consumption or energy storage services, as defined in art. 3 points 6 , 29 and 121 respectively
+- Recharging point operators, as defined in art. 3 point 96 of Law no. 123/2012 , who are responsible for the management and operation of a recharging point providing a recharging service to final customers, as defined in art. 3 point 20 , including in the name and on behalf of a mobility service provider, as defined in art. 2 point 36 of Regulation (EU) 2023/1804 of the European Parliament and of the Council of 13 September 2023 on the deployment of alternative fuels infrastructure and repealing Directive 2014/94/EU
+- Economic operators, concessionaires and the developer of the offshore wind power plant provided for by Law No. 121/2024 on offshore wind energy
+b) Central heating and central cooling
+- District heating or district cooling operators, as defined in art. 2 letter t) of Law no. 220/2008 (republished) establishing the system for promoting the production of energy from renewable energy sources, with subsequent amendments and completions
+c) Oil
+- Oil pipeline operators, as defined as "transporters" in art. 2 point 42 of Petroleum Law no. 238/2004 , as subsequently amended and supplemented
+- Operators of oil production, refining and treatment facilities, storage and transportation
+- Central storage entities, as defined in art. 2 letters m) and n) of Law no. 85/2018 on the establishment and maintenance of minimum reserves of crude oil and/or petroleum products
+d) Gases
+- Supply companies, as defined as "suppliers" in art. 100 point 44 of Law no. 123/2012
+- Distribution operators, as defined in art. 100 point 63 of Law no. 123/2012
+- Transmission and system operators, as defined in art. 100 point 65 of Law no. 123/2012
+- Storage operators, as defined in art. 100 point 64 of Law no. 123/2012
+- LNG system operators, as defined as "LNG terminal operators" in art. 100 point 60 of Law no. 123/2012
+- Natural gas companies, as defined as "economic operators in the natural gas sector" in art. 100 point 67 of Law no. 123/2012
+- Natural gas refining and treatment plant operators
+e) Hydrogen
+- Hydrogen production, storage and transportation operators
+f) Beneficiaries of projects financed from non-reimbursable funds, and the type of entity that will have the following content
+- Beneficiaries provided for by Government Emergency Ordinance No. 60/2022 on establishing the institutional and financial framework for the implementation and management of funds allocated to Romania through the Modernization Fund, as well as for the amendment and completion of certain normative acts, with subsequent amendments and completions
+2. Transportation
+a) Air transport
+- Air carriers, as defined in art. 3 point 51 of the Air Code of March 18, 2020 , as amended and supplemented, used for commercial purposes
+- Airport managing bodies, as defined as "aerodrome managers" in art. 3 point 6 of the Aviation Code of 18 March 2020 , as subsequently amended and supplemented, airports, as defined in art. 3 point 13 , including the main airports listed in section 2 of Annex II to Regulation (EU) No 1315/2013 of the European Parliament and of the Council of 11 December 2013 on Union guidelines for the development of the trans-European transport network and repealing Decision No 661/2010/EU, as well as entities operating ancillary facilities at airports
+- Air traffic control operators providing air traffic control (ATC) services, as defined in Article 2(1) of Regulation (EC) No 549/2004 of the European Parliament and of the Council of 10 March 2004 laying down the framework for the creation of the single European sky (Framework Regulation)
+- Aircraft maintenance operators
+- Civil aviation agents, as defined as "aviation agents" in art. 3 point 15 of the Air Code of March 18, 2020 , as subsequently amended and supplemented
+- The organisations referred to in Article 2(1) of Commission Delegated Regulation (EU) 2022/1645 of 14 July 2022 laying down rules for the implementation of Regulation (EU) 2018/1139 of the European Parliament and of the Council with regard to requirements for the management of information security risks with a potential impact on aviation safety imposed on organisations subject to Commission Regulations (EU) No 748/2012 and (EU) No 139/2014 and amending Commission Regulations (EU) No 748/2012 and (EU) No 139/2014
+- The organisations referred to in Article 2(1) of Commission Implementing Regulation (EU) 2023/203 of 27 October 2022 laying down rules for the implementation of Regulation (EU) 2018/1139 of the European Parliament and of the Council with regard to requirements for the management of information security risks with a potential impact on aviation safety, imposed on organisations subject to Commission Regulations (EU) No 1321/2014, (EU) No 965/2012, (EU) No 1178/2011, (EU) 2015/340 and Commission Implementing Regulations (EU) 2017/373 and (EU) 2021/664, as well as competent authorities subject to Regulations (EU) No 748/2012, (EU) No. 1.321/2014, (EU) No. 965/2012, (EU) No. 1.178/2011, (EU) 2015/340 and (EU) No. 139/2014 and Commission Implementing Regulations (EU) 2017/373 and (EU) 2021/664, and amending Regulations (EU) No. 1.178/2011, (EU) No. 748/2012, (EU) No. 965/2012, (EU) No. 139/2014, (EU) No. 1.321/2014, (EU) 2015/340 of the Commission and of the Commission Implementing Regulations (EU) 2017/373 and (EU) 2021/664
+b) Rail transport
+- Infrastructure managers, as defined in art. 3 point 3 of Law no. 202/2016
+- Railway undertakings, as defined as "railway transport operators" in art. 3 point 18 of Law no. 202/2016 , including operators of a service infrastructure, as defined in art. 3 point 19
+c) Water transport
+- Inland, maritime and coastal freight and passenger transport companies as defined for maritime transport in Annex I to Regulation (EC) No 725/2004 of the European Parliament and of the Council of 31 March 2004 on enhancing ship and port facility security, not including individual ships operated by those companies
+- Port management bodies, as defined in art. 3 of Order of the Minister of Transport No. 290/2007 for the introduction of measures to strengthen port security, including their port facilities, as defined in art. 2 point 11 of Regulation (EC) No. 725/2004, and entities carrying out works and operating equipment within ports
+- Maritime traffic service operators (MTS), as defined in art. 3 letter t) of Government Decision no. 1,016/2010 for the establishment of the System for information and monitoring of maritime vessel traffic entering/exiting the national navigable waters of Romania, with subsequent amendments and completions
+d) Road transport
+- Road authorities as defined in Article 2(12) of Commission Delegated Regulation (EU) 2015/962 of 18 December 2014 supplementing Directive 2010/40/EU of the European Parliament and of the Council with regard to the provision of real-time traffic information services at EU level responsible for controlling traffic management, with the exception of public entities where traffic management or the operation of intelligent transport systems constitutes only a non-essential part of their overall activity
+- Intelligent transport system operators, as defined in art. 4 letter a) of Government Ordinance no. 7/2012 on the implementation of intelligent transport systems in the field of road transport and for the creation of interfaces with other modes of transport, approved by Law no. 221/2012
+3. Banking sector
+- Credit institutions, as defined in art. 4 point 1 of Regulation (EU) No. 575/2013 of the European Parliament and of the Council of 26 June 2013 on prudential requirements for credit institutions and investment firms and amending Regulation (EU) No. 648/2012
+4. Financial market infrastructures
+- Trading venue operators, as defined in art. 3 para. (1) point 40 of Law no. 126/2018 on markets in financial instruments, as subsequently amended and supplemented
+- Central Counterparties (CCPs), as defined in art. 3 par. (1) point 16 of Law no. 126/2018
+5. Health sector
+- Medical service providers, as defined by art. 347 letter c) of Law no. 95/2006 (republished) on the healthcare reform, as subsequently amended and supplemented
+- EU reference laboratories as defined in Article 15 of Regulation (EU) 2022/2371 of the European Parliament and of the Council of 23 November 2022 on serious cross-border threats to health and repealing Decision No 1082/2013/EU
+- Entities carrying out research and development of medicines - Entities manufacturing basic pharmaceutical products and pharmaceutical preparations mentioned in Section C Division 21 of NACE Rev. 2
+- Entities manufacturing medical devices considered to be essential in the context of a public health emergency (list of essential devices for the public health emergency) within the meaning of Article 22 of Regulation (EU) 2022/123 of the European Parliament and of the Council of 25 January 2022 on the strengthening of the role of the European Medicines Agency in relation to crisis preparedness and management in the field of medicinal products and medical devices
+6. Drinking water
+- Water suppliers and distributors, as defined as "water suppliers" in art. 2 letter c) of Government Ordinance no. 7/2023 on the quality of water intended for human consumption, as subsequently amended and supplemented, intended for human consumption, as defined in art. 2 letter a) of the same ordinance, excluding water used in any food-type establishment for the production, processing, preservation or marketing of products or substances intended for human consumption and excluding distributors for whom the distribution of water intended for human consumption represents a non-essential part of their general activity of distribution of other basic products and goods that are not considered essential services
+7. Wastewater
+- Enterprises that collect, discharge or treat urban wastewater, domestic wastewater or industrial wastewater, as defined in art. 2 points 1-3 of Annex no. 1 - Technical Norms of 28 February 2002 on the collection, purification and discharge of urban wastewater, NTPA-011 to Government Decision no. 188/2002 for the approval of norms on the conditions for the discharge of wastewater into the aquatic environment, with the exception of enterprises for which the collection, discharge or treatment of urban wastewater, domestic wastewater or industrial wastewater represents a non-essential part of their general activity, with subsequent amendments and supplements
+8. Digital infrastructure
+- IXP (internet exchange point) providers
+- DNS service providers, except primary name server operators
+- TLD name registries
+- Cloud computing service providers
+- Data center service providers
+- Content delivery network providers
+- Trusted service providers
+- Providers of public electronic communications networks
+- Providers of publicly available electronic communications services
+9. ICT service management (business-to-business)
+- Managed service providers
+- Managed security service providers
+10. Public administration
+- Central public administration entities, except for institutions in the field of defense, public order and national security, the Office of the National Register of State Secret Information, higher education institutions, the legal field, justice, including the Public Ministry, the Parliament of Romania, the General Secretariat of the Government, the Chancellery of the Prime Minister, the Presidential Administration, ASF, BNR and ANCOM.
+11. Space
+- Operators of terrestrial infrastructure owned, managed and operated by the Romanian state or by private entities on the territory of Romania, which support the provision of space services, with the exception of providers of public electronic communications networks
+Annex No. 2
+
+Other sectors of critical importance
+sector
+subsector
+Entity type
+1
+2
+3
+1. Postal and courier services
+- Postal service providers, as defined in art. 2 point 2 of Government Emergency Ordinance no. 13/2013 on postal services, as subsequently amended and supplemented by Law no. 187/2013 , including courier service providers
+2. Waste management
+- Enterprises that carry out waste management, as defined in point 19 of Annex No. 1 to Government Emergency Ordinance No. 92/2021 on the waste regime, approved with amendments and completions by Law No. 17/2023 , with the exception of enterprises for which waste management does not represent the main economic activity
+3. Manufacturing, production and distribution of chemicals
+- Undertakings producing substances and distributing substances or mixtures as referred to in Article 3(9) and (14) of Regulation (EC) No 1907/2006 of the European Parliament and of the Council of 18 December 2006 concerning the Registration, Evaluation, Authorisation and Restriction of Chemicals (REACH), establishing a European Chemicals Agency, amending Directive 1999/45/EC and repealing Council Regulation (EEC) No 793/93 and Commission Regulation (EC) No 1488/94 as well as Council Directive 76/769/EEC and Commission Directives 91/155/EEC, 93/67/EEC, 93/105/EC and 2000/21/EC and undertakings producing articles as defined in Article 3(3) of that Regulation from substances or mixtures
+4. Food production, processing and distribution
+- Food businesses as defined in Article 3(2) of Regulation (EC) No 178/2002 of the European Parliament and of the Council of 28 January 2002 laying down the general principles and requirements of food law, establishing the European Food Safety Authority and laying down procedures in matters of food safety, which are involved in wholesale distribution and in industrial production and processing
+5. Manufacturing
+a) Manufacturing of medical devices and in vitro diagnostic medical devices
+- Entities manufacturing medical devices, as defined in Article 2(1) of Regulation (EU) 2017/745 of the European Parliament and of the Council of 5 April 2017 on medical devices, amending Directive 2001/83/EC, Regulation (EC) No 178/2002 and Regulation (EC) No 1.223/2009 and repealing Council Directives 90/385/EEC and 93/42/EEC, and entities manufacturing in vitro diagnostic medical devices as defined in Article 2(2) of Regulation (EU) 2017/746 of the European Parliament and of the Council of 5 April 2017 on in vitro diagnostic medical devices and repealing Directive 98/79/EC and Commission Decision 2010/227/EU, with the exception of entities manufacturing medical devices referred to in Annex I(5)
+b) Manufacture of computers and electronic and optical products
+- Enterprises carrying out any of the economic activities mentioned in division 26 of NACE Rev. 2
+c) Manufacturing of electrical equipment
+- Enterprises carrying out any of the economic activities mentioned in division 27 of NACE Rev. 3, according to the Order of the President of the National Institute of Statistics
+d) Manufacture of other machinery and equipment n.e.c.
+- Enterprises carrying out any of the economic activities mentioned in division 28 of NACE Rev. 3, according to the Order of the President of the National Institute of Statistics
+e) Manufacture of motor vehicles, trailers and semi-trailers
+- Enterprises carrying out any of the economic activities mentioned in division 29 of NACE Rev. 3, according to the Order of the President of the National Institute of Statistics
+f) Manufacture of other transport equipment
+- Enterprises carrying out any of the economic activities mentioned in division 30 of NACE Rev. 3, according to the Order of the President of the National Institute of Statistics
+6. Digital providers
+- Online marketplace providers
+- Online search engine providers
+- Social networking service platform providers
+7. Research
+Research organizations
+----
