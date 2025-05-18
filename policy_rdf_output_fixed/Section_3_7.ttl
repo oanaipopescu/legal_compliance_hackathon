@@ -1,91 +1,43 @@
 @prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:InformationSecurityIncidentPrioritization a :RegulationRule ;
-    rdfs:label "Information Security Incident Prioritization" ;
-    :requires :SeverityAssignment .
+:InformationSecurityIncident a :Incident ;
+    :severityLevel [
+        rdfs:label "High" ;
+        :functionalImpact "some (critical) services cannot be delivered to any users and 10 or more users or assets are affected" ;
+        :informationImpact "confidentiality or integrity compromised of Secret Classified information" ;
+        :recoverabilityEffort "recovery from the incident is not possible and time to recover is unpredictable and additional resources and external expertise might be needed" ;
+        :responseTime "PT72H"^^xsd:duration
+    ], [
+        rdfs:label "Medium" ;
+        :functionalImpact "some (critical) services cannot be delivered to any users and 5 to 10 users or assets are affected" ;
+        :informationImpact "confidentiality or integrity compromised of Confidential Classified information" ;
+        :recoverabilityEffort "time to recover is predictable and additional resources might be needed" ;
+        :responseTime "P5D"^^xsd:duration
+    ], [
+        rdfs:label "Low" ;
+        :functionalImpact "all (critical) services can still be delivered but with lost efficiency and less than 5 users or assets are affected" ;
+        :informationImpact "confidentiality or integrity compromised of Internal Classified information" ;
+        :recoverabilityEffort "time to recover is predictable with existing resources" ;
+        :responseTime "P2D"^^xsd:duration
+    ] .
 
-:SeverityAssignment a :RegulationRequirement ;
-    rdfs:label "Severity Assignment" ;
-    :assigns :SeverityLevel .
+:rule1 a :RegulationRule ;
+    rdfs:label "Information security incident prioritization" ;
+    :appliesTo :InformationSecurityIncident ;
+    :requires :severityLevelAssignment .
 
-:SeverityLevel a :RegulationClass ;
-    rdfs:label "Severity Level" ;
-    :hasMember :HighSeverity , :MediumSeverity , :LowSeverity .
+:severityLevelAssignment a :Obligation ;
+    rdfs:label "Severity Level Assignment" ;
+    :description "Information security incidents must be assigned a severity level (High, Medium, or Low) based on functional impact, information impact, and recoverability effort." .
 
-:HighSeverity a :SeverityLevel ;
-    rdfs:label "High Severity" ;
-    :definedBy :HighSeverityCriteria .
-
-:HighSeverityCriteria a :RegulationRule ;
-    rdfs:label "High Severity Criteria" ;
-    :requires :CriticalServiceOutage , :HighInformationImpact , :UnrecoverableIncident ;
-    :responseTime "Immediate" .
-
-:CriticalServiceOutage a :RegulationRequirement ;
-    rdfs:label "Critical Service Outage" ;
-    :description "some (critical) services cannot be delivered to any users and 10 or more users or assets are affected" .
-
-:HighInformationImpact a :RegulationRequirement ;
-    rdfs:label "High Information Impact" ;
-    :description "confidentiality or integrity compromised of Secret Classified information" .
-
-:UnrecoverableIncident a :RegulationRequirement ;
-    rdfs:label "Unrecoverable Incident" ;
-    :description "recovery from the incident is not possible and time to recover is unpredictable and additional resources and external expertise might be needed" .
-
-
-:MediumSeverity a :SeverityLevel ;
-    rdfs:label "Medium Severity" ;
-    :definedBy :MediumSeverityCriteria .
-
-:MediumSeverityCriteria a :RegulationRule ;
-    rdfs:label "Medium Severity Criteria" ;
-    :requires :PartialCriticalServiceOutage , :MediumInformationImpact , :PredictableRecovery ;
-    :responseTime "1 hour" .
-
-:PartialCriticalServiceOutage a :RegulationRequirement ;
-    rdfs:label "Partial Critical Service Outage" ;
-    :description "some (critical) services cannot be delivered to any users and 5 to 10 users or assets are affected" .
-
-:MediumInformationImpact a :RegulationRequirement ;
-    rdfs:label "Medium Information Impact" ;
-    :description "confidentiality or integrity compromised of Confidential Classified information" .
-
-:PredictableRecovery a :RegulationRequirement ;
-    rdfs:label "Predictable Recovery" ;
-    :description "time to recover is predictable and additional resources might be needed" .
-
-
-:LowSeverity a :SeverityLevel ;
-    rdfs:label "Low Severity" ;
-    :definedBy :LowSeverityCriteria .
-
-:LowSeverityCriteria a :RegulationRule ;
-    rdfs:label "Low Severity Criteria" ;
-    :requires :MinorServiceImpact , :LowInformationImpact , :EasyRecovery ;
-    :responseTime "2 hours" .
-
-:MinorServiceImpact a :RegulationRequirement ;
-    rdfs:label "Minor Service Impact" ;
-    :description "all (critical) services can still be delivered but with lost efficiency and less than 5 users or assets are affected" .
-
-:LowInformationImpact a :RegulationRequirement ;
-    rdfs:label "Low Information Impact" ;
-    :description "confidentiality or integrity compromised of Internal Classified information" .
-
-:EasyRecovery a :RegulationRequirement ;
-    rdfs:label "Easy Recovery" ;
-    :description "time to recover is predictable with existing resources" .
-
-:SecretClassifiedInformation a :PersonalData ;
+:SecretClassifiedInformation a :ClassificationLevel ;
     rdfs:label "Secret Classified Information" .
 
-:ConfidentialClassifiedInformation a :PersonalData ;
+:ConfidentialClassifiedInformation a :ClassificationLevel ;
     rdfs:label "Confidential Classified Information" .
 
-:InternalClassifiedInformation a :PersonalData ;
+:InternalClassifiedInformation a :ClassificationLevel ;
     rdfs:label "Internal Classified Information" .
-
-:IncidentCategoryType a :RegulationClass ;
-    rdfs:label "Incident Category Type" .

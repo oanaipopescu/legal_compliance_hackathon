@@ -6,14 +6,14 @@ Properties:
 • Functional Impact: some (critical) services cannot be delivered to any users and 10 or more users or assets are affected. 
 • Information Impact: confidentiality or integrity compromised of Secret Classified information. 
 • Recoverability Effort: recovery from the incident is not possible and time to recover is unpredictable and additional resources and external expertise might be needed. 
-• Response Time: Immediate
+• Response Time: 72 hours
 2.	Severity: Medium 
 • Functional Impact: some (critical) services cannot be delivered to any users and 5 to 10 users or assets are affected. 
 • Information Impact: confidentiality or integrity compromised of Confidential Classified information. 
 • Recoverability Effort: time to recover is predictable and additional resources might be needed. 
-• Response Time: 1 hour 
+• Response Time: 5 days
 3.	Severity Low: 
 • Functional Impact: all (critical) services can still be delivered but with lost efficiency and less than 5 users or assets are affected. 
 • Information Impact: confidentiality or integrity compromised of Internal Classified information.  
 • Recoverability Effort: time to recover is predictable with existing resources.
-• Response time: 2 hours
+• Response time: 2 days

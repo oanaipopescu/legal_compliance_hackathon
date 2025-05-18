@@ -1,0 +1,35 @@
+```turtle
+@prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+:IncidentSeverityLevel a :RegulationRule ;
+    :label "Information security incident prioritization" ;
+    :appliesTo :IncidentReport ;
+    :hasInformation :HighSeverity ;
+    :hasInformation :MediumSeverity ;
+    :hasInformation :LowSeverity .
+
+:HighSeverity a :RegulationRule ;
+    :label "High Severity Incident" ;
+    :requires [ :type :FunctionalImpact ; :description "some (critical) services cannot be delivered to any users and 10 or more users or assets are affected." ] ;
+    :requires [ :type :InformationImpact ; :description "confidentiality or integrity compromised of Secret Classified information." ] ;
+    :requires [ :type :RecoverabilityEffort ; :description "recovery from the incident is not possible and time to recover is unpredictable and additional resources and external expertise might be needed." ] ;
+    :requires [ :type :responseTime ; :dateLiteral "P72H"^^xsd:duration ] .
+
+:MediumSeverity a :RegulationRule ;
+    :label "Medium Severity Incident" ;
+    :requires [ :type :FunctionalImpact ; :description "some (critical) services cannot be delivered to any users and 5 to 10 users or assets are affected." ] ;
+    :requires [ :type :InformationImpact ; :description "confidentiality or integrity compromised of Confidential Classified information." ] ;
+    :requires [ :type :RecoverabilityEffort ; :description "time to recover is predictable and additional resources might be needed." ] ;
+    :requires [ :type :responseTime ; :dateLiteral "P5D"^^xsd:duration ] .
+
+:LowSeverity a :RegulationRule ;
+    :label "Low Severity Incident" ;
+    :requires [ :type :FunctionalImpact ; :description "all (critical) services can still be delivered but with lost efficiency and less than 5 users or assets are affected." ] ;
+    :requires [ :type :InformationImpact ; :description "confidentiality or integrity compromised of Internal Classified information." ] ;
+    :requires [ :type :RecoverabilityEffort ; :description "time to recover is predictable with existing resources." ] ;
+    :requires [ :type :responseTime ; :dateLiteral "P2D"^^xsd:duration ] .
+
+```

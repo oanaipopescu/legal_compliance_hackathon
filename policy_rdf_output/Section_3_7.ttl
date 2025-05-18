@@ -1,94 +1,60 @@
 ```turtle
 @prefix : <http://example.org#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 
-:InformationSecurityIncidentPrioritization a :RegulationRule ;
-    rdfs:label "Information Security Incident Prioritization" ;
-    :requires :SeverityAssignment .
+:InformationSecurityIncident a :Incident ;
+    rdfs:label "Information Security Incident" .
 
-:SeverityAssignment a :RegulationRequirement ;
-    rdfs:label "Severity Assignment" ;
-    :assigns :SeverityLevel .
-
-:SeverityLevel a :RegulationClass ;
-    rdfs:label "Severity Level" ;
-    :hasMember :HighSeverity , :MediumSeverity , :LowSeverity .
+:SeverityLevel a :Classification ;
+    rdfs:label "Severity Level" .
 
 :HighSeverity a :SeverityLevel ;
-    rdfs:label "High Severity" ;
-    :definedBy :HighSeverityCriteria .
-
-:HighSeverityCriteria a :RegulationRule ;
-    rdfs:label "High Severity Criteria" ;
-    :requires :CriticalServiceOutage , :HighInformationImpact , :UnrecoverableIncident ;
-    :responseTime "Immediate" .
-
-:CriticalServiceOutage a :RegulationRequirement ;
-    rdfs:label "Critical Service Outage" ;
-    :description "some (critical) services cannot be delivered to any users and 10 or more users or assets are affected" .
-
-:HighInformationImpact a :RegulationRequirement ;
-    rdfs:label "High Information Impact" ;
-    :description "confidentiality or integrity compromised of Secret Classified information" .
-
-:UnrecoverableIncident a :RegulationRequirement ;
-    rdfs:label "Unrecoverable Incident" ;
-    :description "recovery from the incident is not possible and time to recover is unpredictable and additional resources and external expertise might be needed" .
-
+    rdfs:label "High" ;
+    :functionalImpact "some (critical) services cannot be delivered to any users and 10 or more users or assets are affected" ;
+    :informationImpact "confidentiality or integrity compromised of Secret Classified information" ;
+    :recoverabilityEffort "recovery from the incident is not possible and time to recover is unpredictable and additional resources and external expertise might be needed" ;
+    :responseTime "72 hours" .
 
 :MediumSeverity a :SeverityLevel ;
-    rdfs:label "Medium Severity" ;
-    :definedBy :MediumSeverityCriteria .
-
-:MediumSeverityCriteria a :RegulationRule ;
-    rdfs:label "Medium Severity Criteria" ;
-    :requires :PartialCriticalServiceOutage , :MediumInformationImpact , :PredictableRecovery ;
-    :responseTime "1 hour" .
-
-:PartialCriticalServiceOutage a :RegulationRequirement ;
-    rdfs:label "Partial Critical Service Outage" ;
-    :description "some (critical) services cannot be delivered to any users and 5 to 10 users or assets are affected" .
-
-:MediumInformationImpact a :RegulationRequirement ;
-    rdfs:label "Medium Information Impact" ;
-    :description "confidentiality or integrity compromised of Confidential Classified information" .
-
-:PredictableRecovery a :RegulationRequirement ;
-    rdfs:label "Predictable Recovery" ;
-    :description "time to recover is predictable and additional resources might be needed" .
-
+    rdfs:label "Medium" ;
+    :functionalImpact "some (critical) services cannot be delivered to any users and 5 to 10 users or assets are affected" ;
+    :informationImpact "confidentiality or integrity compromised of Confidential Classified information" ;
+    :recoverabilityEffort "time to recover is predictable and additional resources might be needed" ;
+    :responseTime "5 days" .
 
 :LowSeverity a :SeverityLevel ;
-    rdfs:label "Low Severity" ;
-    :definedBy :LowSeverityCriteria .
+    rdfs:label "Low" ;
+    :functionalImpact "all (critical) services can still be delivered but with lost efficiency and less than 5 users or assets are affected" ;
+    :informationImpact "confidentiality or integrity compromised of Internal Classified information" ;
+    :recoverabilityEffort "time to recover is predictable with existing resources" ;
+    :responseTime "2 days" .
 
-:LowSeverityCriteria a :RegulationRule ;
-    rdfs:label "Low Severity Criteria" ;
-    :requires :MinorServiceImpact , :LowInformationImpact , :EasyRecovery ;
-    :responseTime "2 hours" .
+:IncidentPrioritization a :RegulationRule ;
+    rdfs:label "Incident Prioritization" ;
+    :requires :SeverityLevelAssignment ;
+    :appliesTo :InformationSecurityIncident .
 
-:MinorServiceImpact a :RegulationRequirement ;
-    rdfs:label "Minor Service Impact" ;
-    :description "all (critical) services can still be delivered but with lost efficiency and less than 5 users or assets are affected" .
+:SeverityLevelAssignment a :Obligation ;
+    rdfs:label "Severity Level Assignment" ;
+    :description "Information security incidents must be assigned a severity level (high, medium, or low) based on functional impact, information impact, and recoverability effort." .
 
-:LowInformationImpact a :RegulationRequirement ;
-    rdfs:label "Low Information Impact" ;
-    :description "confidentiality or integrity compromised of Internal Classified information" .
+:FunctionalImpact a :ImpactCategory ;
+    rdfs:label "Functional Impact" .
 
-:EasyRecovery a :RegulationRequirement ;
-    rdfs:label "Easy Recovery" ;
-    :description "time to recover is predictable with existing resources" .
+:InformationImpact a :ImpactCategory ;
+    rdfs:label "Information Impact" .
 
-:SecretClassifiedInformation a :PersonalData ;
+:RecoverabilityEffort a :ImpactCategory ;
+    rdfs:label "Recoverability Effort" .
+
+:SecretClassifiedInformation a :InformationClassification ;
     rdfs:label "Secret Classified Information" .
 
-:ConfidentialClassifiedInformation a :PersonalData ;
+:ConfidentialClassifiedInformation a :InformationClassification ;
     rdfs:label "Confidential Classified Information" .
 
-:InternalClassifiedInformation a :PersonalData ;
+:InternalClassifiedInformation a :InformationClassification ;
     rdfs:label "Internal Classified Information" .
-
-:IncidentCategoryType a :RegulationClass ;
-    rdfs:label "Incident Category Type" .
 
 ```

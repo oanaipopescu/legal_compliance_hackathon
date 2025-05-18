@@ -14,7 +14,7 @@
         sh:severity sh:Violation
     ], [
         sh:path :registrationDeadline ;
-        sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+        sh:pattern "^\\\\d{4}-\\\\d{2}-\\\\d{2}$" ;
         sh:message "Invalid date format for registration deadline.  Use YYYY-MM-DD." ;
         sh:severity sh:Violation
     ] .
@@ -29,7 +29,7 @@
         sh:severity sh:Violation
     ], [
         sh:path :registrationDeadline ;
-        sh:pattern "^\\d{4}-\\d{2}-\\d{2}$" ;
+        sh:pattern "^\\\\d{4}-\\\\d{2}-\\\\d{2}$" ;
         sh:message "Invalid date format for registration deadline. Use YYYY-MM-DD." ;
         sh:severity sh:Violation
     ] .

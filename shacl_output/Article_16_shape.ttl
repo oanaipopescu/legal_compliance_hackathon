@@ -3,68 +3,81 @@
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-:IncidentNotificationShape a sh:NodeShape ;
-    sh:targetClass :KeyEntities ;
+:IncidentReportShape a sh:NodeShape ;
+    sh:targetClass :IncidentReport ;
     sh:property [
-        sh:path :hasIncidentReport ;
+        sh:path :notificationTime ;
+        sh:datatype xsd:dateTime ;
         sh:minCount 1 ;
-        sh:message "Key Entities must have at least one incident report." ;
+        sh:message "Incident notification time must be provided." ;
         sh:severity sh:Violation
-    ] .
-
-:SignificantCyberThreatNotificationShape a sh:NodeShape ;
-    sh:targetClass :SignificantEntities ;
-    sh:property [
-        sh:path :hasSignificantCyberThreatNotification ;
+    ], [
+        sh:path :incidentType ;
         sh:minCount 1 ;
-        sh:message "Significant Entities must have at least one significant cyber threat notification." ;
+        sh:message "Incident type must be specified." ;
         sh:severity sh:Violation
-    ] .
-
-:TrustServiceProviderIncidentNotificationShape a sh:NodeShape ;
-    sh:targetClass :TrustServiceProvider ;
-    sh:property [
-        sh:path :hasTrustServiceProviderIncidentNotification ;
+    ], [
+        sh:path :affectedUsers ;
+        sh:datatype xsd:integer ;
         sh:minCount 1 ;
-        sh:message "Trust Service Providers must have at least one incident notification." ;
+        sh:message "Number of affected users must be provided." ;
         sh:severity sh:Violation
-    ] .
-
-:UnifiedCybersecurityPolicyShape a sh:NodeShape ;
-    sh:targetClass :KeyEntities ;
-    sh:property [
-        sh:path :hasUnifiedCybersecurityPolicy ;
+    ], [
+        sh:path :dataClassification ;
+        sh:in (:SecretClassified, :Confidential, :Public) ;
+        sh:message "Data classification must be one of: Secret Classified, Confidential, Public." ;
+        sh:severity sh:Violation
+    ], [
+        sh:path :severity ;
+        sh:in (:High, :Medium, :Low) ;
+        sh:message "Severity must be one of: High, Medium, Low." ;
+        sh:severity sh:Violation ;
+        sh:sparql [
+            sh:select """
+                SELECT $this WHERE {
+                  ?report :affectedUsers ?users ;
+                    :dataClassification ?classification .
+                  FILTER(?users >= 10 && ?classification = :SecretClassified) .
+                  BIND(IRI(:High) AS $this)
+                }
+            """ ;
+            sh:message "If affected users are 10 or more and data classification is Secret Classified, then severity MUST be High."
+        ]
+    ], [
+        sh:path :earlyWarningNotificationTime ;
+        sh:datatype xsd:dateTime ;
         sh:minCount 1 ;
-        sh:message "Key Entities must have a Unified Cybersecurity Policy." ;
-        sh:severity sh:Violation
-    ] .
-
-:UnifiedCybersecurityPolicyShape2 a sh:NodeShape ;
-    sh:targetClass :SignificantEntities ;
-    sh:property [
-        sh:path :hasUnifiedCybersecurityPolicy ;
+        sh:message "Early warning notification time must be provided." ;
+        sh:severity sh:Violation ;
+        sh:sparql [
+            sh:select """
+              SELECT $this WHERE {
+                ?report :notificationTime ?notificationTime ;
+                  :earlyWarningNotificationTime ?earlyWarningTime .
+                FILTER(xsd:dateTime(?notificationTime) - xsd:dateTime(?earlyWarningTime) > "PT24H") .
+                BIND(IRI(:Violation) as $this)
+              }
+            """ ;
+            sh:message "Early warning notification must be sent within 24 hours before the incident notification."
+        ]
+    ], [
+        sh:path :incidentNotificationTime ;
+        sh:datatype xsd:dateTime ;
         sh:minCount 1 ;
-        sh:message "Significant Entities must have a Unified Cybersecurity Policy." ;
-        sh:severity sh:Violation
-    ] .
-
-:ComprehensiveAssetRecordShape a sh:NodeShape ;
-    sh:targetClass :KeyEntities ;
-    sh:property [
-        sh:path :hasComprehensiveAssetRecord ;
-        sh:minCount 1 ;
-        sh:message "Key Entities must have a Comprehensive Asset Record." ;
-        sh:severity sh:Violation
-    ] .
-
-:ComprehensiveAssetRecordShape2 a sh:NodeShape ;
-    sh:targetClass :SignificantEntities ;
-    sh:property [
-        sh:path :hasComprehensiveAssetRecord ;
-        sh:minCount 1 ;
-        sh:message "Significant Entities must have a Comprehensive Asset Record." ;
-        sh:severity sh:Violation
+        sh:message "Incident notification time must be provided." ;
+        sh:severity sh:Violation ;
+        sh:sparql [
+            sh:select """
+                SELECT $this WHERE {
+                  ?report :incidentNotificationTime ?incidentTime .
+                  FILTER(xsd:dateTime(?incidentTime) > xsd:dateTime("2024-01-01T00:00:00Z")) .  
+                  BIND(IRI(:Violation) as $this)
+                }
+            """ ;
+            sh:message "Incident notification time must be after 2024-01-01T00:00:00Z (Example Time Constraint)."
+        ]
     ] .
 
 ```

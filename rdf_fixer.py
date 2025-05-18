@@ -2,10 +2,10 @@ import os
 import re
 
 # Define input and output directories
-# input_dir = "policy_rdf_output"
-# output_dir = "policy_rdf_output_fixed"
-input_dir = "shacl_output"
-output_dir = "shacl_output_fixed"
+input_dir = "policy_rdf_output"
+output_dir = "policy_rdf_output_fixed"
+# input_dir = "shacl_output"
+# output_dir = "shacl_output_fixed"
 
 # Create output directory if it doesn't exist
 os.makedirs(output_dir, exist_ok=True)
