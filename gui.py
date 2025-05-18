@@ -110,10 +110,10 @@ class GeminiComplianceChecker(QWidget):
         ])
         layout.addWidget(self.country_dropdown)
 
-        layout.addWidget(self._make_label("Upload Contract Files (TXT):"))
+        layout.addWidget(self._make_label("Upload Policy File (TXT):"))
         self.contract_list = QListWidget()
         layout.addWidget(self.contract_list)
-        self.contract_button = QPushButton("Upload Contract Files")
+        self.contract_button = QPushButton("Upload Policy Files")
         self.contract_button.clicked.connect(self.load_contract_files)
         layout.addWidget(self.contract_button)
 
