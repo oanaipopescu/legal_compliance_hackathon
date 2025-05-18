@@ -1,23 +1,16 @@
 import sys
 from PyQt5.QtWidgets import (
     QApplication, QWidget, QVBoxLayout, QPushButton, QLabel, QTextEdit,
-    QFileDialog, QComboBox, QListWidget, QMessageBox, QHBoxLayout
+    QFileDialog, QComboBox, QListWidget, QMessageBox, QHBoxLayout, QMainWindow
 )
-from PyQt5.QtGui import QFont, QColor, QPalette
-
-from SHACL_COMPLIANCE_TEST import get_compliance_test
-
-# Configure Gemini API
-# genai.configure(api_key="YOUR_GOOGLE_API_KEY")  # Replace with your API key
-
-
-from PyQt5.QtWidgets import QMainWindow
+from PyQt5.QtGui import QFont
 from matplotlib.backends.backend_qt5agg import FigureCanvasQTAgg as FigureCanvas
 import matplotlib.pyplot as plt
 import networkx as nx
 from rdflib import Graph, RDF
 from collections import defaultdict
 
+# ========= Helper for Graph Rendering =========
 def local_name(uri):
     uri = str(uri)
     if "#" in uri:
@@ -27,9 +20,9 @@ def local_name(uri):
     return uri
 
 class GraphViewerWindow(QMainWindow):
-    def __init__(self, ttl_path):
+    def __init__(self, ttl_path, title):
         super().__init__()
-        self.setWindowTitle("Knowledge Graph")
+        self.setWindowTitle(title)
         self.setGeometry(150, 150, 1000, 800)
 
         self.figure = plt.figure(figsize=(16, 10))
@@ -86,30 +79,29 @@ class GraphViewerWindow(QMainWindow):
         ax.legend(handles=legend_elements, title="Node Types (RDF Classes)", loc="lower center", bbox_to_anchor=(0.5, -0.2), ncol=3)
         self.figure.tight_layout()
         self.canvas.draw()
-# 
 
+
+# ========= Main Application =========
 class GeminiComplianceChecker(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("ComplyVerify")
-        self.setGeometry(100, 100, 950, 750)
+        self.setGeometry(100, 100, 950, 900)
         self.setStyle()
 
         self.law_files = []
         self.contract_files = []
+        self.graph_windows = []
 
         layout = QVBoxLayout()
 
-        # Law file section
         layout.addWidget(self._make_label("Upload EU Law Documents (TXT):"))
         self.law_list = QListWidget()
         layout.addWidget(self.law_list)
-
         self.law_button = QPushButton("Upload Law Files")
         self.law_button.clicked.connect(self.load_law_files)
         layout.addWidget(self.law_button)
 
-        # Country selection
         layout.addWidget(self._make_label("Select Country:"))
         self.country_dropdown = QComboBox()
         self.country_dropdown.addItems([
@@ -118,33 +110,46 @@ class GeminiComplianceChecker(QWidget):
         ])
         layout.addWidget(self.country_dropdown)
 
-        # Contract file section
         layout.addWidget(self._make_label("Upload Contract Files (TXT):"))
         self.contract_list = QListWidget()
         layout.addWidget(self.contract_list)
-
         self.contract_button = QPushButton("Upload Contract Files")
         self.contract_button.clicked.connect(self.load_contract_files)
         layout.addWidget(self.contract_button)
 
-        # Action buttons
+        # Compliance Check
         button_layout = QHBoxLayout()
-
         self.check_button = QPushButton("Check Compliance")
         self.check_button.clicked.connect(self.check_compliance)
         button_layout.addWidget(self.check_button)
-
-        self.visualize_button = QPushButton("Visualize Graphs")
-        self.visualize_button.clicked.connect(self.visualize_graphs)
-        button_layout.addWidget(self.visualize_button)
-
         layout.addLayout(button_layout)
 
-        # Output
         layout.addWidget(self._make_label("Compliance Report:"))
         self.result_text = QTextEdit()
         self.result_text.setReadOnly(True)
         layout.addWidget(self.result_text)
+
+        # === Visualization of Law Files ===
+        layout.addWidget(self._make_label("Visualization of Law Knowledge Graphs:"))
+        law_vis_layout = QHBoxLayout()
+        self.law_article_dropdown = QComboBox()
+        self.law_article_dropdown.addItems([f"Article {i}" for i in range(1, 6)])
+        law_vis_layout.addWidget(self.law_article_dropdown)
+        self.law_vis_button = QPushButton("Visualize Graph")
+        self.law_vis_button.clicked.connect(lambda: self.visualize_law_graph(self.law_article_dropdown.currentText()))
+        law_vis_layout.addWidget(self.law_vis_button)
+        layout.addLayout(law_vis_layout)
+
+        # === Visualization of Policy File ===
+        layout.addWidget(self._make_label("Visualization of Policy Knowledge Graphs:"))
+        policy_vis_layout = QHBoxLayout()
+        self.policy_section_dropdown = QComboBox()
+        self.policy_section_dropdown.addItems([f"Section {i}" for i in range(1, 6)])
+        policy_vis_layout.addWidget(self.policy_section_dropdown)
+        self.policy_vis_button = QPushButton("Visualize Graph")
+        self.policy_vis_button.clicked.connect(lambda: self.visualize_policy_graph(self.policy_section_dropdown.currentText()))
+        policy_vis_layout.addWidget(self.policy_vis_button)
+        layout.addLayout(policy_vis_layout)
 
         self.setLayout(layout)
 
@@ -152,14 +157,6 @@ class GeminiComplianceChecker(QWidget):
         label = QLabel(text)
         label.setFont(QFont("Segoe UI", 10, QFont.Bold))
         return label
-
-    # def setStyle(self):
-    #     palette = QPalette()
-    #     palette.setColor(QPalette.Window, QColor("#f4f6f9"))
-    #     palette.setColor(QPalette.Base, QColor("#ffffff"))
-    #     palette.setColor(QPalette.Text, QColor("#222222"))
-    #     self.setPalette(palette)
-    #     self.setFont(QFont("Segoe UI", 10))
 
     def setStyle(self):
         self.setStyleSheet("""
@@ -193,7 +190,6 @@ class GeminiComplianceChecker(QWidget):
             }
         """)
 
-
     def load_law_files(self):
         files, _ = QFileDialog.getOpenFileNames(self, "Select EU Law Files", "", "Documents (*.txt)")
         if files:
@@ -202,28 +198,40 @@ class GeminiComplianceChecker(QWidget):
             self.law_list.addItems([f.split("/")[-1] for f in files])
 
     def load_contract_files(self):
-        files, _ = QFileDialog.getOpenFileNames(self, "Select Contract Files", "", "Documents (*.txt)")
+        files, _ = QFileDialog.getOpenFileNames(self, "Select Policy File", "", "Documents (*.txt)")
         if files:
             self.contract_files = files
             self.contract_list.clear()
             self.contract_list.addItems([f.split("/")[-1] for f in files])
 
     def check_compliance(self):
+        from SHACL_COMPLIANCE_TEST import get_compliance_test
         summary_file = get_compliance_test()
         with open(summary_file, "r") as file:
             content = file.read()
         self.result_text.setPlainText(content)
 
-    def visualize_graphs(self):
-        QMessageBox.information(self, "Visualize Graphs", "Graph visualization feature coming soon!")
-        
-        # ttl_path = "output.ttl"  # Or wherever your generated TTL is saved
+    def visualize_law_graph(self, article):
+        article_path = './legal_compliance_hackathon/rdf_output_fixed/' + article.replace(' ', '_') + '.ttl'
         # try:
-        #     self.graph_window = GraphViewerWindow(ttl_path)
-        #     self.graph_window.show()
+        graph_window = GraphViewerWindow(article_path, article)
+        graph_window.show()
+        self.graph_windows.append(graph_window)
         # except Exception as e:
-        #     QMessageBox.critical(self, "Error", f"Could not visualize graph:\n{e}")
+            # QMessageBox.critical(self, "Error", f"Could not visualize graph:\n{e}")
 
+
+    def visualize_policy_graph(self, section):
+        section_path = './legal_compliance_hackathon/policy_rdf_output_fixed/' + section.replace(' ', '_') + '.ttl'
+        # try:
+        graph_window = GraphViewerWindow(section_path, section)
+        graph_window.show()
+        self.graph_windows.append(graph_window)
+        # except Exception as e:
+            # QMessageBox.critical(self, "Error", f"Could not visualize graph:\n{e}")
+
+
+# Run the application
 if __name__ == "__main__":
     app = QApplication(sys.argv)
     window = GeminiComplianceChecker()
